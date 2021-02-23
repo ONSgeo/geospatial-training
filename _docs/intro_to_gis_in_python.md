@@ -1,5 +1,6 @@
 ---
-title: Introduction to GIS in Python 
+title: Introduction to GIS in Python
+description: An introduction to working with geospatial data in Python, for existing Python users.
 ---
 # Introduction to GIS in Python
 
@@ -29,5 +30,5 @@ By the end of the course you will:
 * 
 * Beginner/Intermediate knowledge of Python and Pandas.
 
-## Course Instructions
+### Course Instructions
 

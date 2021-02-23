@@ -1,6 +1,6 @@
 ---
 title: Awareness of Geography and Statistics
-description: An introduction to unlock geography for statistics
+description: An introduction to geography for statistics. Helping you understand why geography matters.
 ---
 
 # Awareness of Geography and Statistics
@@ -23,6 +23,7 @@ This course covers:
 * How to use geography correctly
 * Understanding geographic data 
 * Introducing Geographic Information Systems (GIS) and geospatial techniques 
+
 
 ---
 

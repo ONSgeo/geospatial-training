@@ -1,8 +1,6 @@
 ---
 title: Introduction to GIS in R 
-nav_order: 2
-has_toc: false
-has_children: true
+description: An introduction to working with geospatial data in R, for existing R users.
 ---
 
 # Introduction to GIS in R
@@ -33,7 +31,7 @@ By the end of the course you will:
 * R and RStudio
 * Beginner / Intermediate knowledge of R and `dplyr` .
 
-## Course Instructions
+### Course Instructions
 To take this course:
 
 * Go to [github.com/ONSgeo/Introduction_to_GIS_in_R](https://github.com/ONSgeo/Introduction_to_GIS_in_R) and download the repository as a zip file. 
