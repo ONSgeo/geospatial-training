@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Documentation
+title: Courses
 permalink: /docs/
 ---
 
-# Documentation
+# Courses Available
 
-Welcome to the {{ site.title }} Documentation pages! Here you can quickly jump to a 
-particular page.
+Welcome to {{ site.title }} ! Here you will find an overview of the courses available.
 
 <div class="section-index">
     <hr class="panel-line">
