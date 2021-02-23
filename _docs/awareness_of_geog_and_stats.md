@@ -5,8 +5,7 @@ description: An introduction to unlock geography for statistics
 
 # Awareness of Geography and Statistics
 
-## Course Overview
-
+## Course Summary
 ### Introduction
 This short course provides an overview of why geography matters for statistics.
 
@@ -18,8 +17,7 @@ It will give an introduction to what you need to know to unlock the geography in
 ### Audience
 Those managing work which incorporates aspects of geography
 
-### Course Summary
-
+### Course Aims
 This course covers:
 * Why geography matters for statistics
 * How to use geography correctly

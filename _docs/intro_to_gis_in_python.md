@@ -1,9 +1,9 @@
 ---
 title: Introduction to GIS in Python 
 ---
-  
 # Introduction to GIS in Python
-  
+
+## Course Summary
 ### Introduction
 This course provides an introduction to working with geospatial data in Python. 
 We recommend going through the [Awareness of Geography and Statistics](https://onsgeo.github.io/training/_docs/awareness_of_geog_and_stats.html) training prior to starting this course.
@@ -14,12 +14,7 @@ We recommend going through the [Awareness of Geography and Statistics](https://o
 ### Audience
 Python users wanting to work with geospatial data.
 
-### Requirements
-* 
-* Beginner/Intermediate knowledge of Python and Pandas.
-
 ### Course Aims
-
 By the end of the course you will:
   
 * Know how to load spatial data into Python using the `geopandas` package.
@@ -30,6 +25,9 @@ By the end of the course you will:
 * Know how to make static and interactive maps.
 * Be able to export your maps and shapefiles.
 
+### Requirements
+* 
+* Beginner/Intermediate knowledge of Python and Pandas.
 
-###Course Instructions
+## Course Instructions
 
