@@ -1,5 +1,6 @@
 ---
 title: Awareness of Geography and Statistics
+description: An introduction to unlock geography for statistics
 ---
 
 # Awareness of Geography and Statistics
