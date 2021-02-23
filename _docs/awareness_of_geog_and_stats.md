@@ -24,6 +24,7 @@ This course covers:
 * Understanding geographic data 
 * Introducing Geographic Information Systems (GIS) and geospatial techniques 
 
+---
 
 ## Location Matters
 
