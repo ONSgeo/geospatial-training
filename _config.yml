@@ -74,7 +74,7 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: "docs"
+      path: "_docs"
       type: "docs"
     values:
       layout: page
@@ -86,7 +86,7 @@ defaults:
       layout: "page"
   -
     scope:
-      path: "posts"
+      path: "_posts"
       type: "posts"
     values:
       layout: "post"
