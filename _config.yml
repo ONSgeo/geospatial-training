@@ -1,3 +1,5 @@
+remote_theme: vsoch/docsy-jekyll
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -14,32 +16,29 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Docsy Jekyll
-email: your-email@domain.com
-author: Dinosaur Avocado
+title: Geography and Statistics Training
+email: geospatial@ons.gov.uk
+author: Office for National Statistics Geospatial Team
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
+  Training provided by the Office for National Statistics Geospatial Team to help 
+  and support you in the use of geography for statistics. 
 # DO NOT CHANGE THE LINE OF THIS FILE without editing .circleci/circle_urls.sh
-baseurl: "/docsy-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/training2" # the subpath of your site, e.g. /blog
 
 # This is mostly for testing
-url: "https://vsoch.github.io" # the base hostname & protocol for your site
+url: "https://onsgeo.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/vsoch/docsy-jekyll"
-github_user: "vsoch"
-github_repo: "docsy-jekyll"
+repo: "https://github.com/onsgeo/training2"
+github_user: "onsgeo"
+github_repo: "training2"
 
 # Optional
-twitter: vsoch
-linkedin: vsochat
-dockerhub: vanessa
+twitter: ONSGeography
+
 
 # Should there be feedback buttons at the bottom of pages?
-feedback: true
+feedback: false
 
 # Link to a privacy policy in footer, uncomment and define if wanted
 # privacy: https://domain.com/privacy
@@ -47,7 +46,7 @@ feedback: true
 # google-analytics: UA-XXXXXXXXXX
 # Image and (square) dimension for logo (don't start with /)
 # If commented, will use material hat theme
-# logo: "assets/img/logo/SRCC-square-red.png"
+logo: "ons_logo.png"
 logo_pixels: 34
 color: "#30638e"
 # color: "#8c1515" # primary color for header, buttons
@@ -60,8 +59,8 @@ markdown: kramdown
 # tag_search_endpoint: https://ask.cyberinfrastructure.org/search?q=
 tag_color: primary # danger, success, warning, primary, info, secondary
 
-accentColor: red # purple, green, etc.
-themeColor: red # purple, green, blue, orange, purple, grey
+accentColor: green # purple, green, etc.
+themeColor: blue # purple, green, blue, orange, purple, grey
 fixedNav: 'true' # true or false
 
 permalink: /:year/:title/
@@ -77,7 +76,7 @@ collections:
 # Defaults
 defaults:
   - scope:
-      path: "_docs"
+      path: "docs"
       type: "docs"
     values:
       layout: page
