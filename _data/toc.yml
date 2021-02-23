@@ -13,7 +13,7 @@
         - title: Working with geographic data
           url: "docs/awareness_of_geog_and_stats#working-with-geographic-data" 
     - title: "Introduction to QGIS"
-      url: "docs/intro_to_qgis/Introduction_to_QGIS"
+      url: "docs/intro_to_qgis"
       children:
         - title: QGIS Basics
           url: "docs/intro_to_qgis#qgis-basics"
