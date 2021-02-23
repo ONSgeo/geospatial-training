@@ -76,7 +76,7 @@ The [Government Statistical Service (GSS) Geography Policy](https://gss.civilser
 
 The policy outlines seven key pillars which underpin the best practice around using geography with statistics.
 
-![The seven pillars of the GSS Geography](https://github.com/ONSgeo/training/blob/main/_docs/awareness_of_geog_and_stats/geography_policy.png?raw=true)
+![The seven pillars of the GSS Geography](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/geography_policy.png?raw=true)
 
 ### Key Geography Policies
 
@@ -107,7 +107,8 @@ Vector data comes in three types:
 * **Lines** A series of two or more connected points. Eg. road network, rivers.
 * **Polygons** A series of connected points which enclose a homogeneous area. Eg. ONS boundary products like LSOAs or Local Authorities.
 
-![Geographic data types: vectors - points, lines and polygons](https://github.com/ONSgeo/training/blob/main/_docs/awareness_of_geog_and_stats/vectors.gif?raw=true)
+![Geographic data types: vectors - points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/vectors.gif?raw=true)
+
 *Image from [Esri](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/feature-class-basics.htm)*
 
 In the statistical domain you will most often deal with vector data and within that, most commonly point or polygon types. Much of the data that ONS collects or uses is linked to a location, most commonly via a postcode or address, unique property reference number (UPRN) or GSS geography code. This allows us to link data together easily and accurately, and then produce statistics. We can think of postcodes, addresses and UPRNs as point data (pairs of XY coordinates); GSS geography codes allow us to link to the associated geographical boundaries, or polygons.
@@ -117,7 +118,7 @@ In the statistical domain you will most often deal with vector data and within t
 
 Raster data is represented by a grid or equal sized cells, with a value for each cell. The most common example of raster data is an image and in the geographical context, this is often data collected by satellites, aerial imaging or data collected by drone (all often referred to as Earth observation data). Raster data is often large, and can need specialist tools to analyse properly. 
 
-![Geographic data types: rasters](https://github.com/ONSgeo/training/blob/main/_docs/awareness_of_geog_and_stats/raster.png?raw=true)
+![Geographic data types: rasters](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/raster.png?raw=true)
 
 Many types of environmental data are collected in raster format. In the statistical realm you are less likely to come across raster data, although there are applications for it, for example in work undertaken by Natural Capital and for the Sustainable Development Goals.
 
