@@ -29,9 +29,9 @@ baseurl: "/training2" # the subpath of your site, e.g. /blog
 url: "https://onsgeo.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/onsgeo/training2"
+repo: "https://github.com/onsgeo/training3"
 github_user: "onsgeo"
-github_repo: "training2"
+github_repo: "training3"
 
 # Optional
 twitter: ONSGeography
