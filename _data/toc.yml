@@ -1,7 +1,7 @@
 - title: Courses
   url: "_docs/course_overview"
   links:
-      - title: "Awareness of Geography and Statistics"
+    - title: "Awareness of Geography and Statistics"
       url: "_docs/awareness_of_geog_and_stats"
       children:
         - title: Location matters
