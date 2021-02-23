@@ -28,7 +28,7 @@ url: "https://onsgeo.github.io" # the base hostname & protocol for your site
 
 # Social (First three Required)
 repo: "https://github.com/onsgeo/geospatial-training"
-github_user: "vsoch"
+github_user: "onsgeo"
 github_repo: "geospatial-training"
 
 # Optional
