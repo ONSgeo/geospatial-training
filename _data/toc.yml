@@ -1,23 +1,27 @@
-- title: Documentation
-  url: docs
+- title: Courses
+  url: "_docs/course_overview"
   links:
-    - title: "Getting Started"
-      url: "docs/getting-started"
+      - title: "Awareness of Geography and Statistics"
+      url: "_docs/awareness_of_geog_and_stats"
       children:
-        - title: Features
-          url: "docs/getting-started#getting-started"
-        - title: Development
-          url: "docs/getting-started#development"
-        - title: Customization
-          url: "docs/getting-started#customization"
-    - title: "Extras"
-      url: "docs/extras"
+        - title: Location matters
+          url: "_docs/awareness_of_geog_and_stats#location-matters"
+        - title: Geography policy
+          url: "_docs/awareness_of_geog_and_stats#geography-policy"
+        - title: Geographic data
+          url: "_docs/awareness_of_geog_and_stats#geographic-data"
+        - title: Working with geographic data
+          url: "_docs/awareness_of_geog_and_stats#working-with-geographic-data" 
+    - title: "Introduction to QGIS"
+      url: "_docs/intro_to_qgis/Introduction_to_QGIS"
       children:
-        - title: Quizzes
-          url: "docs/extras/example-quiz"
-        - title: Tags Page
-          url: "tags"
-    - title: "About"
-      url: "about"
-    - title: "News"
-      url: "news"
+        - title: QGIS Basics
+          url: "_docs/intro_to_qgis#qgis-basics"
+        - title: Basic QGIS Tools
+          url: "_docs/intro_to_qgis#basic-qgis-tools"
+    - title: "Introduction to GIS in R"
+      url: "_docs/intro_to_gis_in_r"
+    - title: "Introduction to GIS in Python"
+      url: "_docs/intro_to_gis_in_python"
+
+
