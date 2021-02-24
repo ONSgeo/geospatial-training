@@ -89,12 +89,6 @@ The following table summarises some of the most useful buttons in these toolbars
 
 The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
 
-The Project Toolbar (below) has the following buttons, from left to right: `New Project`, `Open Project`, `Save Project`, `New Print Layout`, `Show Layout Manager`, and `Style Manager`.
-
-The Navigation Toolbar is used to adjust the view of a map in the main display area. From left to right, the navigation tools are: `Pan Map`, `Pan Map to Selection`, `Zoom In`, `Zoom Out`, `Zoom Full`, `Zoom to Selection`. The 'selection' navigation tools will require that an object on the map has been selected, using the Attributes Toolbar.
-
-The Attributes Toolbar can be used to select objects by hand or SPL-like queries, show attribute information for a selected feature, open the processing toolbox, and create quick summary statistics. The tools are: `Identify Features`, `Run Feature Action`, `Select Features by Area or Single Click`, `Select Features by Value`, `Deselect Features from All Layers`, `Open Attribute Table`, `Open Field Calculator`, `Toolbox`, and `Show Statistical Summary`, `Measure Line`, `Show Map Tips`, and `Text Annotation`.
-
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
 Panels are parts of the UI which organise a variety of features into larger groups. These features often directly interface with any maps displayed.
