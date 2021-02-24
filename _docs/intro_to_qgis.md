@@ -50,7 +50,7 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
-    <td>Identify Features: Displays attribute information for a selected feature in the 'Identify Results' panel
+    <td>Identify Features: Displays attribute information for a selected feature in the 'Identify Results' panel</td>
   </tr>
 </table>  
 
