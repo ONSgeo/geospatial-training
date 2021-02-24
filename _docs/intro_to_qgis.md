@@ -72,6 +72,20 @@ The following table summarises some of the most useful buttons in these toolbars
       <p>`Select Features by Value` will open a new dialogue to select features based on value sof the attribute table (see: 'Selecting Features').</p></td>
   </tr>
   <tr align="center">
+    <td><img src="attribute_table_button.JPG?raw=TRUE" title="Open Attribute Table Button"></td>
+    <td>`Open Attribute Table` for the selected layer.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
+    <td>`Open Field Calculato`r for the selected layer (see: 'Field Calculator').</td>
+  </tr>
+  <tr align="center">
+    <td><img src="measure_button.jpg" title="Measure button"></td>
+    <td><p>By default this will be `Measure Line` to measure the distance between two points in the map view. The arrow next to the icon opens a dropdown menu. Using this tool will open a window to display the measurements, where units can be chosen.</p>
+      <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
+      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td?
+  </tr>
+  <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
     <td>Identify Features: Displays attribute information for a selected feature in the 'Identify Results' panel</td>
   </tr>
