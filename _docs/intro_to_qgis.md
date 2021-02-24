@@ -50,7 +50,26 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
   <tr align="center">
     <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
-    <td>New Project, Open Project, and Save Project</td>
+    <td>`New Project`, `Open Project`, and `Save Project`</td>
+  </tr>
+  <tr align="center">
+    <td><img src="pan_buttons.JPG?raw=TRUE" title="Pan and Pan to Selection buttons"></td>
+    <td>`Pan Map` and `Pan to Selection`. `Pan to Selection` will centre the map view on the selected feature(s)</td>
+  </tr>
+  <tr align="center">
+    <td><img src="zoom_butons.JPG?raw=TRUE" title="Zoom buttons"></td>
+    <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extem from click+drag.</p> 
+      <p>`Zoom Full` will zoom to the maximum exten from all layers.</p>
+      <p>`Zoom to Selection` and `Zoom to Layer` will zoom to the extent of the selected feature or selected layer, respectively.</p></td>
+  </tr>
+  <tr align="center">
+    <td><img src="identify_features_button.JPG?raw=TRUE" title="Identify features button"></td>
+    <td>`Identify Features`. Clicking on a feature with this tool will open the 'Identify Results' panel, displaying attribute information for the highlighted feature.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="select_features_buttons.JPG?raw=TRUE" title="Select Features buttons"></td>
+    <td><p>`Select Feature by area or Single Click` will allow the selection of features by either clicking on one feature or doing a click+drag to select multiple. `ctrl+left click` can also be used to click select multiple features at once.</p>
+      <p>`Select Features by Value` will open a new dialogue to select features based on value sof the attribute table (see: 'Selecting Features').</p></td>
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
