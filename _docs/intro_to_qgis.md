@@ -1,8 +1,6 @@
 ---
 title: Introduction to QGIS
-nav_order: 5
-has_toc: false
-has_children: true
+description: An introductory course to using QGIS software for those new to GIS but familiar with data analysis.
 ---
 
 # Introduction to QGIS
