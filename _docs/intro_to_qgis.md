@@ -85,10 +85,6 @@ The following table summarises some of the most useful buttons in these toolbars
       <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
       <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td?
   </tr>
-  <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
-    <td>Identify Features: Displays attribute information for a selected feature in the 'Identify Results' panel</td>
-  </tr>
 </table>  
 
 The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
