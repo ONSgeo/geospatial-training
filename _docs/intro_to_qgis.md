@@ -43,10 +43,14 @@ Toolbars are collections of easy-access functions, grouped under a parent family
 
 The following table summarises some of the most useful buttons in these toolbars:
 
-<table style="width 100%">
+<table style="width 75%" align="center">
   <tr align="center">
     <th>Icon</th>
     <th>Description</th>
+  </tr>
+  <tr align="center">
+    <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"><td>
+    <td>New Project, Open Project, and Save Project</td>
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
