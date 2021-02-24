@@ -5,6 +5,8 @@ description: An introductory course to using QGIS software for those new to GIS 
 
 # Introduction to QGIS
 
+## Course Summary
+
 ### Introduction
 This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping.
 
@@ -17,12 +19,7 @@ Those beginning to undertake analytical work which brings together geography and
 ### Pre-requisites 
 Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_.
 
-### Course Summary
-
-This course covers:
-* Navigating the QGIS User Interface
-* Basic tools for spatial and non-spatial analysis
-* 
+---
 
 ## QGIS Basics
 This first module will cover the basics of using QGIS: including  basic ui elements, project setup, loading data, and some basic functionality.
@@ -43,6 +40,19 @@ At the top of the QGIS window are a number of menus. Clicking on one will reveal
 Toolbars are collections of easy-access functions, grouped under a parent family of functions. The toolbars appear as the rows of icons below the menus. These toolbars can be moved around by dragging on the three vertical dots to their left. Hovering the cursor over an icon will display a tooltip with the name of the tool and any keyboard shortcuts for it.
 
 ![Toolbars](https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/toolbars.JPG?raw=true)
+
+The following table summarises some of the most useful buttons in these toolbars:
+
+<table style="width 100%">
+  <tr align="center">
+    <th>Icon</th>
+    <th>Description</th>
+  </tr>
+  <tr align="center">
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/info_button.JPG?raw=true" title="Identify Features Icon"></td>
+    <td>Identify Features: Displays attribute information for a selected feature in the 'Identify Results' panel
+  </tr>
+</table>  
 
 The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
 
@@ -111,6 +121,8 @@ As these tutorials will use data for Great Britain, we will need to set the Proj
 
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
 
+---
+
 ## Basic QGIS Tools
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
@@ -176,6 +188,8 @@ Probably one of the most useful spatial operations, and one of the most commonly
   <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
 </p>
 
+---
+
 ## Editing and Saving Data
 
 Now that we have worked with some data using basic geospatial tools, we can do some deeper editing and look at more ways of storing geospatial data.
@@ -231,6 +245,8 @@ On the trees layers, right-click and then go to `Export > Save feature as...`. F
 When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must also be specified. Multiple layers can be saved to the same geopackage or geodatabase. A shapefile only needs the file name.
   
 If we want to export the attribute table alone, we can choose the CSV option.
+
+---
 
 ## Basic Mapping in QGIS
 
