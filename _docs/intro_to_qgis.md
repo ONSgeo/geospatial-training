@@ -49,7 +49,7 @@ The following table summarises some of the most useful buttons in these toolbars
     <th>Description</th>
   </tr>
   <tr align="center">
-    <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"><td>
+    <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
     <td>New Project, Open Project, and Save Project</td>
   </tr>
   <tr align="center">
