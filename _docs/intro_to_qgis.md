@@ -83,7 +83,7 @@ The following table summarises some of the most useful buttons in these toolbars
     <td><img src="measure_button.jpg" title="Measure button"></td>
     <td><p>By default this will be `Measure Line` to measure the distance between two points in the map view. The arrow next to the icon opens a dropdown menu. Using this tool will open a window to display the measurements, where units can be chosen.</p>
       <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
-      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td?
+      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td>
   </tr>
 </table>  
 
