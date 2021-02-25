@@ -325,6 +325,29 @@ Categorised maps are similar to graduated maps except the bins are based on uniq
 
 ### Print Layouts
 
+Layer styling is the first step in producing map visualisations. To expand on the amount of information a map can present in a single image we must create a 'print layout'. To make a new print layout, go to `Project > New Print Layout` or use `ctrl+p`. Choose a suitable name for the layout e.g. 'Edinburgh Tree Map'.
+
+#### Layout UI
+
+The print layout will open in a new window with a different set of toolbars and panels to the main QGIS window.
+
+<p>
+  <img src="print_layout_window.JPG?raw=TRUE" title="Print Layout window">
+</p>
+
+The right panels show the active 'items' in the layout, and properties/options for the currently selected item. In the layout items are map views, text, legends etc. On the left is the Toolbox toolbar. The main tools we will use from this toolbar are:
+
+<table style="width 75%" align="center">
+  <tr>
+    <th>Icon</th>
+    <th>Description</th>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_panzoom_buttons.JPG?raw=TRUE" title="Layout pan and zoom buttons"></td>
+    <td>Pan and zoom. These apply to the layout view iself not map views</td>
+  </tr>
+</table>
+
 #### Adding maps
 
 #### Customising Maps
