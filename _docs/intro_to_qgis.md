@@ -299,6 +299,8 @@ Before we look at the different approaches for layer styling, here are some fund
 
 In the style panel the four most important options are `Fill Colour`, `Fill Style`, `Stroke Colour`, and `Stroke Style`. Setting the style for fill or stroke to `No pen` will result in the fill or stroke not shoring. This is a good way to only show borders on top of other layers.
 
+When working with colours in maps it's very important to be aware of both the aesthetic value of the colours and also how accessible they are. Colour schemes should be equally legible to colourblind and non-colourblind people. <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a useful website which displays palettes based on different criteria, including suitability for colour-blindness.
+
 #### Single Symbol
 
 This is the default style for all layers. With single symbol styling, all features in that layer will have the same appearance e.g. all tree points will be the same size and colour. This can be useful when we want to provide, for example, a background layer to provide some spatial reference.
@@ -313,9 +315,15 @@ When choosing the number of bins we must consider both the palette and the value
 
 The breaks methods can help us deal with different distributions in the underlying data and therefore produce more accurate maps. The `Mode` dropdown shows the breaks available in QGIS. As with any other visualisation, the optimal mode will depend on how the data is distributed. Generally only two methods will be needed; data spaced evenly across a range will work best with quantiles, but data which has clusters or outliers will be best shown using Natural Breaks (Jenks).
 
+When applied to a polygon, a graduated map is called a 'Choropleth'. To show what this looks like for the natural neighbourhoods layer, we will set the value for a graduated map to 'TREE_HEIGHT_AV_COUNT'. Change the mode to `Natural Breaks (Jenks)` and press `Classify`. By default this will creat 5 bins. Try out different colour ramps and see which look good with the selected data while also being colour-blind friendly. You could also try adjusting the number of classes to see how this changes the map, and also what different break types do.
+
+There is a problem with this type of choropleth. We're visualising the count of trees in a given area. This can be deceptive as larger areas, as a general rule, will have a higher count of trees simply because they can contain more. To conteract this the data for a choropleth should always be normalised. This is usually done in two ways: creating a summary statistic, or normalising by area or per X count of a value e.g.trees/km^2 or trees per 1,000 population. We have already created summary statistcs and calculated the density of trees per km^2. Try changing the values between 'TREES_HEIGH_AV_MEAN" and "TREES_DENSITY_KM2" to see how this changes the appearance of the layer. The latter should result in the larger aras now being grouped into the lower values, while we can see that tree densities are actually much higher in the smaller, more central neighbourhoods.
+
 #### Categorised
 
-### Layout View
+Categorised maps are similar to graduated maps except the bins are based on unique values rather than a contunuous range. Categorical maps can be messy if too many unique values are present, so it's usally a good ida to keep the number of categrories to the minimum possible. 
+
+### Print Layouts
 
 #### Adding maps
 
