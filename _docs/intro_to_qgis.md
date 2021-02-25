@@ -346,6 +346,19 @@ The right panels show the active 'items' in the layout, and properties/options f
     <td><img src="layout_panzoom_buttons.JPG?raw=TRUE" title="Layout pan and zoom buttons"></td>
     <td>Pan and zoom. These apply to the layout view iself not map views</td>
   </tr>
+  <tr align="center">
+    <td><img src="layout_selectmoveitem_button.JPG?raw=TRUE" title="Layout select/move items button"></td>
+    <td>Select/move items. Selecting an item will make it the active item in the properties panel.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_moveitemcontent_button.JPG?raw=TRUE" title="Layout move item content"></td>
+    <td>Move item content. This will move the internal content of the selected map view item in the same way as panning and scrolling works in project view.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_addmapview_button.JPG?raw=TRUE" title="Layout add map view"></td>
+    <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p?
+      <p>The map can be panned and zoomed in on while `Move Item Content ` is enabled.</p></td>
+  </tr>
 </table>
 
 #### Adding maps
