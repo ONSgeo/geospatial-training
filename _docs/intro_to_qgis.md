@@ -5,6 +5,8 @@ description: An introductory course to using QGIS software for those new to GIS 
 
 # Introduction to QGIS
 
+## Course Summary
+
 ### Introduction
 This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping.
 
@@ -17,12 +19,7 @@ Those beginning to undertake analytical work which brings together geography and
 ### Pre-requisites 
 Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_.
 
-### Course Summary
-
-This course covers:
-* Navigating the QGIS User Interface
-* Basic tools for spatial and non-spatial analysis
-* 
+---
 
 ## QGIS Basics
 This first module will cover the basics of using QGIS: including  basic ui elements, project setup, loading data, and some basic functionality.
@@ -44,13 +41,53 @@ Toolbars are collections of easy-access functions, grouped under a parent family
 
 ![Toolbars](https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/toolbars.JPG?raw=true)
 
+The following table summarises some of the most useful buttons in these toolbars:
+
+<table style="width 75%" align="center">
+  <tr align="center">
+    <th>Icon</th>
+    <th>Description</th>
+  </tr>
+  <tr align="center">
+    <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
+    <td>`New Project`, `Open Project`, and `Save Project`</td>
+  </tr>
+  <tr align="center">
+    <td><img src="pan_buttons.JPG?raw=TRUE" title="Pan and Pan to Selection buttons"></td>
+    <td>`Pan Map` and `Pan to Selection`. `Pan to Selection` will centre the map view on the selected feature(s)</td>
+  </tr>
+  <tr align="center">
+    <td><img src="zoom_butons.JPG?raw=TRUE" title="Zoom buttons"></td>
+    <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extem from click+drag.</p> 
+      <p>`Zoom Full` will zoom to the maximum exten from all layers.</p>
+      <p>`Zoom to Selection` and `Zoom to Layer` will zoom to the extent of the selected feature or selected layer, respectively.</p></td>
+  </tr>
+  <tr align="center">
+    <td><img src="identify_features_button.JPG?raw=TRUE" title="Identify features button"></td>
+    <td>`Identify Features`. Clicking on a feature with this tool will open the 'Identify Results' panel, displaying attribute information for the highlighted feature.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="select_features_buttons.JPG?raw=TRUE" title="Select Features buttons"></td>
+    <td><p>`Select Feature by area or Single Click` will allow the selection of features by either clicking on one feature or doing a click+drag to select multiple. `ctrl+left click` can also be used to click select multiple features at once.</p>
+      <p>`Select Features by Value` will open a new dialogue to select features based on value sof the attribute table (see: 'Selecting Features').</p></td>
+  </tr>
+  <tr align="center">
+    <td><img src="attribute_table_button.JPG?raw=TRUE" title="Open Attribute Table Button"></td>
+    <td>`Open Attribute Table` for the selected layer.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
+    <td>`Open Field Calculato`r for the selected layer (see: 'Field Calculator').</td>
+  </tr>
+  <tr align="center">
+    <td><img src="measure_button.jpg" title="Measure button"></td>
+    <td><p>By default this will be `Measure Line` to measure the distance between two points in the map view. The arrow next to the icon opens a dropdown menu. Using this tool will open a window to display the measurements, where units can be chosen.</p>
+      <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
+      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td>
+  </tr>
+</table>  
+
 The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
-
-The Project Toolbar (below) has the following buttons, from left to right: `New Project`, `Open Project`, `Save Project`, `New Print Layout`, `Show Layout Manager`, and `Style Manager`.
-
-The Navigation Toolbar is used to adjust the view of a map in the main display area. From left to right, the navigation tools are: `Pan Map`, `Pan Map to Selection`, `Zoom In`, `Zoom Out`, `Zoom Full`, `Zoom to Selection`. The 'selection' navigation tools will require that an object on the map has been selected, using the Attributes Toolbar.
-
-The Attributes Toolbar can be used to select objects by hand or SPL-like queries, show attribute information for a selected feature, open the processing toolbox, and create quick summary statistics. The tools are: `Identify Features`, `Run Feature Action`, `Select Features by Area or Single Click`, `Select Features by Value`, `Deselect Features from All Layers`, `Open Attribute Table`, `Open Field Calculator`, `Toolbox`, and `Show Statistical Summary`, `Measure Line`, `Show Map Tips`, and `Text Annotation`.
 
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
@@ -110,6 +147,8 @@ As these tutorials will use data for Great Britain, we will need to set the Proj
 </p>
 
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
+
+---
 
 ## Basic QGIS Tools
 
@@ -176,6 +215,8 @@ Probably one of the most useful spatial operations, and one of the most commonly
   <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
 </p>
 
+---
+
 ## Editing and Saving Data
 
 Now that we have worked with some data using basic geospatial tools, we can do some deeper editing and look at more ways of storing geospatial data.
@@ -232,6 +273,8 @@ When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must als
   
 If we want to export the attribute table alone, we can choose the CSV option.
 
+---
+
 ## Basic Mapping in QGIS
 
 This section will cover some of the options available for producing basic map visualisations. More specifics on the style of maps covered and best practice for mapping can be found here [LINK]. Once this section is completed you will be able to create a number of maps depending on the types of underlying data and purpose of the visualisation.
@@ -256,6 +299,8 @@ Before we look at the different approaches for layer styling, here are some fund
 
 In the style panel the four most important options are `Fill Colour`, `Fill Style`, `Stroke Colour`, and `Stroke Style`. Setting the style for fill or stroke to `No pen` will result in the fill or stroke not shoring. This is a good way to only show borders on top of other layers.
 
+When working with colours in maps it's very important to be aware of both the aesthetic value of the colours and also how accessible they are. Colour schemes should be equally legible to colourblind and non-colourblind people. <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a useful website which displays palettes based on different criteria, including suitability for colour-blindness.
+
 #### Single Symbol
 
 This is the default style for all layers. With single symbol styling, all features in that layer will have the same appearance e.g. all tree points will be the same size and colour. This can be useful when we want to provide, for example, a background layer to provide some spatial reference.
@@ -270,9 +315,51 @@ When choosing the number of bins we must consider both the palette and the value
 
 The breaks methods can help us deal with different distributions in the underlying data and therefore produce more accurate maps. The `Mode` dropdown shows the breaks available in QGIS. As with any other visualisation, the optimal mode will depend on how the data is distributed. Generally only two methods will be needed; data spaced evenly across a range will work best with quantiles, but data which has clusters or outliers will be best shown using Natural Breaks (Jenks).
 
+When applied to a polygon, a graduated map is called a 'Choropleth'. To show what this looks like for the natural neighbourhoods layer, we will set the value for a graduated map to 'TREE_HEIGHT_AV_COUNT'. Change the mode to `Natural Breaks (Jenks)` and press `Classify`. By default this will creat 5 bins. Try out different colour ramps and see which look good with the selected data while also being colour-blind friendly. You could also try adjusting the number of classes to see how this changes the map, and also what different break types do.
+
+There is a problem with this type of choropleth. We're visualising the count of trees in a given area. This can be deceptive as larger areas, as a general rule, will have a higher count of trees simply because they can contain more. To conteract this the data for a choropleth should always be normalised. This is usually done in two ways: creating a summary statistic, or normalising by area or per X count of a value e.g.trees/km^2 or trees per 1,000 population. We have already created summary statistcs and calculated the density of trees per km^2. Try changing the values between 'TREES_HEIGH_AV_MEAN" and "TREES_DENSITY_KM2" to see how this changes the appearance of the layer. The latter should result in the larger aras now being grouped into the lower values, while we can see that tree densities are actually much higher in the smaller, more central neighbourhoods.
+
 #### Categorised
 
-### Layout View
+Categorised maps are similar to graduated maps except the bins are based on unique values rather than a contunuous range. Categorical maps can be messy if too many unique values are present, so it's usally a good ida to keep the number of categrories to the minimum possible. 
+
+### Print Layouts
+
+Layer styling is the first step in producing map visualisations. To expand on the amount of information a map can present in a single image we must create a 'print layout'. To make a new print layout, go to `Project > New Print Layout` or use `ctrl+p`. Choose a suitable name for the layout e.g. 'Edinburgh Tree Map'.
+
+#### Layout UI
+
+The print layout will open in a new window with a different set of toolbars and panels to the main QGIS window.
+
+<p>
+  <img src="print_layout_window.JPG?raw=TRUE" title="Print Layout window">
+</p>
+
+The right panels show the active 'items' in the layout, and properties/options for the currently selected item. In the layout items are map views, text, legends etc. On the left is the Toolbox toolbar. The main tools we will use from this toolbar are:
+
+<table style="width 75%" align="center">
+  <tr>
+    <th>Icon</th>
+    <th>Description</th>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_panzoom_buttons.JPG?raw=TRUE" title="Layout pan and zoom buttons"></td>
+    <td>Pan and zoom. These apply to the layout view iself not map views</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_selectmoveitem_button.JPG?raw=TRUE" title="Layout select/move items button"></td>
+    <td>Select/move items. Selecting an item will make it the active item in the properties panel.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_moveitemcontent_button.JPG?raw=TRUE" title="Layout move item content"></td>
+    <td>Move item content. This will move the internal content of the selected map view item in the same way as panning and scrolling works in project view.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_addmapview_button.JPG?raw=TRUE" title="Layout add map view"></td>
+    <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p?
+      <p>The map can be panned and zoomed in on while `Move Item Content ` is enabled.</p></td>
+  </tr>
+</table>
 
 #### Adding maps
 
