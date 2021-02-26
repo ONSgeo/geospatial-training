@@ -356,7 +356,7 @@ The right panels show the active 'items' in the layout, and properties/options f
   </tr>
   <tr align="center">
     <td><img src="layout_addmapview_button.JPG?raw=TRUE" title="Layout add map view"></td>
-    <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p?
+    <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p>
       <p>The map can be panned and zoomed in on while `Move Item Content ` is enabled.</p></td>
   </tr>
 </table>
