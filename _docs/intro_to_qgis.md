@@ -363,6 +363,12 @@ The right panels show the active 'items' in the layout, and properties/options f
 
 #### Adding maps
 
+To add a map to the layout we use the `Add map view` tool from the previous table. With this tool selected, click and drag in the white area to draw the bondary of the view. This view will now display the same map that we can see in the project view. In fact, this map view and the project are linked such that changing layer styles and active layers in the project will change the view in layout. 
+
+<p align="center">
+  <img src="layout_mapview.JPG?raw=TRUE" title="Layout map view item.">
+</p>
+
 #### Customising Maps
 
 #### Legends & Extras
