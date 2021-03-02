@@ -359,6 +359,20 @@ The right panels show the active 'items' in the layout, and properties/options f
     <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p>
       <p>The map can be panned and zoomed in on while `Move Item Content ` is enabled.</p></td>
   </tr>
+  <tr align="center">
+    <td><img src="layout_addlabel_button.JPG?raw=TRUE" title="Layout add label"></td>
+    <td>Adds a text box to the layout. The text can be moved with `Select/Move Items` and formatted in the item properties panel.</td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_addlegend_button.JPG?raw=TRUE" title="Layout add legend"></td>
+    <td><p>Adds a legend. The legend is linked to the layers available in the project.</p>
+    <p>Items in the legend can be customised in the item properties panel, including what items are included, their order, and formatting.</p></td>
+  </tr>
+  <tr align="center">
+    <td><img src="layout_addscalebarnortharrow.JPG?raw=TRUE" title="Layout add legend"></td>
+    <td><p>The first tool adds a scalebar to the layout. This is linked to the zoom scale of a selected map view. Scale bars are primarily useful when aiming to show the distance between data or in contexts where the scale of the map is otherwise unintuitive.</p>
+    <p>The second tool adds a north arrow/compass rose. This is rarely needed, usually only for specific scales or boundaries where the the top of the map is not North, the target audience of the visualisation may be unaware of the geography's orientation, or where the map describes some phenomenon related to compass bearing.</p></td>
+  </tr>
 </table>
 
 #### Adding maps
