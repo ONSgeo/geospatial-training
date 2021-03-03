@@ -23,5 +23,8 @@
       url: "docs/intro_to_gis_in_r"
     - title: "Introduction to GIS in Python"
       url: "docs/intro_to_gis_in_python"
-
+- title: Guides
+  links: 
+    - title: "Install Guide: Python Geospatial Packages at ONS"
+      url: "pages/python_install.md"
 
