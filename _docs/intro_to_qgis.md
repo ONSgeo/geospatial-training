@@ -451,3 +451,5 @@ As we want to use this visualisation elsewhere, such as in presentations or as h
 <p align="center">
   <img src="layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
 </p>
+
+For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
