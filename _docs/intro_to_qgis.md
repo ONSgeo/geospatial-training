@@ -412,13 +412,13 @@ To add a map to the layout we use the `Add map view` tool from the previous tabl
 
 #### Legends & Extras
 
-### Text
+#### Text
 
 While 'a picture says a thousand words', the context of a map is usually impossible to discern without some text to describe it. Using the label tool we'll add a descriptive title to the map. With the tool selected, click and drag to create a text box. This will contain a 'Lorem ipsum' placeholder by default. 
 
 The properties of the text can be customised in the Item Properties panel. Try experimenting with some of the options under`
 
-### Exporting Maps
+#### Exporting Maps
 
 <p align="center">
   <img src="edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
