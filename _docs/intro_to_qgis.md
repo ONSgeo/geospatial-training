@@ -207,6 +207,9 @@ Dissolving will merge all features of a layer into one, or will merge features b
 <p align="center">
   <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
 </p>
+
+
+
 #### Spatial Joins
 
 Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will joinn tables based on their location instead of attributes. A number of options are avalable for a spatial join, how each works can be found here: [insert link]. For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joines. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
@@ -216,6 +219,26 @@ Probably one of the most useful spatial operations, and one of the most commonly
 </p>
 
 It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. This time, choose 'edinburgh trees' as the input layer and 'edinburgh_natneighbourhoods' as the join layer. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points.
+
+#### Centroids
+
+It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon.
+
+<p align="center">
+  <img src="centroids_window.JPG?raw=TRUE" title="Centroids window">
+</p>
+
+Choose the 'natural neighbourhoods' layer
+
+There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. Really, there are neighbouring polygons where the centroids do not fall within the geometry. These centroids are therefore not spatially representative of there the natural neighbourhoods actually are. To get around this we can use a different tool to generate centroids: `Point on surface`. This will produce a centroid which strictly falls on the surface of the parent polygon.
+
+<p align="center">
+  <img src="pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
+</p>
+
+Running this again for natural neighbourhoods we can see that all polygons have a single point each. The points generated from `Point on surface` will be our centroids layer, so we can remove the geometric centroid layer.
+
+Some spatial datasets have existing centroids available with statistical weighting applied. England and Wales statistical Output Areas have their population-weighted centroids avalable. If a population-weighted centroid dataset exists, this would be the preferred choice over generating them by hand as they are more certain to be good for use in official statistics.
 
 ---
 
