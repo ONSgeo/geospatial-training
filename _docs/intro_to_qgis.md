@@ -134,6 +134,24 @@ All of these features can either be made up of a single part or multiple parts. 
   <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/basic_features_classified.JPG?raw=TRUE" />
 </p>
 
+### Selecting Features
+
+The `Select` tools can be used to select features by hand or by a query.  Many tools have an option to apply their operations to selected features only. This is useful if we have a large spatial dataset which could take a long time to process and it might take multiple attempts to refine the use of the tool.
+
+#### Select by area or single click
+
+Firstly, let's try `Select features by area or single click`. With this tool active we will be able to select features for the active layer. Left clicking will select on feature at a time. Try selecting different polygons in the 'natural neighbourhoods' layer. Notice that upon selecting a new feature, the previously selected on is deselected. If we want to select multiple features at once we must hold `ctrl` while clicking.
+
+Clicking and dragging will select features which intersect with the rectangle drawn. This is a quick and rough way of selecting many features at once if, say, we don't need to worry about any specific one but instead all those in a general area.
+
+#### Select by value
+
+With the trees layer active, open the `Select features by value` field. This will open a dialogue window with the names of each of this layer's fields and query boxes next to them. If we know the specific term we want to select by, we can enter this into the relevant query. Open the attribute table for this layer too. Copy one of the values in 'LatinName' into the `Select featurs by value` window in the relevant query box 'LatinName' and press OK. Now we can see that multiple points have been selected. These will all have the chosen 'LatinName' attribute. 
+
+Multiple fields can be used at once to further refine the selection. Have a go at selecting by different combinations of attributes for different layers.
+
+When finished, press `Deselect features from all layers`.
+
 ### Project Settings
 
 #### Project CRS
@@ -208,7 +226,7 @@ Dissolving will merge all features of a layer into one, or will merge features b
   <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
 </p>
 
-
+The result is a single polygon feature. Inspecting the attribute table will also reveal this. Unlike `Union`, a dissolve will attempt to resolve internal borders and therefore will not produce overlapping features. This does mean, however, that dissolves can be computationally slow if there are a lot of detailed or overlapping internal borders.
 
 #### Spatial Joins
 
@@ -422,4 +440,14 @@ The properties of the text can be customised in the Item Properties panel. Try e
 
 <p align="center">
   <img src="edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
+</p>
+
+Now our map is finished we can export it to useelsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
+
+Multiple formats are available when exporting a map. Open the `Layout` drop down from the menu bar, and navigate down to the three options: `Export as Image`, `Export as SVG`, and `Export as PDF`. Image will allow us to save to a standard image format like a .jpg or .png. And SVG is an image format which maintains the contents of the image as vectors rather than pixels. An SVG can be opened and edited in a non-raster editing suite such as Adobe Illustrator. Unofrtunately, attempting to do this will give a warning that QGIS' SVG library is not adequate for saving to this format and advises to export as PDF instead. Exporting to PDF will save the map as high qualit PDF.
+
+As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
+
+<p align="center">
+  <img src="layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
 </p>
