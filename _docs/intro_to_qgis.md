@@ -293,7 +293,7 @@ Now, we can specify the name of the field and the type of values it can hold. Al
 The field calculator uses SQL-like expressions to perform a range of possible operations on a field. As this is a basics tutorial, we will just use standard numerical operations.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/field_calculator_window.JPG?raw=TRUE")
+  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/field_calculator_window.JPG?raw=TRUE" title="Field calculator">
 </p>
 
 ### Data Formats
@@ -309,7 +309,7 @@ QGIS contains a single UI for exporting data.
 On the trees layers, right-click and then go to `Export > Save feature as...`. From here, we have a few options. The top drop-down is where we choose the output format. There is a large range of formats available depdending on the desired output. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/save_feature_as_window.JPG?raw=TRUE")
+  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/save_feature_as_window.JPG?raw=TRUE">
 </p>
   
 When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must also be specified. Multiple layers can be saved to the same geopackage or geodatabase. A shapefile only needs the file name.
@@ -329,7 +329,7 @@ So far, QGIS has assigned random, default colours to imported and created layers
 To edit the layer styles, we will use the `Layer Stylng` panel. If not already, enable this from the menu bar under `View > Panels > Layer Styling`.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/layer_styling_panel.JPG?raw=true"
+  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/layer_styling_panel.JPG?raw=true" title="Layer styling panel">
 </p>
   
 Layer style can also be edited by rght clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes.
