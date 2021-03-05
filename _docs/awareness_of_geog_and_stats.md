@@ -76,7 +76,7 @@ The [Government Statistical Service (GSS) Geography Policy](https://gss.civilser
 
 The policy outlines seven key pillars which underpin the best practice around using geography with statistics.
 
-![The seven pillars of the GSS Geography](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/geography_policy.png?raw=true)
+![The seven pillars of the GSS Geography Policy](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/geography_policy.png?raw=true)
 
 ### Key Geography Policies
 
@@ -134,8 +134,29 @@ Make sure you use the official codes wherever possible (rather than the names of
 ## Working with Geographic Data
 
 ### Locating Data
+Locating geographic data means providing it with an X and Y coordinate which references a position on a coordinate reference system (CRS). Very simply put, a coordinate reference system is a way to represent positions on a 3D sphere, on a flat, 2D object. In this case we are representing points on the Earth on a 2D map. 
 
+There are lots of different coordinate reference systems which are designed for use across different areas of the world. In the Great Britain the CRS we use is British National Grid, which is produced and maintained by <a href="https://www.ordnancesurvey.co.uk/" target="_blank">Ordnance Survey</a>, Great Britain's Mapping Agency. If you've ever used an Ordnance Survey map for walking, cycling or perhaps back in geography class at school, you'll have used British National Grid, perhaps without even knowing it!
 
+Sometimes the data we use is provided in a different CRS than British National Grid. This isn't a problem as there are transformations we can use to convert between the two. GIS systems are also very good at doing this transformation on the fly, so you if you're just looking at data you don't need to worry about the CRS. However, there are some common mistakes that can be made by analysing data which is in different coordinate reference systems, so be careful! You can find out more if you complete the Practical Geography for Statstics course we offer, and don't forget the Geospatial team are on hand to help if needed, so please get in touch.
 
+This is a very brief overview of locating geospatial data. In reality, geodesy is an incredibly complex field, which thankfully, you do not need to know too much more about at the moment!
+
+![A map showing the British National Grid 10km cells overlaid on the outline of the UK.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/bng.png?raw=true)
 
 ### GSS Names and Codes
+On 1st January 2011 GSS codes were introduced. GSS codes are a type of uniform resource indicator (URI) which provide a way to identify unique items. GSS codes identify individual geographic objects, for example, Local Authority Districts. 
+
+GSS codes are comprised of two codes: a three character entity code which describes what type of statistical geography the object is, and a six digit number which refers to the unique instance of the object. 
+
+![The structure of a GSS code showing the Portsmouth Unitary Authority as an example: E06000044.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/entity_code.PNG?raw=true)
+
+GSS codes can be used to look up specific areas on the <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a>. This website provides a useful insight into the relationships between statistical geographies across the UK.
+
+The <a href="https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-april-2020-for-the-united-kingdom" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/datasets/code-history-database-december-2020-for-the-united-kingdom-version-2" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
+
+### Referencing Areas Correctly
+Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets so, identifying one by name alone can be fraught with error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
+
+Using GSS codes to accurately refer to areas avoids problem. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas. 
+
