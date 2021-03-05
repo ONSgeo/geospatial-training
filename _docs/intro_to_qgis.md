@@ -97,7 +97,7 @@ Not all of these buttons are used often, whereas some will be used in every proj
 
 Panels are parts of the UI which organise a variety of features into larger groups. These features often directly interface with any maps displayed.
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/panels.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" />
 </p>
 
 Before we begin any work, it's a good idea to set up the UI such that everything need will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
@@ -135,7 +135,7 @@ Polgyons, unlike lines and points, do have two dimensional area. Polygons have a
 All of these features can either be made up of a single part or multiple parts. The figure below, for instance, shows how by basing symbology on the values of an attribute we can visually separate the geometries from one another.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/basic_features_classified.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/basic_features_classified.JPG?raw=TRUE" />
 </p>
 
 ### Selecting Features
@@ -165,7 +165,7 @@ Each project uses a 'Coordinate Reference System' (CRS). This essentially determ
 As these tutorials will use data for Great Britain, we will need to set the Project CRS to British National Grid. To do this go to `Project > Properties > CRS`. Now, in the `Filter` bar search for either 'British National Grid' or '27700' (the EPSG code). Now select the result in the 'Coordinate Reference System' box and press OK. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/project_crs_window.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" />
 </p>
 
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
@@ -187,7 +187,7 @@ A non-spatial join allows us to connect two tables to each other according to a 
 To perform a non-spatial join, go to the processing toolbox panel and search for `Join attributes by field value`.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_trees_join_attribute_window.JPG?raw=true">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_join_attribute_window.JPG?raw=true">
 </p>
 
 #### Table to geometry
@@ -195,7 +195,7 @@ To perform a non-spatial join, go to the processing toolbox panel and search for
 Data will not always come in a spatial format. Here, we have the locations of trees as a csv file, with columns for the X and Y coordinate. This table can be converted into a point geometry, with all other attributes retained, with the `Extract points from table` tool.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_trees_points_from_table_window.JPG?raw=true">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_points_from_table_window.JPG?raw=true">
 </p>
 
 ### Vector Tools
@@ -211,7 +211,7 @@ To demonstrate on points, we will use the refactored trees layer. A single point
 Now, set the input layer to your trees point layers. Set `buffer distance` to 10. This will automatically be in metres as that is the standard geographic unit of the project CRS. Run the buffer.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_trees_buffer_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffer_window.JPG?raw=TRUE">
 </p>
 
 The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
@@ -227,7 +227,7 @@ Clipping will also work on lines and polygons. If used on those, any portions wh
 Dissolving will merge all features of a layer into one, or will merge features based on a specified attribute.  To demonstrate, we will dissolve the Natural Neighbourhoods layer into a single polygon. Select the `Dissolve` tool from either the Processing Toolbox or by using the `Vector > Geoprocessing > Dissolve` menu.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
 </p>
 
 The result is a single polygon feature. Inspecting the attribute table will also reveal this. Unlike `Union`, a dissolve will attempt to resolve internal borders and therefore will not produce overlapping features. This does mean, however, that dissolves can be computationally slow if there are a lot of detailed or overlapping internal borders.
@@ -237,7 +237,7 @@ The result is a single polygon feature. Inspecting the attribute table will also
 Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will joinn tables based on their location instead of attributes. A number of options are avalable for a spatial join, how each works can be found here: [insert link]. For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joines. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
 </p>
 
 It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. This time, choose 'edinburgh trees' as the input layer and 'edinburgh_natneighbourhoods' as the join layer. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points.
@@ -247,7 +247,7 @@ It is also possible to join without summarising. Search and open `Join attribute
 It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon.
 
 <p align="center">
-  <img src="centroids_window.JPG?raw=TRUE" title="Centroids window">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/centroids_window.JPG?raw=TRUE" title="Centroids window">
 </p>
 
 Choose the 'natural neighbourhoods' layer
@@ -255,7 +255,7 @@ Choose the 'natural neighbourhoods' layer
 There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. Really, there are neighbouring polygons where the centroids do not fall within the geometry. These centroids are therefore not spatially representative of there the natural neighbourhoods actually are. To get around this we can use a different tool to generate centroids: `Point on surface`. This will produce a centroid which strictly falls on the surface of the parent polygon.
 
 <p align="center">
-  <img src="pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
 </p>
 
 Running this again for natural neighbourhoods we can see that all polygons have a single point each. The points generated from `Point on surface` will be our centroids layer, so we can remove the geometric centroid layer.
@@ -275,7 +275,7 @@ Spatial data, just like non-spatial data, is built around tables with data. Indi
 As in a spreadsheet, fields also have a type. The data types possible include integers and floats of varying precision, strings (text), date formats etc. As with non-spatial data, we have to make sure the columns are the right type when creating, editing, or using them for analysis.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/edinburgh/edinburgh_natn_attributetable.JPG?raw=TRUE">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_attributetable.JPG?raw=TRUE">
 </p>
 
 #### Refactor Fields
@@ -283,7 +283,7 @@ As in a spreadsheet, fields also have a type. The data types possible include in
 Refactoring fields allows us to change how the software interprets values. Search `Refactor Fields` in the toolbox and open it. If we use the natural trees layer as the input, we can see what type has been assigned to each field. Right now, all fields are of type `String`. This means QGIS will interpret these values as text, including numbers, and will not be able to use them to perform numerical operations. To fix this, we can simply select the drop down menus for the 'TREE_HEIGHT_AV' and 'TREE_SPREAD_AV' fields, and change the type to `Double`.
 
 <p align="center">
- <img src = "https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/save_feature_as_window.JPG?raw=TRUE">
+ <img src = "https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
 </p>
 
 #### Create Fields
@@ -297,7 +297,7 @@ Now, we can specify the name of the field and the type of values it can hold. Al
 The field calculator uses SQL-like expressions to perform a range of possible operations on a field. As this is a basics tutorial, we will just use standard numerical operations.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/field_calculator_window.JPG?raw=TRUE" title="Field calculator">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_window.JPG?raw=TRUE" title="Field calculator">
 </p>
 
 ### Data Formats
@@ -313,7 +313,7 @@ QGIS contains a single UI for exporting data.
 On the trees layers, right-click and then go to `Export > Save feature as...`. From here, we have a few options. The top drop-down is where we choose the output format. There is a large range of formats available depdending on the desired output. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/save_feature_as_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
 </p>
   
 When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must also be specified. Multiple layers can be saved to the same geopackage or geodatabase. A shapefile only needs the file name.
@@ -333,7 +333,7 @@ So far, QGIS has assigned random, default colours to imported and created layers
 To edit the layer styles, we will use the `Layer Stylng` panel. If not already, enable this from the menu bar under `View > Panels > Layer Styling`.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/layer_styling_panel.JPG?raw=true" title="Layer styling panel">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_styling_panel.JPG?raw=true" title="Layer styling panel">
 </p>
   
 Layer style can also be edited by rght clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes.
@@ -427,7 +427,7 @@ The right panels show the active 'items' in the layout, and properties/options f
 To add a map to the layout we use the `Add map view` tool from the previous table. With this tool selected, click and drag in the white area to draw the bondary of the view. This view will now display the same map that we can see in the project view. In fact, this map view and the project are linked such that changing layer styles and active layers in the project will change the view in layout. 
 
 <p align="center">
-  <img src="layout_mapview.JPG?raw=TRUE" title="Layout map view item.">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapview.JPG?raw=TRUE" title="Layout map view item.">
 </p>
 
 #### Customising Maps
@@ -443,7 +443,7 @@ The properties of the text can be customised in the Item Properties panel. Try e
 #### Exporting Maps
 
 <p align="center">
-  <img src="edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/ediburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
 </p>
 
 Now our map is finished we can export it to useelsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
@@ -453,7 +453,7 @@ Multiple formats are available when exporting a map. Open the `Layout` drop down
 As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
 
 <p align="center">
-  <img src="layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
 </p>
 
 For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
