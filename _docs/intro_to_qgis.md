@@ -29,7 +29,9 @@ Before loading QGIS, please check your version number. This tutorial will use QG
 
 Upon opening QGIS, you should be met with a screen similar to that below.
 
-![A blank, unsaved project after opening QGIS](https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/untitled_startup.JPG?raw=TRUE)
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/untitled_startup.jpg?raw=true" title="Blank, unsaved project created at program startup">
+</p>
 
 ### UI elements
 
@@ -39,7 +41,9 @@ At the top of the QGIS window are a number of menus. Clicking on one will reveal
 #### Toolbars and Panels
 Toolbars are collections of easy-access functions, grouped under a parent family of functions. The toolbars appear as the rows of icons below the menus. These toolbars can be moved around by dragging on the three vertical dots to their left. Hovering the cursor over an icon will display a tooltip with the name of the tool and any keyboard shortcuts for it.
 
-![Toolbars](https://github.com/ONSgeo/training/blob/main/docs/intro_to_qgis/images/toolbars.JPG?raw=true)
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/toolbars.JPG?raw=true" title="Default QGIS toolbars">
+</p>
 
 The following table summarises some of the most useful buttons in these toolbars:
 
@@ -49,38 +53,38 @@ The following table summarises some of the most useful buttons in these toolbars
     <th>Description</th>
   </tr>
   <tr align="center">
-    <td><img src="new_open_save_projects.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/new_open_save_project_icons.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
     <td>`New Project`, `Open Project`, and `Save Project`</td>
   </tr>
   <tr align="center">
-    <td><img src="pan_buttons.JPG?raw=TRUE" title="Pan and Pan to Selection buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/pan_map_buttons.JPG?raw=TRUE" title="Pan and Pan to Selection buttons"></td>
     <td>`Pan Map` and `Pan to Selection`. `Pan to Selection` will centre the map view on the selected feature(s)</td>
   </tr>
   <tr align="center">
-    <td><img src="zoom_butons.JPG?raw=TRUE" title="Zoom buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/zoom_map_buttons.JPG?raw=TRUE" title="Zoom buttons"></td>
     <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extem from click+drag.</p> 
       <p>`Zoom Full` will zoom to the maximum exten from all layers.</p>
       <p>`Zoom to Selection` and `Zoom to Layer` will zoom to the extent of the selected feature or selected layer, respectively.</p></td>
   </tr>
   <tr align="center">
-    <td><img src="identify_features_button.JPG?raw=TRUE" title="Identify features button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/identify_features_button.JPG?raw=TRUE" title="Identify features button"></td>
     <td>`Identify Features`. Clicking on a feature with this tool will open the 'Identify Results' panel, displaying attribute information for the highlighted feature.</td>
   </tr>
   <tr align="center">
-    <td><img src="select_features_buttons.JPG?raw=TRUE" title="Select Features buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/select_features_buttons.JPG?raw=TRUE" title="Select Features buttons"></td>
     <td><p>`Select Feature by area or Single Click` will allow the selection of features by either clicking on one feature or doing a click+drag to select multiple. `ctrl+left click` can also be used to click select multiple features at once.</p>
       <p>`Select Features by Value` will open a new dialogue to select features based on value sof the attribute table (see: 'Selecting Features').</p></td>
   </tr>
   <tr align="center">
-    <td><img src="attribute_table_button.JPG?raw=TRUE" title="Open Attribute Table Button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/attribute_table_button.JPG?raw=TRUE" title="Open Attribute Table Button"></td>
     <td>`Open Attribute Table` for the selected layer.</td>
   </tr>
   <tr align="center">
-    <td><img src="field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
     <td>`Open Field Calculato`r for the selected layer (see: 'Field Calculator').</td>
   </tr>
   <tr align="center">
-    <td><img src="measure_button.jpg" title="Measure button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/measure_button.JPG?raw=TRUE" title="Measure button"></td>
     <td><p>By default this will be `Measure Line` to measure the distance between two points in the map view. The arrow next to the icon opens a dropdown menu. Using this tool will open a window to display the measurements, where units can be chosen.</p>
       <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
       <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td>
@@ -386,33 +390,33 @@ The right panels show the active 'items' in the layout, and properties/options f
     <th>Description</th>
   </tr>
   <tr align="center">
-    <td><img src="layout_panzoom_buttons.JPG?raw=TRUE" title="Layout pan and zoom buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_panzoom_buttons.JPG?raw=TRUE" title="Layout pan and zoom buttons"></td>
     <td>Pan and zoom. These apply to the layout view iself not map views</td>
   </tr>
   <tr align="center">
-    <td><img src="layout_selectmoveitem_button.JPG?raw=TRUE" title="Layout select/move items button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_selectmoveitem_button.JPG?raw=TRUE" title="Layout select/move items button"></td>
     <td>Select/move items. Selecting an item will make it the active item in the properties panel.</td>
   </tr>
   <tr align="center">
-    <td><img src="layout_moveitemcontent_button.JPG?raw=TRUE" title="Layout move item content"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_moveitemcontent_button.JPG?raw=TRUE" title="Layout move item content"></td>
     <td>Move item content. This will move the internal content of the selected map view item in the same way as panning and scrolling works in project view.</td>
   </tr>
   <tr align="center">
-    <td><img src="layout_addmapview_button.JPG?raw=TRUE" title="Layout add map view"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addmapview_button.JPG?raw=TRUE" title="Layout add map view"></td>
     <td><p>Add map view. A map view is a essentially a link to the main project window and will render active layers from there.</p>
       <p>The map can be panned and zoomed in on while `Move Item Content ` is enabled.</p></td>
   </tr>
   <tr align="center">
-    <td><img src="layout_addlabel_button.JPG?raw=TRUE" title="Layout add label"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlabel_button.JPG?raw=TRUE" title="Layout add label"></td>
     <td>Adds a text box to the layout. The text can be moved with `Select/Move Items` and formatted in the item properties panel.</td>
   </tr>
   <tr align="center">
-    <td><img src="layout_addlegend_button.JPG?raw=TRUE" title="Layout add legend"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegend_button.JPG?raw=TRUE" title="Layout add legend"></td>
     <td><p>Adds a legend. The legend is linked to the layers available in the project.</p>
     <p>Items in the legend can be customised in the item properties panel, including what items are included, their order, and formatting.</p></td>
   </tr>
   <tr align="center">
-    <td><img src="layout_addscalebarnortharrow.JPG?raw=TRUE" title="Layout add legend"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addscalebarnortharrow.JPG?raw=TRUE" title="Layout add legend"></td>
     <td><p>The first tool adds a scalebar to the layout. This is linked to the zoom scale of a selected map view. Scale bars are primarily useful when aiming to show the distance between data or in contexts where the scale of the map is otherwise unintuitive.</p>
     <p>The second tool adds a north arrow/compass rose. This is rarely needed, usually only for specific scales or boundaries where the the top of the map is not North, the target audience of the visualisation may be unaware of the geography's orientation, or where the map describes some phenomenon related to compass bearing.</p></td>
   </tr>
