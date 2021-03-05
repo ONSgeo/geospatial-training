@@ -19,6 +19,10 @@
           url: "docs/intro_to_qgis#qgis-basics"
         - title: Basic QGIS Tools
           url: "docs/intro_to_qgis#basic-qgis-tools"
+        - title: Editing and Saving Data
+          url: "docs/intro_to_qgis#editing-and-saving-data"
+        - title: Basic Mapping in QGIS
+          url: "docs/intro_to_qgis#basic-mapping-in-qgis"
     - title: "Introduction to GIS in R"
       url: "docs/intro_to_gis_in_r"
     - title: "Introduction to GIS in Python"
