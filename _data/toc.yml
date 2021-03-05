@@ -28,7 +28,7 @@
     - title: "Introduction to GIS in Python"
       url: "docs/intro_to_gis_in_python"
 - title: Guides
-  links: 
+  links: "docs/guides/guides_overview"
     - title: "Install Guide: Python Geospatial Packages at ONS"
-      url: "pages/python_install.md"
+      url: "docs/guides/python_install"
 
