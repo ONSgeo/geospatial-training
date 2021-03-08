@@ -11,7 +11,7 @@ description: An introductory course to using QGIS software for those new to GIS 
 This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping.
 
 ### Estimated time for course
-3 hours
+2 hours
 
 ### Audience
 Those beginning to undertake analytical work which brings together geography and statistics.
@@ -91,7 +91,7 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
 </table>  
 
-The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
+The buttons on the toolbar can be chosen by by going to `View > Toolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
 
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
@@ -100,13 +100,15 @@ Panels are parts of the UI which organise a variety of features into larger grou
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" />
 </p>
 
+<p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" title="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
+
 Before we begin any work, it's a good idea to set up the UI such that everything need will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
 
-To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools availible in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although if a tool an be accessed from the toolbar or menus that method will also be shown. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
+To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools availible in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although some tools can also be found from the menu bar. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
 
 ### Loading data
 
-Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in.
+Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the provided 'Edinburgh_City_Data.zip'.
 
 #### Delimited Data (non-spatial)
 
@@ -116,7 +118,7 @@ Text delimited data (.csv, .txt, .xlsx) can be simply dragged and dropped in. Up
 
 Different kinds of spatial data format have slightly different ways of loading in.
 
-Shapefiles (.shp) come with a number of auxillary files such as .dbf, .dbx etc. These files do no need to be dropped into QGIS; only the .shp needs to be. However, a shapefile's auxillary files should always be kept with it, so it's usually a good idea to have each set of files in their own folder rather than looseley mixed. We'll now load in the `edinburgh_natn.shp` and `ediburgh_aqma.shp` files into our QGIS project. Drag and drop each shapefile (.shp) into QGIS. These layers will be displayed in both the layers panel AND the main window. We can still see the attribute tables, however, using the same method as for the delimited layer.
+Shapefiles (.shp) come with a number of auxillary files such as .dbf, .dbx etc. These files do no need to be dropped into QGIS; only the .shp needs to be. However, a shapefile's auxillary files should always be kept with it, so it's usually a good idea to have each set of files in their own folder rather than looseley mixed. We'll now load in the 'edinburgh_natn.shp' and 'ediburgh_aqma.shp' files into our QGIS project. Drag and drop each shapefile (.shp) into QGIS. These layers will be displayed in both the layers panel AND the main window. We can still see the attribute tables, however, using the same method as for the delimited layer.
 
 A geodatabase (.gdb) and a geopackage (.gpkg) are similar formats. Both are eseentially specialised folders which contain both spatial data and their auxillary information in one place. Dragging and dropping in a geodatabase or geopackage will do one of two things, depending on contents. If there is only a single layer in the file, it will be loaded straight in. Otherwise a dialog will appear asking which layers we would like to import and if we would like them to be grouped together.
 
@@ -180,11 +182,7 @@ The project will now use BNG as the CRS. This means that any spatial data with c
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
 
-QGIS uses a form of temporary layer called a 'scratch layer'. These will have this symbol next to them:
-
-<p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol">
-</p>
+<p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol"> symbol next to them. </p>
 
 A scratch layer can be renamed, reordered, visualised, or edited just like any other layer however these layers are temporary and are lost when the project is closed. Scratch layers are the default outputs for all tools, and so will be created during the course of this tutorial. Try to name these scratch layers appropriately to keep things organised e.g. 'originalname_toolused'. We will cover making these layers permanent in Editing and Saving Data.
 
@@ -245,13 +243,13 @@ Now, set the input layer to your trees point layers. Set `buffer distance` to 10
 The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
 </p>
 
 However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
 </p>
   
 #### Clip
@@ -465,33 +463,53 @@ The right panels show the active 'items' in the layout, and properties/options f
 To add a map to the layout we use the `Add map view` tool from the previous table. With this tool selected, click and drag in the white area to draw the bondary of the view. This view will now display the same map that we can see in the project view. In fact, this map view and the project are linked such that changing layer styles and active layers in the project will change the view in layout. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapview.JPG?raw=TRUE" title="Layout map view item.">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapview.JPG?raw=TRUE" title="Layout map view item">
 </p>
+
+<p>This map can be moved using the move item tool. In addition, the `Move item content` and <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapviewzoom_buttons.JPG" title="Layout map view zoom buttons"> buttons can be used to pan and zoom within the map view item. Resize the map view item and pan and zoom until the whole layer is visbible and fills a good portion of the layout.</p>
 
 #### Customising Maps
 
 #### Legends & Extras
 
+A legend is a necessary part of a map as it allows the viewer to understand what colours and symbols mean and how they relate to the underlying data. With the legend tool selected, click and drag anywhere in the layout to create a new one.
+
+<p>By default, the legend will contain entries for every layer active in the project. However as we are only displaying a single layer, we only want a single entry. To change what is displayed in the legend go to the Item Properties panel while the legend layer is active. Here we can see a list of all legend items. To customise this list, disable `Auto update`. Now, select all the layers displayed and press <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_removelegendentry.JPG?raw=TRUE" title="Remove legend entry"></p>
+
+<p>Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" title="Remove legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.</p>
+
+We can further cusomise the legend under the `Fonts and Text Formatting` section. Click each font option to customise the appearance of the text and see which sections relate to which parts of the legend. Ideally the title for each layer will stand out from the corresponding symbol labels.
+
+Along with the legend it might be useful to add a scale bar as the data shown relates to a measurement of distance. Add a scale bar using the associated tool from the table above. Customising this toolbar can be tricky at first but with practise becomes simple.
+
+Firstly, we can edit the style of the scale bar under main properties. Try changing `Single box` to other options and see what it does. Some of these styles may not be as easily readable, so for now we'll stick to the original.
+
+To change the number of divison of the bar and the distance shown the `Segments` section of the item properties can be altered where it says 'left 0' and 'right 2'. Change 'right 2' to 'right 4' for example and the bar will increase to 4 segments. The length will also change. This is because the width of each segment is fixed to a certain number of map length units i.e. each segment will be 2.5km, so having 4 segments will yield a scale bar ranging from 0-10km with divisions every 2.5km. Try experimenting with these variables to find a scale bar which sensibly depicts the scale of the map. Normally, around 4 divisions of about 1-4 units width each should be ok. 
+
 #### Text
 
 While 'a picture says a thousand words', the context of a map is usually impossible to discern without some text to describe it. Using the label tool we'll add a descriptive title to the map. With the tool selected, click and drag to create a text box. This will contain a 'Lorem ipsum' placeholder by default. 
 
-The properties of the text can be customised in the Item Properties panel. Try experimenting with some of the options under`
+The properties of the text can be customised in the Item Properties panel. Try experimenting with some of the options under `Appearance`. When multiple labels are present, they should follow a natural order of precedence: Titles should be the largest and boldest, headers smaller and less bold, descriptive text should be of a normal but readable size, and layer labels and data credits should be visible but unintrusive.
+
+Add a title to the map using the text tool. It should be descriptive enough that it alone could get across the content and purpose of the map, but short enough that it can be read at a glance.
+
+It is also important to add credits for any data used in the creation of the map or figures. In this case our data was sourced from the City of Edinburgh. Create a tetbox citing them. It's ok to make the font for this small and to move the text away from the main content so that it is visible but unintrusive.
 
 #### Exporting Maps
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/ediburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
 </p>
 
-Now our map is finished we can export it to useelsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
+Now our map is finished we can export it to use elsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
 
 Multiple formats are available when exporting a map. Open the `Layout` drop down from the menu bar, and navigate down to the three options: `Export as Image`, `Export as SVG`, and `Export as PDF`. Image will allow us to save to a standard image format like a .jpg or .png. And SVG is an image format which maintains the contents of the image as vectors rather than pixels. An SVG can be opened and edited in a non-raster editing suite such as Adobe Illustrator. Unofrtunately, attempting to do this will give a warning that QGIS' SVG library is not adequate for saving to this format and advises to export as PDF instead. Exporting to PDF will save the map as high qualit PDF.
 
 As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngn_window.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
 </p>
 
 For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
