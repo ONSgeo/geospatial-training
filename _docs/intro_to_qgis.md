@@ -283,7 +283,7 @@ It is also possible to join without summarising. Search and open `Join attribute
 It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/centroids_window.JPG?raw=TRUE" title="Centroids window">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_centroids_window.JPG?raw=TRUE" title="Centroids window">
 </p>
 
 Choose the 'natural neighbourhoods' layer
@@ -291,7 +291,7 @@ Choose the 'natural neighbourhoods' layer
 There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. Really, there are neighbouring polygons where the centroids do not fall within the geometry. These centroids are therefore not spatially representative of there the natural neighbourhoods actually are. To get around this we can use a different tool to generate centroids: `Point on surface`. This will produce a centroid which strictly falls on the surface of the parent polygon.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
 </p>
 
 Running this again for natural neighbourhoods we can see that all polygons have a single point each. The points generated from `Point on surface` will be our centroids layer, so we can remove the geometric centroid layer.
@@ -466,7 +466,7 @@ To add a map to the layout we use the `Add map view` tool from the previous tabl
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapview.JPG?raw=TRUE" title="Layout map view item">
 </p>
 
-<p>This map can be moved using the move item tool. In addition, the `Move item content` and <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapviewzoom_buttons.JPG" title="Layout map view zoom buttons"> buttons can be used to pan and zoom within the map view item. Resize the map view item and pan and zoom until the whole layer is visbible and fills a good portion of the layout.</p>
+<p>This map can be moved using the move item tool. In addition, the `Move item content` and <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapviewzoom_buttons.JPG" title="Layout map view zoom buttons"> buttons can be used to pan and zoom within the map view item. Resize the map view item and pan and zoom until the whole layer is visbible and fills a good portion of the layout.</p>
 
 #### Customising Maps
 
@@ -509,7 +509,7 @@ Multiple formats are available when exporting a map. Open the `Layout` drop down
 As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngn_window.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpng_window.JPG?raw=TRUE" title="Dialogue for exporting a layout as an image">
 </p>
 
 For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
