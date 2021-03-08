@@ -11,7 +11,7 @@ description: An introductory course to using QGIS software for those new to GIS 
 This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping.
 
 ### Estimated time for course
-3 hours
+2 hours
 
 ### Audience
 Those beginning to undertake analytical work which brings together geography and statistics.
