@@ -243,13 +243,13 @@ Now, set the input layer to your trees point layers. Set `buffer distance` to 10
 The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
 </p>
 
 However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
 </p>
   
 #### Clip
