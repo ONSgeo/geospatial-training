@@ -91,7 +91,7 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
 </table>  
 
-The buttons on the toolbar can be chosen by by going to `View > TOolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
+The buttons on the toolbar can be chosen by by going to `View > Toolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
 
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
@@ -100,13 +100,15 @@ Panels are parts of the UI which organise a variety of features into larger grou
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" />
 </p>
 
+<p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" title="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
+
 Before we begin any work, it's a good idea to set up the UI such that everything need will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
 
-To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools availible in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although if a tool an be accessed from the toolbar or menus that method will also be shown. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
+To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools availible in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although some tools can also be found from the menu bar. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
 
 ### Loading data
 
-Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in.
+Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the provided 'Edinburgh_City_Data.zip'.
 
 #### Delimited Data (non-spatial)
 
@@ -116,7 +118,7 @@ Text delimited data (.csv, .txt, .xlsx) can be simply dragged and dropped in. Up
 
 Different kinds of spatial data format have slightly different ways of loading in.
 
-Shapefiles (.shp) come with a number of auxillary files such as .dbf, .dbx etc. These files do no need to be dropped into QGIS; only the .shp needs to be. However, a shapefile's auxillary files should always be kept with it, so it's usually a good idea to have each set of files in their own folder rather than looseley mixed. We'll now load in the `edinburgh_natn.shp` and `ediburgh_aqma.shp` files into our QGIS project. Drag and drop each shapefile (.shp) into QGIS. These layers will be displayed in both the layers panel AND the main window. We can still see the attribute tables, however, using the same method as for the delimited layer.
+Shapefiles (.shp) come with a number of auxillary files such as .dbf, .dbx etc. These files do no need to be dropped into QGIS; only the .shp needs to be. However, a shapefile's auxillary files should always be kept with it, so it's usually a good idea to have each set of files in their own folder rather than looseley mixed. We'll now load in the 'edinburgh_natn.shp' and 'ediburgh_aqma.shp' files into our QGIS project. Drag and drop each shapefile (.shp) into QGIS. These layers will be displayed in both the layers panel AND the main window. We can still see the attribute tables, however, using the same method as for the delimited layer.
 
 A geodatabase (.gdb) and a geopackage (.gpkg) are similar formats. Both are eseentially specialised folders which contain both spatial data and their auxillary information in one place. Dragging and dropping in a geodatabase or geopackage will do one of two things, depending on contents. If there is only a single layer in the file, it will be loaded straight in. Otherwise a dialog will appear asking which layers we would like to import and if we would like them to be grouped together.
 
