@@ -210,6 +210,12 @@ Data will not always come in a spatial format. Here, we have the locations of tr
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_points_from_table_window.JPG?raw=true">
 </p>
 
+Set the input layer to the trees csv. The X and Y coordinates to 'Easting' and 'Northing' respectively, and the CRS to 'BNG'/'EPSG 27700'. After running, we will now have the trees represented as points in the central view window and as a points layer in the 'Layers' panel.
+
+<p align="center">
+  <img src=https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees.JPG?raw=TRUE" title="Edinburgh tree points after extracting from table">
+</p>
+
 ### Vector Tools
 
 #### Fix Geometry
