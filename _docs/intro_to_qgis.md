@@ -146,6 +146,10 @@ The `Select` tools can be used to select features by hand or by a query.  Many t
 
 Firstly, let's try `Select features by area or single click`. With this tool active we will be able to select features for the active layer. Left clicking will select on feature at a time. Try selecting different polygons in the 'natural neighbourhoods' layer. Notice that upon selecting a new feature, the previously selected on is deselected. If we want to select multiple features at once we must hold `ctrl` while clicking.
 
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_selected.JPG?raw=TRUE" title="Appearance of selected features in the Natural Neighbourhoods layer">
+</p>
+
 Clicking and dragging will select features which intersect with the rectangle drawn. This is a quick and rough way of selecting many features at once if, say, we don't need to worry about any specific one but instead all those in a general area.
 
 #### Select by value
@@ -154,7 +158,7 @@ With the trees layer active, open the `Select features by value` field. This wil
 
 Multiple fields can be used at once to further refine the selection. Have a go at selecting by different combinations of attributes for different layers.
 
-When finished, press `Deselect features from all layers`.
+When finished, press `Deselect features from all layers` to deselect everything.
 
 ### Project Settings
 
@@ -175,6 +179,14 @@ The project will now use BNG as the CRS. This means that any spatial data with c
 ## Basic QGIS Tools
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
+
+QGIS uses a form of temporary layer called a 'scratch layer'. These will have this symbol next to them:
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol">
+</p>
+
+A scratch layer can be renamed, reordered, visualised, or edited just like any other layer however these layers are temporary and are lost when the project is closed. Scratch layers are the default outputs for all tools, and so will be created during the course of this tutorial. Try to name these scratch layers appropriately to keep things organised e.g. 'originalname_toolused'. We will cover making these layers permanent in Editing and Saving Data.
 
 ### Data Tools
 
@@ -202,6 +214,16 @@ Data will not always come in a spatial format. Here, we have the locations of tr
 
 #### Fix Geometry
 
+Often spatial data will contain geometry errors due to problems during digitsation or changes of data format. For exampke, a polygon may not be properly closed or can overlap with itself. QGIS will fail to complete a process if it detects a geometry error.
+
+To prevent this there is the `Fix geometries` tool. Open this from the toolbox. 
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_fixgeom_window.JPG?raw=TRUE" title="Fix geometries window">
+</p>
+
+Select the 'Natural neighbourhoods' layer as the geometry we would like to fix and press run. It may take some time depending on your computer, but the end result will be a layer called 'fixed geometries'. Give this new layer an appropriate name. This is now our fixed, error-less natural neighbourhoods layer which we'll use going forward, so feel free to hide or remove the original layer.
+
 #### Buffer
 
 A buffer is one of the simplest and most useful tools. Aa buffer will produce a polygon feature which extends from the input feature to a specified distance. The input feature can be a point, line, or polygon, but the output will always be a polygon. 
@@ -211,11 +233,21 @@ To demonstrate on points, we will use the refactored trees layer. A single point
 Now, set the input layer to your trees point layers. Set `buffer distance` to 10. This will automatically be in metres as that is the standard geographic unit of the project CRS. Run the buffer.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffer_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffer_window.JPG?raw=TRUE" title="Buffer window">
 </p>
 
-The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
+The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. 
 
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
+</p>
+
+However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
+</p>
+  
 #### Clip
 
 Clipping is useful for when we wish to cut down geomtries to within the extent of boundary of another. Zooming out, we can see that there are some tree points which are outside of the neighbourhood boundaries. As we only want to consider those within the boundary, we can clip the trees layer.
