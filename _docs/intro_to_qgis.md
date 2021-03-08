@@ -180,11 +180,7 @@ The project will now use BNG as the CRS. This means that any spatial data with c
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
 
-QGIS uses a form of temporary layer called a 'scratch layer'. These will have this symbol next to them:
-
-<p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol">
-</p>
+<p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol"> symbol next to them. </p>
 
 A scratch layer can be renamed, reordered, visualised, or edited just like any other layer however these layers are temporary and are lost when the project is closed. Scratch layers are the default outputs for all tools, and so will be created during the course of this tutorial. Try to name these scratch layers appropriately to keep things organised e.g. 'originalname_toolused'. We will cover making these layers permanent in Editing and Saving Data.
 
