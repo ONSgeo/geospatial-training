@@ -18,8 +18,8 @@ There are five steps required to make sure that you can download and install the
 
 ### 1. Make sure Python is in your PATH
 The PATH variable tells your operating system the applications that are available from the command line. We need python to be available in the PATH to install the libraries required.
-* Search for the environment path by clicking on the start button and using the search box. 
-[image]
+* Search for the environment path by clicking on the start button and using the search box.
+![Windows search bar image showing Edit Environment menu](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/edit_environment.PNG?raw=true)
 * Select the “Edit environmental variables for your account” option in Control Panel.
 [image]
 * Check if you the PATH variable on your list of User variables as shown in the image below. If you do have PATH ommit the next step
@@ -30,9 +30,9 @@ The PATH variable tells your operating system the applications that are availabl
 * As shown on the imaged above, the PATH in this example is `C:\Python36;C:\Python36\Scripts\`
 * To test whether this has worked, open Anaconda Prompt from the Windows start menu as shown below.
  
-[Anaconda prompt search image]
+![Image showing the windows search bar for Anaconda Prompt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/anaconda%20prompt.PNG?raw=true)
 * In the Anaconda Prompt, type 'python' and press return. You should open a python interpreter as below:
-[AP output image]
+![Image showing the output from Anaconda Prompt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/anaconda_prompt_output.PNG?raw=true)
 * Close this and move onto the next part.
  
 
@@ -52,7 +52,7 @@ Once you have access, you need to generate an encrypted password that you can us
 *	Copy the encrypted password to notepad for now, to use later. 
 
 **Now, go back to the environment variables window we used to set PATH.**
- [Pip_index image]
+ ![Image showing the environment variables menu when adding Pip Index URL](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/pip_index.PNG?raw=true)
 *	Add a new variable called PIP_INDEX_URL
 *	Set the variable value to: http://username: AP7JAPuaQ7cFZZ4gUNoDGjpLrEs@art-p-01/artifactory/api/pypi/yr-python/simple
     * username is your ONS username
@@ -62,7 +62,7 @@ Once you have access, you need to generate an encrypted password that you can us
 ### 3. Set up the .condarc file
 * Open the .condarc.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
 * When done, your. condarc file should look like the example below.
-* [.condarc image]
+![Image showing the .condarc file contents](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/condarc_file.png?raw=true)
 
 * Save it to C:\Users\YourUsername without the .txt extension and close it.
 
@@ -70,14 +70,14 @@ Once you have access, you need to generate an encrypted password that you can us
 * First, create a folder into C:\Users\YourUsername\AppData\Roaming and name it pip
 * As in the previous step, open the .pip.ini.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
 * When done, your pip.ini.txt file should look like the example below
-[pip ini image]
+![Image showing Pip Ini file contents](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/pip_ini.png?raw=true)
 
 
 ### 5. Download and install python wheels for the required libraries
 
 We have to download these python libraries separately. This is because they rely on c libraries that are not downloaded if we use the normal python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the c libraries that we don’t get otherwise.
 
-[Atefactory image]
+![Image showing the Artefactory](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/artefactory.PNG?raw=true)
 
 
 In Artifactory, we’ll need to access the “Artifactory Repository Browser”.
