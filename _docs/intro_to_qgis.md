@@ -463,18 +463,38 @@ The right panels show the active 'items' in the layout, and properties/options f
 To add a map to the layout we use the `Add map view` tool from the previous table. With this tool selected, click and drag in the white area to draw the bondary of the view. This view will now display the same map that we can see in the project view. In fact, this map view and the project are linked such that changing layer styles and active layers in the project will change the view in layout. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapview.JPG?raw=TRUE" title="Layout map view item">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapview.JPG?raw=TRUE" title="Layout map view item">
 </p>
+
+<p>This map can be moved using the move item tool. In addition, the `Move item content` and <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/layout_mapviewzoom_buttons.JPG" title="Layout map view zoom buttons"> buttons can be used to pan and zoom within the map view item. Resize the map view item and pan and zoom until the whole layer is visbible and fills a good portion of the layout.</p>
 
 #### Customising Maps
 
 #### Legends & Extras
 
+A legend is a necessary part of a map as it allows the viewer to understand what colours and symbols mean and how they relate to the underlying data. With the legend tool selected, click and drag anywhere in the layout to create a new one.
+
+<p>By default, the legend will contain entries for every layer active in the project. However as we are only displaying a single layer, we only want a single entry. To change what is displayed in the legend go to the Item Properties panel while the legend layer is active. Here we can see a list of all legend items. To customise this list, disable `Auto update`. Now, select all the layers displayed and press <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_removelegendentry.JPG?raw=TRUE" title="Remove legend entry"></p>
+
+<p>Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" title="Remove legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.</p>
+
+We can further cusomise the legend under the `Fonts and Text Formatting` section. Click each font option to customise the appearance of the text and see which sections relate to which parts of the legend. Ideally the title for each layer will stand out from the corresponding symbol labels.
+
+Along with the legend it might be useful to add a scale bar as the data shown relates to a measurement of distance. Add a scale bar using the associated tool from the table above. Customising this toolbar can be tricky at first but with practise becomes simple.
+
+Firstly, we can edit the style of the scale bar under main properties. Try changing `Single box` to other options and see what it does. Some of these styles may not be as easily readable, so for now we'll stick to the original.
+
+To change the number of divison of the bar and the distance shown the `Segments` section of the item properties can be altered where it says 'left 0' and 'right 2'. Change 'right 2' to 'right 4' for example and the bar will increase to 4 segments. The length will also change. This is because the width of each segment is fixed to a certain number of map length units i.e. each segment will be 2.5km, so having 4 segments will yield a scale bar ranging from 0-10km with divisions every 2.5km. Try experimenting with these variables to find a scale bar which sensibly depicts the scale of the map. Normally, around 4 divisions of about 1-4 units width each should be ok. 
+
 #### Text
 
 While 'a picture says a thousand words', the context of a map is usually impossible to discern without some text to describe it. Using the label tool we'll add a descriptive title to the map. With the tool selected, click and drag to create a text box. This will contain a 'Lorem ipsum' placeholder by default. 
 
-The properties of the text can be customised in the Item Properties panel. Try experimenting with some of the options under`
+The properties of the text can be customised in the Item Properties panel. Try experimenting with some of the options under `Appearance`. When multiple labels are present, they should follow a natural order of precedence: Titles should be the largest and boldest, headers smaller and less bold, descriptive text should be of a normal but readable size, and layer labels and data credits should be visible but unintrusive.
+
+Add a title to the map using the text tool. It should be descriptive enough that it alone could get across the content and purpose of the map, but short enough that it can be read at a glance.
+
+It is also important to add credits for any data used in the creation of the map or figures. In this case our data was sourced from the City of Edinburgh. Create a tetbox citing them. It's ok to make the font for this small and to move the text away from the main content so that it is visible but unintrusive.
 
 #### Exporting Maps
 
