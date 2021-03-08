@@ -463,7 +463,7 @@ The right panels show the active 'items' in the layout, and properties/options f
 To add a map to the layout we use the `Add map view` tool from the previous table. With this tool selected, click and drag in the white area to draw the bondary of the view. This view will now display the same map that we can see in the project view. In fact, this map view and the project are linked such that changing layer styles and active layers in the project will change the view in layout. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapview.JPG?raw=TRUE" title="Layout map view item.">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_mapview.JPG?raw=TRUE" title="Layout map view item">
 </p>
 
 #### Customising Maps
@@ -479,17 +479,17 @@ The properties of the text can be customised in the Item Properties panel. Try e
 #### Exporting Maps
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/ediburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
 </p>
 
-Now our map is finished we can export it to useelsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
+Now our map is finished we can export it to use elsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
 
 Multiple formats are available when exporting a map. Open the `Layout` drop down from the menu bar, and navigate down to the three options: `Export as Image`, `Export as SVG`, and `Export as PDF`. Image will allow us to save to a standard image format like a .jpg or .png. And SVG is an image format which maintains the contents of the image as vectors rather than pixels. An SVG can be opened and edited in a non-raster editing suite such as Adobe Illustrator. Unofrtunately, attempting to do this will give a warning that QGIS' SVG library is not adequate for saving to this format and advises to export as PDF instead. Exporting to PDF will save the map as high qualit PDF.
 
 As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngnwindow.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpngn_window.JPG?raw=TRUE" title="Dialogue for exporting a lyout as an image">
 </p>
 
 For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
