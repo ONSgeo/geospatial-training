@@ -207,14 +207,18 @@ Data will not always come in a spatial format. Here, we have the locations of tr
 Set the input layer to the trees csv. The X and Y coordinates to 'Easting' and 'Northing' respectively, and the CRS to 'BNG'/'EPSG 27700'. After running, we will now have the trees represented as points in the central view window and as a points layer in the 'Layers' panel.
 
 <p align="center">
-  <img src=https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees.JPG?raw=TRUE" title="Edinburgh tree points after extracting from table">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees.JPG?raw=TRUE" title="Edinburgh tree points after extracting from table">
 </p>
 
 ### Vector Tools
 
 #### Fix Geometry
 
-Often spatial data will contain geometry errors due to problems during digitsation or changes of data format. For exampke, a polygon may not be properly closed or can overlap with itself. QGIS will fail to complete a process if it detects a geometry error.
+Often spatial data will contain geometry errors due to problems during digitsation or changes of data format. For exampke, a polygon may not be properly closed or can overlap with itself. QGIS will fail to complete a process if it detects a geometry error. For example:
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_error.JPG?raw=TRUE" title="Geometry error during a dissolve operation">
+</p>
 
 To prevent this there is the `Fix geometries` tool. Open this from the toolbox. 
 
