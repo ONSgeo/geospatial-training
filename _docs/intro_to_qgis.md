@@ -184,9 +184,9 @@ A scratch layer can be renamed, reordered, visualised, or edited just like any o
 
 ### Data Tools
 
-These tools apply specifically to non-spatial data. Often, data will not be provided spatially, and it must be manipulated to suit a spatial analysis.
+These tools apply specifically to non-spatial data. Often data will not be provided spatially, and it must be manipulated to suit a spatial analysis.
 
-#### Non-spatial Joins
+#### Joins
 
 A non-spatial join allows us to connect two tables to each other according to a specified attribute. The most common used, and the one we will use now, is a left-join. Just as on a normal table in any other software, a left-join in QGIS will produce a new table with columns between the two inputs tables mathched by feature (rows).
 
