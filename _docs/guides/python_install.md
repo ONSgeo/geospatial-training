@@ -18,15 +18,15 @@ There are five steps required to make sure that you can download and install the
 
 ### 1. Make sure Python is in your PATH
 The PATH variable tells your operating system the applications that are available from the command line. We need python to be available in the PATH to install the libraries required.
-* Search for the environment path by clicking on the start button and using the search box.
+* Search for the **Edit Environment Variables** menu by clicking on the start button and using the search box.
 
 ![Image showing Windows search bar for environment edit](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/edit_environment_search.PNG?raw=true)
 
-* Select the “Edit environmental variables for your account” option in Control Panel.
+* Select the **Edit environment Variables** option in the Control Panel to open the menu.
 
 ![Image showing the Edit Environment Variables menu before being opened](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/edit_environment%20menu.PNG?raw=true)
 
-* Check if you the PATH variable on your list of User variables as shown in the image below. If you do have PATH ommit the next step
+* Check if you the PATH variable is on your list of **User variables** as shown in the image below. If you do have PATH ommit the next step
 
 ![Image showing the environment path variable menu](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/edit_environment_path.PNG?raw=true)
 
