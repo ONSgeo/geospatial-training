@@ -67,7 +67,7 @@ Once you have access, you need to generate an encrypted password that you can us
    	
 
 ### 3. Set up the .condarc file
-* Open the .condarc.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
+* Download the [.condarc.txt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/.condarc.txt) file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
 * When done, your. condarc file should look like the example below.
 ![Image showing the .condarc file contents](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/condarc_file.png?raw=true)
 
@@ -75,7 +75,7 @@ Once you have access, you need to generate an encrypted password that you can us
 
 ### 4. Set up a pip.ini file
 * First, create a folder into C:\Users\YourUsername\AppData\Roaming and name it pip
-* As in the previous step, open the pip.ini.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
+* As in the previous step, download the [pip.ini.txt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/pip.ini.txt) file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
 * When done, your pip.ini.txt file should look like the example in the image below
 * Make sure to save you pip.ini file without the .txt extension
 ![Image showing Pip Ini file contents](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/pip_ini.png?raw=true)
@@ -143,7 +143,7 @@ Having installed Rtree, Fiona, shapely, gdal and pyproj, you should now be able 
       `pip install .\mapclassify-2.4.2-py3-none-any.whl`
      
 
-You should hopefully have a fully functional Python for all the Geo_libraries.
+You should hopefully have a fully functional Python for all the geo-libraries.
 
 
 
