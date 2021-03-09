@@ -136,11 +136,13 @@ Having installed Rtree, Fiona, shapely, gdal and pyproj, you should now be able 
 
 ##### Install mapclassify
 
-* Download from this link: 
-      `https://pypi.org/project/mapclassify/#files` 
+* Open the [Mapclassify documentation page from this link:](https://pypi.org/project/mapclassify/#files) and download this package by selecting:
+
+`mapclassify-2.4.2-py3-none-any.whl (38.6 kB)` 
       
 * On Anaconda Prompt, map the path to your Downloads folder and run the following:
-      `pip install .\mapclassify-2.4.2-py3-none-any.whl`
+
+`pip install .\mapclassify-2.4.2-py3-none-any.whl`
      
 
 You should hopefully have a fully functional Python for all the geo-libraries.
