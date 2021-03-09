@@ -476,7 +476,7 @@ A legend is a necessary part of a map as it allows the viewer to understand what
 
 <p>By default, the legend will contain entries for every layer active in the project. However as we are only displaying a single layer, we only want a single entry. To change what is displayed in the legend go to the Item Properties panel while the legend layer is active. Here we can see a list of all legend items. To customise this list, disable `Auto update`. Now, select all the layers displayed and press <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_removelegendentry.JPG?raw=TRUE" title="Remove legend entry"></p>
 
-<p>Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" title="Remove legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.</p>
+<p>Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" title="Add legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.</p>
 
 We can further cusomise the legend under the `Fonts and Text Formatting` section. Click each font option to customise the appearance of the text and see which sections relate to which parts of the legend. Ideally the title for each layer will stand out from the corresponding symbol labels.
 
