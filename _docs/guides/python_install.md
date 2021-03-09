@@ -68,8 +68,9 @@ Once you have access, you need to generate an encrypted password that you can us
 
 ### 4. Set up a pip.ini file
 * First, create a folder into C:\Users\YourUsername\AppData\Roaming and name it pip
-* As in the previous step, open the .pip.ini.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
-* When done, your pip.ini.txt file should look like the example below
+* As in the previous step, open the pip.ini.txt file from the repository and edit your credentials onto this by replacing Username with your windows ID and EncryptedPassword with the encrypted password from the artifactory.
+* When done, your pip.ini.txt file should look like the example in the image below
+* Make sure to save you pip.ini file without the .txt extension
 ![Image showing Pip Ini file contents](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/pip_ini.png?raw=true)
 
 
