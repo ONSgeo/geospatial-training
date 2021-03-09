@@ -18,9 +18,7 @@ Those beginning to undertake analytical work which brings together geography and
 
 ### Pre-requisites 
 Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_.
-
 ---
-
 ## QGIS Basics
 This first module will cover the basics of using QGIS: including  basic ui elements, project setup, loading data, and some basic functionality.
 
@@ -175,9 +173,7 @@ As these tutorials will use data for Great Britain, we will need to set the Proj
 </p>
 
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
-
 ---
-
 ## Basic QGIS Tools
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
@@ -280,26 +276,34 @@ It is also possible to join without summarising. Search and open `Join attribute
 
 #### Centroids
 
-It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon.
+It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon. Choose the natural neighbourhoods layer which we previously created using the summary join.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_centroids_window.JPG?raw=TRUE" title="Centroids window">
 </p>
 
-Choose the 'natural neighbourhoods' layer
+There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. 
 
-There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. Really, there are neighbouring polygons where the centroids do not fall within the geometry. These centroids are therefore not spatially representative of there the natural neighbourhoods actually are. To get around this we can use a different tool to generate centroids: `Point on surface`. This will produce a centroid which strictly falls on the surface of the parent polygon.
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_treesummary_centroids_wrong.JPG?raw=TRUE" title="Erroneous centroids lie outside of the parent geometry">
+</p>
+
+Really, there are neighbouring polygons where the centroids do not fall within the geometry. These centroids are therefore not spatially representative of there the natural neighbourhoods actually are. To get around this we can use a different tool to generate centroids: `Point on surface`. This will produce a centroid which strictly falls on the surface of the parent polygon.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_pointonsurface_window.JPG?raw=TRUE" title="Point on surface window">
 </p>
 
-Running this again for natural neighbourhoods we can see that all polygons have a single point each. The points generated from `Point on surface` will be our centroids layer, so we can remove the geometric centroid layer.
+Running this again for natural neighbourhoods we can see that all polygons have a single point each. The map below demonstrates the difference between the point on surface and centroid methods.
 
-Some spatial datasets have existing centroids available with statistical weighting applied. England and Wales statistical Output Areas have their population-weighted centroids avalable. If a population-weighted centroid dataset exists, this would be the preferred choice over generating them by hand as they are more certain to be good for use in official statistics.
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_centroidspos.JPG?raw=TRUE" title="Difference between geometric centroids and centroids from 'point on surface'">
+</p>
 
+The points generated from `Point on surface` will be our new centroids layer, so we can remove the other geometric centroid layer.
+
+Some spatial datasets have existing centroids available with statistical weighting applied. England and Wales statistical Output Areas have their population-weighted centroids avalable. If a population-weighted centroid dataset exists, this would be the preferred choice over generating them by hand as they are the best for use in official statistics.
 ---
-
 ## Editing and Saving Data
 
 Now that we have worked with some data using basic geospatial tools, we can do some deeper editing and look at more ways of storing geospatial data.
@@ -355,12 +359,10 @@ On the trees layers, right-click and then go to `Export > Save feature as...`. F
 When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must also be specified. Multiple layers can be saved to the same geopackage or geodatabase. A shapefile only needs the file name.
   
 If we want to export the attribute table alone, we can choose the CSV option.
-
 ---
-
 ## Basic Mapping in QGIS
 
-This section will cover some of the options available for producing basic map visualisations. More specifics on the style of maps covered and best practice for mapping can be found here [LINK]. Once this section is completed you will be able to create a number of maps depending on the types of underlying data and purpose of the visualisation.
+This section will cover some of the options available for producing basic map visualisations. Once this section is completed you will be able to create a number of maps depending on the types of underlying data and purpose of the visualisation.
 
 ### Layer Styling
 
@@ -405,6 +407,16 @@ There is a problem with this type of choropleth. We're visualising the count of 
 #### Categorised
 
 Categorised maps are similar to graduated maps except the bins are based on unique values rather than a contunuous range. Categorical maps can be messy if too many unique values are present, so it's usally a good ida to keep the number of categrories to the minimum possible. 
+
+### Basemaps
+
+A basemap is a dynamic map layer which provides a background map which can contextualise our other layers. For example, a background map might be a street map or a topographic map. These maps are rendered depending on the current zoom scale and often cover entire countries, continents, or the whole world depending on the project CRS.
+
+As an ONS employee you will have access to basemaps from the Ordnance Survey Data Hub as part of the Public Sector Geospatial Agreement (PSGA). To gain access to these basemaps you simplt need to sign up with a Public Sector Account at the data hub. Your application will have to be processed by an administrator to verify your employment but this shouldn't take long. Before verfiication, however, you will still have access to open data APIs for use as basemaps.
+
+Once signed up and logged in to the Data Hub, go to `API Dashboard > APIs`. Now bu 'OS Maps API', click `Add to API project` and `Add to NEW PROJECT` and call the project 'QGIS'. Now, if not automatically redirected there, in `My Projects > QGIS` copy the 'WMTS API Endpoint address'.
+
+In QGIS in the Browser panel, right click `WMS/WMTS` and select `New connection...`. This will open a new window. Choose an appropriate name for this basemap e.g. 'OS Raster'. Paste the copied link into the URL bar and then click `OK`. Under 'WMS/WMTS' will now be a new item with the name you chose. Expand this item and drag one of the subitems into the layers panel. QGIS will now render this basemap as a layer, and it can be reordered and toggled on/off as any other layer. As this is a BASE map, it should be placed under all of the other layers.
 
 ### Print Layouts
 
