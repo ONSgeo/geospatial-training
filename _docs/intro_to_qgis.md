@@ -8,7 +8,7 @@ description: An introductory course to using QGIS software for those new to GIS 
 ## Course Summary
 
 ### Introduction
-This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping.
+This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping. Data for this is 
 
 ### Estimated time for course
 2 hours
@@ -25,7 +25,7 @@ This first module will cover the basics of using QGIS: including  basic ui eleme
 ### Loading QGIS
 Before loading QGIS, please check your version number. This tutorial will use QGIS 3.10. 
 
-Upon opening QGIS, you should be met with a screen similar to that below.
+Upon opening QGIS, you should be met with a screen similar to that below:
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/untitled_startup.jpg?raw=true" title="Blank, unsaved project created at program startup">
