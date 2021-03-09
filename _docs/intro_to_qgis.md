@@ -344,6 +344,16 @@ The field calculator uses SQL-like expressions to perform a range of possible op
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_window.JPG?raw=TRUE" title="Field calculator">
 </p>
 
+This calculator can be used to calculate a number of useful outputs for analysis. There area also default operations which can come in handy. Entering `$area`, for example, will return the area of the features (individually). We're going to use this to calculate the density of trees in each natural neighbourhood. With the summary-joined natural neighbourhoods selected, open the field calculator and copy the entries from the screenshot below.
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_fieldcalc_treedensity.JPG?raw=TRUE" title="Field calculator">
+</p>
+
+As `$area` calculates the area of a feature in map units, we may want to convert them to a more common one. As the project map unit is metres, we will multiple by 1,000,000 to convert to km^2. Press `OK` to finish.
+
+This operation will not create a new layer. If we open the layer's attribute table we can see that a new field has been created containing the result of the calculation.
+
 ### Data Formats
 
 Spatial data comes in specialised formats designed to hold geometry information. The three most common methods of formatting spatial data are Shapefiles, GeoDatabases, and Geopakages. 
