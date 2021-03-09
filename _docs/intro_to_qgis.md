@@ -528,4 +528,4 @@ As we want to use this visualisation elsewhere, such as in presentations or as h
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpng_window.JPG?raw=TRUE" title="Dialogue for exporting a layout as an image">
 </p>
 
-For most purposes, a DPI of 100-200 will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
+Although standard print resolution is 300dpi, for our purposes 150-250dpi will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
