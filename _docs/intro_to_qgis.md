@@ -388,9 +388,9 @@ To edit the layer styles, we will use the `Layer Stylng` panel. If not already, 
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_styling_panel.JPG?raw=true" title="Layer styling panel">
 </p>
   
-Layer style can also be edited by rght clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes.
+Layer style can also be edited by rght clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes as they will not apply until `OK` has been clicked.
 
-So using the layer styling panel, we can start to improve the appearance of our layers.
+Using the layer styling panel we can start to improve the appearance of our layers.
 
 #### Symbology
 
@@ -399,6 +399,8 @@ Before we look at the different approaches for layer styling, here are some fund
 In the style panel the four most important options are `Fill Colour`, `Fill Style`, `Stroke Colour`, and `Stroke Style`. Setting the style for fill or stroke to `No pen` will result in the fill or stroke not shoring. This is a good way to only show borders on top of other layers.
 
 When working with colours in maps it's very important to be aware of both the aesthetic value of the colours and also how accessible they are. Colour schemes should be equally legible to colourblind and non-colourblind people. <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a useful website which displays palettes based on different criteria, including suitability for colour-blindness.
+
+If we want to display some detail of layers below another but want both to be visible we can change a layer's transparency under `Layer rendering` in the Style panel. This is useful when we want to further contextualise one layer against another such as placing boundaries on a street map.
 
 #### Single Symbol
 
@@ -441,7 +443,7 @@ Layer styling is the first step in producing map visualisations. To expand on th
 The print layout will open in a new window with a different set of toolbars and panels to the main QGIS window.
 
 <p>
-  <img src="print_layout_window.JPG?raw=TRUE" title="Print Layout window">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/print_layout_window.JPG?raw=TRUE" title="Print Layout window">
 </p>
 
 The right panels show the active 'items' in the layout, and properties/options for the currently selected item. In the layout items are map views, text, legends etc. On the left is the Toolbox toolbar. The main tools we will use from this toolbar are:
