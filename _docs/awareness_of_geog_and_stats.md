@@ -144,6 +144,8 @@ This is a very brief overview of locating geospatial data. In reality, geodesy i
 
 ![A map showing the British National Grid 10km cells overlaid on the outline of the UK.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/bng.png?raw=true)
 
+*British National Grid: 10 km cells*
+
 ### GSS Names and Codes
 On 1st January 2011 GSS codes were introduced. GSS codes are a type of uniform resource indicator (URI) which provide a way to identify unique items. GSS codes identify individual geographic objects, for example, Local Authority Districts. 
 
@@ -158,5 +160,67 @@ The <a href="https://geoportal.statistics.gov.uk/datasets/register-of-geographic
 ### Referencing Areas Correctly
 Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets so, identifying one by name alone can be fraught with error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
 
-Using GSS codes to accurately refer to areas avoids problem. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas. 
+Using GSS codes to accurately refer to areas avoids problem. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas.
+
+## Geographic Products from ONS
+ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
+
+The *Heirarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
+
+![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
+
+We'll now run through some of the more frequently used geographies to be aware of.
+
+### Administrative Geographies
+
+**Regions**
+* 9 regions in England
+* No regions in Scotland, Wales or Northern Ireland.
+* For UK wide representation, often England's regions are shown with the country boarders for Scotland, Wales and Northern Ireland.
+* Local Authority Districts (also known as Lower Tier Local Authorities) nest within regions.
+
+![Map showing regions in the England](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/regions.png?raw=true)
+
+**Local Authorities**
+* The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
+* The two tier system means there are two different boundary sets for Local Authorities. Here is how they are made up in 2020:
+  * Upper Tier Local Authorities (UTLA)
+    * England: 151
+    * Wales: 22
+    * Scotland: 32
+    * Northern Ireland: 11
+    * **Total: 216**
+  * Lower Tier Local Authorities (LTLA)
+    * England:314
+    * Wales: 22
+    * Scotland: 32
+    * Northern Ireland: 11
+    * **Total: 379**
+* Lower Tier Local Authorities (LTLAs) are also known as Local Authority Districts (LADs).
+* Local Authority boundaries change frequently so ensure you use the correct year to avoid errors. 
+
+![Maps showing Local Authorities in the UK](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/local_authorities.PNG?raw=true)
+
+### Census Geographies
+
+**Output Areas**
+* Census geographies are stable, small area geographies created for non-disclosive census releases.
+* These areas represent the nighttime residential population.
+* They were introduced in 2001 and revised in 2011 to reflect population changes and better align with administrative units. They will be revised again in 2021.
+* The geographies are built from clusters of postcodes which are aggregated to be as socially homogenous as possible, based on a range of factors.
+* Each level of geograhpy has a relatively consistent population size.
+* Mixtures of urban and rural areas are avoided wherever possible.
+* The Census geographies are hierarchical and nest within each other, as shown in the image below.
+
+![The hierarchy of Census geographies](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/census.PNG?raw=true)
+
+**Workplace Zones**
+* Workplace Zones are used to publish workplace related statistics
+* They representation of the workplace population (ie. day time population distribution)
+
+
+
+    
+
+
 
