@@ -61,9 +61,9 @@ Once you have access, you need to generate an encrypted password that you can us
 **Now, go back to the environment variables window we used to set PATH.**
  ![Image showing the environment variables menu when adding Pip Index URL](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/pip_index.PNG?raw=true)
 *	Add a new variable called PIP_INDEX_URL
-*	Set the variable value to:`http://username:AP7JAPuaQ7cFZZ4gUNoDGjpLrEs@art-p-01/artifactory/api/pypi/yr-python/simple`
-    * username is your ONS username
-    *	encrypted_password is the output from step 2 above.
+*	Set the variable value to:`http://UserName:EncryptedPassword@art-p-01/artifactory/api/pypi/yr-python/simple`
+    * UserName is your ONS username
+    *	EncryptedPassword is the output from step 2 above.
    	
 
 ### 3. Set up the .condarc file
