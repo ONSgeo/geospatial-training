@@ -232,7 +232,7 @@ ONS produce two postcode directories. Both directories provide information about
 * Postcodes are assigned to Output Areas (OAs) by point-in-polygon assignment. Then, OAs are assigned to other statistical areas by 'best-fit' method (more on this later in the course.)
 * The best fit assignment can mean the postcode appears to be in the wrong place (but it isn't).
 * This directory should be used for statistical production, where it is important to ensure data is assigned to the correct area within the relevant geographical hierarchy.
-* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this have a look at <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_BFIT)", target="_blank">'An overview of best-fitting'</a>.
+* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this have a look at <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_BFIT)" target="_blank">'An overview of best-fitting'</a>.
 
 **Unique Property Reference Numbers - UPRNs**
 UPRNs are 12 digit reference numbers which are assigned to every addressable location in Great Britain. Addressable locations include buildings and objects like bus shelters and electricity substations. 
@@ -258,12 +258,14 @@ Standard area measurements are official measures for the area of geographic enti
 There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often required, and is recommended for use when calculating statistics like population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_SAM)", target="_blank">User Guide</a>.
 
 *Types of Standard Area Measurement*
+
 Measure | Definition
 --------| ----------
 AREAEHECT | Area measurement to extent of the realm boundaries (mean low water mark) in hectares.
 AREACHECT | Area measurement to coastline feature boundaries (mean high water mark) in hectares.
 AREAIHECT | Area measurement of inland water features larger than 1km<sup>2</sup>.
 AREALHECT | Area measurement of land area only (to coastline features and excluding inland water features larger than 1km<sup>2</sup>).
+
 
 ![Map illustrating the four different standard area measurements](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/sam.png?raw=true)
 
@@ -279,7 +281,7 @@ There are multiple methods for defining "urban" and "rural". Two of the most com
 ## Area Classifications
 Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live wihtin the same locality. These area types will be distributed in different geographical space.
 
-The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200", target="_blank>this interactive map</a>.
+The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200" target="_blank>this interactive map</a>.
 
 ![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/oac.png?raw=true)
 
