@@ -1,6 +1,7 @@
 ---
 title: Introduction to QGIS
 description: An introductory course to using QGIS software for those new to GIS but familiar with data analysis.
+
 ---
 
 # Introduction to QGIS
@@ -17,8 +18,10 @@ This course will provide an introduction to QGIS for non-geographic analysts who
 Those beginning to undertake analytical work which brings together geography and statistics.
 
 ### Pre-requisites 
-Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_.
+Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_ .
+
 ---
+
 ## QGIS Basics
 This first module will cover the basics of using QGIS: including  basic ui elements, project setup, loading data, and some basic functionality.
 
@@ -60,8 +63,8 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/zoom_map_buttons.JPG?raw=TRUE" title="Zoom buttons"></td>
-    <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extem from click+drag.</p> 
-      <p>`Zoom Full` will zoom to the maximum exten from all layers.</p>
+    <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extent from click+drag.</p> 
+      <p>`Zoom Full` will zoom to the maximum extent from all layers.</p>
       <p>`Zoom to Selection` and `Zoom to Layer` will zoom to the extent of the selected feature or selected layer, respectively.</p></td>
   </tr>
   <tr align="center">
@@ -79,7 +82,7 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
-    <td>`Open Field Calculato`r for the selected layer (see: 'Field Calculator').</td>
+    <td>`Open Field Calculator for the selected layer (see: 'Field Calculator').</td>
   </tr>
   <tr align="center">
     <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/measure_button.JPG?raw=TRUE" title="Measure button"></td>
@@ -89,7 +92,7 @@ The following table summarises some of the most useful buttons in these toolbars
   </tr>
 </table>  
 
-The buttons on the toolbar can be chosen by by going to `View > Toolbars` and toggling options. For this course, make sure `Project Toolbar`, `Navigation Toolbar`, and `Attributes Toolbar` are enabled.
+The buttons on the toolbar can be chosen by by going to `View > Toolbars` and toggling options. For this course, make sure `Project Toolbar`, `Map Navigation Toolnar`, and `Attributes Toolbar` are enabled.
 
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
@@ -118,7 +121,7 @@ Different kinds of spatial data format have slightly different ways of loading i
 
 Shapefiles (.shp) come with a number of auxillary files such as .dbf, .dbx etc. These files do no need to be dropped into QGIS; only the .shp needs to be. However, a shapefile's auxillary files should always be kept with it, so it's usually a good idea to have each set of files in their own folder rather than looseley mixed. We'll now load in the 'edinburgh_natn.shp' and 'ediburgh_aqma.shp' files into our QGIS project. Drag and drop each shapefile (.shp) into QGIS. These layers will be displayed in both the layers panel AND the main window. We can still see the attribute tables, however, using the same method as for the delimited layer.
 
-A geodatabase (.gdb) and a geopackage (.gpkg) are similar formats. Both are eseentially specialised folders which contain both spatial data and their auxillary information in one place. Dragging and dropping in a geodatabase or geopackage will do one of two things, depending on contents. If there is only a single layer in the file, it will be loaded straight in. Otherwise a dialog will appear asking which layers we would like to import and if we would like them to be grouped together.
+A geodatabase (.gdb) and a geopackage (.gpkg) are similar formats. Both are essentially specialised folders which contain both spatial data and their auxillary information in one place. Dragging and dropping in a geodatabase or geopackage will do one of two things, depending on contents. If there is only a single layer in the file, it will be loaded straight in. Otherwise a dialog will appear asking which layers we would like to import and if we would like them to be grouped together.
 
 ### Layers and Feature Types
 
@@ -128,7 +131,7 @@ There are three geometry types most commonly used in GIS: points, lines, and pol
 
 Points represent a single location, with X and Y coordinates and potentially some associated data for each point. Points do not have spaital dimension, only position. As such, QGIS will by default display points as circles with a fill colour and outline. This symbol representation of the points will remain at constant size relative to the screen as you zoom in and out.
 
-Lines represent connections between points. A line feature can be a single line with nodes and one beginning or end, but can also branch and have multiple end points. What defines it is the point nodes and connections between them. As the line features is effectiely one dimensional, points will only intersect a line if they lie directly on one another. The symbol representation of the line does not represent the extent of the line, which is one-dimensional and does not have true width.
+Lines represent connections between points. A line feature can be a single line with nodes and one beginning or end, but can also branch and have multiple end points. What defines it is the point nodes and connections between them. As the line features is effectively one dimensional, points will only intersect a line if they lie directly on one another. The symbol representation of the line does not represent the extent of the line, which is one-dimensional and does not have true width.
 
 Polgyons, unlike lines and points, do have two dimensional area. Polygons have a boundary separating the 'inside' from the 'outside'. Polygon features can intersect other polygons, lines, and points anywhere on or within the polygon boundary. The symbology for a polygon is made up of an internal 'fill' and an 'outline' for the boundary.
 
@@ -144,7 +147,7 @@ The `Select` tools can be used to select features by hand or by a query.  Many t
 
 #### Select by area or single click
 
-Firstly, let's try `Select features by area or single click`. With this tool active we will be able to select features for the active layer. Left clicking will select on feature at a time. Try selecting different polygons in the 'natural neighbourhoods' layer. Notice that upon selecting a new feature, the previously selected on is deselected. If we want to select multiple features at once we must hold `ctrl` while clicking.
+Firstly, let's try `Select features by area or single click` from the Atributes Toolbar. With this tool active we will be able to select features for the active layer. Left clicking will select on feature at a time. Try selecting different polygons in the 'natural neighbourhoods' layer. Notice that upon selecting a new feature, the previously selected on is deselected. If we want to select multiple features at once we must hold `ctrl` while clicking.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_selected.JPG?raw=TRUE" title="Appearance of selected features in the Natural Neighbourhoods layer">
@@ -169,14 +172,16 @@ Each project uses a 'Coordinate Reference System' (CRS). This essentially determ
 As these tutorials will use data for Great Britain, we will need to set the Project CRS to British National Grid. To do this go to `Project > Properties > CRS`. Now, in the `Filter` bar search for either 'British National Grid' or '27700' (the EPSG code). Now select the result in the 'Coordinate Reference System' box and press OK. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" title="Project CRS window>>
 </p>
-
+                                                                                                                                  
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
+
 ---
+
 ## Basic QGIS Tools
 
-This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from [link here]. It has been edited from the original soure [link here] to make it suitable for a basic analysis, and extraneous attributes have been removed.
+This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from <a href="https://github.com/ONSgeo/geospatial-training/tree/master/_docs/intro_to_qgis/edinburgh_data.zip" target="_blank">Github here</a>. It has been edited from the <a href="https://data.edinburghcouncilmaps.info/" target="_blank">original soure</a> to make it suitable for a basic analysis, and extraneous attributes have been removed.
 
 <p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol"> symbol next to them. </p>
 
@@ -196,25 +201,39 @@ To perform a non-spatial join, go to the processing toolbox panel and search for
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_join_attribute_window.JPG?raw=true">
 </p>
 
+Choose 'edinburgh_trees' as input layer 1, and 'edinburgh_trees_dummy' as input layer 2. Set the join type to 'one to many'
+
 #### Table to geometry
 
-Data will not always come in a spatial format. Here, we have the locations of trees as a csv file, with columns for the X and Y coordinate. This table can be converted into a point geometry, with all other attributes retained, with the `Extract points from table` tool.
+Data will not always come in a spatial format. Here, we have the locations of trees as a csv file, with columns for the X and Y coordinate. This table can be converted into a point geometry, with all other attributes retained, with the `Create points layer from table` tool.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_points_from_table_window.JPG?raw=true">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_points_from_table_window.JPG?raw=true" title="Create points layer from table tool">
 </p>
 
-Set the input layer to the trees csv. The X and Y coordinates to 'Easting' and 'Northing' respectively, and the CRS to 'BNG'/'EPSG 27700'. After running, we will now have the trees represented as points in the central view window and as a points layer in the 'Layers' panel.
+Set the input layer as 'edinburgh_trees_join'. The X and Y coordinates to 'Easting' and 'Northing' respectively, and the CRS to 'BNG'/'EPSG 27700'. After running, we will now have the trees represented as points in the central view window and as a points layer in the 'Layers' panel.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees.JPG?raw=TRUE" title="Edinburgh tree points after extracting from table">
 </p>
 
+If the points layer is below 'Natural neighbourhoods', move it to the top. Rename the points layer to 'edinburgh_trees_points'.
+
+#### Refactor Fields
+
+Refactoring fields allows us to change how the software interprets field values. Search `Refactor Fields` in the toolbox and open it. Use 'edinburgh_trees_points' as the input layer. If prompted to, choose to reload the field mapping. We can now see what type has been assigned to each field. Right now, all fields are of type `String`. This means QGIS will interpret these values as text, including numbers, and will not be able to use them to perform numerical operations. To fix this, we can simply select the drop down menus for the 'TREE_HEIGHT_AV' and 'TREE_SPREAD_AV' fields and change the type to `Double`.
+
+<p align="center">
+ <img src = "https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
+</p>
+
+Once you've done this, run the tool and name the output 'edinburgh_trees_points_refactored'. We can now begin to use spatial and numerical operations on our data. If you are happy that you have followed these steps correctly you can now remove the other edinburgh_trees layers by right-clicking and choosing `Remove layer...`.
+
 ### Vector Tools
 
 #### Fix Geometry
 
-Often spatial data will contain geometry errors due to problems during digitsation or changes of data format. For exampke, a polygon may not be properly closed or can overlap with itself. QGIS will fail to complete a process if it detects a geometry error. For example:
+Often spatial data will contain geometry errors due to problems during digitsation or changes of data format. For example, a polygon may not be properly closed or can overlap with itself. QGIS will fail to complete a process if it detects a geometry error. For example:
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_error.JPG?raw=TRUE" title="Geometry error during a dissolve operation">
@@ -226,15 +245,15 @@ To prevent this there is the `Fix geometries` tool. Open this from the toolbox.
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_fixgeom_window.JPG?raw=TRUE" title="Fix geometries window">
 </p>
 
-Select the 'Natural neighbourhoods' layer as the geometry we would like to fix and press run. It may take some time depending on your computer, but the end result will be a layer called 'fixed geometries'. Give this new layer an appropriate name. This is now our fixed, error-less natural neighbourhoods layer which we'll use going forward, so feel free to hide or remove the original layer.
+Select the 'Natural_neighbourhoods' layer as the geometry we would like to fix and press run. It may take some time depending on your computer, but the end result will be a layer called 'fixed geometries'. Rename this to 'edinburgh_natn_fixed'. This is now our fixed, error-less natural neighbourhoods layer which we'll use going forward, so feel free to hide or remove the original layer.
 
 #### Buffer
 
-A buffer is one of the simplest and most useful tools. Aa buffer will produce a polygon feature which extends from the input feature to a specified distance. The input feature can be a point, line, or polygon, but the output will always be a polygon. 
+A buffer is one of the simplest and most useful tools in GIS. A buffer will produce a polygon feature which extends from the input feature out to a specified distance. The input feature can be a point, line, or polygon, but the output will always be a polygon. 
 
 To demonstrate on points, we will use the refactored trees layer. A single point is not a good physical representation of a tree, which will have a spread. Say the council wished to calculate an approximate area of tree coverage, they would need to have a polygon representation of the trees. By using the buffer tool, we can do this calculation. Search for `Buffer` in processing toolbox.
 
-Now, set the input layer to your trees point layers. Set `buffer distance` to 10. This will automatically be in metres as that is the standard geographic unit of the project CRS. Run the buffer.
+Now, set the input layer to your trees point layer. Set `buffer distance` to 10. This will automatically be in metres as that is the standard geographic unit of the project CRS. Run the buffer.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffer_window.JPG?raw=TRUE" title="Buffer window">
@@ -246,37 +265,45 @@ The result is that each point now has a circular polygon drawn around it. The ra
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
 </p>
 
-However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in m^2.
+However we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in square meters.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered_dissolve.JPG?raw=TRUE" title="Edinburgh tree points after buffering with dissolve">
 </p>
-  
-#### Clip
 
-Clipping is useful for when we wish to cut down geomtries to within the extent of boundary of another. Zooming out, we can see that there are some tree points which are outside of the neighbourhood boundaries. As we only want to consider those within the boundary, we can clip the trees layer.
-
-Clipping will also work on lines and polygons. If used on those, any portions which extend beyond the overlay layer will be removed, leaving only those inside of it.
+The non-dissolved layer may also look very similar to the original points layer, however zooming in and out will not resize the tree symbology, whereas with points they will scale according to zoom.
 
 #### Dissolve
 
-Dissolving will merge all features of a layer into one, or will merge features based on a specified attribute.  To demonstrate, we will dissolve the Natural Neighbourhoods layer into a single polygon. Select the `Dissolve` tool from either the Processing Toolbox or by using the `Vector > Geoprocessing > Dissolve` menu.
+As part of the buffer tool we saw how 'dissolving' the result can lead to individual features being merged into one. This can be applied on its own to a feature with the `Dissolve` tool. As before this will merge all features of a layer into one, but can also merge features into groups based on shared attributes..  To demonstrate, we will dissolve the Natural Neighbourhoods layer into a single polygon. Select the `Dissolve` tool from either the Processing Toolbox or by using the `Vector > Geoprocessing > Dissolve` menu.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
 </p>
 
+With 'edinburgh_natn_fixed' as the input press 'run'.
+
 The result is a single polygon feature. Inspecting the attribute table will also reveal this. Unlike `Union`, a dissolve will attempt to resolve internal borders and therefore will not produce overlapping features. This does mean, however, that dissolves can be computationally slow if there are a lot of detailed or overlapping internal borders.
+
+Feel free to remove this output as we will not be needing it.
 
 #### Spatial Joins
 
-Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will joinn tables based on their location instead of attributes. A number of options are avalable for a spatial join, how each works can be found here: [insert link]. For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joines. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
+Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will join tables based on their location instead of shared attributes. A number of options are avalable for a spatial join. Four examples are:
+
+* 'Intersects' will return those features from the input layer which intersect the join layer at any point.
+* ' Within' will return only those input features which are entirely within the join layer.
+* 'Equals' will return only those input features which precisely match 
+
+
+
+For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joines. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
 </p>
 
-It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. This time, choose 'edinburgh trees' as the input layer and 'edinburgh_natneighbourhoods' as the join layer. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points.
+It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. This time, choose 'edinburgh trees' as the input layer and 'edinburgh_natneighbourhoods' as the join layer. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points. The result is either the creation of a single feature with the attributes of the first join feature added on, or duplicate geometries for each feature that is joined. e.g. an intersection join for points to a polygon without summarising will yield one new polygon for every intersecting point with that point's table joined to the new polygon.
 
 #### Centroids
 
@@ -307,7 +334,9 @@ Running this again for natural neighbourhoods we can see that all polygons have 
 The points generated from `Point on surface` will be our new centroids layer, so we can remove the other geometric centroid layer.
 
 Some spatial datasets have existing centroids available with statistical weighting applied. England and Wales statistical Output Areas have their population-weighted centroids avalable. If a population-weighted centroid dataset exists, this would be the preferred choice over generating them by hand as they are the best for use in official statistics.
+
 ---
+
 ## Editing and Saving Data
 
 Now that we have worked with some data using basic geospatial tools, we can do some deeper editing and look at more ways of storing geospatial data.
@@ -320,14 +349,6 @@ As in a spreadsheet, fields also have a type. The data types possible include in
 
 <p align="center">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_attributetable.JPG?raw=TRUE">
-</p>
-
-#### Refactor Fields
-
-Refactoring fields allows us to change how the software interprets values. Search `Refactor Fields` in the toolbox and open it. If we use the natural trees layer as the input, we can see what type has been assigned to each field. Right now, all fields are of type `String`. This means QGIS will interpret these values as text, including numbers, and will not be able to use them to perform numerical operations. To fix this, we can simply select the drop down menus for the 'TREE_HEIGHT_AV' and 'TREE_SPREAD_AV' fields, and change the type to `Double`.
-
-<p align="center">
- <img src = "https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
 </p>
 
 #### Create Fields
