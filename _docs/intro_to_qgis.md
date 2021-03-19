@@ -551,9 +551,9 @@ To add a map to the layout we use the `Add map view` tool from the previous tabl
 
 A legend is a necessary part of a map as it allows the viewer to understand what colours and symbols mean and how they relate to the underlying data. With the legend tool selected, click and drag anywhere in the layout to create a new one.
 
-<p>By default, the legend will contain entries for every layer active in the project. However as we are only displaying a single layer, we only want a single entry. To change what is displayed in the legend go to the Item Properties panel while the legend layer is active. Here we can see a list of all legend items. To customise this list, disable `Auto update`. Now, select all the layers displayed and press <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_removelegendentry.JPG?raw=TRUE" title="Remove legend entry"></p>
+By default, the legend will contain entries for every layer active in the project. However as we are only displaying a single layer, we only want a single entry. To change what is displayed in the legend go to the Item Properties panel while the legend layer is active. Here we can see a list of all legend items. To customise this list, disable `Auto update`. Now, select all the layers displayed and press <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_removelegendentry.JPG?raw=TRUE" alt="Remove legend entry">
 
-<p>Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" title="Add legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.</p>
+Now we can add the correct layer by pressing <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_addlegendentry.JPG?raw=TRUE" alt="Add legend entry"> and choosing the layer used to create the choropleth. Now the legend will display the correct information for the layer visible in the layout view.
 
 We can further cusomise the legend under the `Fonts and Text Formatting` section. Click each font option to customise the appearance of the text and see which sections relate to which parts of the legend. Ideally the title for each layer will stand out from the corresponding symbol labels.
 
@@ -576,7 +576,7 @@ It is also important to add credits for any data used in the creation of the map
 #### Exporting Maps
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" title="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_treedensity_choropleth.JPG?raw=TRUE" alt="Final output map: Choropleth showing density of trees in Edinburgh Natural Neighbourhoods">
 </p>
 
 Now our map is finished we can export it to use elsehwere. Bear in mind that the purpose of this map is to quickly visualise some geographic data for informal use only e.g. a presentation to a team or on a github page.
@@ -586,7 +586,7 @@ Multiple formats are available when exporting a map. Open the `Layout` drop down
 As we want to use this visualisation elsewhere, such as in presentations or as here in a github markdown document, we will export as an image. After choosing a file name and format (png and jpg are preferred), a dialogue will let us choose the resolution of the output.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpng_window.JPG?raw=TRUE" title="Dialogue for exporting a layout as an image">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layout_exportpng_window.JPG?raw=TRUE" alt="Dialogue for exporting a layout as an image">
 </p>
 
 Although standard print resolution is 300dpi, for our purposes 150-250dpi will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
