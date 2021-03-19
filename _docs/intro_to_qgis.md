@@ -498,7 +498,7 @@ The print layout will open in a new window with a different set of toolbars and 
 The right panels show the active 'items' in the layout, and properties/options for the currently selected item. In the layout items are map views, text, legends etc. On the left is the Toolbox toolbar. The main tools we will use from this toolbar are:
 
 <table style="width 75%" align="center">
-  <tr>
+  <tr align="center">
     <th>Icon</th>
     <th>Description</th>
   </tr>
