@@ -11,7 +11,9 @@
         - title: Geographic data
           url: "docs/awareness_of_geog_and_stats#geographic-data"
         - title: Working with geographic data
-          url: "docs/awareness_of_geog_and_stats#working-with-geographic-data" 
+          url: "docs/awareness_of_geog_and_stats#working-with-geographic-data"
+        - title: Geospatial tools at ONS
+          url: "docs/awareness_of_geog_and_stats#geospatial-tools-at-ONS"
     - title: "Introduction to QGIS"
       url: "docs/intro_to_qgis"
       children:
