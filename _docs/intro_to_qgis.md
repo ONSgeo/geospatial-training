@@ -113,7 +113,7 @@ Panels are parts of the UI which organise a variety of features into larger grou
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" alt="QGIS default panels">
 </p>
 
-<p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" title="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
+<p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" alt="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
 
 Before we begin any work, it's a good idea to set up the UI such that everything need will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
 
