@@ -31,7 +31,7 @@ Before loading QGIS, please check your version number. This tutorial will use QG
 Upon opening QGIS, you should be met with a screen similar to that below:
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/untitled_startup.jpg?raw=true" title="Blank, unsaved project created at program startup">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/untitled_startup.jpg?raw=true" alt="Blank, unsaved project created at program startup">
 </p>
 
 ### UI elements
@@ -54,41 +54,41 @@ The following table summarises some of the most useful buttons in these toolbars
     <th>Description</th>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/new_open_save_project_icons.JPG?raw=TRUE" title="Icons for New Project, Open Project, and Save Project"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/new_open_save_project_icons.JPG?raw=TRUE" alt="Icons for New Project, Open Project, and Save Project"></td>
     <td>`New Project`, `Open Project`, and `Save Project`</td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/pan_map_buttons.JPG?raw=TRUE" title="Pan and Pan to Selection buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/pan_map_buttons.JPG?raw=TRUE" alt="Pan and Pan to Selection buttons"></td>
     <td>`Pan Map` and `Pan to Selection`. `Pan to Selection` will centre the map view on the selected feature(s)</td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/zoom_map_buttons.JPG?raw=TRUE" title="Zoom buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/zoom_map_buttons.JPG?raw=TRUE" alt="Zoom buttons"></td>
     <td><p>`Zoom In` and `Zoom Out` will zoom either a fixed amount on click or to an extent from click+drag.</p> 
       <p>`Zoom Full` will zoom to the maximum extent from all layers.</p>
       <p>`Zoom to Selection` and `Zoom to Layer` will zoom to the extent of the selected feature or selected layer, respectively.</p></td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/identify_features_button.JPG?raw=TRUE" title="Identify features button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/identify_features_button.JPG?raw=TRUE" alt="Identify features button"></td>
     <td>`Identify Features`. Clicking on a feature with this tool will open the 'Identify Results' panel, displaying attribute information for the highlighted feature.</td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/select_features_buttons.JPG?raw=TRUE" title="Select Features buttons"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/select_features_buttons.JPG?raw=TRUE" alt="Select Features buttons"></td>
     <td><p>`Select Feature by area or Single Click` will allow the selection of features by either clicking on one feature or doing a click+drag to select multiple. `ctrl+left click` can also be used to click select multiple features at once.</p>
       <p>`Select Features by Value` will open a new dialogue to select features based on value sof the attribute table (see: 'Selecting Features').</p></td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/attribute_table_button.JPG?raw=TRUE" title="Open Attribute Table Button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/attribute_table_button.JPG?raw=TRUE" alt="Open Attribute Table Button"></td>
     <td>`Open Attribute Table` for the selected layer.</td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_button.JPG?raw=TRUE" title="Field Calculator button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/field_calculator_button.JPG?raw=TRUE" alt="Field Calculator button"></td>
     <td>`Open Field Calculator for the selected layer (see: 'Field Calculator').</td>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/measure_button.JPG?raw=TRUE" title="Measure button"></td>
+    <td><img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/measure_button.JPG?raw=TRUE" alt="Measure button"></td>
     <td><p>By default this will be `Measure Line` to measure the distance between two points in the map view. The arrow next to the icon opens a dropdown menu. Using this tool will open a window to display the measurements, where units can be chosen.</p>
       <p>`Measure Area` allows the placing of multiple points to calculate an internal area. Right clicking will complete the area.</p>
-      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to th the cursor.</p></td>
+      <p>`Measure Angle` two clicks on the map will draw a line. The angle displayed will be between this line and the line from the last point to the the cursor.</p></td>
   </tr>
 </table>  
 
@@ -97,8 +97,9 @@ The buttons on the toolbar can be chosen by by going to `View > Toolbars` and to
 Not all of these buttons are used often, whereas some will be used in every project. Try clicking on each available toolbar button to see what it opens and familiarise yourself with their names.
 
 Panels are parts of the UI which organise a variety of features into larger groups. These features often directly interface with any maps displayed.
+
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" alt="QGIS default panels">
 </p>
 
 <p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" title="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
@@ -224,7 +225,7 @@ If the points layer is below 'Natural neighbourhoods', move it to the top. Renam
 Refactoring fields allows us to change how the software interprets field values. Search `Refactor Fields` in the toolbox and open it. Use 'edinburgh_trees_points' as the input layer. If prompted to, choose to reload the field mapping. We can now see what type has been assigned to each field. Right now, all fields are of type `String`. This means QGIS will interpret these values as text, including numbers, and will not be able to use them to perform numerical operations. To fix this, we can simply select the drop down menus for the 'TREE_HEIGHT_AV' and 'TREE_SPREAD_AV' fields and change the type to `Double`.
 
 <p align="center">
- <img src = "https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
+ <img src = "https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_refactor_window.JPG?raw=TRUE" title="Refactor fields window">
 </p>
 
 Once you've done this, run the tool and name the output 'edinburgh_trees_points_refactored'. We can now begin to use spatial and numerical operations on our data. If you are happy that you have followed these steps correctly you can now remove the other edinburgh_trees layers by right-clicking and choosing `Remove layer...`.
@@ -278,40 +279,48 @@ The non-dissolved layer may also look very similar to the original points layer,
 As part of the buffer tool we saw how 'dissolving' the result can lead to individual features being merged into one. This can be applied on its own to a feature with the `Dissolve` tool. As before this will merge all features of a layer into one, but can also merge features into groups based on shared attributes..  To demonstrate, we will dissolve the Natural Neighbourhoods layer into a single polygon. Select the `Dissolve` tool from either the Processing Toolbox or by using the `Vector > Geoprocessing > Dissolve` menu.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_dissolve_window.JPG?raw=TRUE" alt="Dissolve window">
 </p>
 
 With 'edinburgh_natn_fixed' as the input press 'run'.
 
-The result is a single polygon feature. Inspecting the attribute table will also reveal this. Unlike `Union`, a dissolve will attempt to resolve internal borders and therefore will not produce overlapping features. This does mean, however, that dissolves can be computationally slow if there are a lot of detailed or overlapping internal borders.
+The result is a single polygon feature. Inspecting the attribute table will also reveal this. Unlike `Union`, a dissolve will attempt to resolve internal borders and therefore will not produce overlapping features. This does mean, however, that dissolves can be computationally slow if there are a lot of detailed or overlapping internal borders. You may notice that the output also has a number of very 
 
-Feel free to remove this output as we will not be needing it.
+#### Clip
+
+Clipping is a very useful feature in QGIS which removes features of an input layer which are outside of an overlay polygon layer. This is useful if we want to simply remove geometries outside of a given area without doing any joins and is therefore a quick way to eliminate geometries for visualisation. 
+
+Some of the edinburgh tree points are outside of the Natural Neighbourhoods layer. From the processing toolbox, find and open the 'Clip' tool or go to `Vector > Geoprocessing > Clip`. Select 'edinburgh_trees_points_refactored' as the input layer and 'edinburgh_natn_dissolve' as the overlay and press `Run`.
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_clip_window.JPG?raw=TRUE" alt="Clip window">
+</p>
+
+The output will be a points layer containing only those trees which are inside the boundary of the natural neighbourhoods layer. Name this new points layer 'edinburgh_trees_clipped'.
 
 #### Spatial Joins
 
-Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will join tables based on their location instead of shared attributes. A number of options are avalable for a spatial join. Four examples are:
-
-* 'Intersects' will return those features from the input layer which intersect the join layer at any point.
-* ' Within' will return only those input features which are entirely within the join layer.
-* 'Equals' will return only those input features which precisely match 
-
-
-
-For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joines. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
+Probably one of the most useful spatial operations, and one of the most commonly used. A spatial join acts similarly to a non-spatial join, however it will join tables based on their location instead of shared attributes. A number of options are avalable for a spatial join. For our purposes, a simple 'intersect' is all that is necessary. Also, as we are primarily interested in the data linked with the spatial features, we will want to create summaries from the joins. To achieve this, we will use `Join attributes by location (summary)` from the processing toolbox.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_trees_join_window.JPG?raw=TRUE">
 </p>
 
-It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. This time, choose 'edinburgh trees' as the input layer and 'edinburgh_natneighbourhoods' as the join layer. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points. The result is either the creation of a single feature with the attributes of the first join feature added on, or duplicate geometries for each feature that is joined. e.g. an intersection join for points to a polygon without summarising will yield one new polygon for every intersecting point with that point's table joined to the new polygon.
+Use 'natural_neighbourhoods_fixed' as the input layer and 'edinburgh_trees_clipped'. Click <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE" alt="Three dots to open an additional menu"> the three dots to choose 'Fields to summarise' and check 'TREE_HEIGHT_AV' and 'TREE_SPREAD_AV'. For 'Summaries to calculate', choose: count, min, max, range, and mean. Now press `Run`.
+
+The output should be a polygon layer. Open the attibute table for this new layer. We can now see that new columns have been created which include the counts for the variables specified and some summary statistics for each. These are summaries for each natural neighbourhood feature. The count is the same for both HEIGHT and SPREAD and is the number of points (trees) which fell within that neighbourhood. Call this join layer 'edinburgh_natn_trees_join'.
+
+It is also possible to join without summarising. Search and open `Join attributes by location` in the processing toolbox. Use the same inputs as for the summary join. Select 'one to many'. This will now join the attributes of he natural neighbourhoods layer to any intersecting points.  Depending on which is the input and which is the join, the result is either the creation of a single feature with the attributes of the first join feature added on, or duplicate geometries for each feature that is joined. e.g. an intersection join for points to a polygon without summarising will yield one new polygon for every intersecting point with that point's table joined to the new polygon. Generally the way to remember this is that if the input layer has fewer features than the join layer then we will produce as many features as are in the join layer and vice versa.
 
 #### Centroids
 
-It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon. Choose the natural neighbourhoods layer which we previously created using the summary join.
+It is often useful to represent data contained in polygons as individual points which can be joined with other layers or turned into proportial symbol maps. The `Centroid` tool can be used to produce a point which lies at the geometric centre of a polygon. Open the tool from the processing toolbox under `Vector geometry` or from `Vector > Geometry > Centroids`. Choose the 'edinburgh_natn_trees_join' layer which we previously created using the summary join as the input and run it.
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_centroids_window.JPG?raw=TRUE" title="Centroids window">
 </p>
+
+Name the output layer 'edinburgh_natn_trees_centroids'
 
 There is a problem with this method, however. Not all polygons willhave simple, convex geometries. Some may be more complex shapes where the geometric centroid is outside of the polygon boundaries. The image below shows an area where some polygons appear to have multiple centroids. 
 
@@ -331,7 +340,7 @@ Running this again for natural neighbourhoods we can see that all polygons have 
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_centroidspos.JPG?raw=TRUE" title="Difference between geometric centroids and centroids from 'point on surface'">
 </p>
 
-The points generated from `Point on surface` will be our new centroids layer, so we can remove the other geometric centroid layer.
+We will use the point on surface method, so name the outpiut for this 'edinburgh_natn_trees_points', and remove the centroids layer.
 
 Some spatial datasets have existing centroids available with statistical weighting applied. England and Wales statistical Output Areas have their population-weighted centroids avalable. If a population-weighted centroid dataset exists, this would be the preferred choice over generating them by hand as they are the best for use in official statistics.
 
@@ -348,7 +357,7 @@ Spatial data, just like non-spatial data, is built around tables with data. Indi
 As in a spreadsheet, fields also have a type. The data types possible include integers and floats of varying precision, strings (text), date formats etc. As with non-spatial data, we have to make sure the columns are the right type when creating, editing, or using them for analysis.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_attributetable.JPG?raw=TRUE">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_attributetable.JPG?raw=TRUE" alt="Attribute table for the natural neighbourhoods layer">
 </p>
 
 #### Create Fields
@@ -371,7 +380,7 @@ This calculator can be used to calculate a number of useful outputs for analysis
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_fieldcalc_treedensity.JPG?raw=TRUE" title="Field calculator">
 </p>
 
-As `$area` calculates the area of a feature in map units, we may want to convert them to a more common one. As the project map unit is metres, we will multiple by 1,000,000 to convert to km^2. Press `OK` to finish.
+As `$area` calculates the area of a feature in map units, we may want to convert them to a more common one. As the project map unit is metres, we will multiple by 1,000,000 to convert to square kilometers. Press `OK` to finish.
 
 This operation will not create a new layer. If we open the layer's attribute table we can see that a new field has been created containing the result of the calculation.
 
@@ -385,16 +394,20 @@ Spatial data can, however, also be formatted in standard data formats such us .c
 
 QGIS contains a single UI for exporting data.
 
-On the trees layers, right-click and then go to `Export > Save feature as...`. From here, we have a few options. The top drop-down is where we choose the output format. There is a large range of formats available depdending on the desired output. 
+On the 'edinburgh_trees_clipped' layer, right-click and then choose `Export > Save feature as...`. From here, we have a few options. The top drop-down is where we choose the output format. There is a large range of formats available depdending on the desired output. 
 
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/save_feature_as_window.JPG?raw=TRUE">
 </p>
   
 When saving  to a geopackage (GPKG) or geodatabase (GDB), a layer namer must also be specified. Multiple layers can be saved to the same geopackage or geodatabase. A shapefile only needs the file name.
+
+We will export to a geopackage. Select the `Geopackage` option. Click the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_aqma_nn_intersection_window.JPG?raw=TRUE" alt="Three dots to open an additional menu"> three dots and choose a suitable geopackage name e.g. 'edinburgh_tasks'. Now, set the layer name to the same as we choose for this layer in QGIS i.e. 'edinburgh_trees_clipped'. Press `Ok` to save the layer to the geopackage. Now repeat this process for some other layers, however make sure to choose to save to the geopackage we just made by selecting it in `File name` rather than creating a new geopackage. Do this for: 'edinburgh_natn_dissolved', 'edinburgh_natn_trees_join', and 'edinburgh_natn_trees_points'.
   
-If we want to export the attribute table alone, we can choose the CSV option.
+If we want to export the attribute table alone, we can choose the CSV option and export as previously without specifying a layer name.
+
 ---
+
 ## Basic Mapping in QGIS
 
 This section will cover some of the options available for producing basic map visualisations. Once this section is completed you will be able to create a number of maps depending on the types of underlying data and purpose of the visualisation.
@@ -409,7 +422,7 @@ To edit the layer styles, we will use the `Layer Stylng` panel. If not already, 
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_styling_panel.JPG?raw=true" title="Layer styling panel">
 </p>
   
-Layer style can also be edited by rght clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes as they will not apply until `OK` has been clicked.
+Layer style can also be edited by right clicking on a layer, choosing `Properties`, and going to the `Symbology` tab. This can be useful if there is little room on the screen for additional panels, however it can make it harder to see the impact of a new style as you make changes as they will not apply until `OK` has been clicked.
 
 Using the layer styling panel we can start to improve the appearance of our layers.
 
