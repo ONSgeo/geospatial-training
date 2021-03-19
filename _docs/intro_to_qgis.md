@@ -7,18 +7,29 @@ description: An introductory course to using QGIS software for those new to GIS 
 # Introduction to QGIS
 
 ## Course Summary
-
 ### Introduction
-This course will provide an introduction to QGIS for non-geographic analysts who are starting to use geospatial techniques and mapping. Data for this is 
+This course provides an introduction to working with geospatial data in QGIS for data scientists and those new to GIS and geography.
 
 ### Estimated time for course
-2 hours
+2-3 hours
 
 ### Audience
-Those beginning to undertake analytical work which brings together geography and statistics.
+Data scientists working with location data.
 
-### Pre-requisites 
-Knowledge of the content presented in _Introduction to Geography and Statistics for Analysts_ .
+### Course Aims
+By the end of the course you will know how to:
+  
+* Navigate QGIS User Interface
+* Create, save, and customise a QGIS project
+* Import and export tables and spatial data to and from QGIS
+* Use basic GIS tools to process geospatial data
+* Edit geospatial data and perform a basic analysis
+* Style layers to visualise the underlying data
+* Create a basic geospatial data visualisation
+
+### Requirements
+* We recommend completing the [Awareness of Geography and Statistics](https://onsgeo.github.io/training/_docs/awareness_of_geog_and_stats.html) training prior to starting this course.
+* Beginner/Intermediate knowledge of data science operations.
 
 ---
 
@@ -579,3 +590,7 @@ As we want to use this visualisation elsewhere, such as in presentations or as h
 </p>
 
 Although standard print resolution is 300dpi, for our purposes 150-250dpi will suffice. Any greater can produce very large files which can be awkward to transfer over networks and may clog up storage.
+
+---
+
+You have now completed the Introduction to QGIS course and should now be able to perform basic analysis work in QGIS. Well done!
