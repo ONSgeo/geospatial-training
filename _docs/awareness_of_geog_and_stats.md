@@ -255,7 +255,7 @@ ONS produces two UPRN directories, which are similar to the postcode directories
 * URPNs can appear to be in the wrong place, but they aren't.
 * Use this directory for statistical production.
 
-## Standard Area Measurements
+### Standard Area Measurements
 Standard area measurements are official measures for the area of geographic entities. They should be used whenever you are doing a calculation which uses area as a factor (eg. calculating population density). 
 
 There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often used, and is recommended for use when calculating statistics like population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_SAM)" target="_blank">User Guide</a>.
@@ -275,7 +275,7 @@ AREALHECT | Area measurement of land area only (to coastline features and exclud
 ## Rural-Urban
 There are multiple methods for defining "urban" and "rural". Two of the most common are the **Rural Urban Classification (RUC)** and **Built-up Areas (BUAs)**. 
 
-**Built-up Areas** are defined geospatially using a 50m x 50m grid which covers the country. Each cell is classified using Ordnance Survey's MasterMap topography data; the cell is built up if over a certain proportion is covered by man-made features. When a large enough area of contiguous built-up cells is reached, that area is defined as a built-up area. Built-up areas are not strictly urban but rather developed.
+**Built-up Areas** are defined geospatially using a 50m x 50m grid which covers the country. Each cell is classified using Ordnance Survey's MasterMap topography data; the cell is defined as built up if over a certain proportion is covered by man-made features. When a large enough area of contiguous built-up cells is reached, that area is defined as a built-up area. Built-up areas are not strictly urban but rather developed.
 
 **Rural Urban Classification** has a common demographic definition. Urban is defined as an area where >50% of the population belong to a built-up area with a population >10,000. This classification also includes categories such as sparse and non-sparse, according to the population density profile of an area.
 
@@ -284,16 +284,96 @@ There are multiple methods for defining "urban" and "rural". Two of the most com
 ## Area Classifications
 Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live wihtin the same locality. These area types will be distributed in different geographical space.
 
-The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200" target="_blank>this interactive map</a>.
+The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200" target="_blank">this interactive map</a>.
 
 ![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/oac.png?raw=true)
 
 
-# Where to get data
+## Where to get data
+
+There is a huge amount of geospatial data available on the internet. As with all data, you should carefully consider the provenance, accuracy and suitability of the data you source. You should also aim to use the authoritative sources of data wherever possible. 
+
+### Geographic Data from ONS
+
+ONS produces a range of geographic data, including boundaries, lookups, directories and classifications. 
+
+This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>. The <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a> is a companion site for the Open Geography Portal, and allows you to search for geographical entities or places and understand the different types of geographies available in that area.
+
+
+![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals.PNG?raw=true)
+
+### Geographic Data from Ordnance Survey
+
+Ordnance Survey provide a wide variety of geospatial data which far exceeds the needs of most statisticians and analysts. Open data as well as premium data available through the Public Sector Geospatial Agreement (PSGA) can be accessed via the <a href="https://osdatahub.os.uk/" target="_blank">Ordnance Survey Data Hub</a>. We recommend following the excellent tutorials available in the Documentation to get started.
+
+![The front page of the Ordnance Survey Data Hub](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/oshub.PNG?raw=true)
+
+## GIS and Analytical Techniques
+
+In this section we will provide a quick overview of some of the basic techniques which can be used to start analysing spatial data.
+
+### Geographic Information Systems
+A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can be other things like code or a cloud based database. 
+
+GIS can be used to bring together many different types of data and provides us with the tools to identify, analyse and understand patterns and relationships. GIS can also be a valuable tool in problem solving and decision making, as well as for investigation and visualisation.
+
+### Basic Spatial Analysis Techniques
+This section will give you a quick overview of some of the most commonly used spatial techniques available in GIS, which can be combined to answer numerous questions around location.
+
+**Select By Location** allows you to select features based on their location relative to other features. For example, to find out how many homes are affected by flooding you can select homes which fall within the flood boundary.
+
+![Example of select by location: selecting point which fall within a polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/selectbyloc.PNG?raw=true)
+*In this example we have selected all the points which fall within the blue square; the selected points are in orange*
+
+**Buffer** allows you to calculate a distance outwards from an object. For example, to find households within a certain distance from a GP surgery you would buffer the surgery's location and then (using select by location) select the households which fall within the buffer.
+
+![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.PNG?raw=true)
+*In this example we have buffered the blue features. The resulting buffer is the green feature.*
+
+**Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies. If you remember back to the postcode and UPRN directories, this method is used to assign the postcode or UPRN to the statistical geographies.
+
+![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/pip.PNG?raw=true)
+*In this example we have joined the points to the green areas they fall within*
+
+**Dissolve** allows you to merge together polygons which overlap.
+
+![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
+*In this example the blue and green polygons have been dissolved into one object - the pink polygon*
+
+**Clipping** uses the extent of one geographic feature to trim another feature by. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
+
+![Example showing a layer being clipped to a triangular feature, and the subsequently clipped output.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/clip.PNG?raw=true)
+*In this example the blue and green layer has been clipped to the triangular feature*
+
+**Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate, overlapping features.
+
+![Example showing two different features which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/clip.PNG?raw=true)
+*In this example the blue and green layers are merged, resulting in the lighter blue layer*
+
+### More advanced spatial analysis techniques
+The basic techniques outlined above can be easily utilised and have the power to provide great insights into statistical data. However, there are more complex techniques and data sources which can be used to provide more detail or statistical rigour to analyses. It is worth being aware of these techniques, although we would not expect you to be using them without more support or training.
+
+**Networks, drivetime and zoning** can be used to solve problems relating to networks. One of the most commonly used networks is the road network, which allows you to answer questions like "how far is it to drive between these two points?", "how far from this point can I travel in 30 minutes?" or "what areas can a field staff member cover in 1 hour of driving?". Network analysis has been successfully used to plan field staff areas for the Census.
+
+![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.PNG?raw=true)
+*This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.*
+
+**Cluster and Hotspot Analysis** can be used to expose spatial groups or patterns which may not be visible to the human eye, particularly when dealing with large datasets. Statistical cluster analysis aims to classify or group objects into a number of different clusters, based on measured variables. This allows clustering of objects based on similarity (often in multiple dimensions) and location.
+
+These methods can add statistical rigour to analysis, allowing us to express measures of statistical confidence based on the patterns or groups that are observed.
+
+![A map showing the result of hotspot analysis on happiness data from 2018 across the UK. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/hotspots.jpg?raw=true)
+*This map shows the results of hotspot analysis for happiness data from 2018. It shows significant clusters of high happiness (hotspots shown in red) and low happiness (cold spots shown in blue).*
+
+**Earth observation and machine learning** are often combined to analyse satellite data. Analysis of satellite data is a complex field that exists in its own right. So, for statistical applications, we tend to use data derived from satellite data to complement our analysis. For example, machine learning can be used to extract building outlines which can then be analysed using techniques outlined earlier. 
+
+![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/eo.jpg?raw=true)
+*An example where machine learning has been used to extract building outlines from satellite data.*
+
+## Mapping Your Data
 
 
 
-    
 
 
 
