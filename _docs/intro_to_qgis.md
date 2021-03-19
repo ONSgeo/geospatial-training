@@ -137,7 +137,7 @@ Lines represent connections between points. A line feature can be a single line 
 Polgyons, unlike lines and points, do have two dimensional area. Polygons have a boundary separating the 'inside' from the 'outside'. Polygon features can intersect other polygons, lines, and points anywhere on or within the polygon boundary. The symbology for a polygon is made up of an internal 'fill' and an 'outline' for the boundary.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/basic_features_classified.JPG?raw=TRUE" alt="Basic geomtry types">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/basic_features_unclassified.JPG?raw=TRUE" alt="Basic geomtry types">
 </p>
 
 All of these features can either be made up of a single part or multiple parts. The figure below, for instance, shows how by basing symbology on the values of an attribute we can visually separate the geometries from one another.
