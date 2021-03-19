@@ -139,7 +139,7 @@ Polgyons, unlike lines and points, do have two dimensional area. Polygons have a
 All of these features can either be made up of a single part or multiple parts. The figure below, for instance, shows how by basing symbology on the values of an attribute we can visually separate the geometries from one another.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/basic_features_classified.JPG?raw=TRUE" />
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/basic_features_classified.JPG?raw=TRUE" alt="Basic geomtry types, each classified differently>
 </p>
 
 ### Selecting Features
@@ -151,7 +151,7 @@ The `Select` tools can be used to select features by hand or by a query.  Many t
 Firstly, let's try `Select features by area or single click` from the Atributes Toolbar. With this tool active we will be able to select features for the active layer. Left clicking will select on feature at a time. Try selecting different polygons in the 'natural neighbourhoods' layer. Notice that upon selecting a new feature, the previously selected on is deselected. If we want to select multiple features at once we must hold `ctrl` while clicking.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_selected.JPG?raw=TRUE" title="Appearance of selected features in the Natural Neighbourhoods layer">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_natn_selected.JPG?raw=TRUE" alt="Appearance of selected features in the Natural Neighbourhoods layer">
 </p>
 
 Clicking and dragging will select features which intersect with the rectangle drawn. This is a quick and rough way of selecting many features at once if, say, we don't need to worry about any specific one but instead all those in a general area.
@@ -173,7 +173,7 @@ Each project uses a 'Coordinate Reference System' (CRS). This essentially determ
 As these tutorials will use data for Great Britain, we will need to set the Project CRS to British National Grid. To do this go to `Project > Properties > CRS`. Now, in the `Filter` bar search for either 'British National Grid' or '27700' (the EPSG code). Now select the result in the 'Coordinate Reference System' box and press OK. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" title="Project CRS window>>
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" alt="Project CRS window">
 </p>
                                                                                                                                   
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
@@ -184,7 +184,7 @@ The project will now use BNG as the CRS. This means that any spatial data with c
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. This can be downloaded from <a href="https://github.com/ONSgeo/geospatial-training/tree/master/_docs/intro_to_qgis/edinburgh_data.zip" target="_blank">Github here</a>. It has been edited from the <a href="https://data.edinburghcouncilmaps.info/" target="_blank">original soure</a> to make it suitable for a basic analysis, and extraneous attributes have been removed.
 
-<p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" title="Scratch layer symbol"> symbol next to them. </p>
+<p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" alt="Scratch layer symbol"> symbol next to them. </p>
 
 A scratch layer can be renamed, reordered, visualised, or edited just like any other layer however these layers are temporary and are lost when the project is closed. Scratch layers are the default outputs for all tools, and so will be created during the course of this tutorial. Try to name these scratch layers appropriately to keep things organised e.g. 'originalname_toolused'. We will cover making these layers permanent in Editing and Saving Data.
 
