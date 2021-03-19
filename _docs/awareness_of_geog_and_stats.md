@@ -341,6 +341,7 @@ This section will give you a quick overview of some of the most commonly used sp
 **Dissolve** allows you to merge together polygons which overlap.
 
 ![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
+
 *In this example the blue and green polygons have been dissolved into one object - the pink polygon*
 
 **Clipping** uses the extent of one geographic feature to trim another feature by. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
@@ -351,7 +352,7 @@ This section will give you a quick overview of some of the most commonly used sp
 
 **Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate, overlapping features.
 
-![Example showing two different features which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/clip.PNG?raw=true)
+![Example showing two different features which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/merge.PNG?raw=true)
 
 *In this example the blue and green layers are merged, resulting in the lighter blue layer*
 
