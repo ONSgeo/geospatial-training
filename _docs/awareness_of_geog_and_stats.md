@@ -371,6 +371,22 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 *An example where machine learning has been used to extract building outlines from satellite data.*
 
 ## Mapping Your Data
+Mapping data is one of the most basic but powerful things you can do with GIS. Maps can be used to present results, but also allow us to interrogate data sources or investigate relationships and patterns. It can also be a useful technique for spotting anomalies or problems during the quality assurance process.
+
+Any GIS will give options for a number of different map types and a whole range of different symbologies and colours that allow you to bring your map to life. As with any visualisation, you need to think about the data you're presening and ensure you follow some simple rules. It is easy to lie or misdirect with a map if you make the wrong decisions. We outline how to make a good map in our other courses, so we won't dwell on that here.
+
+![Two maps showing a) a proportional symbol map of residential property sale prices in London, and b) a choropleth map showing persons per square km woodland. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/eo.jpg?raw=true)
+*Examples of two commonly used map types: left - proportional symbol map and right - choropleth map.*
+
+## Geospatial tools at ONS
+If you work at ONS you are able to install geospatial software from the software centre (you may need to request it via the Service Desk first). We recommend you use the following tools:
+
+**QGIS** is a desktop GIS tool which will allow you to quickly load and visualise your data. This software is used by geospatial experts across the world and is the leading free and open source GIS software. If you want to use geospatial data and don't know how to code, this is a great way to get started.
+
+**Python** users should use `GeoPandas` for manipulating spatial objects; `GeoPandas` is the spatial version of `Pandas`, so you will find it familiar. For mapping you should use `matplotlib` and for raster analysis we recommend `rasterio`. Installation of geospatial Python packages is slightly awkward, we recommend you <a href="https://onsgeo.github.io/geospatial-training/docs/guides/python_install">follow our installation guidance</a>.
+
+**R** users should use the `sf` package for manipulating spatial objects; `sf` integrates well with the `tidyverse` so should be comfortable for many R users. There are a number of mapping packages, we recommend `tmap` for its simplicity, but `ggplot2`, `cartography` and `leaflet` are also excellent options. For raster data we recommend using `raster` or `stars`. These packages are all available to install via the Artifactory, as usual.
+
 
 
 
