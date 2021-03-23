@@ -571,7 +571,13 @@ The properties of the text can be customised in the Item Properties panel. Try e
 
 Add a title to the map using the text tool. It should be descriptive enough that it alone could get across the content and purpose of the map, but short enough that it can be read at a glance.
 
-It is also important to add credits for any data used in the creation of the map or figures. In this case our data was sourced from the City of Edinburgh. Create a tetbox citing them. It's ok to make the font for this small and to move the text away from the main content so that it is visible but unintrusive.
+It is also important to add credits for any data used in the creation of the map or figures. Our map has used data from the City of Edinburgh, so we need to use <a href="https://data.edinburghcouncilmaps.info/" target="_blank">their acknowledgements</a> in credits. We also used OS basemaps and so need to follow <a href="https://www.ordnancesurvey.co.uk/business-government/licensing-agreements/copyright-acknowledgements" target="_blank">their acknowledgement guide.</a> For our purposes this can be done with the following akncowledgement:
+
+<p align="center">
+  <i>Copyright City of Edinburgh Council, contains Ordnance Survey data © Crown copyright and database right 2021</i>
+</p>
+
+We'll render all text in the Arial font. This is a very legible font above size 10 and is the standard font used across government.
 
 #### Exporting Maps
 
