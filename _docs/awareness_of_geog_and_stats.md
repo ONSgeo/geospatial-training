@@ -263,7 +263,7 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 ### Mapping Your Data
 Mapping data is one of the most basic but powerful things you can do with GIS. Maps can be used to present results, but also allow us to interrogate data sources or investigate relationships and patterns. It can also be a useful technique for spotting anomalies or problems during the quality assurance process.
 
-Any GIS will give options for a number of different map types and a whole range of different symbologies and colours that allow you to bring your map to life. As with any visualisation, you need to think about the data you're presening and ensure you follow some simple rules. It is easy to lie or misdirect with a map if you make the wrong decisions. We outline how to make a good map in our other courses, so we won't dwell on that here.
+Any GIS will give options for a number of different map types and a whole range of different symbologies and colours that allow you to bring your map to life. As with any visualisation, you need to think about the data you're presenting and ensure you follow some simple rules. It is easy to lie or misdirect with a map if you make the wrong decisions. We outline how to make a good map in our other courses, so we won't dwell on that here.
 
 ![Two maps showing a) a proportional symbol map of residential property sale prices in London, and b) a choropleth map showing persons per square km woodland. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maps.PNG?raw=true)
 
@@ -286,7 +286,7 @@ By now you should have a good understanding of:
 * what the GSS Geography policy is and why it matters
 * geographic data
   * types of geographic data
-  * locating geographic data
+  * plotting geographic data in the right place
   * where to get geographic data
 * GIS and geospatial analysis techniques
 * what geospatial tools are available at ONS
