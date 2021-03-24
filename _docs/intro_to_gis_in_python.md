@@ -30,4 +30,6 @@ By the end of the course you will:
 * Beginner/Intermediate knowledge of Python and Pandas.
 
 ### Course Instructions
+The course materials are [available here](https://github.com/ONSgeo/Introduction_to_GIS_in_Python). Download the repository to your local drive.
 
+Follow the course instructions in "Intro_to_Geography_in_Python.ipynb".
