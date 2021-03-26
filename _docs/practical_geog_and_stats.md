@@ -250,7 +250,7 @@ For mapping or visualising your data a more generalised dataset can make outputs
 
 When downloading boundaries from the ONS Geoportal you will find the following codes. This table will help you understand them.
 
-- | Clipped | Extent of the Realm
+Generalisation | Clipped | Extent of the Realm
 --- | --- | ---
 Full | BFC | BFE
 Generalised | BGC | -
