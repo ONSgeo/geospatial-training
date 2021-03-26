@@ -406,11 +406,11 @@ There are some popular pieces of proprietary software for geospatial application
 
 At ONS we have licences for these softwares, although they are generally used by Geographers working in Data Architecture. You should contact the Geospatial team if you need access to them.
 
-## Spatial Analysis Techniques
+## Geospatial Analysis Techniques
 
 Coming soon...
 
-## Advanced techniques to be aware of
+## Advanced Analysis Techniques
 
 
 ## Mapping your data
