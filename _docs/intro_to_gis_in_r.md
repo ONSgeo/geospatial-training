@@ -27,8 +27,8 @@ By the end of the course you will:
 * Be able to export your maps and shapefiles.
 
 ### Requirements
-* We recommend completing the [Awareness of Geography and Statistics](https://onsgeo.github.io/geospatial-training/docs/awareness_of_geog_and_stats) training prior to starting this course.
-* R and RStudio
+* We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
+* R and RStudio installed
 * Beginner / intermediate knowledge of R and `dplyr`.
 
 ### Course Instructions

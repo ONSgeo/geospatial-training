@@ -26,7 +26,8 @@ By the end of the course you will:
 * Be able to export your maps and shapefiles.
 
 ### Requirements
-* We recommend completing the [Awareness of Geography and Statistics](https://onsgeo.github.io/training/_docs/awareness_of_geog_and_stats.html) training prior to starting this course.
+* We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
+* Python and Jupyter Notebooks installed
 * Beginner/Intermediate knowledge of Python and Pandas.
 
 ### Course Instructions
