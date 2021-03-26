@@ -9,7 +9,7 @@ description: An introduction to practical geography for statistics. Providing yo
 ### Introduction
 This short course provides the theoretical knowledge you need to begin using geography for statistical purposes. 
 
-We suggest combining this course with either Introduction to QGIS, Introduction to GIS in R or Introduction to GIS in Python. Doing so will provide you with a good theoretical and practical knowledge to begin using geography with statistics.
+We suggest combining this course with either Introduction to QGIS, Introduction to GIS in R or Introduction to GIS in Python. Doing so will provide you with a good theoretical and practical knowledge to begin using geography with statistics in your analysis.
 
 ### Estimated time for course
 1 hour
@@ -19,8 +19,18 @@ Those undertaking statistical analysis who want to begin incorporating geographi
 
 ### Course Aims
 This course covers:
-* 
+* Geographic data
+  * types
+  * file formats
+  * coordinate reference systems
+  * where to get data
+* ONS's geographical products
+* Spatial analysis techniques
+* Mapping
+* Geographic fallacies to avoid
 
+### Requirements
+There are no pre-requisites for this course, but we recommend you take [Awareness of Geography and Statistics](https://onsgeo.github.io/geospatial-training/docs/awareness_of_geog_and_stats) beforehand if this is your first foray into geography for statistics.
 
 ---
 ## Introduction
@@ -240,7 +250,7 @@ For mapping or visualising your data a more generalised dataset can make outputs
 
 When downloading boundaries from the ONS Geoportal you will find the following codes. This table will help you understand them.
 
-| Clipped | Extent of the Realm
+- | Clipped | Extent of the Realm
 --- | --- | ---
 Full | BFC | BFE
 Generalised | BGC | -
@@ -391,6 +401,7 @@ There are many excellent open source geospatial resources and tools available. W
 There are some popular pieces of proprietary software for geospatial applications.
 
 **ArcGIS** (including ArcMap and ArcGIS Pro) - a desktop GIS software similar to QGIS.
+
 **FME** an ETL software which can be useful for automating processes, including geographic ones. 
 
 At ONS we have licences for these softwares, although they are generally used by Geographers working in Data Architecture. You should contact the Geospatial team if you need access to them.
