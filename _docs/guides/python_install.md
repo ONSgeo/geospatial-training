@@ -109,7 +109,7 @@ In Artifactory, we’ll need to access the “Artifactory Repository Browser”.
 	3. Search for wheels.
 	4. Open the “Python_Wheels” drop down to reveal all the wheel files!
 
-**These Python wheels are Operating System and Python install specific. Scroll down and download each of the following:**
+**These Python wheels are Operating System and Python install specific.** Download the following wheels:
   1. Fiona-1.7.13-cp36-cp36m-win_amd64.whl
   2. GDAL-2.2.4-cp36-cp36m-win_amd64.whl
   3. pyproj-1.9.5.1-cp36-cp36m-win_amd64.whl
@@ -152,13 +152,9 @@ Having installed Rtree, Fiona, shapely, gdal and pyproj, you should now be able 
 
 ### 6. Install Mapclassify
 
-* Open the [Mapclassify documentation page from this link:](https://pypi.org/project/mapclassify/#files) and download this package by selecting:
-
-`mapclassify-2.4.2-py3-none-any.whl (38.6 kB)` 
+* Open the [Mapclassify documentation page](https://pypi.org/project/mapclassify/#files) and download `mapclassify-2.4.2-py3-none-any.whl (38.6 kB)` 
       
-* On Anaconda Prompt, map the path to your Downloads folder and run the following:
-
-`pip install .\mapclassify-2.4.2-py3-none-any.whl`
+* On Anaconda Prompt, map the path to your Downloads folder and run `pip install .\mapclassify-2.4.2-py3-none-any.whl`
      
 
 You should hopefully have a fully functional Python for all the geo-libraries.
@@ -232,7 +228,7 @@ We have to download these Python libraries separately. This is because they rely
 
 [Visit this website](https://www.lfd.uci.edu/~gohlke/pythonlibs/) to download the wheels for installing the libraries we need.
 
-**These Python wheels are Operating System and Python install specific. Scroll down and download each of the following:**
+**These Python wheels are Operating System and Python install specific.** Download the following wheels:
   1. Fiona-1.8.18-cp38-cp38-win_amd64.whl
   2. GDAL-3.2.2-cp38-cp38-win_amd64.whl
   3. pyproj-3.0.1-cp38-cp38-win_amd64.whl
@@ -274,13 +270,9 @@ Having installed Rtree, Fiona, shapely, gdal and pyproj, you should now be able 
 
 ### 6. Install Mapclassify
 
-* Open the [Mapclassify documentation page from this link:](https://pypi.org/project/mapclassify/#files) and download this package by selecting:
-
-`mapclassify-2.4.2-py3-none-any.whl (38.6 kB)` 
+* Open the [Mapclassify documentation page](https://pypi.org/project/mapclassify/#files) and download this package `mapclassify-2.4.2-py3-none-any.whl (38.6 kB)` 
       
-* On Anaconda Prompt, map the path to your Downloads folder and run the following:
-
-`pip install .\mapclassify-2.4.2-py3-none-any.whl`
+* On Anaconda Prompt, map the path to your Downloads folder and run `pip install .\mapclassify-2.4.2-py3-none-any.whl`
      
 
 You should hopefully have a fully functional Python for all the geo-libraries.
