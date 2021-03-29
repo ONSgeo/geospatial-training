@@ -1,7 +1,7 @@
 ---
-title: Introduction to QGIS
-description: An introductory course to using QGIS software for those new to GIS but familiar with data analysis.
-
+title: "Introduction to QGIS"
+description: An introductory course to using QGIS software for those new to GIS but
+  familiar with data analysis.
 ---
 
 # Introduction to QGIS
@@ -30,6 +30,8 @@ By the end of the course you will know how to:
 ### Requirements
 * We recommend completing the [Awareness of Geography and Statistics](https://onsgeo.github.io/training/_docs/awareness_of_geog_and_stats.html) training prior to starting this course.
 * Beginner/Intermediate knowledge of data science operations.
+
+Data for this project can be found in this repo under '_docs/edinburgh_data'.
 
 ---
 
@@ -121,7 +123,7 @@ To do this, go to `View > Panels` and check `Processing Toolbox`. You should now
 
 ### Loading data
 
-Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the provided 'Edinburgh_City_Data.zip'.
+Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the supplied 'edinburgh data' folder..
 
 #### Delimited Data (non-spatial)
 
@@ -599,4 +601,4 @@ Although standard print resolution is 300dpi, for our purposes 150-250dpi will s
 
 ---
 
-You have now completed the Introduction to QGIS course and should now be able to perform basic analysis work in QGIS. Well done!
+You have now completed the Introduction to QGIS course and should now be able to perform basic analysis work in QGIS. Well done! 
