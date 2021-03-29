@@ -59,4 +59,6 @@
   links: 
     - title: "Install Guide: Python Geospatial Packages at ONS"
       url: "docs/guides/python_install"
+    - title: "Recommended Resources"
+      url: "docs/guides/resources"
 
