@@ -25,8 +25,8 @@ This course covers:
 * Introducing Geographic Information Systems (GIS) and geospatial techniques 
 
 
----
 
+---
 ## Location Matters
 
 ### Introduction
@@ -109,7 +109,7 @@ Vector data comes in three types:
 
 ![Geographic data types: vectors - points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/vectors.gif?raw=true)
 
-*Image from [Esri](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/feature-class-basics.htm)*
+*Image from <a href="https://desktop.arcgis.com/en/arcmap/10.3/manage-data/geodatabases/feature-class-basics.htm" target="_blank">Esri</a>*
 
 In the statistical domain you will most often deal with vector data and within that, most commonly point or polygon types. Much of the data that ONS collects or uses is linked to a location, most commonly via a postcode or address, unique property reference number (UPRN) or GSS geography code. This allows us to link data together easily and accurately, and then produce statistics. We can think of postcodes, addresses and UPRNs as point data (pairs of XY coordinates); GSS geography codes allow us to link to the associated geographical boundaries, or polygons.
 
@@ -185,7 +185,7 @@ This data is available for download or access via API from the <a href="https://
 
 ### Geographic Data from Ordnance Survey
 
-Ordnance Survey provide a wide variety of geospatial data which far exceeds the needs of most statisticians and analysts. Open data as well as premium data available through the Public Sector Geospatial Agreement (PSGA) can be accessed via the <a href="https://osdatahub.os.uk/" target="_blank">Ordnance Survey Data Hub</a>. We recommend following the excellent tutorials available in the Documentation to get started.
+Ordnance Survey provide a wide variety of geospatial data which far exceeds the needs of most statisticians and analysts. Open data as well as premium data available to the Public Sector through the Public Sector Geospatial Agreement (PSGA) can be accessed via the <a href="https://osdatahub.os.uk/" target="_blank">Ordnance Survey Data Hub</a>. We recommend following the excellent tutorials available in the Documentation to get started.
 
 ![The front page of the Ordnance Survey Data Hub](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/oshub.PNG?raw=true)
 

@@ -28,7 +28,7 @@ By the end of the course you will know how to:
 * Create a basic geospatial data visualisation
 
 ### Requirements
-* We recommend completing the [Awareness of Geography and Statistics](https://onsgeo.github.io/training/_docs/awareness_of_geog_and_stats.html) training prior to starting this course.
+* We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
 * Beginner/Intermediate knowledge of data science operations.
 
 Data for this project can be found in this repo under '_docs/edinburgh_data'.

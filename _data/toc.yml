@@ -16,6 +16,29 @@
           url: "docs/awareness_of_geog_and_stats#gis-and-analytical-techniques"
         - title: Geospatial tools at ONS
           url: "docs/awareness_of_geog_and_stats#geospatial-tools-at-ons"
+    - title: "Practical Geography for Statistics"
+      url: "docs/practical_geog_and_stats"
+      children:
+        - title: Geographic data types
+          url: "docs/practical_geog_and_stats#geographic-data-types"
+        - title: Geography file formats
+          url: "docs/practical_geog_and_stats#geographic-file-formats"
+        - title: Locating spatial data
+          url: "docs/practical_geog_and_stats#locating-spatial-data"
+        - title: Where to get geospatial data
+          url: "docs/practical_geog_and_stats#where-to-get-geospatial-data"
+        - title: Features of ONS Geography Products
+          url: "docs/practical_geog_and_stats#features-of-ons-geography-products"
+        - title: Geospatial tools
+          url: "docs/practical_geog_and_stats#geospatial-tools"
+        - title: Geospatial analysis techniques
+          url: "docs/practical_geog_and_stats#geospatial-analysis-techniques"
+        - title: Advanced analysis techniques
+          url: "docs/practical_geog_and_stats#advanced-analysis-techniques"
+        - title: Mapping your data
+          url: "docs/practical_geog_and_stats#mapping-your-data"
+        - title: geographic fallacies
+          url: "docs/practical_geog_and_stats#geographical-fallacies"
     - title: "Introduction to QGIS"
       url: "docs/intro_to_qgis"
       children:
