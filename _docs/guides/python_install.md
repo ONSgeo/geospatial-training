@@ -11,7 +11,7 @@ If not, please contact the ONS Service Desk to request installation.
 
 ## Check Your Python Version
 
-If you're not sure what version of Python you have, Launch **Anaconda Prompt** from the windows search bar and type in `Python`.
+If you're not sure what version of Python you have, launch **Anaconda Prompt** from the windows search bar and type in `Python`.
 
 ![Image showing the windows search bar for Anaconda Prompt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/anaconda%20prompt.PNG?raw=true)
 
