@@ -15,16 +15,21 @@ If you're not sure what version of Python you have, Launch **Anaconda Prompt** f
 
 ![Image showing the windows search bar for Anaconda Prompt](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/anaconda%20prompt.PNG?raw=true)
 
-
+### Python 3.6 
 If you're using Python 3.6, you should get the following output:
 
 ![Image showing the output from Anaconda Prompt for 3.6](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/anaconda_prompt_output.PNG?raw=true)
 
+Follow the [instructions for installation on Python 3.8](https://onsgeo.github.io/geospatial-training/docs/guides/python_install#installation-guide-for-python-36).
+
+
+### Python 3.8
 
 If you're using Python 3.8 you should get the following output:
 
-![Image showing the output from Anaconda Prompt for 3.8](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/python_3_8.PNG?raw=true)
+![Image showing the output from Anaconda Prompt for 3.8](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/python_3_8.png?raw=true)
 
+Follow the [instructions for installation on Python 3.8](https://onsgeo.github.io/geospatial-training/docs/guides/python_install#installation-guide-for-python-38).
 
 
 
@@ -91,7 +96,7 @@ Once you have access, you need to generate an encrypted password that you can us
 
 ### 4. Download and install Python wheels for the required libraries
 
-We have to download these Python libraries separately. This is because they rely on c libraries that are not downloaded if we use the normal Python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the c libraries that we don’t get otherwise.
+We have to download these Python libraries separately. This is because they rely on C libraries that are not downloaded if we use the normal Python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the C libraries that we don’t get otherwise.
 
 ![Image showing the Artefactory](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/artefactory.PNG?raw=true)
 
@@ -160,8 +165,6 @@ You should hopefully have a fully functional Python for all the geo-libraries.
 
 ## Installation Guide for Python 3.8
 
-# Install Guide: Python Geospatial Packages at ONS
-
 There are five steps required to make sure that you can download and install the necessary packages:
 1.	Make sure you have access to the ONS artifactory.
 2.	Set up a .codarc file.
@@ -223,9 +226,9 @@ Once you have access, you need to generate an encrypted password that you can us
 
 ### 4. Download and install Python wheels for the required libraries
 
-We have to download these Python libraries separately. This is because they rely on c libraries that are not downloaded if we use the normal Python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the c libraries that we don’t get otherwise.
+We have to download these Python libraries separately. This is because they rely on C libraries that are not downloaded if we use the normal Python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the C libraries that we don’t get otherwise.
 
-Follow this link **`https://www.lfd.uci.edu/~gohlke/pythonlibs/`** to download the wheels for installing the libraries we need.
+Follow this link **https://www.lfd.uci.edu/~gohlke/pythonlibs/** to download the wheels for installing the libraries we need.
 
 **These Python wheels are Operating System and Python install specific. Scroll down and download each of the following:**
   1. Fiona-1.8.18-cp38-cp38-win_amd64.whl
@@ -280,9 +283,3 @@ Having installed Rtree, Fiona, shapely, gdal and pyproj, you should now be able 
      
 
 You should hopefully have a fully functional Python for all the geo-libraries.
-
-
-
-
-
-
