@@ -411,9 +411,10 @@ At ONS we have licences for these softwares, although they are generally used by
 ### Basic Spatial Analysis Techniques
 This section will give you an overview of some of the most commonly used spatial techniques available in GIS, which can be used to answer numerous questions around location. While the techniques outlined in this section are simple, they are very powerful when combined and can aid you in answering complex analyses. Developing a solid understanding and practical foundation in these techniques will take you far geospatially and will serve as a good base to build more complex skills. Our training walkthroughs in QGIS, R and Python cover how you can undertake these techniques.
 
-<b><i>A quick reminder</i></b>: don't use these techniques to modify statistical or administrative boundaries without thinking about what you are doing carefully - check the GSS Geography Policy on managing change for more details.
+<i>A quick reminder:</i> don't use these techniques to modify statistical or administrative boundaries without thinking about what you are doing carefully - check the GSS Geography Policy on managing change for more details.
 
 **Joining data to boundaries**
+
 While not strictly a spatial analysis technique, joining tabular data to spatial data is often the first step of analysis you will undertake. 
 
 Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others done then check your geographical coverage (you may be joining data and boundaries with different extents, eg. GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
@@ -488,27 +489,25 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 
 *An example where machine learning has been used to extract building outlines from satellite data.*
 
-
 ## Mapping your data
 Mapping your data is one of the most powerful things you can do with GIS. Maps are excellent tools to effectively present results, but can also be useful when interrogating source data or investigating potential relationships and patterns. Mapping can also be a useful QA tool which allows you to identify anomalies and spot errors. 
 
-Any GIS will give you access to a range of map types and will allow you to customise the design of your map through adjustable ranges, colour schemes and symbology. These will allow you to bring your data to life. However, as with any visualisation, you need to think carefully about what you are presenting to avoid misleading. People like and intuitively understand maps, but it is easy to lie with them if you make the wrong design decisions. So, here are a few important rules to consider.
+Any GIS will give you access to a range of map types and will allow you to customise the design of your map through adjustable ranges, colour schemes and symbology. These will allow you to bring your data to life. However, as with any visualisation, you need to think carefully about what you are presenting to avoid misleading. People like and intuitively understand maps, but it is easy to lie with them if you make the wrong design decisions. So, here are a few important features to consider.
 
 ### Normalising Data
 When mapping counts to areas it's important to normalise your counts. Large areas naturally tend to have larger counts, so it can be misleading to plot raw counts by area as large areas tend to dominate the map. By normalising your data (for example, by area) you get a value which is comparable across different sized areas.
 
 In the image below you can see how the raw count of woodland area (top left) can dominate when mapped by MSOA (bottom left). However, when we normalise woodland area by people per MSOA (top right) the resulting map (bottom right) is much clearer, and highlights places of interest where there is a high area of woodland per person. 
 
-![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/normalise.png?raw=true)
+![Examples of mapping normliased data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/normalise.png?raw=true)
 
 ### Selecting Breaks
 A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the are. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how ddifferent methods for selecting breaks can drastically change your visualisation.
 
-![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/breaks.png?raw=true)
+![Maps showing how differen breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
 
-### More on cartography
+### More Cartography
 Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an out for our upcoming training on 'How to make a good map'. 
-
 
 ## Geographical Fallacies
 There are a number of geographical fallacies which you can fall foul of when undertaking geospatial analysis. Be aware of these to avoid making mistakes in your work.
@@ -517,7 +516,7 @@ There are a number of geographical fallacies which you can fall foul of when und
 ### Modifiable Areal Unit Problem (MAUP)
 The modifiable areal unit problem (MAUP) is a common source of statistical bias in geographic data where points are aggregated to areas. MAUP is where the same underlying point data can yield different statistical results when aggregated to areas of different size or shape. Statistics can easily be manipulated by changing the geography used. Gerrymandering is a common example of MAUP that you may be familiar with.
 
-![An example of the modifiable areal unit problem.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maup.png?raw=true)
+![An example of the modifiable areal unit problem.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/maup.png?raw=true)
 
 As much of the statistical data we deal with is aggregated from point data, we have to be particularly careful of this problem. Using consistent boundaries is the main way we avoid MAUP; this is why change management is one of the pillars of the GSS geography policy, and also why you should avoid creating your own boundaries or modifying existing ones.
 
@@ -530,20 +529,21 @@ For example, recording locations for all crimes can be misleading. Crimes like b
 Accuracy and precision are important to appreciate in order to understand potential bias or errors within your data.
 
 **Accuracy** is how close a piece of data is to the real-world value.
+
 **Precision** is the exact the measurement of the data is.
 
-Accuracy and precision can refer to both the location and the object being measured. 
+Accuracy and precision can refer to both the object being measured and its location. 
 
 A common example of mistakes with accuracy and precision in a spatial context is to provide locational precision to a very high level (mm or even smaller) in a GIS or map, when the location of the data was measured with a GPS which had an error of +/-3 meters.
 
-![Examples of targets showing combinations of high and low precision and accuracy data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/accuracyprecision.png?raw=true)
+![Examples of targets showing combinations of high and low precision and accuracy data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/accuracyprecision.png?raw=true)
 
 ### Ecological Fallacy
 Ecological fallacy is where incorrect inferences are drawn about an individual based upon information data from a group they are in. For example, a high crime rate in a deprived area does not mean that poor people are criminals. 
 
 Aggregating data can conceal variations within an area - the diagram below shows an example of this.
 
-![Ecolocical fallacy where individual data on income is averaged to draw an incorrect inference about an area.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ecological.PNG?raw=true)
+![Ecolocical fallacy where individual data on income is averaged to draw an incorrect inference about an area.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ecological.PNG?raw=true)
 
 ## Conclusion
 Congratulations on reaching the end of the course.
