@@ -7,6 +7,8 @@ description: Guidance to demonstrate good and bad practise in the creation of ma
 
 ## Intro
 
+
+
 ---
 
 ## Map Types:
@@ -57,9 +59,13 @@ description: Guidance to demonstrate good and bad practise in the creation of ma
 
 ## Peripherals
 
-### Legends
+### Legend
 
-### Scales, Compasses, Graticules
+### Scale 
+
+### Compass 
+
+### Graticules
 
 ---
 
