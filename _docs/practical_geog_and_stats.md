@@ -408,14 +408,159 @@ At ONS we have licences for these softwares, although they are generally used by
 
 ## Geospatial Analysis Techniques
 
-Coming soon...
+### Basic Spatial Analysis Techniques
+This section will give you an overview of some of the most commonly used spatial techniques available in GIS, which can be used to answer numerous questions around location. While the techniques outlined in this section are simple, they are very powerful when combined and can aid you in answering complex analyses. Developing a solid understanding and practical foundation in these techniques will take you far geospatially and will serve as a good base to build more complex skills. Our training walkthroughs in QGIS, R and Python cover how you can undertake these techniques.
 
-## Advanced Analysis Techniques
+<b><i>A quick reminder</i></b>: don't use these techniques to modify statistical or administrative boundaries without thinking about what you are doing carefully - check the GSS Geography Policy on managing change for more details.
+
+**Joining data to boundaries**
+While not strictly a spatial analysis technique, joining tabular data to spatial data is often the first step of analysis you will undertake. 
+
+Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others done then check your geographical coverage (you may be joining data and boundaries with different extents, eg. GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
+
+**Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies. Point in polygon is used to create the ONS postcode directory and national statistics UPRN directory; this method is used to assign the postcode or UPRN to the statistical geographies. The attributes of the points will be assigned to the polygon.
+
+![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/pip.png?raw=true)
+
+*In this example we have joined the points to the green areas they fall within*
+
+**Select By Location** allows you to select features based on their location relative to other features. 
+
+There are a number of different spatial relationships, or predicates, which you can use to select by location, for example:
+  * features which intersect
+  * features within another feature
+  * features which touch another feature
+
+[This documentation](http://postgis.net/workshops/postgis-intro/spatial_relationships.html) explains the predicates and how they work for the different vector data types.
+
+Selecting by location is an incredibly useful tool and is frequently used across a range of geospatial contexts. For example, to find out how many homes are affected by flooding you can select homes which fall within the flood boundary. You can also combine a number of different selection techniques to answer queries which include more than one variable, for example, selecting homes which fall within a flood boundary and touch the 10 meter contour line. 
+
+![Example of select by location: selecting point which fall within a polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/selectbyloc.PNG?raw=true)
+
+*In this example we have selected all the points which fall within the blue square; the selected points are in orange*
+
+**Buffer** allows you to calculate the area a certain distance away from an object. It can be undertaken on all three vector data types and raster data. While most buffers are calculated outwards from the object, you can use negative buffers for polygons which are useful when considering an area inside a polygon.
+
+To find households within a certain distance from a GP surgery, for example, you would buffer the surgery's location and then (using select by location) select the households which fall within the buffer.
+
+![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
+
+*In this example we have buffered the blue features. The resulting buffer is the green feature.*
+
+**Dissolve** allows you to merge together polygons which overlap. This can be useful when considering two overlapping areas as one, when you want to avoid double counting the overlapping area. 
+
+![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
+
+*In this example the blue and green polygons have been dissolved into one object - the pink polygon*
+
+**Clipping** uses the extent of one geographic feature to trim another feature by. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region. By removing irrelevant data, this tool can speed up analysis and improve the focus of visualisations.
+
+![Example showing a layer being clipped to a triangular feature, and the subsequently clipped output.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/clip.PNG?raw=true)
+
+*In this example the blue and green layer has been clipped to the triangular feature*
+
+**Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate, overlapping features. This tool can be used to bring separate datasets together while still maintaining the individual features within the datasets.
+
+![Example showing two different features which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/merge.PNG?raw=true)
+
+*In this example the blue and green layers are merged, resulting in the lighter blue layer*
+
+### Advanced Analysis Techniques
+The basic techniques outlined above can be easily utilised and have the power to provide great insights into statistical data. However, there are more complex techniques and data sources which can be used to provide more detail or statistical rigour to analyses. It is worth being aware of these techniques, although we would not expect you to be using them without more support or training.
+
+**Networks, drivetime and zoning** can be used to solve problems relating to networks. One of the most commonly used networks is the road network, which allows you to answer questions like "how far is it to drive between these two points?", "how far from this point can I travel in 30 minutes?" or "what areas can a field staff member cover in 1 hour of driving?". Network analysis has been successfully used to plan field staff areas for the Census.
+
+![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.PNG?raw=true)
+
+*This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.*
+
+**Cluster and Hotspot Analysis** can be used to expose spatial groups or patterns which may not be visible to the human eye, particularly when dealing with large datasets. Statistical cluster analysis aims to classify or group objects into a number of different clusters, based on measured variables. This allows clustering of objects based on similarity (often in multiple dimensions) and location.
+
+These methods can add statistical rigour to analysis, allowing us to express measures of statistical confidence based on the patterns or groups that are observed.
+
+![A map showing the result of hotspot analysis on happiness data from 2018 across the UK. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/hotspots.png?raw=true)
+
+*This map shows the results of hotspot analysis for happiness data from 2018. It shows significant clusters of high happiness (hotspots shown in red) and low happiness (cold spots shown in blue).*
+
+**Earth observation and machine learning** are often combined to analyse satellite data. Analysis of satellite data is a complex field that exists in its own right. So, for statistical applications, we tend to use data derived from satellite data to complement our analysis. For example, machine learning can be used to extract building outlines which can then be analysed using techniques outlined earlier. 
+
+![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/eo.png?raw=true)
+
+*An example where machine learning has been used to extract building outlines from satellite data.*
 
 
 ## Mapping your data
+Mapping your data is one of the most powerful things you can do with GIS. Maps are excellent tools to effectively present results, but can also be useful when interrogating source data or investigating potential relationships and patterns. Mapping can also be a useful QA tool which allows you to identify anomalies and spot errors. 
+
+Any GIS will give you access to a range of map types and will allow you to customise the design of your map through adjustable ranges, colour schemes and symbology. These will allow you to bring your data to life. However, as with any visualisation, you need to think carefully about what you are presenting to avoid misleading. People like and intuitively understand maps, but it is easy to lie with them if you make the wrong design decisions. So, here are a few important rules to consider.
+
+### Normalising Data
+When mapping counts to areas it's important to normalise your counts. Large areas naturally tend to have larger counts, so it can be misleading to plot raw counts by area as large areas tend to dominate the map. By normalising your data (for example, by area) you get a value which is comparable across different sized areas.
+
+In the image below you can see how the raw count of woodland area (top left) can dominate when mapped by MSOA (bottom left). However, when we normalise woodland area by people per MSOA (top right) the resulting map (bottom right) is much clearer, and highlights places of interest where there is a high area of woodland per person. 
+
+![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/normalise.png?raw=true)
+
+### Selecting Breaks
+A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the are. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how ddifferent methods for selecting breaks can drastically change your visualisation.
+
+![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/breaks.png?raw=true)
+
+### More on cartography
+Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an out for our upcoming training on 'How to make a good map'. 
 
 
 ## Geographical Fallacies
+There are a number of geographical fallacies which you can fall foul of when undertaking geospatial analysis. Be aware of these to avoid making mistakes in your work.
+
+
+### Modifiable Areal Unit Problem (MAUP)
+The modifiable areal unit problem (MAUP) is a common source of statistical bias in geographic data where points are aggregated to areas. MAUP is where the same underlying point data can yield different statistical results when aggregated to areas of different size or shape. Statistics can easily be manipulated by changing the geography used. Gerrymandering is a common example of MAUP that you may be familiar with.
+
+![An example of the modifiable areal unit problem.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maup.png?raw=true)
+
+As much of the statistical data we deal with is aggregated from point data, we have to be particularly careful of this problem. Using consistent boundaries is the main way we avoid MAUP; this is why change management is one of the pillars of the GSS geography policy, and also why you should avoid creating your own boundaries or modifying existing ones.
+
+### Locational Fallacy
+Locational fallacy is cause by the spatial characterisation of events in a simplistic or incorrect way. This characterisation can subsequently influence the understanding of the subject and can lead to incorrect outcomes or understanding. 
+
+For example, recording locations for all crimes can be misleading. Crimes like burglary or assult occur at a location, so it is suitable to associate these crimes with a location. However, allocating crimes like fruad to a location is less straightforward as it can be committed virtually as well as in person. Incorrectly assigning a crime like fraud to a location can cause misunderstandings in how and why fraud victims are targetted. 
+
+### Accuracy and Precision
+Accuracy and precision are important to appreciate in order to understand potential bias or errors within your data.
+
+**Accuracy** is how close a piece of data is to the real-world value.
+**Precision** is the exact the measurement of the data is.
+
+Accuracy and precision can refer to both the location and the object being measured. 
+
+A common example of mistakes with accuracy and precision in a spatial context is to provide locational precision to a very high level (mm or even smaller) in a GIS or map, when the location of the data was measured with a GPS which had an error of +/-3 meters.
+
+![Examples of targets showing combinations of high and low precision and accuracy data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/accuracyprecision.png?raw=true)
+
+### Ecological Fallacy
+Ecological fallacy is where incorrect inferences are drawn about an individual based upon information data from a group they are in. For example, a high crime rate in a deprived area does not mean that poor people are criminals. 
+
+Aggregating data can conceal variations within an area - the diagram below shows an example of this.
+
+![Ecolocical fallacy where individual data on income is averaged to draw an incorrect inference about an area.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ecological.PNG?raw=true)
 
 ## Conclusion
+Congratulations on reaching the end of the course.
+
+By now you should have a good understanding of the theory that underpins geospatial analysis. We have covered:
+* Geographic data
+  * types
+  * file formats
+  * coordinate reference systems
+  * where to get data
+* ONS's geographical products
+* Geospatial tools
+* Geospatial analysis techniques
+* How to visualise your data
+* Geographic fallacies to avoid
+
+Now it's time to apply your newly gained knowledge. Take a look at our practical modules to learn how:
+* [Introduction to QGIS](https://onsgeo.github.io/geospatial-training/docs/intro_to_qgis)
+* [Introduction to GIS in R](https://onsgeo.github.io/geospatial-training/docs/intro_to_gis_in_r)
+* [Introduction to GIS in Python](https://onsgeo.github.io/geospatial-training/docs/intro_to_gis_in_python)
