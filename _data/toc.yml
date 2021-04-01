@@ -37,7 +37,7 @@
           url: "docs/practical_geog_and_stats#advanced-analysis-techniques"
         - title: Mapping your data
           url: "docs/practical_geog_and_stats#mapping-your-data"
-        - title: geographic fallacies
+        - title: Geographic fallacies
           url: "docs/practical_geog_and_stats#geographical-fallacies"
     - title: "Introduction to QGIS"
       url: "docs/intro_to_qgis"
