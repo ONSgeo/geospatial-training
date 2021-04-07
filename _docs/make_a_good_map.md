@@ -70,11 +70,19 @@ These maps are primarily used for more specialised purposes and may require a mo
 
 #### Dasymmetric Maps
 
-A dasymmetric map is effectively a merging of the principles of a choropleth and a land cover map into one. These maps use the physical properties of an area to change the extent of the visualisation. For example, below is a map showing the density of trees per MSOA on the Isle of Wight. However, the physical reality of the area is that trees are not uniformly distributed across an MSOA: some may be clustered entirely into one corner, or may exist as patches of broken forest. To make up for this discrepency, we can use a layer which shows the extend of tree cover to cut out any areas without trees from the MSOAs. We can now re-evaluate the density of trees based on this new extent.
+A dasymmetric map is effectively a merging of the principles of a choropleth and a land cover map into one. These maps use the physical properties of an area to change the extent of the visualisation. For example, below is a map showing the density of trees per MSOA on the Isle of Wight. However, the physical reality of the area is that the trees cannot grow in certain places like on rivers, or on top of buildings. To compensate for this we can clip the boundaries of these features from the MSOA boundary.
 
-The resulting map is a better representation of the PHYSICAL reality of the data. This can also be applied to population maps which remove areas where nobody lives. This does, however, come at the cost statistically standardised areas and therefore is only useful as either a standalone map or against maps made with the exact same methods.
+The resulting map is a better representation of the PHYSICAL reality of the data: areas where the data CANNOT physically apply are masked out. This could for example also be applied to population maps to remove areas where nobody lives. It does, however, come at the cost of changing statistically standardised areas and therefore is only useful as either a standalone map or against maps made with the exact same methods.
 
 #### Cartograms
+
+Cartograms are a type of map whereby the size and shape of a geography is distorted from the real, physical reality. A number of cartograms are possible. The map below shows how a map of Wales can be changed from a normal choropleth (top left), to proportional area (top right), to an equal-area hexmap (bottom right), or a diagrammatic (Dorling) cartogram (bottom left). 
+
+Each cartogram radically changes the visual presentation of the data and thus the ease of interpretation.
+
+Proportional area results in highly distorted boundaries. While this adds additional weight to the differences between areas it also detracts from the spatial context.
+
+Equal areas eliminate the common problem of choropleths misrepresenting the spatial distribution of the data within an area by removing variation between areas entirely. This is commonly seen in constituency maps as it more clearly shows how the results of an election in a given area relate to a single seat in parliament while also showing as much detail in dense urban constuencies as in larger rural ones.
 
 ---
 
