@@ -88,13 +88,39 @@ Equal areas eliminate the common problem of choropleths misrepresenting the spat
 
 ## Colour Schemes and Symbology
 
+Once a map type has been chosen, by far the most important property to consider is the colour scheme you will use. Different colour schemes can fundamntally change the way an audience may view and interpret a visualisation. Some colour schemes may raise an inherent bias, others may be unintuitive, and some may be unreadable for people with visual impairments such as colour blindness. Choosing the right colour scheme to counter these issues is vital. There is no absolute 'right' or 'wrong', but there are choices which offer the best looking, most impactiful, and most accessible maps.
+
+Along with colour, the overall symbology must be considered. This includes what types of symbols to use for point data, line thicknesses, and map effects for emphasis.
+
 ### Palettes and Data
 
-#### Converging vs Diverging
+The ideal colour palette for a map depends on both the map type and the underlying data. Many different colour palettes can be used for any given map, however some may be more appropriate than others. The following subsections, taken together, describe how an appropriate palette can be chosen.
 
 #### Conitnuous vs Discrete
 
+One of the first considerations is whether the data mapped is made up of continuous or discrete variables.
+
+For continuous variables, the colour palette will be a continuous 'ramp': it will vary along a gradient between different colours. This type of palette is most suitable for numeric or ordered variables where there is a clear minimum and maximum value with a range between these. A number of 'ramps (see: Colour Ramps) can be used for this data depending on it's properties.
+
+Discrete data can also represented via a ramp if it is ordered. If, however, each feature represents a distinct class then a different type of palette may be suitable. In these cases it is often a good idea to start with a colour ramp and aply this. Then, the colours can be adjusted to be distinct across variables. For example, a choropleth for the Rural-Urban classification of LSOAs has 'rural' and 'urban' classes divided into subclasses. It would be useful to choose a different colour entirely for urban and rural classes, but to choose different shades of those colours to distinguish subclass features within the urban and rural classes e.g. shades of green for rural and shades of grey for urban. As data can often contain far more classes than distinct colours, it is not always beneficial to display all at once. Sometimes it is acceptable to create a new map for each class to show them off in more detail.
+
+#### Colour Ramps
+
+Colour ramps are a continuous scale of colours startring from one colour then shifting to another. In some ramps this is simplay a change from a start to an end colour, in others there could be multiple colour changes along the way. When applied to data which is split into classes, the ramp is divided out across those classes. The map below shows a choroleth with the same data represented by different ramps.
+
+The first ramp is simply a continuous scale from a starting colour to an end colour. This type of ramp is useful when the data is on a continuous scale e.g. a range of temperatures or population density.
+
+The secondramp uses three colours. This is a diverging ramp as there is a start and end colour, but with those beldning to form a distinct central region. This ramp is very effective to show data which diverges about a fixed value e.g. percentage increase or decrease in disease cases. These will diverge around a certain number, but may not necessarily be symmtrical around it i.e. the change will always be positive or negative, so '0' would be the centrepoint about which the data varies.
+
+The third ramp has a random colour distribution. These ramps are useful for applying to discrete data with many classes as a starting point for further refinement. They can also be used if continuous data shows many clustered points. Caution should be taken to make sure this ramp does not become too detailed or overwhelming, and that it remains accessible.
+
 #### Relative vs General
+
+A point must also be considered about how people may have a bias towards a certain colour: red is 'bad', blue is 'good'; green is 'natural', grey is 'artificial'. These preconceptions can colour the interpretation of a map.
+
+It is therefore generally advisable to choose a palette which is not strongly associated with these biases when presenting data for which there is no clear trend towards these conclusions e.g. a map of population density which ranges from blue (low) to red  (high) might suggest the higher density is 'worse' than lower density. A more neutral palette, such as viridis, might not hold these preconceptions but is still effective at differentiating the extremes.
+
+However there are plenty of cases where it is logical to make a map based on existing associations with a colour such as a previous example of choosing green for rural areas and grey for urban: this is clearly linked to the physical appearance of the areas and therefore makes thhe distributions easier to interpret. Similarly, land cover maps may be more effective if the polygons are coloured to match the 'expected' colour the land cover type.
 
 ### Aesthetics and Accessibility
 
@@ -102,7 +128,7 @@ Equal areas eliminate the common problem of choropleths misrepresenting the spat
 
 #### Fills, Textures, Strokes
 
-#### Colour-blindness
+#### Accessibility
 
 ---
 
