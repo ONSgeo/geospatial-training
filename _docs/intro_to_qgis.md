@@ -31,7 +31,7 @@ By the end of the course you will know how to:
 * We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
 * Beginner/Intermediate knowledge of data science operations.
 
-Data for this project can be found in: <a href="https://github.com/ONSgeo/geospatial-training/tree/master/_docs/intro_to_qgis/edinburgh_data" target="_blank">this repo</a>.
+Data for this project can be found in <a href="https://github.com/ONSgeo/geospatial-training/" target="_blank">this repo</a> under `_docs/intro_to_qgis/edinburgh_data`.
 
 ---
 
