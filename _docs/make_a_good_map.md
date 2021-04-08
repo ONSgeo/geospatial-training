@@ -124,19 +124,35 @@ However there are plenty of cases where it is logical to make a map based on exi
 
 ### Aesthetics and Accessibility
 
-#### Ideal Palettes
+A good map will be aesthetically pleasing as well as informative; the colours chosen won't clash, there will be a clear unifying theme to the symbology, and  the overall design will lend itself to being both easy and enjoyable to view. Still, the aesthetics should not compromise the <i>accessibility</i> of a map.
 
+#### Colour and Accesibility
+
+ <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a web which allows you to choose a number of aesthetically pleasing palettes based on a number of criteria including the order of the data (sequential, diverging etc.), print or copy friendly, and colour-blind friendliness. Browsing through these palettes and selecting different criteria, you can see how different each palette is. Most of the palettes offer distinct and easily identifiable schemes which offer an unambiguous scale.
+ 
+Accessibility is very important when making any visualisation. In maps this means choosing colour-blind friendly palettes and clearly legible and easy to comprehend text. The maps below demonstrate how coour blindness can make it  difficult to differentiate between different parts of a colour scale. The first map is how someone with normal colour vision would see the map. This red-green scale is particularly infamous for being inaccessible. Instead, the blue-red scale is clearly differentiated across the most common forms of colour-blindness.
+ 
 #### Fills, Textures, Strokes
-
-#### Accessibility
 
 ---
 
 ## Boundaries
 
-### Boundaries and Data
+Boundaries refers to the area on which data is deplayed e.g. an OA, LAD, County etc. These boundaries often come in different resoltions. The choice of boundary is important for both accuracy of the visualisation and for making it look good. 
+
+Always make sure that the chosen boundaries are best suited to the data you wish to display. For example OAs may be more detailed than necesary or too disclosive and so MSOAs may be appropriate, or the data may be reported at a geography such as a LAD and may lose meaning if aggregated up further to Counties..
+
+### Boundary Levels
+
+Boundaries from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a> usually come in a number of generalisations (resolutions). The image below shows what these generalisations do to the quality of the boundaries.
+
+What generalisation you choose will depend on both what you want to visualise. A map which covers a large area with very little detail will not need a Full boundary such as BFE as this can be slow to handle in software and the detail could be distracting or hard to display. In this case, a Generalised boundary such as BGC may be better as it reduces unneeded details while preserving the overall geometry. Alternatively, there may be occasions when Super-generalised or ultra-generalised will get the job done just as well as BGC and cut out unwanted details completely.
 
 ### Mixing Boundaries
+
+Sometimes it is useful to overlay one type of boundary on top of another. Care should be taken to not make the map too crowded or to cover up the most important boundaries or colours with the overlay. The map below, for example, shows data at MSOA level with LAD boundaries drawn on. It would be inappropriate, however, to draw MSOA boundaries over LAD level data as this might suggest detail at the MSOA level which is not actually present.
+
+Overlaying boundaries can also help give a sense of location if the primary boundaries are not commonly known by the target audience,
 
 ---
 
