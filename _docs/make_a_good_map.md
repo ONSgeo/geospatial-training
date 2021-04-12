@@ -228,11 +228,23 @@ Importantly backdrops can provide additional location detail and context which i
 
 ### Sources
 
+While a number of basemap API sources are available, we would recommend using <a href="https://osdatahub.os.uk/" target="_blank">OS Open Data</a>, as the PSMA gives us civil servants access to their basemaps. To sign up for this:
+
+* instructions
+
+Vector and raster tiles are available from here and these come in a number of styles (a few shown below), making them useful for a number of applications.
+
 ---
 
 ## General Map Design
 
+This section will cover some other, more general aspects of map design, particularly arranging the layout of a map and some underlying considerations towards the purpose of the map.
+
 ### Layout
+
+The layout of a map, that is the layout of all items on a page or image from the map itself to text and peripherals, is important for both the aesthetics of the map and ease of use.
+
+When arranging items it's important to consider a few things: What items are PART of the map and what items DESCRIBE the map. As a general rule, items which are actually a part of the map should clearly stand out. Boundaries should be obvious, colours clear, symbols highly visible.
 
 #### Insets
 
