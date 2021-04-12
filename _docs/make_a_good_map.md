@@ -222,9 +222,11 @@ Wwhich label to use depends on a number of factors. A densely visualised map may
 
 ## Basemaps
 
-### Sources
+Basemaps are pre-made maps which can be use to form the 'base' of a visualisation. These basemaps come in a number of forms ranging from standard topographical maps such a sstreetmaps or leisure maps, to aerial imagery or hybrids (think Google Maps), to possibly even heavily stylised maps useful for aesthetically pleasing backdrops.
 
-### Styles
+Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
+
+### Sources
 
 ---
 
