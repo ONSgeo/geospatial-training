@@ -158,25 +158,65 @@ Overlaying boundaries can also help give a sense of location if the primary boun
 
 ## Peripherals
 
+In addition to the main attribute of the map (palette, breaks, boundaries), other items can be arranged alongside to provide more information and context. Not all of these peripherals are always necessary but are contextual depending on both the type of visualisation and the intented audience.
+
 ### Legend
+
+A legend, or key, displays the different symbologies (including colour scales) used on the map and their respective description.
+
+Legends are generally a necesity as without them it can be difficult to determine what each symbol on the map means. Legends do not have to describe EVERY tiem on the map e.g. a basemap may not need an legend entry nor would a background layer used just as a fill. For a choropleth the legend would include the colour scale used for the areas and the associated values or value ranges. A General Feature map (like the one at the start of this course) would have the symbols for places shown in the legend and what they represent.
 
 ### Scale 
 
+A scale is used to assist the viewer in determing distances on the map which may not be easy to understand without context. This is usally the case when e.g. no basemap is used or for maps where distances are not easily worked out from the relative sizes of objects on the map. A number of methods are used to visualise scales. Generally the scale bar is broken up into alternating blocks, with each block representing a given distance. THe map below shows a scale with a left and right side: The left side shows divisions of a KM, while the right side shows the extent of a whole KM.
+
+In this example map a scale was necessary for two reasons: 
+
+* There are no contextual clues in the map to give a sense of scale
+* The data shown is based on a measure of distance
+
+The latter reason is an important consideration as it can give much-needed additional context to the distribution of the data.
+
 ### Compass 
 
+A compass shows the direction of the cardinal directions. A compass is a lesser-used feature in most data visualisations as it's often clear that maps default to 'up' as north. However there are times when this may not be the case such as when the map is rotated, or the map may be taken in isolation away from the text which would otherwise signify 'up'. If the area shown in the map is unfamiliar to the viewer they may also wish to have a reference to north.
+
+While many will think of a fancy compass rose such as on old-fashioned globes which show NWSE and interstitial directions, it is perfectly acceptable to use a compass which only shows north. In the example below this is represented with a simple arrow pointing up. If the displayed map was actually offset at a certain angle from North, the arrow would also be rotated to this angle.
+
 ### Graticules
+
+Graticules are lines and/or dashes within and along the edge of a map which display X and Y coordinates. Graticules are commonly seen on military maps where a combination of distance grid and decimal degrees longitude and latitude are shown.
+
+Graticules are rarely used in basic visualisations however they are particularly important in some situations. For example, some large-scale maps such as those of entire continents can often be enhanced with the use of graticules: either as dashes on the edge of the map or lines going across it. Similarly, the mapping of any data which is know to vary with latitude and longitude can use a graticule to make this explicit. 
+
+The graticules should be unintrusive however, so try not to use thick or bold lines and instead use thin lines with a colour which blends well with the rest of the map.
 
 ---
 
 ## Text
 
-### Descriptive Text
+Text is very important for mapping. It provides a description ofwhat the map represents and can be expanded into a number of areas to improve the quality of the map.
 
 #### Title
 
-#### Accompanying Text
+The title is the most important single piece of text on a map. A title should stand out and be clearly visible at the top. The title should be descriptive enough that a viewer can clearly glean the purpose of the map from what it says. Conversely, the title is not in and of itself a piece of descriptive text and so should be made concise so a viewer could read and understand it quickly. The map below gives a good example of a title: Highly descriptive but concise and to the point.
+
+### Descriptive Text
+
+As the title cannot be used to describe EVERYTHING about a map, some accompanying descriptive text could be useful. This should be placed alongside the map and should give additional details about specific points of the visualisation. For example, a descriptive text box could be used to briefly explain the distribution of the data in a choropleth, or multiple boxes could be added with lines pointing to clusters of points, or it could simply give additional context for the purpose of the map.
+
+Regardless of how the text is used, it should be clear and relate directly to the map.
 
 ### Labels
+
+Labels are pieces of text placed on the map itself to identify individual features or groups of features. Labels can be placed in a number of ways:
+
+* Alongside the feature
+* Around the feature
+* Entirely within the feature
+* Across the feature matching its shape
+
+Wwhich label to use depends on a number of factors. A densely visualised map may only be able to fit in a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below whic contains multiple label types). This ensures the label is legible. Additionally labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple.
 
 ---
 
