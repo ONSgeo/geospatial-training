@@ -248,7 +248,13 @@ When arranging items it's important to consider a few things: What items are PAR
 
 #### Insets
 
+Insets are smaller maps within the layout of a large map used to show details which may otherwise be hard to see in the main map. These are often used to show dense urban areas e.g. Greater London in detail, or to include features geographically separated from the main features of map by positioning them closer e.g. the Shetland Isles which may otherwise be too far from Great Britain that the overall scale of the map would not be appropriate.
+
+Multiple insets can be used on the same map o show off different areas of interest in greater detail. However this can become cluttered and consideration should be taken as to if an entirely new page/map should be used for the inset feature instead.
+
 #### Arranging items
+
+When arranging items around the map, be sure to keep the focus on the map itself. Generally the map should take up the most area with other features like text, legend, scale being placed arond or on the map without covering data. For items placed outside of the main map area, these should be placed such that they follow the 'reading order': look at the map, then refer to descriptions and other items after. Items placed in the map area need to be unintrusive but clear for example a scale should be place such that it's on the map for direct reference but is not intruding upon key map features like coloured areas or labels.
 
 ### Telling a Story
 
