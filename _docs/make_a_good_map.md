@@ -64,6 +64,8 @@ Heatmaps use a colour scale to display a relationship between the density of poi
  
 The map below shows this for burglaries in London. Each burglary is represented as a single point. For a given radius around each point, the more points in that radius the more intense the 'heat' and the darker the colour. Additionally, we can specify an underlying value to add weight to the map e.g. the financial loss per burglary. This will adjust the colour scale to make it clearer where there are not only a large number of instances but also which areas are the most impaceted.
 
+### Dot Density
+
 ### Specialised Maps
 
 These maps are primarily used for more specialised purposes and may require a more advanced understanding of geography and data visualisation to be useful.
@@ -73,6 +75,8 @@ These maps are primarily used for more specialised purposes and may require a mo
 A dasymmetric map is effectively a merging of the principles of a choropleth and a land cover map into one. These maps use the physical properties of an area to change the extent of the visualisation. For example, below is a map showing the density of trees per MSOA on the Isle of Wight. However, the physical reality of the area is that the trees cannot grow in certain places like on rivers, or on top of buildings. To compensate for this we can clip the boundaries of these features from the MSOA boundary.
 
 The resulting map is a better representation of the PHYSICAL reality of the data: areas where the data CANNOT physically apply are masked out. This could for example also be applied to population maps to remove areas where nobody lives. It does, however, come at the cost of changing statistically standardised areas and therefore is only useful as either a standalone map or against maps made with the exact same methods.
+
+#### Bivariate Maps
 
 #### Cartograms
 
