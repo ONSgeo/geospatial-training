@@ -56,7 +56,11 @@ A proportional symbol map is similar in application, however here the size of th
 
 Ideally you should use a graduated symbol map when displaying point data as different sized symbols. You should also consider the overall scale of the map and the density of points: If the symbols are very dense they can overlap and become unreadable, or they can cover up underlying geographies and thus hide their spatial context.
 
-### Land Cover Map
+### Land Cover Map and Classification Maps
+
+A Land Cover Map shows areas representing physical land types. This will usually cover the entirety of an area and be split up into land cover classifcations. These maps don't have any underlying numeric data to display, and so are just coloured by classification. Usually the colours used will relate to the classification e.g. green areas for forests and fields, grey for build up areas etc.
+
+Land cover maps can become very crowded, so depending on the application they can be filtered to exclude land cover types which aren't relevant to the visualiation e.g. a map of natural landscapes for some ecology data might not need to explicitly show urban classifications as only the binary natural v not natural is important. Land cover maps do not HAVE to use colour matching physical features if shades are limited by readability or there is no obvious colour for the map e.g. a geological map.
 
 ### Heatmap
 
@@ -66,17 +70,15 @@ The map below shows this for burglaries in London. Each burglary is represented 
 
 ### Dot Density
 
+Dot density maps transform point data into a continuous surface. This adds an additional dimension to the data, as the density of points can be used as a weighting for a variable along a colour scale. The map below, for crime statistics, produces more intense blue colours for aras with high crime rates which are closer together.
+
 ### Specialised Maps
 
 These maps are primarily used for more specialised purposes and may require a more advanced understanding of geography and data visualisation to be useful.
 
-#### Dasymmetric Maps
-
-A dasymmetric map is effectively a merging of the principles of a choropleth and a land cover map into one. These maps use the physical properties of an area to change the extent of the visualisation. For example, below is a map showing the density of trees per MSOA on the Isle of Wight. However, the physical reality of the area is that the trees cannot grow in certain places like on rivers, or on top of buildings. To compensate for this we can clip the boundaries of these features from the MSOA boundary.
-
-The resulting map is a better representation of the PHYSICAL reality of the data: areas where the data CANNOT physically apply are masked out. This could for example also be applied to population maps to remove areas where nobody lives. It does, however, come at the cost of changing statistically standardised areas and therefore is only useful as either a standalone map or against maps made with the exact same methods.
-
 #### Bivariate Maps
+
+Bivariate maps combine two variables in the data and plot them against eachother across the same colour scale. There are multiple ways to make a bivariate map. One way is to use a specific plugin for some GIS software. This will automatically group data into a number of bins across two axis. For instance, the x and y axis may be split into 'high' and 'low' for each, thus there would be four categories: xlow:ylow, xhigh:ylow, xlow:yhigh, xhigh:yhigh. Given that this is essentially just a categorisation of the data, a bivariate map could also be made by first categorisng the data according to manually set threshold for the data, and then using the same principles as for a categorical map but with a colour scheme which converges on both x and y variables.
 
 #### Cartograms
 
