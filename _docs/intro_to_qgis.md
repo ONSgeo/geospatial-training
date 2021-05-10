@@ -56,7 +56,7 @@ At the top of the QGIS window are a number of menus. Clicking on one will reveal
 Toolbars are collections of easy-access functions, grouped under a parent family of functions. The toolbars appear as the rows of icons below the menus. These toolbars can be moved around by dragging on the three vertical dots to their left. Hovering the cursor over an icon will display a tooltip with the name of the tool and any keyboard shortcuts for it.
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/toolbars.JPG?raw=true" title="Default QGIS toolbars">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/toolbars.JPG?raw=true" alt="Default QGIS toolbars">
 </p>
 
 The following table summarises some of the most useful buttons in these toolbars:
