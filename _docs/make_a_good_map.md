@@ -81,7 +81,7 @@ Heatmaps use a colour scale to display a relationship between the density of poi
 The map below shows this for burglaries in London. Each burglary is represented as a single point. For a given radius around each point, the more points in that radius the more intense the 'heat' and the darker the colour. Additionally, we can specify an underlying value to add weight to the map e.g. the financial loss per burglary. This will adjust the colour scale to make it clearer where there are not only a large number of instances but also which areas are the most impacted.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Bivariate_map.PNG?raw=true" alt="Bivariate map of London MSOAs showing Burglary rates vs median household income">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Density_of_burglaries_in_London_Heatmap.PNG?raw=true" alt="Heatmap of burglary incidents in London">
 </p>
 
 ### Dot Density
