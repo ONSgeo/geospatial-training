@@ -78,7 +78,11 @@ These maps are primarily used for more specialised purposes and may require a mo
 
 #### Bivariate Maps
 
-Bivariate maps combine two variables in the data and plot them against eachother across the same colour scale. There are multiple ways to make a bivariate map. One way is to use a specific plugin for some GIS software. This will automatically group data into a number of bins across two axis. For instance, the x and y axis may be split into 'high' and 'low' for each, thus there would be four categories: xlow:ylow, xhigh:ylow, xlow:yhigh, xhigh:yhigh. Given that this is essentially just a categorisation of the data, a bivariate map could also be made by first categorisng the data according to manually set threshold for the data, and then using the same principles as for a categorical map but with a colour scheme which converges on both x and y variables.
+Bivariate maps combine two variables in the data and plot them against eachother across the same colour scale. There are multiple ways to make a bivariate map. One way is to use a specific plugin for some GIS software. This will automatically group data into a number of bins across two axis. For instance, the x and y axis may be split into 'high' and 'low' for each, thus there would be four categories: xlow:ylow, xhigh:ylow, xlow:yhigh, xhigh:yhigh. Given that this is essentially just a categorisation of the data, a bivariate map could also be made by first categorisng the data according to manually set threshold for the data, and then using the same principles as for a categorical map but with a colour scheme which converges on both x and y variables. The map below demonstrates this by simultaneously plotting 
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Bivariate_map.PNG?raw=true" alt="Bivariate map of London MSOAs showing Burglary rates vs median household income">
+</p>
 
 #### Cartograms
 
