@@ -46,7 +46,7 @@ As the colouration is simply assigned to an entire area, the spatial distributio
 
 This map shows a choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOAs.
 
-<p> align="center">
+<p align="center">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth.PNG?raw=true" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
 </p>
 
