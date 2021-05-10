@@ -42,9 +42,13 @@ In additoon, there is a 'zoomed in' inset view of the South East coast. This is 
 
 A choropleth map relates data to a given area. This is achieve by colouring areas based on the valuees of the underlying data. Choropleths are probably the most common types of map used as they easily display aggregations of data with location context.
 
-As the colouration is simply assigned to an entire area, the spatial distribution of the data can be misleading or the aggregation could simply be a result of the boundary type used. To prevent this a choropleth should use normalised data e.g. people per sq. km, cases of a disease per N population. This normalisation makes different areas directly comparable on the same colour scale.
+As the colouration is simply assigned to an entire area, the spatial distribution of the data can be misleading or the aggregation could simply be a result of the boundary type used. To prevent this a choropleth should use normalised data e.g. people per sq. km, cases of a disease per N population, or a percentage. This normalisation makes different areas on a map more directly comparable.
 
-This map demonstrates crime rates in London. The data is normalised per 100k population and is visualised at the Local Authority level.
+This map shows a choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOAs.
+
+<p> align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth.PNG?raw=true" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
+</p>
 
 ### Graduated and Proportional Symbols
 
@@ -52,7 +56,15 @@ Graduated and Proportional Symbol maps are an alternative to choropleths for vis
 
 A graduated symbol map does this by dividing the symbol sizes into bins, just like a choropleth does with colour, and thus displays symbols which scale from a minimum to a maximum size across these bins. Graduated symbols are the preferred type for mapping quantities as symbols as it is made clear in the legend what symbol size relates to what data range.
 
-A proportional symbol map is similar in application, however here the size of the symbols varies directly with the underlying data values i.e. it is not split up into discrete bins. Proportional symbols are less ideal as it can result in both a large number of symbol sizes and very small differences between similar values. This makes it hard to easily identify the general scale of the data and how it varies on average from place to place.
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Number_of_burglaries_msoa_Graduated_Symbols.PNG?raw=true" alt="A graduated symbol map of burglary rates in London MSOAs">
+</p>
+
+A proportional symbol map is similar in application, however here the size of the symbols varies directly with the underlying data values i.e. it is not split up into discrete bins. Proportional symbols are less ideal as it can result in both a large number of symbol sizes and very small differences between similar values. This makes it hard to easily identify the general scale of the data and how it varies on average from place to place. In the map below, the legend is broken up in steps, however the symbols on the map have sizes which vary between these steps according to the source data. Labelling the symbols with their actual values might make it easier to read, but the same thing can be done for graduated symbols to increase accuracy.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Number_of_burglaries_msoa_Proportional_Symbols.PNG?raw=true" alt="A proportional symbol map of burglary rates in London MSOAs">
+</p>
 
 Ideally you should use a graduated symbol map when displaying point data as different sized symbols. You should also consider the overall scale of the map and the density of points: If the symbols are very dense they can overlap and become unreadable, or they can cover up underlying geographies and thus hide their spatial context.
 
