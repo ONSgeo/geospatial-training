@@ -182,6 +182,8 @@ Overlaying boundaries can also help give a sense of location if the primary boun
 
 In addition to the main attribute of the map (palette, breaks, boundaries), other items can be arranged alongside to provide more information and context. Not all of these peripherals are always necessary but are contextual depending on both the type of visualisation and the intented audience.
 
+For this section, we will take a choropleth map of Hartlepool and add items to it bit by bit to end up with a final, well-made map.
+
 ### Legend
 
 A legend, or key, displays the different symbologies (including colour scales) used on the map and their respective description.
@@ -247,6 +249,10 @@ Wwhich label to use depends on a number of factors. A densely visualised map may
 Basemaps are pre-made maps which can be use to form the 'base' of a visualisation. These basemaps come in a number of forms ranging from standard topographical maps such a sstreetmaps or leisure maps, to aerial imagery or hybrids (think Google Maps), to possibly even heavily stylised maps useful for aesthetically pleasing backdrops.
 
 Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Hartelpool_Basemap.PNG?raw=true" alt="Hartlepool map with a basemap added.">
+</p>
 
 ### Sources
 
