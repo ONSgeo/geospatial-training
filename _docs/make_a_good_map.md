@@ -164,7 +164,13 @@ Boundaries refers to the area on which data is deplayed e.g. an OA, LAD, County 
 
 Always make sure that the chosen boundaries are best suited to the data you wish to display. For example OAs may be more detailed than necesary or too disclosive and so MSOAs may be appropriate, or the data may be reported at a geography such as a LAD and may lose meaning if aggregated up further to Counties..
 
-### Boundary Levels
+
+
+<p align="center">
+ <i>The same map aggregated at four different levels of geography: Output Area (OA), Super Output Areas (LSOA and MSOA), and Local Authority (LAD).</i>
+</p>
+
+### Boundary Generalisation
 
 Boundaries from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a> usually come in a number of generalisations (resolutions). The image below shows what these generalisations do to the quality of the boundaries.
 
