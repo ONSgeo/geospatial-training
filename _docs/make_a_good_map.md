@@ -34,9 +34,14 @@ These maps mainly emphasise the locations of points of interest (POI) e.g:
 
 General reference maps are easy to read for most users as they are descriptive and visualise physical locations rather than abstracting from data. However a good general reference map will still feature a number of additional items to aid in describing what the map is displaying.
 
-For example, the map below clearly shows the locations of various international transit hubs in the UK. This is made clear through the effective use of colour, symbols, text, and a legend. The colours of the map make it clear that the green areas are simply there for background to give location context for the symbols. The symbols used are directly related to the place they describe e.g. a boat for a port. There is also extensive text annotation and labelling which can help identify individual locations and is also used to describe te purpose of the map. Finally, the legend clearly displays what each symbol means and thus makes it easy to refer back to the map and see what each point represents.
+For example, the map below shows the locations of National Parks in Great Britain. Relevant features are labelled, and additional information is provided to enhance understanding of both the map itself and the National Park system.
 
-In additoon, there is a 'zoomed in' inset view of the South East coast. This is especially useful as the density of symbols in that area is much higher than elsewhere, and so a more detailed view can make this area more legible at a glance.
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/National_parks_General_reference_Map.PNG?raw=true" alt="A general reference map of National Parks in Great Britain">
+</p>
+<p align="center">
+ <i>A general reference map of National Parks in Great Britain</i>
+</p>
 
 ### Choropleth
 
@@ -49,6 +54,9 @@ This map shows a choropleth of the percentage of households below 60% of median 
 <p align="center">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth.PNG?raw=true" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
 </p>
+<p align="center">
+ <i>A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA</i>
+</p>
 
 ### Graduated and Proportional Symbols
 
@@ -59,6 +67,10 @@ A graduated symbol map does this by dividing the symbol sizes into bins, just li
 <p align="center">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Number_of_burglaries_msoa_Graduated_Symbols.PNG?raw=true" alt="A graduated symbol map of burglary rates in London MSOAs">
 </p>
+<p align="center">
+ <i>A graduated symbol map of burglary rates in London MSOAs</i>
+</p>
+ 
 
 A proportional symbol map is similar in application, however here the size of the symbols varies directly with the underlying data values i.e. it is not split up into discrete bins. Proportional symbols are less ideal as it can result in both a large number of symbol sizes and very small differences between similar values. This makes it hard to easily identify the general scale of the data and how it varies on average from place to place. In the map below, the legend is broken up in steps, however the symbols on the map have sizes which vary between these steps according to the source data. Labelling the symbols with their actual values might make it easier to read, but the same thing can be done for graduated symbols to increase accuracy.
 
@@ -189,6 +201,26 @@ Overlaying boundaries can also help give a sense of location if the primary boun
 
 ---
 
+## Basemaps
+
+Basemaps are pre-made maps which can be use to form the 'base' of a visualisation. These basemaps come in a number of forms ranging from standard topographical maps such a sstreetmaps or leisure maps, to aerial imagery or hybrids (think Google Maps), to possibly even heavily stylised maps useful for aesthetically pleasing backdrops.
+
+Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Hartelpool_Basemap.PNG?raw=true" alt="Hartlepool map with a basemap added.">
+</p>
+
+### Sources
+
+While a number of basemap API sources are available, we would recommend using <a href="https://osdatahub.os.uk/" target="_blank">OS Open Data</a>, as the PSMA gives us civil servants access to their basemaps. To sign up for this:
+
+* instructions
+
+Vector and raster tiles are available from here and these come in a number of styles (a few shown below), making them useful for a number of applications.
+
+---
+
 ## Peripherals
 
 In addition to the main attribute of the map (palette, breaks, boundaries), other items can be arranged alongside to provide more information and context. Not all of these peripherals are always necessary but are contextual depending on both the type of visualisation and the intented audience.
@@ -252,26 +284,6 @@ Labels are pieces of text placed on the map itself to identify individual featur
 * Across the feature matching its shape
 
 Wwhich label to use depends on a number of factors. A densely visualised map may only be able to fit in a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below whic contains multiple label types). This ensures the label is legible. Additionally labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple.
-
----
-
-## Basemaps
-
-Basemaps are pre-made maps which can be use to form the 'base' of a visualisation. These basemaps come in a number of forms ranging from standard topographical maps such a sstreetmaps or leisure maps, to aerial imagery or hybrids (think Google Maps), to possibly even heavily stylised maps useful for aesthetically pleasing backdrops.
-
-Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
-
-<p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Hartelpool_Basemap.PNG?raw=true" alt="Hartlepool map with a basemap added.">
-</p>
-
-### Sources
-
-While a number of basemap API sources are available, we would recommend using <a href="https://osdatahub.os.uk/" target="_blank">OS Open Data</a>, as the PSMA gives us civil servants access to their basemaps. To sign up for this:
-
-* instructions
-
-Vector and raster tiles are available from here and these come in a number of styles (a few shown below), making them useful for a number of applications.
 
 ---
 
