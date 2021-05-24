@@ -378,8 +378,7 @@ This section will showcase two maps, each of which is presented as "bad" and "go
  <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Badmap_Goodmap1_2.png?raw=true" alt="The good version of a London house price map">
  </p>
- 
-
+</details>
 
 ### Example 2:
  
@@ -399,3 +398,4 @@ This section will showcase two maps, each of which is presented as "bad" and "go
  <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Badmap_Goodmap2_2.png?raw=true" alt="The good version of a London burglaries heatmap">
  </p>
+</details>
