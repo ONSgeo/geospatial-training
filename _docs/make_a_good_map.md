@@ -184,6 +184,10 @@ A good map will be aesthetically pleasing as well as informative; the colours ch
  
 Accessibility is very important when making any visualisation. In maps this means choosing colour-blind friendly palettes and clearly legible and easy to comprehend text. The maps below demonstrate how coour blindness can make it  difficult to differentiate between different parts of a colour scale. The first map is how someone with normal colour vision would see the map. This red-green scale is particularly infamous for being inaccessible. Instead, the blue-red scale is clearly differentiated across the most common form of colour-blindness.
 
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/colour_blind_maps.png?raw=true" alt="Visualisation of how colour-blindness can affect readability of a map">
+</p>
+
 ### Fills, textures, and strokes
 
 As a general rule, the fills for polygons should be solid colours. Texture or pattern fills often add unnecessary visual complexity to maps. In cases where a fill could be used to display physical features, like grassland with grass symbols, a colour or a basemap already showing that would suffice.
