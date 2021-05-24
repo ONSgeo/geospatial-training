@@ -98,7 +98,11 @@ The map below shows this for burglaries in London. Each burglary is represented 
 
 ### Dot Density
 
-Dot density maps transform point data into a continuous surface. This adds an additional dimension to the data, as the density of points can be used as a weighting for a variable along a colour scale. The map below, for crime statistics, produces more intense blue colours for aras with high crime rates which are closer together.
+Dot density maps display a distribution of points where each point represents a certain number of observances from underlying data. The randomised istribution of these dots within individual polygons, from which the dots get their values, creates an interesting visualisation showing how different the densities of records can be in different areas. The example below does this by visualising one point for every 500 votes cast for different parties in the 2019 UK General Election.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/General_election_results_PCs_Dot_Density.PNG?raw=true" alt="Dot density map of the results of the 2019 UK General Election">
+</p>
 
 ### Specialised Maps
 
@@ -114,13 +118,13 @@ Bivariate maps combine two variables in the data and plot them against eachother
 
 #### Cartograms
 
-Cartograms are a type of map whereby the size and shape of a geography is distorted from the real, physical reality. A number of cartograms are possible. The map below shows how a map of Wales can be changed from a normal choropleth (top left), to proportional area (top right), to an equal-area hexmap (bottom right), or a diagrammatic (Dorling) cartogram (bottom left). 
+Cartograms are a type of map whereby the size and shape of a geography is distorted from the real, physical reality. A number of cartograms are possible. The map below demonstrates a hexmap to represent data in Local Authorities.
 
-Each cartogram radically changes the visual presentation of the data and thus the ease of interpretation.
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Loneliness_by_local_authority_Cartogram.PNG?raw=true" alt="Cartogram of self-reported happiness of populations at LAD-level.">
+</p>
 
-Proportional area results in highly distorted boundaries. While this adds additional weight to the differences between areas it also detracts from the spatial context.
-
-Equal areas eliminate the common problem of choropleths misrepresenting the spatial distribution of the data within an area by removing variation between areas entirely. This is commonly seen in constituency maps as it more clearly shows how the results of an election in a given area relate to a single seat in parliament while also showing as much detail in dense urban constuencies as in larger rural ones.
+Cartograms radically change the visual presentation of the data. Equal-area cartograms are useful to remove area effects where, for instance, boundaries do not necessarily correspond to almost constant densities of people (which Ouput Areas do).
 
 ---
 
@@ -144,13 +148,13 @@ Discrete data can also represented via a ramp if it is ordered. If, however, eac
 
 #### Colour Ramps
 
-Colour ramps are a continuous scale of colours startring from one colour then shifting to another. In some ramps this is simplay a change from a start to an end colour, in others there could be multiple colour changes along the way. When applied to data which is split into classes, the ramp is divided out across those classes. The map below shows a choroleth with the same data represented by different ramps.
+Colour ramps are a continuous scale of colours startring from one colour then shifting to another. In some ramps this is simplay a change from a start to an end colour, in others there could be multiple colour changes along the way. When applied to data which is split into classes, the ramp is divided out across those classes. 
 
-The first ramp is simply a continuous scale from a starting colour to an end colour. This type of ramp is useful when the data is on a continuous scale e.g. a range of temperatures or population density.
+A continuous scale would use one colour and simply change shade between light and dark. This type of ramp is useful when the data is on a continuous scale e.g. a range of temperatures or population density where there is an obvious increase from a low to a high.
 
-The secondramp uses three colours. This is a diverging ramp as there is a start and end colour, but with those beldning to form a distinct central region. This ramp is very effective to show data which diverges about a fixed value e.g. percentage increase or decrease in disease cases. These will diverge around a certain number, but may not necessarily be symmtrical around it i.e. the change will always be positive or negative, so '0' would be the centrepoint about which the data varies.
+A diverging ramp as there has different start and end colours, but with those blending to form a distinct central region. This ramp is very effective to show data which diverges about a fixed value e.g. percentage increase or decrease in disease cases. These will diverge around a certain number, but may not necessarily be symmtrical around it i.e. the change will always be positive or negative, so '0' would be the centrepoint about which the data varies.
 
-The third ramp has a random colour distribution. These ramps are useful for applying to discrete data with many classes as a starting point for further refinement. They can also be used if continuous data shows many clustered points. Caution should be taken to make sure this ramp does not become too detailed or overwhelming, and that it remains accessible.
+Categorised or random colour ramps assign unique colours to different classes with no respect to minimum or maximum values. This was demonstrated previously with land cover and classification maps. It is also sometimes ok to assign random colours to a map if, for instance, one wanted to simply differentiate between areas without reference to underlying data. This can, in fact, be achieved with only four colours according to the <a href="https://en.wikipedia.org/wiki/Four_color_theorem" target="_blank">four colour theorem</a>.
 
 #### Relative vs General
 
@@ -168,9 +172,13 @@ A good map will be aesthetically pleasing as well as informative; the colours ch
 
  <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a web which allows you to choose a number of aesthetically pleasing palettes based on a number of criteria including the order of the data (sequential, diverging etc.), print or copy friendly, and colour-blind friendliness. Browsing through these palettes and selecting different criteria, you can see how different each palette is. Most of the palettes offer distinct and easily identifiable schemes which offer an unambiguous scale.
  
-Accessibility is very important when making any visualisation. In maps this means choosing colour-blind friendly palettes and clearly legible and easy to comprehend text. The maps below demonstrate how coour blindness can make it  difficult to differentiate between different parts of a colour scale. The first map is how someone with normal colour vision would see the map. This red-green scale is particularly infamous for being inaccessible. Instead, the blue-red scale is clearly differentiated across the most common forms of colour-blindness.
- 
-#### Fills, Textures, Strokes
+Accessibility is very important when making any visualisation. In maps this means choosing colour-blind friendly palettes and clearly legible and easy to comprehend text. The maps below demonstrate how coour blindness can make it  difficult to differentiate between different parts of a colour scale. The first map is how someone with normal colour vision would see the map. This red-green scale is particularly infamous for being inaccessible. Instead, the blue-red scale is clearly differentiated across the most common form of colour-blindness.
+
+### Fills, textures, and strokes
+
+As a general rule, the fills for polygons should be solid colours. Texture or pattern fills often add unnecessary visual complexity to maps. In cases where a fill could be used to display physical features, like grassland with grass symbols, a colour or a basemap already showing that would suffice.
+
+The 'strokes', outlines of polygons and points or line features, should be thin enough to not cover other features while still being clearly visible. With line features, stroke weidth is a useful way to denote a hierarchy of features or differentiate between them as colour is not always obvious at some stroke widths.
 
 ---
 
@@ -193,11 +201,17 @@ Boundaries from the <a href="https://geoportal.statistics.gov.uk/" target="_blan
 
 What generalisation you choose will depend on both what you want to visualise. A map which covers a large area with very little detail will not need a Full boundary such as BFE as this can be slow to handle in software and the detail could be distracting or hard to display. In this case, a Generalised boundary such as BGC may be better as it reduces unneeded details while preserving the overall geometry. Alternatively, there may be occasions when Super-generalised or ultra-generalised will get the job done just as well as BGC and cut out unwanted details completely.
 
+This map shows how different boundary levels can change the amount of detail visible:
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Boundary_generalisation.PNG?raw=true" alt="Visualisation of different boundary generalisations available from the geoportal.">
+</p>
+
 ### Mixing Boundaries
 
-Sometimes it is useful to overlay one type of boundary on top of another. Care should be taken to not make the map too crowded or to cover up the most important boundaries or colours with the overlay. The map below, for example, shows data at MSOA level with LAD boundaries drawn on. It would be inappropriate, however, to draw MSOA boundaries over LAD level data as this might suggest detail at the MSOA level which is not actually present.
+Sometimes it is useful to overlay one type of boundary on top of another. Care should be taken to not make the map too crowded or to cover up the most important boundaries or colours with the overlay. The map below, for example, shows data at MSOA level with LAD boundaries drawn on. It would be inappropriate, however, to draw MSOA boundaries over LAD level data as this might suggest detail at the MSOA level which is not actually present. Overlaying boundaries can also help give a sense of location if the primary boundaries are not commonly known by the target audience.
 
-Overlaying boundaries can also help give a sense of location if the primary boundaries are not commonly known by the target audience,
+
 
 ---
 
