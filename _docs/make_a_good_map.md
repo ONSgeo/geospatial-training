@@ -382,11 +382,13 @@ This section will showcase two maps, each of which is presented as "bad" and "go
 
 <details><summary><b>Answer</b></summary>
 
- *The colour scheme is a random palette and not accessible. It should be a continuous scale and colour-blind friendly
- *The borders of the MSOAs are too thick so the denser areas become impossible to see
- *The legend is poorly titled and there are to many breaks
- *The title does not properly describe what the map shows.
- 
+ <ul>
+  <li>The colour scheme is a random palette and not accessible. It should be a continuous scale and colour-blind friendly</li>
+  <li>The borders of the MSOAs are too thick so the denser areas become impossible to see</li>
+  <li>The legend is poorly titled and there are to many breaks</li>
+  <li>The title does not properly describe what the map shows</li>
+ </ul> 
+  
  <p>Below is what the map <i>could</i> look like if it were to follow the guidance:</p>
  
  <p align="center">
@@ -402,10 +404,12 @@ This section will showcase two maps, each of which is presented as "bad" and "go
 
 <details><summary><b>Answer</b></summary>
 
- *The overlayed Ward boundaries are too detailed and don't provide any additionally useful context
- *The basemap is far too detailed and clashes/distracts from the heatmap itself
- *The credits text does not comply with the necessary copyright statements and is not easily identified against the basemap
- *The overall layout and clarity of individual elements is extremely poor
+<ul>
+ <li>The overlayed Ward boundaries are too detailed and don't provide any additionally useful context</li>
+ <li>The basemap is far too detailed and clashes/distracts from the heatmap itself</li>
+ <li>The credits text does not comply with the necessary copyright statements and is not easily identified against the basemap</li>
+ <li>The overall layout and clarity of individual elements is extremely poor
+</ul>
  
  <p>Below is what the map <i>could</i> look like if it were to follow the guidance:</p>
  
