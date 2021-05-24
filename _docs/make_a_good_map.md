@@ -380,12 +380,12 @@ This section will showcase two maps, each of which is presented as "bad" and "go
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Badmap_Goodmap1.png?raw=true" alt="The bad version of a London house price map">
 </p>
 
-<details><summary>Answer</summary>
+<details><summary><b>Answer</b></summary>
 
- * The colour scheme is a random palette and not accessible. It should be a continuous scale and colour-blind friendly
- * The borders of the MSOAs are too thick so the denser areas become impossible to see
- * The legend is poorly titled and there are to many breaks
- * The title does not properly describe what the map shows.
+ *The colour scheme is a random palette and not accessible. It should be a continuous scale and colour-blind friendly
+ *The borders of the MSOAs are too thick so the denser areas become impossible to see
+ *The legend is poorly titled and there are to many breaks
+ *The title does not properly describe what the map shows.
  
  <p>Below is what the map <i>could</i> look like if it were to follow the guidance:</p>
  
@@ -400,12 +400,12 @@ This section will showcase two maps, each of which is presented as "bad" and "go
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Badmap_Goodmap2.png?raw=true" alt="The bad version of a London burglaries heatmap">
 </p>
 
-<details><summary>Answer</summary>
+<details><summary><b>Answer</b></summary>
 
- * The overlayed Ward boundaries are too detailed and don't provide any additionally useful context
- * The basemap is far too detailed and clashes/distracts from the heatmap itself
- * The credits text does not comply with the necessary copyright statements and is not easily identified against the basemap
- * The overall layout and clarity of individual elements is extremely poor
+ *The overlayed Ward boundaries are too detailed and don't provide any additionally useful context
+ *The basemap is far too detailed and clashes/distracts from the heatmap itself
+ *The credits text does not comply with the necessary copyright statements and is not easily identified against the basemap
+ *The overall layout and clarity of individual elements is extremely poor
  
  <p>Below is what the map <i>could</i> look like if it were to follow the guidance:</p>
  
