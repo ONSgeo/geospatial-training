@@ -201,17 +201,28 @@ Overlaying boundaries can also help give a sense of location if the primary boun
 
 ---
 
-## Basemaps
+## Peripherals
+
+In addition to the main attribute of the map (palette, breaks, boundaries), other items can be arranged alongside to provide more information and context. Not all of these peripherals are always necessary but are contextual depending on both the type of visualisation and the intented audience.
+
+For this section, we will take a choropleth map of IMD for Hartlepool LSOAs and add items to it bit by bit to end up with a final, well-made map.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map.jpg?raw=true" alt="The initial Hartlepool IMD choropleth">
+</p>
+
+
+### Basemaps
 
 Basemaps are pre-made maps which can be use to form the 'base' of a visualisation. These basemaps come in a number of forms ranging from standard topographical maps such a sstreetmaps or leisure maps, to aerial imagery or hybrids (think Google Maps), to possibly even heavily stylised maps useful for aesthetically pleasing backdrops.
 
 Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Hartelpool_Basemap.PNG?raw=true" alt="Hartlepool map with a basemap added.">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_2.jpg?raw=true" alt="Basemap added to Hartlepool">
 </p>
 
-### Sources
+#### Sources
 
 While a number of basemap API sources are available, we would recommend using <a href="https://osdatahub.os.uk/" target="_blank">OS Open Data</a>, as the PSMA gives us civil servants access to their basemaps. To sign up for this:
 
@@ -219,19 +230,15 @@ While a number of basemap API sources are available, we would recommend using <a
 
 Vector and raster tiles are available from here and these come in a number of styles (a few shown below), making them useful for a number of applications.
 
----
-
-## Peripherals
-
-In addition to the main attribute of the map (palette, breaks, boundaries), other items can be arranged alongside to provide more information and context. Not all of these peripherals are always necessary but are contextual depending on both the type of visualisation and the intented audience.
-
-For this section, we will take a choropleth map of Hartlepool and add items to it bit by bit to end up with a final, well-made map.
-
 ### Legend
 
 A legend, or key, displays the different symbologies (including colour scales) used on the map and their respective description.
 
 Legends are generally a necesity as without them it can be difficult to determine what each symbol on the map means. Legends do not have to describe EVERY tiem on the map e.g. a basemap may not need an legend entry nor would a background layer used just as a fill. For a choropleth the legend would include the colour scale used for the areas and the associated values or value ranges. A General Feature map (like the one at the start of this course) would have the symbols for places shown in the legend and what they represent.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_3.jpg?raw=true" alt="Legend added to Hartlepool">
+</p>
 
 ### Scale 
 
@@ -244,11 +251,19 @@ In this example map a scale was necessary for two reasons:
 
 The latter reason is an important consideration as it can give much-needed additional context to the distribution of the data.
 
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_4.jpg?raw=true" alt="Scale added to Hartlepool">
+</p>
+
 ### Compass 
 
 A compass shows the direction of the cardinal directions. A compass is a lesser-used feature in most data visualisations as it's often clear that maps default to 'up' as north. However there are times when this may not be the case such as when the map is rotated, or the map may be taken in isolation away from the text which would otherwise signify 'up'. If the area shown in the map is unfamiliar to the viewer they may also wish to have a reference to north.
 
 While many will think of a fancy compass rose such as on old-fashioned globes which show NWSE and interstitial directions, it is perfectly acceptable to use a compass which only shows north. In the example below this is represented with a simple arrow pointing up. If the displayed map was actually offset at a certain angle from North, the arrow would also be rotated to this angle.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_5.jpg?raw=true" alt="Compass added to Hartlepool">
+</p>
 
 ### Graticules
 
@@ -264,15 +279,23 @@ The graticules should be unintrusive however, so try not to use thick or bold li
 
 Text is very important for mapping. It provides a description ofwhat the map represents and can be expanded into a number of areas to improve the quality of the map.
 
-#### Title
+### Title
 
 The title is the most important single piece of text on a map. A title should stand out and be clearly visible at the top. The title should be descriptive enough that a viewer can clearly glean the purpose of the map from what it says. Conversely, the title is not in and of itself a piece of descriptive text and so should be made concise so a viewer could read and understand it quickly. The map below gives a good example of a title: Highly descriptive but concise and to the point.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_6.jpg?raw=true" alt="Title added to Hartlepool">
+</p>
 
 ### Descriptive Text
 
 As the title cannot be used to describe EVERYTHING about a map, some accompanying descriptive text could be useful. This should be placed alongside the map and should give additional details about specific points of the visualisation. For example, a descriptive text box could be used to briefly explain the distribution of the data in a choropleth, or multiple boxes could be added with lines pointing to clusters of points, or it could simply give additional context for the purpose of the map.
 
 Regardless of how the text is used, it should be clear and relate directly to the map.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_7.jpg?raw=true" alt="Credits added to Hartlepool">
+</p>
 
 ### Labels
 
@@ -284,6 +307,16 @@ Labels are pieces of text placed on the map itself to identify individual featur
 * Across the feature matching its shape
 
 Wwhich label to use depends on a number of factors. A densely visualised map may only be able to fit in a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below whic contains multiple label types). This ensures the label is legible. Additionally labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple.
+
+#### Insets
+
+Insets are smaller maps within the layout of a large map used to show details which may otherwise be hard to see in the main map. These are often used to show dense urban areas e.g. Greater London in detail, or to include features geographically separated from the main features of map by positioning them closer e.g. the Shetland Isles which may otherwise be too far from Great Britain that the overall scale of the map would not be appropriate.
+
+Multiple insets can be used on the same map to show off different areas of interest in greater detail. However this can become cluttered and consideration should be taken as to if an entirely new page/map should be used for the inset feature instead.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg?raw=true" alt="England IMD LSOA map with insets for Greater London, Hartlepool, and Isles of Scilly">
+</p>
 
 ---
 
@@ -297,11 +330,6 @@ The layout of a map, that is the layout of all items on a page or image from the
 
 When arranging items it's important to consider a few things: What items are PART of the map and what items DESCRIBE the map. As a general rule, items which are actually a part of the map should clearly stand out. Boundaries should be obvious, colours clear, symbols highly visible.
 
-#### Insets
-
-Insets are smaller maps within the layout of a large map used to show details which may otherwise be hard to see in the main map. These are often used to show dense urban areas e.g. Greater London in detail, or to include features geographically separated from the main features of map by positioning them closer e.g. the Shetland Isles which may otherwise be too far from Great Britain that the overall scale of the map would not be appropriate.
-
-Multiple insets can be used on the same map o show off different areas of interest in greater detail. However this can become cluttered and consideration should be taken as to if an entirely new page/map should be used for the inset feature instead.
 
 #### Arranging items
 
