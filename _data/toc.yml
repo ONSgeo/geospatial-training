@@ -54,7 +54,7 @@
       url: "docs/intro_to_gis_in_r"
     - title: "Introduction to GIS in Python"
       url: "docs/intro_to_gis_in_python"
-- title: "How to Make a Good Map"
+    - title: "How to Make a Good Map"
       url: "docs/make_a_good_map"
       children:
         - title: Map Types
