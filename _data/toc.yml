@@ -54,6 +54,21 @@
       url: "docs/intro_to_gis_in_r"
     - title: "Introduction to GIS in Python"
       url: "docs/intro_to_gis_in_python"
+- title: "How to Make a Good Map"
+      url: "docs/make_a_good_map"
+      children:
+        - title: Map Types
+          url: "docs/make_a_good_map#map-types"
+        - title: Colour Schemes and Symbology
+          url: "docs/make_a_good_map#colour-schemes-and-symbology"
+        - title: Boundaries
+          url: "docs/make_a_good_map#boundaries"
+        - title: Peripherals
+          url: "docs/make_a_good_map#peripherals"
+        - title: Text
+          url: "docs/make_a_good_map#text"
+        - title: General Map Design
+          url: "docs/make_a_good_map#general-map-design"
 - title: Guides
   url: "docs/guides/guides_overview"
   links: 
