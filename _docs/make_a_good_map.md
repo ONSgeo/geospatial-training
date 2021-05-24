@@ -180,6 +180,21 @@ As a general rule, the fills for polygons should be solid colours. Texture or pa
 
 The 'strokes', outlines of polygons and points or line features, should be thin enough to not cover other features while still being clearly visible. With line features, stroke weidth is a useful way to denote a hierarchy of features or differentiate between them as colour is not always obvious at some stroke widths.
 
+### Labels
+
+Labels are pieces of text placed on the map itself to identify individual features or groups of features. Labels can be placed in a number of ways:
+
+* Alongside the feature
+* Around the feature
+* Entirely within the feature
+* Across the feature matching its shape
+
+Wwhich label to use depends on a number of factors. A densely visualised map may only be able to fit in a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below whic contains multiple label types). This ensures the label is legible. Additionally labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/VOA_Percentage_point_difference_labels.PNG?raw=true" alt="Labelled map of VOA Perentage point difference in London">
+</p>
+
 ---
 
 ## Boundaries
@@ -211,7 +226,9 @@ This map shows how different boundary levels can change the amount of detail vis
 
 Sometimes it is useful to overlay one type of boundary on top of another. Care should be taken to not make the map too crowded or to cover up the most important boundaries or colours with the overlay. The map below, for example, shows data at MSOA level with LAD boundaries drawn on. It would be inappropriate, however, to draw MSOA boundaries over LAD level data as this might suggest detail at the MSOA level which is not actually present. Overlaying boundaries can also help give a sense of location if the primary boundaries are not commonly known by the target audience.
 
-
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth_Mixing_Boundaries.PNG?raw=true" alt="MSOA map with LAD boundaries on top">
+</p>
 
 ---
 
@@ -311,16 +328,6 @@ Regardless of how the text is used, it should be clear and relate directly to th
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_7.jpg?raw=true" alt="Credits added to Hartlepool">
 </p>
 
-### Labels
-
-Labels are pieces of text placed on the map itself to identify individual features or groups of features. Labels can be placed in a number of ways:
-
-* Alongside the feature
-* Around the feature
-* Entirely within the feature
-* Across the feature matching its shape
-
-Wwhich label to use depends on a number of factors. A densely visualised map may only be able to fit in a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below whic contains multiple label types). This ensures the label is legible. Additionally labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple.
 
 #### Insets
 
@@ -344,12 +351,10 @@ The layout of a map, that is the layout of all items on a page or image from the
 
 When arranging items it's important to consider a few things: What items are PART of the map and what items DESCRIBE the map. As a general rule, items which are actually a part of the map should clearly stand out. Boundaries should be obvious, colours clear, symbols highly visible.
 
-
 #### Arranging items
 
 When arranging items around the map, be sure to keep the focus on the map itself. Generally the map should take up the most area with other features like text, legend, scale being placed arond or on the map without covering data. For items placed outside of the main map area, these should be placed such that they follow the 'reading order': look at the map, then refer to descriptions and other items after. Items placed in the map area need to be unintrusive but clear for example a scale should be place such that it's on the map for direct reference but is not intruding upon key map features like coloured areas or labels.
 
-### Telling a Story
 
 ## Showcase: Bad and Good Maps
 
