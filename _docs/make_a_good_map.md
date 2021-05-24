@@ -84,7 +84,17 @@ Ideally you should use a graduated symbol map when displaying point data as diff
 
 A Land Cover Map shows areas representing physical land types. This will usually cover the entirety of an area and be split up into land cover classifcations. These maps don't have any underlying numeric data to display, and so are just coloured by classification. Usually the colours used will relate to the classification e.g. green areas for forests and fields, grey for build up areas etc.
 
-Land cover maps can become very crowded, so depending on the application they can be filtered to exclude land cover types which aren't relevant to the visualiation e.g. a map of natural landscapes for some ecology data might not need to explicitly show urban classifications as only the binary natural v not natural is important. Land cover maps do not HAVE to use colour matching physical features if shades are limited by readability or there is no obvious colour for the map e.g. a geological map.
+Land cover maps can become very crowded, so depending on the application they can be filtered to exclude land cover types which aren't relevant to the visualiation e.g. a map of natural landscapes for some ecology data might not need to explicitly show urban classifications as only the binary natural v not natural is important. Land cover maps do not HAVE to use colour matching physical features if shades are limited by readability or there is no obvious colour for the map e.g. a geological map. Below is a land cover map for the Isle of Wight
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/wight_lcm.jpg?raw=true" alt="Land Cover Map for the Isle of Wight">
+</p>
+
+Other classification maps may not directly represent physical features, and therefore colouration must be abstracted and need not follow any actual geographic characteristics. The map below, for example, shows a demographic-based Output Area Classifcation for South-East England. Classes here may have generally agreed upon colour associations (green for rural, grey for urban), but some categories such as "Cosmopolitan" are not necessarily associated with a specific colour.
+
+<p align="center">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/output_area_classification.jpg?raw=true" alt="Output Area Classification of South-East England">
+</p>
 
 ### Heatmap
 
