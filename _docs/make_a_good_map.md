@@ -263,6 +263,8 @@ Basemaps are pre-made maps which can be use to form the 'base' of a visualisatio
 
 Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
 
+As an ONS employee you will have access to basemaps from the Ordnance Survey Data Hub as part of the Public Sector Geospatial Agreement (PSGA). To gain access to these basemaps you simply need to sign up with a Public Sector Account at the <a href="https://osdatahub.os.uk/" target="_blank">data hub</a>. Your application will have to be processed by an administrator to verify your employment but this shouldn't take long. Before verfiication, however, you will still have access to open data APIs for use as basemaps.
+
 <p align="center">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_2.jpg?raw=true" alt="Basemap added to Hartlepool">
 </p>
