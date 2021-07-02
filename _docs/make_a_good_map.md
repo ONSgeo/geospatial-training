@@ -161,7 +161,7 @@ Boundaries refers to the area on which data is displayed e.g. an OA, LAD, County
 Always make sure that the chosen boundaries are best suited to the data you wish to display. For example OAs may be more detailed than necessary or too disclosive and so MSOAs may be appropriate, or the data may be reported at a geography such as a LAD and may lose meaning if aggregated up further to Counties..
 
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/statistical_geography_hierarchy.png?raw=true" alt="The same map of population density in London displayed at four different boundary aggregations.">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/statistical_geography_hierarchy.png?raw=true" alt="The same map of population density in London displayed at four different boundary aggregations.">
 </p>
 
 ### Boundary Generalisation
