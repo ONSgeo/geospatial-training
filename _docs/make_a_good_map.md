@@ -65,7 +65,7 @@ General reference maps are easy to read for most users as they are descriptive a
 For example, the map below shows the locations of National Parks in Great Britain. Relevant features are labelled, and additional information is provided to enhance understanding of both the map itself and the National Park system.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/general_reference.PNG?raw=true" alt="A general reference map of National Parks in Great Britain">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/general_reference.png?raw=true" alt="A general reference map of National Parks in Great Britain">
 </p>
 <p align="center">
  <i>A general reference map of National Parks in Great Britain</i>
@@ -80,7 +80,7 @@ As the colouration is simply assigned to an entire area, the spatial distributio
 This map shows a choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOAs.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/choropleth.PNG?raw=true" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/choropleth.png?raw=true" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
 </p>
 <p align="center">
  <i>A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA</i>
@@ -93,7 +93,7 @@ Graduated and Proportional Symbol maps are an alternative to choropleths for vis
 A graduated symbol map does this by dividing the symbol sizes into bins, just like a choropleth does with colour, and thus displays symbols which scale from a minimum to a maximum size across these bins. Graduated symbols are the preferred type for mapping quantities as symbols as it is made clear in the legend what symbol size relates to what data range.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/graduated_symbol.PNG?raw=true" alt="A graduated symbol map of burglary rates in London MSOAs">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/graduated_symbol.png?raw=true" alt="A graduated symbol map of burglary rates in London MSOAs">
 </p>
 <p align="center">
  <i>A graduated symbol map of burglary rates in London MSOAs</i>
@@ -103,7 +103,7 @@ A graduated symbol map does this by dividing the symbol sizes into bins, just li
 A proportional symbol map is similar in application, however here the size of the symbols varies directly with the underlying data values i.e. it is not split up into discrete bins. Proportional symbols are less ideal as it can result in both a large number of symbol sizes and very small differences between similar values. This makes it hard to easily identify the general scale of the data and how it varies on average from place to place. In the map below, the legend is broken up in steps, however the symbols on the map have sizes which vary between these steps according to the source data. Labelling the symbols with their actual values might make it easier to read, but the same thing can be done for graduated symbols to increase accuracy.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/proportional_symbol.PNG?raw=true" alt="A proportional symbol map of burglary rates in London MSOAs">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/proportional_symbol.png?raw=true" alt="A proportional symbol map of burglary rates in London MSOAs">
 </p>
 
 Ideally you should use a graduated symbol map when displaying point data as different sized symbols. You should also consider the overall scale of the map and the density of points: If the symbols are very dense they can overlap and become unreadable, or they can cover up underlying geographies and thus hide their spatial context.
@@ -113,7 +113,7 @@ Ideally you should use a graduated symbol map when displaying point data as diff
 Other classification maps may not directly represent physical features, and therefore colouration must be abstracted and need not follow any actual geographic characteristics. The map below, for example, shows a demographic-based Output Area Classification for South-East England. Classes here may have generally agreed upon colour associations (green for rural, grey for urban), but some categories such as "Cosmopolitan" are not necessarily associated with a specific colour.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/classification_map.PNG?raw=true" alt="Output Area Classification of Southern Hampshire">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/classification_map.png?raw=true" alt="Output Area Classification of Southern Hampshire">
 </p>
 
 ### Heatmap
@@ -123,7 +123,7 @@ Heatmaps use a colour scale to display a relationship between the density of poi
 The map below shows this for burglaries in London. Each burglary is represented as a single point. For a given radius around each point, the more points in that radius the more intense the 'heat' and the darker the colour. Additionally, we can specify an underlying value to add weight to the map e.g. the financial loss per burglary. This will adjust the colour scale to make it clearer where there are not only a large number of instances, but also which areas are the most impacted.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/heatmap.PNG?raw=true" alt="Heatmap of burglary incidents in London">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/heatmap.png?raw=true" alt="Heatmap of burglary incidents in London">
 </p>
 
 ### Dot Density
@@ -131,7 +131,7 @@ The map below shows this for burglaries in London. Each burglary is represented 
 Dot density maps display a distribution of points where each point represents a certain number of observances from underlying data. The randomised distribution of these dots within individual polygons, from which the dots get their values, creates an interesting visualisation showing how different the densities of records can be in different areas. The example below does this by visualising one point for every 500 votes cast for different parties in the 2019 UK General Election.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/dot_density.PNG?raw=true" alt="Dot density map of the results of the 2019 UK General Election">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/dot_density.png?raw=true" alt="Dot density map of the results of the 2019 UK General Election">
 </p>
 
 ### Specialised Maps
@@ -143,7 +143,7 @@ These maps are primarily used for more specialised purposes and may require a mo
 Bivariate maps combine two variables in the data and plot them against each other across the same colour scale. There are multiple ways to make a bivariate map. One way is to use a specific plugin for some GIS software. This will automatically group data into a number of bins across two axis. For instance, the x and y axis may be split into 'high' and 'low' for each, thus there would be four categories: xlow:ylow, xhigh:ylow, xlow:yhigh, xhigh:yhigh. Given that this is essentially just a categorisation of the data, a bivariate map could also be made by first categorising the data according to manually set threshold for the data, and then using the same principles as for a categorical map but with a colour scheme which converges on both x and y variables. The map below demonstrates this by simultaneously plotting 
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bivariate.PNG?raw=true" alt="Bivariate map of London MSOAs showing Burglary rates vs median household income">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bivariate.png?raw=true" alt="Bivariate map of London MSOAs showing Burglary rates vs median household income">
 </p>
 
 #### Cartograms
@@ -151,7 +151,7 @@ Bivariate maps combine two variables in the data and plot them against each othe
 Cartograms are a type of map whereby the size and shape of a geography is distorted from the real, physical reality. A number of cartograms are possible. The map below demonstrates a hexmap to represent data in Local Authorities.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hexmap_cartogram.PNG?raw=true" alt="Cartogram of the percentage of employees in a Local Authority District working in manufacturing in 2014">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hexmap_cartogram.png?raw=true" alt="Cartogram of the percentage of employees in a Local Authority District working in manufacturing in 2014">
 </p>
 
 Cartograms radically change the visual presentation of the data. Equal-area cartograms are useful to remove area effects where, for instance, boundaries do not necessarily correspond to almost constant densities of people (which Ouput Areas do).
@@ -171,7 +171,7 @@ Boundaries refers to the area on which data is displayed e.g. an OA, LAD, County
 Always make sure that the chosen boundaries are best suited to the data you wish to display. For example OAs may be more detailed than necessary or too disclosive and so MSOAs may be appropriate, or the data may be reported at a geography such as a LAD and may lose meaning if aggregated up further to Counties..
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/statistical_geography_hierarchy.PNG?raw=true" alt="The same map of population density in London displayed at four different boundary aggregations.">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/statistical_geography_hierarchy.png?raw=true" alt="The same map of population density in London displayed at four different boundary aggregations.">
 </p>
 <p align="center">
  <i>The same map aggregated at four different levels of geography: Output Area (OA), Super Output Areas (LSOA and MSOA), and Local Authority (LAD).</i>
@@ -186,7 +186,7 @@ What generalisation you choose will depend on both what you want to visualise. A
 This map shows how different boundary levels can change the amount of detail visible:
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Boundary_generalisation.PNG?raw=true" alt="Visualisation of different boundary generalisations available from the geoportal.">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Boundary_generalisation.png?raw=true" alt="Visualisation of different boundary generalisations available from the geoportal.">
 </p>
 
 ### Mixing Boundaries
@@ -238,7 +238,7 @@ A good map will be aesthetically pleasing as well as informative; the colours ch
 Accessibility is very important when making any visualisation. In maps this means choosing colour-blind friendly palettes and clearly legible and easy to comprehend text. The maps below demonstrate how colour blindness can make it difficult to differentiate between different parts of a colour scale. The first map is how someone with normal colour vision would see the map. This red-green scale is particularly infamous for being inaccessible. Instead, the blue-red scale is clearly differentiated across the most common form of colour-blindness.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/colour_accessibility.PNG?raw=true" alt="Visualisation of how colour-blindness can affect readability of a map">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/colour_accessibility.png?raw=true" alt="Visualisation of how colour-blindness can affect readability of a map">
 </p>
 
 ### Fills, textures, and strokes
