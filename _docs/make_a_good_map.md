@@ -31,24 +31,19 @@ This course covers:
   * scales
 * Exercise: map critique (with discussion answers)
 
+
 ---
 
 ## Introduction
 
-A map is a visual representation of a physical area. A map can display data to help an audience understand the its location context better. Maps can also be helpful to tell a story about the data. Maps should serve a clear purpose, and there are many potential ways of making them depend on the underlying data and the purpose of the mapping.
+One of the best things you can do with geographic data is visualise it by making a map! A map can display data to help an audience understand the its location context better and can also be helpful to tell a story about the data.
 
-This course will guide you through some of the <b>DOs</b> and <b>DO NOTs</b> of making a map. By the end you should have an understanding of:
+Map makers face a range of choices when designing a map; these decisions should be driven by the purpose of the map. 
 
-* Different types of maps and their applications
-* How to choose a colour scheme and symbology
-* The importance of accessibility in maps
-* The differences between boundary types and generalisation levels
-* How map items can be used to describe and explain the data
-* The general principles of what makes a 'good map' or a 'bad map'
+This course will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output. 
 
----
 
-## Map Types:
+## Map Types
 
 The map type you use will depend on the properties of your data and the target purpose of the visualisation. Some map types may be applicable to multiple types of data, and one type of data may be suitable for a number of map types.
 
