@@ -247,6 +247,10 @@ As a general rule, the fills for polygons should be solid colours. Texture or pa
 
 The 'strokes', outlines of polygons and points or line features, should be thin enough to not cover other features while still being clearly visible. With line features, stroke width is a useful way to denote a hierarchy of features or differentiate between them as colour is not always obvious at some stroke widths.
 
+### Line Symbology
+
+### Point Symbology
+
 ### Labels
 
 Labels are pieces of text placed on the map itself to identify individual features or groups of features. Labels can be placed in a number of ways:
@@ -307,7 +311,7 @@ In this example map a scale was necessary for two reasons:
 The latter reason is an important consideration as it can give much-needed additional context to the distribution of the data.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_4.jpg?raw=true" alt="Scale added to Hartlepool">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/scale_bar.PNG?raw=true" alt="Scale added to Hartlepool">
 </p>
 
 ### Compass 
@@ -317,7 +321,7 @@ A compass shows the direction of the cardinal directions. A compass is a lesser-
 While many will think of a fancy compass rose such as on old-fashioned globes which show NWSE and interstitial directions, it is perfectly acceptable to use a compass which only shows north. In the example below this is represented with a simple arrow pointing up. If the displayed map was actually offset at a certain angle from North, the arrow would also be rotated to this angle.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_5.jpg?raw=true" alt="Compass added to Hartlepool">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/compass.PNG?raw=true" alt="Compass added to Hartlepool">
 </p>
 
 ### Graticules
