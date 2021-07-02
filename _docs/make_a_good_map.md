@@ -65,7 +65,7 @@ General reference maps are easy to read for most users as they are descriptive a
 For example, the map below shows the locations of National Parks in Great Britain. Relevant features are labelled, and additional information is provided to enhance understanding of both the map itself and the National Park system.
 
 <p align="center">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/general_reference.png?raw=true" alt="A general reference map of National Parks in Great Britain">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/general_reference.png?raw=true" alt="A general reference map of National Parks in Great Britain">
 </p>
 <p align="center">
  <i>A general reference map of National Parks in Great Britain</i>
