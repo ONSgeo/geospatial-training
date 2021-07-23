@@ -184,6 +184,22 @@ Sometimes it is useful to overlay one type of boundary on top of another. Care s
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth_Mixing_Boundaries.PNG?raw=true" width="50%" alt="MSOA map with LAD boundaries on top">
 </p>
 
+### Data Breaks/Classes
+
+The way number and distribution of colours on your map will depend on the type of 'classes', from breaking the data up into ranges from one value to another, used. A number of break styles can be chosen and applied automatically in most types of GIS software. By looking at the distribution of values within your data you can assess what breaks might be appropriate. It is possible to set your break values manually, which can be useful in instances where natural breaks are perhaps too precise or not intuitive e.g. if they have too much decimal precision where rounding would be appropriate. In instances where the data contains clusters of values, Jenks (natural breaks) might be appropriate as it can automatically separate these clusters into different bins (depending on the number of classes specified. Other styles, like quantiles and equal interval, will split the data evenly and produce uniformly wide classes.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/break_types.png?raw=true" width="50%" alt="MSOA map with LAD boundaries on top">
+</p>
+
+More advanced breaks, such as Standard Deviation, are more niche and are mainly appropriate in specific circumstances as they are not easily interpreted by non-experts.
+
+The number of classes chosen will greatly impact a visualisation. Too few and you risk missing out data patterns; too many and you'll add complexity but no additional value to the map. Generally 4-7 classes is appropriate for a map as this offers a good compromise between the detail visible and obvious separation of classes
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/break_n_classes.png?raw=true" width="50%" alt="MSOA map with LAD boundaries on top">
+</p>
+
 ### Palettes and Data
 
 The ideal colour palette for a map depends on both the map type and the underlying data. Many different colour palettes can be used for any given map, however some may be more appropriate than others. The following subsections, taken together, describe how an appropriate palette can be chosen.
@@ -205,6 +221,7 @@ A continuous scale would use one colour and simply change shade between light an
 A diverging ramp as there has different start and end colours, but with those blending to form a distinct central region. This ramp is very effective to show data which diverges about a fixed value e.g. percentage increase or decrease in disease cases. These will diverge around a certain number but may not necessarily be symmetrical around it i.e. the change will always be positive or negative, so '0' would be the centre point about which the data varies.
 
 Categorised or random colour ramps assign unique colours to different classes with no respect to minimum or maximum values. This was demonstrated previously with land cover and classification maps. It is also sometimes ok to assign random colours to a map if, for instance, one wanted to simply differentiate between areas without reference to underlying data. This can, in fact, be achieved with only four colours according to the <a href="https://en.wikipedia.org/wiki/Four_color_theorem" target="_blank">four colour theorem</a>.
+
 
 #### Relative vs General
 
