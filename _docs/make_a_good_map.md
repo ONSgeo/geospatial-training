@@ -1,6 +1,4 @@
 
-
-
 ## Map Design
 
 Now that you've seen a variety of map types which can be used to visualise your data, we will now look at the specific choices to be made when designing your own maps. This section will cover boundary types, colour choices, feature symbology, additional map elements, map layouts, and what to consider in order to tell a story with a map.
@@ -62,12 +60,23 @@ The number of classes chosen will greatly impact a visualisation. Too few and yo
 
 ### Feature Symbology
 
-#### Continuous vs Discrete Palettes
+#### Continuous vs Categorical Palettes
 
-A continuous colour palette is also known as a 'ramp': it changes from one shade or hue to another by a gradient. The ramp used depends on the data being displayed. In most cases, contrinuous data which range sfrom a minimum to a maximum should be displayed with a single colour, but across different shades, as this creates a clear visual representation of 'minimum' and 'maximum' values. 
+A continuous colour palette is also known as a 'ramp': it changes from one shade or hue to another by a gradient. The ramp used depends on the data being displayed. In most cases, continuous data which range from a minimum to a maximum should be displayed with a single colour, but across different shades, as this creates a clear visual representation of 'minimum' and 'maximum' values. 
 
+Categorical palettes do not use a ramp from a minimum to a maximum, as they are used for categorical data where each class is unique. For example, the Output Area Classifcation. Categorical colour schemes can be difficult to get right as they often require many more classes than the 5-8 usually acceptable for continuous data. If dealing with many more classes than that, consider finding a way to 'group' the colours used such that similar classes share the same colour with different shades so that between-class differences stand out and more subtle detail exists within-class, like with the Rural Urban CLassification map below.
 
-#### Relative vs General
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/ruc_categories.png?raw=true" width="50%" alt="Rural-Urban Classification of OAs in Yorkshire and the Humber">
+</p>
+
+With either style of colours, it is easy to end up using colours which are hard to distinguish from each other. This happens when either the ramp used isn't strong enough from one end to the other for the number of classes, or when too many categorical classes are used such that you run out of unique colours.
+
+#### Colour Interpretation
+
+Another thing to consider is how someone's preconceptions about the meaning of colours might influence how they interpret a map. For instance, 'red' is often considered to mean 'bad', and so a map with a white-red colour ramp might immediately imply a scale from 'less bad' to 'very bad', regardless of the scale used. For this reason it's good to consider the impact a colour will have in relation to the purpose of the map. In some cases, this relation between colour and meaning can amplify a poinr, but on others it may be slightly misleading. In the latter case, you should try to find a neutral palette whcih might not invoke preconceptions.
+
+Some maps can actually necessitate the use of colours which have a direct and commonly understood meaning. A map of physical measurement data is often best when plotted with colours associated with the physical values. A temperature map should use blues for lower temperatures and reds for higher, but only so long as the underlying data clearly ranges from accepted values of 'cold' and 'hot'. Similarly, a map of tree cover as a percentage of area would probbly use a green palette as this is associated with tree leaves.
 
 #### Colour and Accesibility
 
@@ -93,7 +102,6 @@ Line features should follow a clear visual hierarchy. Due to their relatively li
 
 Most GIS software visualises points very similarly to polygons as filled-in shapes, but unlike polygons are usually scaled to be the same visual size at any map scale. Points can be differentiated by colour, size, and shape depending on the purpose of the map. a graduated symbol map will differiate by size and sometimes colour. In a general reference map points may be styled to look like boats of planes as per the infrastrcutrue locations they represent. A good rule of thumb for points is that they should be clearly visible at most scales without much overlap while contrasting against other features.
 
-
 ---
 
 ## Map Elements
@@ -106,19 +114,11 @@ Basemaps are pre-made maps which can be used to form the 'base' of a visualisati
 
 Importantly backdrops can provide additional location detail and context which is not visible in the main data. The basemap below uses n OS Grey Raster tile to show an area with the main data overlayed.
 
-As an ONS employee you will have access to basemaps from the Ordnance Survey Data Hub as part of the Public Sector Geospatial Agreement (PSGA). To gain access to these basemaps you simply need to sign up with a Public Sector Account at the <a href="https://osdatahub.os.uk/" target="_blank">data hub</a>. Your application will have to be processed by an administrator to verify your employment, but this shouldn't take long. Before verification, however, you will still have access to open data APIs for use as basemaps.
+As an ONS employee you will have access to basemaps from the Ordnance Survey Data Hub as part of the Public Sector Geospatial Agreement (PSGA). To gain access to these basemaps you simply need to sign up with a Public Sector Account at the <a href="https://osdatahub.os.uk/" target="_blank">data hub</a>. These OS maps are highly recommended, as are their open source versions also available publicly.
 
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_2.jpg?raw=true" width="50%" alt="Basemap added to Hartlepool">
 </p>
-
-#### Sources
-
-While a number of basemap API sources are available, we would recommend using <a href="https://osdatahub.os.uk/" target="_blank">OS Open Data</a>, as the PSMA gives us civil servants access to their basemaps. To sign up for this:
-
-* instructions
-
-Vector and raster tiles are available from here and these come in a number of styles (a few shown below), making them useful for a number of applications.
 
 ### Legend
 
@@ -165,7 +165,9 @@ The graticules should be unintrusive however, so try not to use thick or bold li
 
 ### Text
 
-Text is very important for mapping. It provides a description of what the map represents and can be expanded into a number of areas to improve the quality of the map.
+Text is very important for mapping. It provides a description of what the map represents and can be expanded into a number of areas to improve the quality of the map. 
+
+Much like any other document, text should follow a hierarchy to help draw the eye to certain parts of the map and to make it easier to see what parts are and are not related.
 
 ### Labels
 
@@ -222,6 +224,11 @@ When arranging items, it's important to consider a few things: What items are PA
 
 When arranging items around the map, be sure to keep the focus on the map itself. Generally the map should take up the most area with other features like text, legend, scale being placed arond or on the map without covering data. For items placed outside of the main map area, these should be placed such that they follow the 'reading order': look at the map, then refer to descriptions and other items after. Items placed in the map area need to be unintrusive but clear for example a scale should be place such that it's on the map for direct reference but is not intruding upon key map features like coloured areas or labels.
 
+### Telling a Story
+
+Finally, we come to a crucial question you should ask youself when designing your map. The rest of this tutorial has guided you in creating a map which accurately displays data and is easy to interpret. While making a visualisation, however, there is always room for changes beyond the suggestions here, depending on what story you are trying to tell with the map. Ultimately, the map should clearly convey what the data means within a geographic context. Not all data necessarily needs a map, but a great map with a good story can often make a stronger point than the raw data or a series of graphs on their own.
+
+So while designing your map, continuously ask "What story am I trying to tell? Does this map succeed in tellng it?". A good map will achieve this through a good balance of accuracy and aesthetics.
 
 ## Exercise: Improving a Bad Map
 
