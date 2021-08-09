@@ -36,17 +36,115 @@ This course covers:
 
 ## Introduction
 
-One of the best things you can do with geographic data is visualise it by making a map! A map can display data to help an audience understand the its location context better and can also be helpful to tell a story about the data.
+One of the best things you can do with geographic data is visualise it by making a map. A map can display data to help an audience understand the  location context better and can also be helpful to tell a story about the data.
 
-Map makers face a range of choices when designing a map; these decisions should be driven by the purpose of the map. 
-
-This course will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output. 
+Map makers face a range of choices when designing a map; these choices should be driven by the purpose of the map. Throughout this course will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output.
 
 ## Map Types
 
-The map type you use will depend on the properties of your data and the target purpose of the visualisation. Some map types may be applicable to multiple types of data, and one type of data may be suitable for a number of map types.
+There are many different types of map which can be used in a statistical context. The type of map you use will depend on the properties of your data and the purpose of the visualisation. Some map types may be applicable to multiple types of data, and one type of data may be suitable for a number of map types. In this section we will introduce some of the most common statistical map types and outline the best contexts for their use. By the end of the section you should be able to think about your data and pick a suitable map type to display it. 
+
+As we mentioned, there may be multiple map types which are suitable choices for your data. If this is the case then it's up to you to pick the map which most clearly illustrates the data and the point you are illustrating with it.
+
+
+### Choropleth
+
+Choropleth maps are frequently used to display statistical data by colouring defined geographic areas to represent the statistial value for that area. Choropleth maps are good at illustrating spatial distributions and patterns in an easily understandable and intuative way. These maps are the most commonly used statistical map so it's likely your audience will be familiar with them. 
+
+Choropleths can display data when it's:
+* standardised as a rate or ratio (but *never* as raw counts)
+* a continuous dataset
+* attached to a standard set of areas, for example, a statistical geography provided by ONS.
+
+The main pitfall you can make with choropleth maps is plotting raw counts on your map. Plotting counts on a choropleth is misleading as it fails to account for the different sizes of the geograpic areas you are plotting, which makes comparisons between the areas unfair. By plotting standardised data you overcome this problem. You can standardise data in a number of ways, for example, instances per km^2, instances per 10000 of population, or as a percentage. If plotting raw counts is important for your visualisation you should consider using a different type of map, such as a graduated or proportional symbol map.
+
+The image below is an example of a choropleth, which shows of the percentage of households below 60% of median income, after housing costs, in London MSOAs.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/choropleth.png?raw=true" width="50%" alt="A choropleth of the percentage of households below 60% of median income, after housing costs, in London MSOA">
+</p>
+
+### Graduated and Proportional Symbols
+
+Graduated and Proportional Symbol maps are a good alternative to choropleths for visualising quantities or raw counts. These maps represent the data through a series of differently sized circles, which vary in sized based on the underlying data. While graduated and proportional symbol maps look very similar, the method used for calculating the circle size differs between the two map styles. 
+
+Graduated symbol maps divide the underlying data into classes, just like a choropleth does; each class is assigned to a circular symbol of a specific size which represents the class. Graduated symbol maps provide a clear indication of which sized circle relates to which data value and so, can be easier to interpret than proportoinal symbol maps. Below is an example of a graduated symbol map.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/graduated_symbol.png?raw=true" width="50%" alt="A graduated symbol map of burglary rates in London MSOAs">
+</p>
+
+Proportional symbol maps do not categorise the underlying data into classes. Instead, each data value is represented by a circle which has an area proportional to its corresponding data value. Because of this, proportional symbol maps can have a wide range of different circle symbols which can be hard for the user to interpret properly. Also, if your dataset has extreme values they will tend to have very large circles which can take over the map easily. The map below is an example of a proportional symbol map - it uses the same data as the graduated symbol map above, so you can compare the two styles. 
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/proportional_symbol.png?raw=true" width="50%" alt="A proportional symbol map of burglary rates in London MSOAs">
+</p>
+
+With both of these maps types you should consider the overall scale of the map and the density of points: if the symbols are very dense they can overlap and become unreadable, or they can cover up underlying geographies and thus hide their spatial context. Sometimes you can overcome this by using design features like making your circular symbols slightly transparent or, if this is not appropriate, by selecting a different style of map.
+
+### Heatmaps
+
+A heatmap is created by using point data to make an interpolated surface which represent the density of data points across a geographic area; this surface can also be weighted by an attribute of the underlying data. The surface is coloured with a continuous colour ramp. Heatmaps make it easy to understand the overall trends in point data, including by highlighting areas of particularly high or low density. However, through the creation of an interpolated surface, error can be introduced into your analysis. So, this is a better style of map to visualise data for overall trends, rather than for accurate numerical analysis.
+ 
+The map below is an example of a heatmap for burglaries in London which has been wieghted by financial loss per burglary. Across the map you can see areas with higher density, shown in a darker colour. These represent areas where there have been a high number of burglaries or where there has been a high financial loss. 
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/heatmap.png?raw=true" width="50%" alt="Heatmap of burglary incidents in London">
+</p>
+
+### Dot Density
+Dot density maps use dot symbols to represent observations. Each dot is of identical size and represents the same number of observations as each other dot on the same map - either one-to-one (where one dot is one observation) or one-to-many (where one dot represents a number of observations, eg, one dot equals 500 people). The position of the dots can be assigned either randomly within an associated polygon (eg. an Output Area) or in the actual location of the observation. A colour palette can also be use for categorical data to represent the distribution of the different categories. For example, the map below uses colour to show votes cast for different parties in the 2019 UK General Election, across London, where one point represents 500 votes.
+
+Dot density maps are good for highlighting patterns and distributions in data. They can be used well in place of proportional or graduated symbol maps, and also when you're tempted to break the rules and plot a choropleth with raw counts! When plotting dot density maps you should take care to ensure that the one-to-many value you use is appropriate for the data so it illustrates spatial distributions and data distributions within categorical data without being misleading. The one big disadvantage of dot density maps is they are incredibly frustrating to extract values from, so, if you need people to read values from your map, consider using labels or a different map style altogether.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/dot_density.png?raw=true" width="50%" alt="Dot density map of the results of the 2019 UK General Election">
+</p>
+
+### Bivariate Maps
+
+Bivariate maps are a type of choropleth which allow two variables to be plotted. Bivariate maps are best placed to show two variables which are related (either through a positive or negative correlation) but unlike your standard choropleth, bivariate maps tend to show broad classes and trends rather than more specific values. If you look at the map below you'll see the legend is laid out like a plot with an x and y axis - each axis represents one variable and data is classified and coloured by which class it falls in on this plot. As bivariate maps show broad correlations it's best to keep you number of classes to either 4 (2x2), 9 (3x3) or 16 (4x4) which is why bivariate maps are better at showing correlations and broad trends rather than more exact values - any more classes and it becomes too difficult to differentiate between them. As with a standard choropleth map, values on a bivariate map should be standardised rather than raw counts.
+
+Bivariate colour schemes are difficult to get right; making sure they are accessible and easily distinguishable is tricky. Tools like ColourBrewer have colour pallets and we recommend you use them rather than making your own.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bivariate.png?raw=true" width="50%" alt="Bivariate map of London MSOAs showing Burglary rates vs median household income">
+</p>
+
+
+### Cartograms
+
+Cartograms are a type of map where the size and shape of the areas on the map are distorted from the real, physical reality. There are a number of different cartograms styles available so don't be too confused by this! In a statistical context you will often see areas (for example, Local Authorities) represented as a series of coloured hexagons, we call these maps hexmaps and they are one style of cartogram commonly used when the real size and location of areas doesn't matter too much or where the actual areas wouldn't be recognisable by those looking at the map. In hexmaps the hexagons are laid out in a way which roughly represents the geographic location of the hexagons, this makes it easy for the viewer to understand the general trends in the data. Colour scales can be chosen to be appropriate for categorical data (more on this below) or for continuous data where values are binned like on a choropleth. 
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hexmap_cartogram.png?raw=true" width="50%" alt="Cartogram of the percentage of employees in a Local Authority District working in manufacturing in 2014">
+</p>
+
+
+### Mapping Categorical Data
+
+The maps outlined above deal with continuous data which is most common in a statistical context. However, you may sometimes come across categorical data which requires mapping. When mapping categorical data it is best to choose colours for each cateogry which represent that category best. For example, when mapping land cover it's common to use green for rural areas and greys for urban areas because they most closely match the colours of those land uses in real life. Alternatively, some colours have a commonly recognised symbology in society, such as red for Labour and blue for Conservatives, which should be used to avoid confusion. When picking colour schemes for categorical data it is important to ensure each cateogry has enough contrast when mapped against another, to make sure that the colour scheme is complementary and asthetically pleasing, and to ensure no one category visually jumps out more than another by accident. 
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/classification_map.png?raw=true" width="50%" alt="Output Area Classification of Southern Hampshire">
+</p>
+
 
 ### General Reference Maps
+
+General reference maps are not a type of thematic map but they can augment reports and aid the readers' understanding. 
+
+General reference mainly emphasise the locations of points of interest (POI) e.g:
+* A postcode
+* A route
+* A city
+* An airport
+
+General reference maps are easy to read for most users as they are descriptive and visualise physical locations. The map below shows the locations of National Parks in Great Britain. Relevant features are labelled, and additional information is provided to enhance understanding of both the map itself and the National Park system.
+
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/general_reference.png?raw=true" width="70%" alt="A general reference map of National Parks in Great Britain">
+</p>
 
 
 ## Map Design
@@ -76,6 +174,7 @@ This map shows how different boundary levels can change the amount of detail vis
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Boundary_generalisation.png?raw=true" width="50%" alt="Visualisation of different boundary generalisations available from the geoportal.">
 </p>
+
 
 #### Mixing Boundaries
 
@@ -152,7 +251,6 @@ Line features should follow a clear visual hierarchy. Due to their relatively li
 
 Most GIS software visualises points very similarly to polygons as filled-in shapes, but unlike polygons are usually scaled to be the same visual size at any map scale. Points can be differentiated by colour, size, and shape depending on the purpose of the map. a graduated symbol map will differiate by size and sometimes colour. In a general reference map points may be styled to look like boats of planes as per the infrastrcutrue locations they represent. A good rule of thumb for points is that they should be clearly visible at most scales without much overlap while contrasting against other features.
 
----
 
 ## Map Elements
 
