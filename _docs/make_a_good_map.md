@@ -1,3 +1,53 @@
+---
+title: How To Make A Good Map
+description: Guidance to demonstrate good and bad practise in the creation of maps to visualise data.
+---
+
+# How To Make A Good Map
+
+## Course Summary
+### Introduction
+This course introduces the most common types of maps used for the presentation of statistics, and provides guidance on what to think about when making a statistical map. 
+
+### Estimated time for course
+1 hour
+
+### Audience
+People who wish to make statistical maps
+
+### Course Aims
+This course covers:
+* The most common types of statistical maps
+* Fundamental map components:
+  * choosing a suitable map type for your data
+  * choosing a suitable type of statistical boundary for your map
+  * choosing suitable bins/groups
+  * choosing a good colour scheme and/or symbology for your map
+* Additional map elements including:
+  * base mapping
+  * legends
+  * labels
+  * text
+  * scales
+* Exercise: map critique (with discussion answers)
+
+
+---
+
+## Introduction
+
+One of the best things you can do with geographic data is visualise it by making a map! A map can display data to help an audience understand the its location context better and can also be helpful to tell a story about the data.
+
+Map makers face a range of choices when designing a map; these decisions should be driven by the purpose of the map. 
+
+This course will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output. 
+
+## Map Types
+
+The map type you use will depend on the properties of your data and the target purpose of the visualisation. Some map types may be applicable to multiple types of data, and one type of data may be suitable for a number of map types.
+
+### General Reference Maps
+
 
 ## Map Design
 
