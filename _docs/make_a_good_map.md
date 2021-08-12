@@ -1,19 +1,19 @@
 ---
 title: How To Make A Good Map
-description: Guidance to demonstrate good and bad practise in the creation of maps to visualise data.
+description: Guidance to demonstrate best practise for statistical mapping.
 ---
 
 # How To Make A Good Map
 
 ## Course Summary
 ### Introduction
-This course introduces the most common types of maps used for the presentation of statistics, and provides guidance on what to think about when making a statistical map. 
+This course introduces users to the best practice around mapping for a statistical context. We'll introduce the most common types of maps used to presentati statistics, and will provide guidance on what to think about when making a statistical map to ensure you make a clean, accurate and informative map. 
 
 ### Estimated time for course
 1 hour
 
 ### Audience
-People who wish to make statistical maps
+People with a basic understanding of geography who wish to make statistical maps.
 
 ### Course Aims
 This course covers:
@@ -32,29 +32,32 @@ This course covers:
 * Exercise: map critique (with discussion answers)
 
 
+
 ---
 
 ## Introduction
 
-One of the best things you can do with geographic data is visualise it by making a map. A map can display data to help an audience understand the  location context better and can also be helpful to tell a story about the data.
+One of the best things you can do with geographic data is visualise it by making a map. Like any other visualisation, a map can display data to help an audience understand the data better and can also be helpful for storytelling.
 
-Map makers face a range of choices when designing a map; these choices should be driven by the purpose of the map. Throughout this course will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output.
+Throughout this course we will guide you through the best practice of making a statistical map and some common pitfalls to avoid. By the end you'll be confident identifying the most common statistical map types, know about the main elements of a map and know how to put them together to make a well designed output.
 
 ## Map Types
 
-There are many different types of map which can be used in a statistical context. The type of map you use will depend on the properties of your data and the purpose of the visualisation. Some map types may be applicable to multiple types of data, and one type of data may be suitable for a number of map types. In this section we will introduce some of the most common statistical map types and outline the best contexts for their use. By the end of the section you should be able to think about your data and pick a suitable map type to display it. 
+There are many different types of map which can be used in a statistical context. The type of map you use will depend on the properties of your data and the purpose of the visualisation. As we'll explain soon, some types of map are only suitable for certain data types, and some styles of map are better at showing certain data features than others. However, where there are multiple suitable map types it up to you, the map maker, to pick a style which best illustrates the data without misleading. 
 
-As we mentioned, there may be multiple map types which are suitable choices for your data. If this is the case then it's up to you to pick the map which most clearly illustrates the data and the point you are illustrating with it.
+In this section we will introduce some of the most common statistical map types and outline the best contexts for their use as well as the common pitfalls to avoid. By the end of the section you should be able to think about your data and pick a suitable map type. 
 
 
-### Choropleth
+### Choropleths
 
-Choropleth maps are frequently used to display statistical data by colouring defined geographic areas to represent the statistial value for that area. Choropleth maps are good at illustrating spatial distributions and patterns in an easily understandable and intuative way. These maps are the most commonly used statistical map so it's likely your audience will be familiar with them. 
+Choropleth maps are frequently used to display statistical data by colouring defined geographic areas to represent the statistial values for those areas. These maps are good at illustrating spatial distributions and patterns in an easily understandable and intuative way. They 
+These maps are the most commonly used statistical map so it's likely your audience will be familiar with them. 
 
 Choropleths can display data when it's:
 * standardised as a rate or ratio (but *never* as raw counts)
 * a continuous dataset
 * attached to a standard set of areas, for example, a statistical geography provided by ONS.
+
 
 The main pitfall you can make with choropleth maps is plotting raw counts on your map. Plotting counts on a choropleth is misleading as it fails to account for the different sizes of the geograpic areas you are plotting, which makes comparisons between the areas unfair. By plotting standardised data you overcome this problem. You can standardise data in a number of ways, for example, instances per km^2, instances per 10000 of population, or as a percentage. If plotting raw counts is important for your visualisation you should consider using a different type of map, such as a graduated or proportional symbol map.
 
