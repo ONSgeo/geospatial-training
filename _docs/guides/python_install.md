@@ -245,7 +245,7 @@ In Artifactory, we’ll need to access the “Artifactory Repository Browser”.
   
 
 These wheels have been built specifically for Python 3.8 (cp38) and windows 64-bit (win_amd64), if your install or OS is different, download the appropriate wheels accordingly.
-If you cannot find any of these Python wheels, copy it from the list above and paste it onto the tree search bar. Once you have downloaded these wheels into your “Downloads” folder open the Anaconda Prompt again.
+If you cannot find one of these Python wheels on the drop down from the artifactory, copy it from the list above and paste it onto the tree search bar on the artifactory. Once you have downloaded these wheels into your “Downloads” folder open the Anaconda Prompt again.
 
 * Navigate to your downloads folder, for me this means giving the instruction:
 
