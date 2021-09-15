@@ -226,7 +226,15 @@ Search for the **Edit environment Variables** option in the windows search bar t
 
 We have to download these Python libraries separately. This is because they rely on C libraries that are not downloaded if we use the normal Python install approach, and cannot be built on ONS laptops.By downloading the wheels we are also downloading the C libraries that we don’t get otherwise.
 
-[Visit this website](https://www.lfd.uci.edu/~gohlke/pythonlibs/) to download the wheels for installing the libraries we need.
+![Image showing the Artefactory](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/guides/img/artefactory.PNG?raw=true)
+
+
+In Artifactory, we’ll need to access the “Artifactory Repository Browser”.
+
+	1. Click on the “Artifactory Repository Browser” icon (pages)
+	2. Click on the ‘Tree’ link.
+	3. Search for wheels.
+	4. Open the “Python_Wheels” drop down to reveal all the wheel files!
 
 **These Python wheels are Operating System and Python install specific.** Download the following wheels:
   1. Fiona-1.8.18-cp38-cp38-win_amd64.whl
@@ -237,7 +245,7 @@ We have to download these Python libraries separately. This is because they rely
   
 
 These wheels have been built specifically for Python 3.8 (cp38) and windows 64-bit (win_amd64), if your install or OS is different, download the appropriate wheels accordingly.
-Once you have downloaded these wheels into your “Downloads” folder open the Anaconda Prompt again.
+If you cannot find any of these Python wheels, copy it from the list above and paste it onto the tree search bar. Once you have downloaded these wheels into your “Downloads” folder open the Anaconda Prompt again.
 
 * Navigate to your downloads folder, for me this means giving the instruction:
 
