@@ -291,7 +291,7 @@ By now you should have a good understanding of:
 * GIS and geospatial analysis techniques
 * what geospatial tools are available at ONS
 
-If you're interested and want to know more why not take our ['introduction to practical geography'](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) course, where you'll learn more about applying geography for statistics.
+If you're interested and want to know more why not take our ['Practical Geography for Statistics'](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) course, where you'll learn more about applying geography for statistics.
 
 
 
