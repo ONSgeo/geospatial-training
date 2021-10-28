@@ -49,9 +49,9 @@ Most times when we produce statistics they are also about places – sometimes t
 
 Getting the geography right is critical throughout the statistical production journey.
 
-Datasets from Ordnance Survey or other data providers help form the address or postcode frames used to run surveys or spines of reference data used to link and locate administrative sources. 
+Datasets from Ordnance Survey and other data providers help form fundamental ONS products such as address and postcode frames used to run surveys and spines of reference data which link and locate administrative sources.
 
-At ONS, geography experts in Data Architecture maintain key reference data sets such as the Address and Business indexes, look-up tables between geographies and names and code lists used to reference our outputs. By linking the data  we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
+At ONS, geography experts in Data Architecture maintain key reference data sets such as the Address and Business indexes, look-up tables which allow referencing between different types of geography, and names and code lists used to reference our outputs. By linking the data  we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
 
 Geographic tools allow this production, as well as helping us analyse the data and provide access via the website. Get any of this wrong and the statistics will be wrong.
 
@@ -64,7 +64,7 @@ As we add more administrative data, big-data and other sources to our data store
 *Sir Nigel Shadbolt*
 
 ### Spatial tools – GIS and Geospatial analysis
-Mapping and visualisation of spatial data, both for analysis to enhance our products on the web, can greatly improve understanding and accessibility to our statistics. The use of GIS (Geographic Information Systems – see later) allow us to manage and analyse our data. Analysis of spatial patterns over time and potentially in real-time can unlock new understanding and new views on the data we have never had before.
+Mapping and visualisation of spatial data, both for analysis and to enhance our products on the web, can greatly improve understanding and accessibility to our statistics. The use of GIS (Geographic Information Systems – see later) allow us to manage and analyse our data. Analysis of spatial patterns over time and potentially in real-time can unlock new understanding and new views on the data we have never had before.
 
 Spatial tools and linkage also opens opportunities for the analysis of data far beyond what we are used to working with now. Data and big-data from smart cars, roads and buildings, as well as the ‘Internet of Things’ all have a geospatial dimension and this will be increasingly important in describing and understanding the economy, the environment and society in future. Geographic tools will enable us to manage and make use of these sources.
 
@@ -99,7 +99,7 @@ As a user of geographic data from ONS, you should be particularly aware of the p
 
 Geographic data comes in two fundamental formats: vector and raster. Using these two formats we can represent any data with a location associated to it.
 
-### Vector Data
+#### Vector Data
 
 Vector data comes in three types:
 
@@ -114,7 +114,7 @@ Vector data comes in three types:
 In the statistical domain you will most often deal with vector data and within that, most commonly point or polygon types. Much of the data that ONS collects or uses is linked to a location, most commonly via a postcode or address, unique property reference number (UPRN) or GSS geography code. This allows us to link data together easily and accurately, and then produce statistics. We can think of postcodes, addresses and UPRNs as point data (pairs of XY coordinates); GSS geography codes allow us to link to the associated geographical boundaries, or polygons.
 
 
-### Rasters
+#### Rasters
 
 Raster data is represented by a grid or equal sized cells, with a value for each cell. The most common example of raster data is an image and in the geographical context, this is often data collected by satellites, aerial imaging or data collected by drone (all often referred to as Earth observation data). Raster data is often large, and can need specialist tools to analyse properly. 
 
@@ -138,13 +138,13 @@ Locating geographic data means providing it with an X and Y coordinate which ref
 
 There are lots of different coordinate reference systems which are designed for use across different areas of the world. In the Great Britain the CRS we use is British National Grid, which is produced and maintained by <a href="https://www.ordnancesurvey.co.uk/" target="_blank">Ordnance Survey</a>, Great Britain's Mapping Agency. If you've ever used an Ordnance Survey map for walking, cycling or perhaps back in geography class at school, you'll have used British National Grid, perhaps without even knowing it!
 
-Sometimes the data we use is provided in a different CRS than British National Grid. This isn't a problem as there are transformations we can use to convert between the two. GIS systems are also very good at doing this transformation on the fly, so you if you're just looking at data you don't need to worry about the CRS. However, there are some common mistakes that can be made by analysing data which is in different coordinate reference systems, so be careful! You can find out more if you complete the Practical Geography for Statstics course we offer, and don't forget the Geospatial team are on hand to help if needed, so please get in touch.
+Sometimes the data we use is provided in a different CRS than British National Grid. This isn't a problem as there are transformations we can use to convert between the two. GIS systems are also very good at doing this transformation on the fly, so you if you're just looking at data you don't need to worry about the CRS. However, there are some common mistakes that can be made by analysing data which is in different coordinate reference systems, so be careful! You can find out more if you complete the Practical Geography for Statistics course we offer, and don't forget the Geospatial team are on hand to help if needed, so please get in touch.
 
 This is a very brief overview of locating geospatial data. In reality, geodesy is an incredibly complex field, which thankfully, you do not need to know too much more about at the moment!
 
 ![A map showing the British National Grid 10km cells overlaid on the outline of the UK.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/bng.png?raw=true)
 
-*British National Grid: 10 km cells*
+*British National Grid: 100 km cells*
 
 ### GSS Names and Codes
 On 1st January 2011 GSS codes were introduced. GSS codes are a type of uniform resource indicator (URI) which provide a way to identify unique items. GSS codes identify individual geographic objects, for example, Local Authority Districts. 
@@ -160,12 +160,12 @@ The <a href="https://geoportal.statistics.gov.uk/datasets/register-of-geographic
 ### Referencing Areas Correctly
 Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets so, identifying one by name alone can be fraught with error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
 
-Using GSS codes to accurately refer to areas avoids problem. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas.
+Using GSS codes to accurately refer to areas avoids problems. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas.
 
 ## Geographic Products from ONS
 ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
 
-The *Heirarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
+The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
 
 ![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
 
@@ -194,7 +194,7 @@ Ordnance Survey provide a wide variety of geospatial data which far exceeds the 
 In this section we will provide a quick overview of some of the basic techniques which can be used to start analysing spatial data.
 
 ### Geographic Information Systems
-A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can be other things like code or a cloud based database. 
+A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can take otherforms like code or a cloud based database. 
 
 GIS can be used to bring together many different types of data and provides us with the tools to identify, analyse and understand patterns and relationships. GIS can also be a valuable tool in problem solving and decision making, as well as for investigation and visualisation.
 
@@ -207,7 +207,7 @@ This section will give you a quick overview of some of the most commonly used sp
 
 *In this example we have selected all the points which fall within the blue square; the selected points are in orange*
 
-**Buffer** allows you to calculate a distance outwards from an object. For example, to find households within a certain distance from a GP surgery you would buffer the surgery's location and then (using select by location) select the households which fall within the buffer.
+**Buffer** allows you to calculate a distance outwards from an object. For example, to find households within a certain straight line distance from a GP surgery you would buffer the surgery's location and then (using select by location) select the households which fall within the buffer.
 
 ![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
 
@@ -276,7 +276,7 @@ If you work at ONS you are able to install geospatial software from the software
 
 **Python** users should use `GeoPandas` for manipulating spatial objects; `GeoPandas` is the spatial version of `Pandas` so you should find it familiar. For mapping you should use `matplotlib` and for raster analysis we recommend `rasterio`. Installation of geospatial Python packages is slightly awkward so <a href="https://onsgeo.github.io/geospatial-training/docs/guides/python_install">follow our installation guidance</a>.
 
-**R** users should use the `sf` package for manipulating spatial objects; `sf` integrates well with the `tidyverse` so should be comfortable for many R users. There are a number of mapping packages, we recommend `tmap` for its simplicity, but `ggplot2`, `cartography` and `leaflet` are also excellent options. For raster data we recommend using `raster` or `stars`. These packages are all available to install via the Artifactory, as usual.
+**R** users should use the `sf` package for manipulating spatial objects; `sf` integrates well with the `tidyverse` so should be comfortable for many R users. There are a number of mapping packages, we recommend `tmap` for its simplicity, but `ggplot2`, `cartography` and `leaflet` are also excellent options. For raster data we recommend using `raster` or `stars`. These packages are all available to install via the Artifactory, as usual. It's worth mentioning that you might come across another package called `sp` - this is an old package which has been superseded by `sf` and you should avoid using it unless you have a specific reason to (for example, a few statistical packages still require `sp` objects).
 
 ## Conclusion
 Congratulations! You've reached the end of the course. 
@@ -291,7 +291,7 @@ By now you should have a good understanding of:
 * GIS and geospatial analysis techniques
 * what geospatial tools are available at ONS
 
-If you're interested and want to know more why not take our 'introduction to practical geography' course, where you'll learn more about applying geography for statistics.
+If you're interested and want to know more why not take our ['introduction to practical geography'](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) course, where you'll learn more about applying geography for statistics.
 
 
 
