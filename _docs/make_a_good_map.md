@@ -5,6 +5,9 @@ description: Guidance to demonstrate best practise for statistical mapping.
 
 # How To Make A Good Map
 
+## Disclaimer: Work in Progress!
+This course currently in development. Please note that content may change and some parts are currently incomplete. However, we hope you find this resource useful, even in its current state.
+
 ## Course Summary
 ### Introduction
 This course introduces users to the best practice around mapping for a statistical context. We'll introduce the most common types of maps used to presentati statistics, and will provide guidance on what to think about when making a statistical map to ensure you make a clean, accurate and informative map. 
