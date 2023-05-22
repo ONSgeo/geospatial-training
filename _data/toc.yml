@@ -52,8 +52,12 @@
           url: "docs/intro_to_qgis#basic-mapping-in-qgis"
     - title: "Introduction to GIS in R"
       url: "docs/intro_to_gis_in_r"
+    - title: "More GIS in R"
+      url: "docs/more_gis_in_r"
     - title: "Introduction to GIS in Python"
       url: "docs/intro_to_gis_in_python"
+    - title: "More GIS in Python"
+      url: "docs/more_gis_in_python"
 - title: Guides
   url: "docs/guides/guides_overview"
   links: 
