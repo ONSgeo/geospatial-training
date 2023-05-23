@@ -70,7 +70,7 @@
 - title: Guidance
   url: "docs/guides/guides_overview"
   links: 
-    - title: Install Guide: Python Geospatial Packages at ONS
+    - title: Install Guide - Python Geospatial Packages at ONS
       url: "docs/guides/python_install"
     - title: Ethical considerations in the use of geospatial data
       url: "https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/"
