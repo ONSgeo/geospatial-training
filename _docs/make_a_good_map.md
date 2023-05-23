@@ -395,22 +395,22 @@ All the maps in this section were created specifically for these examples and ar
 ### Bad Maps
 #### Example 1
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_1.png)?raw=true" width="80%" alt="A bad version of a map showing population density by CCGs, England.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_1.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_1.png)?raw=true" width="80%" alt="A bad version of a map showing population density by CCGs, England.">
 </p>
 
 #### Example 2
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_2.png)?raw=true" width="80%" alt="A bad version of a map showing IMD Deciles, England.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_2.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_2.png)?raw=true" width="80%" alt="A bad version of a map showing IMD Deciles, England.">
 </p>
 
 #### Example 3
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_3.png)?raw=true" width="80%" alt="A bad version of a map showing population in Leicester.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_3.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_3.png)?raw=true" width="80%" alt="A bad version of a map showing population in Leicester.">
 </p>
 
 #### Example 4
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_4.png)?raw=true" width="80%" alt="A bad version of a map showing burglaries in London.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_4.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/bad_map_4.png)?raw=true" width="80%" alt="A bad version of a map showing burglaries in London.">
 </p>
 
 ### Improved Versions and Discussion
@@ -424,7 +424,7 @@ The thickness of the boundaries is unnecessarily large and the solid black colou
 Here's an improved version of the map
 
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_1.png)?raw=true" width="80%" alt="A good version of a map showing population density by CCGs, England.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_1.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_1.png)?raw=true" width="80%" alt="A good version of a map showing population density by CCGs, England.">
 </p>
 
 #### Example 2
@@ -439,7 +439,7 @@ Finally, the title uses an abbreviation (IMD) which people may not be familiar w
 Here's an updated version of this map
 
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_2.png)?raw=true" width="80%" alt="A good version of a map showing IMD Deciles, England.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_2.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_2.png)?raw=true" width="80%" alt="A good version of a map showing IMD Deciles, England.">
 </p>
 
 #### Example 3
@@ -452,7 +452,7 @@ The boundaries aren't a highly important feature of this map, but they get lost 
 To improve this map we've selected a proportional symbol map and have changed the symbology to something much clearer, with a better geographical context through the base map and labels. You can also see a difference in the boundaries, with the LA boundary being slightly thicker than the MSOA boundaries to distinguish the hierarchy.
 
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_3.png)?raw=true" width="80%" alt="A good version of a map showing population in Leicester.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_3.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_3.png)?raw=true" width="80%" alt="A good version of a map showing population in Leicester.">
 </p>
 
 #### Example 4
@@ -463,5 +463,5 @@ Some areas of the map don't have data recorded, but this is hard to spot if you 
 Asthetically, this map doesn't look very plesant. The boundaries are very thick and heavy, and the brown/red colour scheme isn't very nice. Something more asthetically pleasing could be chosen!
 
 <p align="left">
- <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_4.png)?raw=true" width="80%" alt="A good version of a map showing burglaries in London.">
+ <img src="[https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_4.png](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_4.png)?raw=true" width="80%" alt="A good version of a map showing burglaries in London.">
 </p>
