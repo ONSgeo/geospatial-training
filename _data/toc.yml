@@ -39,7 +39,7 @@
           url: "docs/practical_geog_and_stats#mapping-your-data"
         - title: Geographic fallacies
           url: "docs/practical_geog_and_stats#geographical-fallacies"
-    - title: "Introduction to QGIS"
+    - title: Introduction to QGIS
       url: "docs/intro_to_qgis"
       children:
         - title: QGIS Basics
@@ -50,15 +50,15 @@
           url: "docs/intro_to_qgis#editing-and-saving-data"
         - title: Basic Mapping in QGIS
           url: "docs/intro_to_qgis#basic-mapping-in-qgis"
-    - title: "Introduction to GIS in R"
+    - title: Introduction to GIS in R
       url: "docs/intro_to_gis_in_r"
-    - title: "More GIS in R"
+    - title: More GIS in R
       url: "docs/more_gis_in_r"
-    - title: "Introduction to GIS in Python"
+    - title: Introduction to GIS in Python
       url: "docs/intro_to_gis_in_python"
-    - title: "More GIS in Python"
+    - title: More GIS in Python
       url: "docs/more_gis_in_python"
-    - title: "How to Make A Good Map"
+    - title: How to Make A Good Map
       url: "docs/make_a_good_map"
       children:
         - title: Map Types
@@ -70,10 +70,10 @@
 - title: Guidance
   url: "docs/guides/guides_overview"
   links: 
-    - title: "Install Guide: Python Geospatial Packages at ONS"
+    - title: Install Guide: Python Geospatial Packages at ONS
       url: "docs/guides/python_install"
-    - title: "Ethical considerations in the use of geospatial data"
+    - title: Ethical considerations in the use of geospatial data
       url: "https://uksa.statisticsauthority.gov.uk/publication/ethical-considerations-in-the-use-of-geospatial-data-for-research-and-statistics/"
-    - title: "Recommended Resources"
+    - title: Recommended Resources
       url: "docs/guides/resources"
 
