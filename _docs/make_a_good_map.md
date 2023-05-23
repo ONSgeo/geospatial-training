@@ -230,12 +230,15 @@ Accessibility is very important when making any visualisation. In maps this mean
 
 The way number and distribution of colours on your map will depend on the type of 'classes' used to break the data up into ranges from one value to another. A number of break styles can be chosen and applied automatically in most types of GIS software. By looking at the distribution of values within your data you can assess what breaks might be appropriate. It is possible to set your break values manually, which can be useful in instances where natural breaks are perhaps too precise or not intuitive e.g. if they have too much decimal precision where rounding would be appropriate. In instances where the data contains clusters of values, Jenks (natural breaks) might be appropriate as it can automatically separate these clusters into different bins (depending on the number of classes specified). Other styles, like quantiles and equal interval, will split the data evenly and produce uniformly wide classes.
 
+<p align="left">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/break_types.png?raw=true" width="80%" alt="MSOA map with LAD boundaries on top">
+</p>
+
 More advanced breaks, such as Standard Deviation, are more niche and are mainly appropriate in specific circumstances as they are not easily interpreted by non-experts.
 
 The number of classes chosen will greatly impact a visualisation. Too few and you risk missing out data patterns; too many and you'll add complexity but no additional value to the map. Generally 4-7 classes is appropriate for a map as this offers a good compromise between the detail visible and obvious separation of classes. In the map below you can see the impact different number of classes can have on your visualisation.
-
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/break_types.png?raw=true" width="80%" alt="MSOA map with LAD boundaries on top">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/breaks_n_classes.png?raw=true" width="80%" alt="MSOA map with LAD boundaries on top">
 </p>
 
 ### Fills, textures, and strokes
@@ -291,7 +294,7 @@ In this example map a scale was necessary for two reasons:
 The latter reason is an important consideration as it can give much-needed additional context to the distribution of the data.
 
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/scale_bar.PNG?raw=true" width="80%" alt="Scale added to Hartlepool">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/scale_bar.png?raw=true" width="70%" alt="Scale bar examples">
 </p>
 
 ### Compass 
@@ -301,7 +304,7 @@ A compass shows the direction of North relative to the map. A compass is a lesse
 While many will think of a fancy compass rose such as on old-fashioned globes which show north-east-south-west, it is perfectly acceptable to use a compass which only shows north. In the example below this is represented with a simple arrow pointing up. If the displayed map was actually offset at a certain angle from north, the arrow would also be rotated to this angle.
 
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/compass.PNG?raw=true" width="80%" alt="Compass added to Hartlepool">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/compass.png?raw=true" width="80%" alt="Compass added to Hartlepool">
 </p>
 
 ### Graticules
