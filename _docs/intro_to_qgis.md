@@ -119,7 +119,7 @@ Panels are parts of the UI which organise a variety of features into larger grou
 
 Before we begin any work, it's a good idea to set up the UI such that everything need will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
 
-To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools availible in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although some tools can also be found from the menu bar. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
+To do this, go to `View > Panels` and check `Processing Toolbox`. You should now have a panel on the right side of the screen called 'Processing Toolbox'. This panel contains a list of all tools available in QGIS and a search bar to find them. This will be the primary method for finding tools in this tutorial, although some tools can also be found from the menu bar. For example, the `Buffer` tool can also be found by going to the menu bar and choosing `Vector > Geoprocessing Tool > Buffer`. This is the same tool as you would get by searching `Buffer` in the processing toolbox. 
 
 ### Loading data
 
