@@ -42,7 +42,7 @@ Most times when we produce statistics they are also about places – sometimes t
 ### Three key reasons that geography matters
 
 1. Geography is fundamental to the way we produce statistics - if we don’t get the geography right there is real risk that we will damage the quality of our statistics.
-2. As we pull more data together in ONS , geography provides a great way to integrate between topics and across themes – often location will be the only element that disparate datasets hold in common.
+2. As we pull more data together in ONS, geography provides a great way to integrate between topics and across themes – often location will be the only element that disparate datasets hold in common.
 3. Spatial relationships matter and there are a wealth of well established and emerging spatial tools available to help us lever more information out of our data.
 
 ### The importance of Geography in Statistics
@@ -51,12 +51,12 @@ Getting the geography right is critical throughout the statistical production jo
 
 Datasets from Ordnance Survey and other data providers help form fundamental ONS products such as address and postcode frames used to run surveys and spines of reference data which link and locate administrative sources.
 
-At ONS, geography experts in Data Architecture maintain key reference data sets such as the Address and Business indexes, look-up tables which allow referencing between different types of geography, and names and code lists used to reference our outputs. By linking the data  we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
+At ONS, geography experts in Data Architecture maintain key reference data sets such as the Address and Business indexes, look-up tables which allow referencing between different types of geography, and names and code lists used to reference our outputs. By linking the data we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
 
 Geographic tools allow this production, as well as helping us analyse the data and provide access via the website. Get any of this wrong and the statistics will be wrong.
 
 ### The great integrator
-Location is a great way of integrating disparate datasets  – it is universal and common to almost all ONS and public sector data. The location in our data therefore provides a powerful way of integrating across topics – social, economic and environmental themes for example.
+Location is a great way of integrating disparate datasets – it is universal and common to almost all ONS and public sector data. The location in our data therefore provides a powerful way of integrating across topics – social, economic and environmental themes for example.
 
 As we add more administrative data, big-data and other sources to our data stores location can form an invaluable frame, bringing topics together for the first time.
 
@@ -194,7 +194,7 @@ Ordnance Survey provide a wide variety of geospatial data which far exceeds the 
 In this section we will provide a quick overview of some of the basic techniques which can be used to start analysing spatial data.
 
 ### Geographic Information Systems
-A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can take otherforms like code or a cloud based database. 
+A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can take other forms like code or a cloud based database. 
 
 GIS can be used to bring together many different types of data and provides us with the tools to identify, analyse and understand patterns and relationships. GIS can also be a valuable tool in problem solving and decision making, as well as for investigation and visualisation.
 

@@ -107,7 +107,7 @@ Geographic data comes is a range of formats. Most GIS software is good at dealin
 * There are some frustrating quirks when using shapefiles which can cause you problems. Be aware that:
   * attribute names are limited to 10 characters
   * file size is limited to 2GB
-  * there is no `NULL` value which makes distinguising 0s and `NULLs` problematic
+  * there is no `NULL` value which makes distinguishing 0s and `NULLs` problematic
   * an individual shapefile can only deal with one type of vector data (points, lines or polygons) so you will need multiple shapefiles if you are working with multiple types of vector data
   * by default there is no projection data provided with shapefiles (unless you have a .prj file) so it is up to the user to make sure the data is projected in the correct coordinate reference system. This makes it easy to put data in the wrong place by accident.
 
@@ -242,9 +242,9 @@ Note that not all resolutions are available for all boundary extents or boundary
 ![Map showing the difference between clipped and extent boundaries.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/resolution.PNG?raw=true)
 
 ### Combining Resolution and Extent
-The extents and resolutios above are combined to produce several different versions of each boundary output, suitable for a range of different uses. 
+The extents and resolutions above are combined to produce several different versions of each boundary output, suitable for a range of different uses. 
 
-For analysis the most detailed boundary data available (most freqently BFE) should be used to avoid errors. This is particularly important when combining or comparing datasets, or when allocating things using boundaries.
+For analysis the most detailed boundary data available (most frequently BFE) should be used to avoid errors. This is particularly important when combining or comparing datasets, or when allocating things using boundaries.
 
 For mapping or visualising your data a more generalised dataset can make outputs easier to interpret and will be quicker to load, improving user experience.
 
@@ -262,7 +262,7 @@ Ultra Generalised | BUC | -
 
 ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
 
-The *Heirarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
+The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
 
 ![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
 
@@ -305,7 +305,7 @@ We'll now run through some of the more frequently used geographies to be aware o
 * These areas represent the nighttime residential population.
 * They were introduced in 2001 and revised in 2011 to reflect population changes and better align with administrative units. They will be revised again in 2021.
 * The geographies are built from clusters of postcodes which are aggregated to be as socially homogenous as possible, based on a range of factors.
-* Each level of geograhpy has a relatively consistent population size.
+* Each level of geography has a relatively consistent population size.
 * Mixtures of urban and rural areas are avoided wherever possible.
 * The Census geographies are hierarchical and nest within each other, as shown in the image below.
 
@@ -340,10 +340,10 @@ UPRNs are authoritative codes and can be used for data linage. At ONS, UPRNs for
 
 **UPRN Directories**
 
-ONS produces two UPRN directories, which are similar to the postcode directories. The UPRN directories provide statistical geogrpahy information for each UPRN.
+ONS produces two UPRN directories, which are similar to the postcode directories. The UPRN directories provide statistical geography information for each UPRN.
 
 *ONS UPRN Directory (ONSUD)*
-* Created by point-in-polygon assignment of UPRNs to geogrpahic boundaries.
+* Created by point-in-polygon assignment of UPRNs to geographic boundaries.
 * Provides a more exact location assignment.
 * Use for operational purposes.
 
@@ -379,7 +379,7 @@ There are multiple methods for defining "urban" and "rural". Two of the most com
 **Other methods** of defining rural-urban are often adjusted versions of BUAs which comply with different boundary types (for example. major towns and cities).
 
 ### Area Classifications
-Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live wihtin the same locality. These area types will be distributed in different geographical space.
+Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live within the same locality. These area types will be distributed in different geographical space.
 
 The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200" target="_blank">this interactive map</a>.
 
@@ -389,7 +389,7 @@ The Output Area Classification (OAC) is a commonly used area classification deri
 ## Geospatial Tools
 
 ### Open Source
-There are many excellent open source geospatial resources and tools available. We would specficially recommend the following:
+There are many excellent open source geospatial resources and tools available. We would specifically recommend the following:
 
 **QGIS** is a desktop GIS tool which will allow you to quickly load and visualise your data. This software is used by geospatial experts across the world and is the leading free and open source GIS software. If you want to use geospatial data and don't know how to code, this is a great way to get started. Take a look at our [Introduction to QGIS training](https://onsgeo.github.io/geospatial-training/docs/intro_to_qgis) for a walkthrough of tasks you might end up doing in a statistical context. To install QGIS at ONS you will need to request it via Service Desk; after approval install can be completed via the software centre.
 
@@ -499,12 +499,12 @@ When mapping counts to areas it's important to normalise your counts. Large area
 
 In the image below you can see how the raw count of woodland area (top left) can dominate when mapped by MSOA (bottom left). However, when we normalise woodland area by people per MSOA (top right) the resulting map (bottom right) is much clearer, and highlights places of interest where there is a high area of woodland per person. 
 
-![Examples of mapping normliased data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/normalise.png?raw=true)
+![Examples of mapping normalised data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/normalise.png?raw=true)
 
 ### Selecting Breaks
-A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the are. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how ddifferent methods for selecting breaks can drastically change your visualisation.
+A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the are. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how different methods for selecting breaks can drastically change your visualisation.
 
-![Maps showing how differen breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
+![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
 
 ### More Cartography
 Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an out for our upcoming training on 'How to make a good map'. 
@@ -523,7 +523,7 @@ As much of the statistical data we deal with is aggregated from point data, we h
 ### Locational Fallacy
 Locational fallacy is cause by the spatial characterisation of events in a simplistic or incorrect way. This characterisation can subsequently influence the understanding of the subject and can lead to incorrect outcomes or understanding. 
 
-For example, recording locations for all crimes can be misleading. Crimes like burglary or assult occur at a location, so it is suitable to associate these crimes with a location. However, allocating crimes like fruad to a location is less straightforward as it can be committed virtually as well as in person. Incorrectly assigning a crime like fraud to a location can cause misunderstandings in how and why fraud victims are targetted. 
+For example, recording locations for all crimes can be misleading. Crimes like burglary or assault occur at a location, so it is suitable to associate these crimes with a location. However, allocating crimes like fraud to a location is less straightforward as it can be committed virtually as well as in person. Incorrectly assigning a crime like fraud to a location can cause misunderstandings in how and why fraud victims are targeted. 
 
 ### Accuracy and Precision
 Accuracy and precision are important to appreciate in order to understand potential bias or errors within your data.
@@ -543,7 +543,7 @@ Ecological fallacy is where incorrect inferences are drawn about an individual b
 
 Aggregating data can conceal variations within an area - the diagram below shows an example of this.
 
-![Ecolocical fallacy where individual data on income is averaged to draw an incorrect inference about an area.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ecological.PNG?raw=true)
+![Ecological fallacy where individual data on income is averaged to draw an incorrect inference about an area.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ecological.PNG?raw=true)
 
 ## Conclusion
 Congratulations on reaching the end of the course.

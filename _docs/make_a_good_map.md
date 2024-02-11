@@ -10,7 +10,7 @@ This course currently in development. Please note that content may change and so
 
 ## Course Summary
 ### Introduction
-This course introduces users to the best practice around mapping for a statistical context. We'll introduce the most common types of maps used to presentat statistics, and will provide guidance on what to think about when making a statistical map to ensure you make a clean, accurate and informative map. 
+This course introduces users to the best practice around mapping for a statistical context. We'll introduce the most common types of maps used to present statistics, and will provide guidance on what to think about when making a statistical map to ensure you make a clean, accurate and informative map. 
 
 ### Estimated time for course
 1 hour
@@ -53,7 +53,7 @@ In this section we will introduce some of the most common statistical map types 
 
 ### Choropleths
 
-Choropleth maps are frequently used to display statistical data by colouring defined geographic areas to represent the statistial values for those areas. These maps are good at illustrating spatial distributions and patterns in an easily understandable and intuative way. These maps are the most commonly used statistical map so it's likely your audience will be familiar with them. 
+Choropleth maps are frequently used to display statistical data by colouring defined geographic areas to represent the statistical values for those areas. These maps are good at illustrating spatial distributions and patterns in an easily understandable and intuitive way. These maps are the most commonly used statistical map so it's likely your audience will be familiar with them. 
 
 Choropleths can display data when it's:
 * standardised as a rate or ratio (but *never* as raw counts)
@@ -61,7 +61,7 @@ Choropleths can display data when it's:
 * attached to a standard set of areas, for example, a statistical geography provided by ONS.
 
 
-The main pitfall you can make with choropleth maps is plotting raw counts on your map. Plotting counts on a choropleth is misleading as it fails to account for the different sizes of the geograpic areas you are plotting, which makes comparisons between the areas unfair. By plotting standardised data you overcome this problem. You can standardise data in a number of ways, for example, instances per km^2, instances per 10000 of population, or as a percentage. If plotting raw counts is important for your visualisation you should consider using a different type of map, such as a graduated or proportional symbol map.
+The main pitfall you can make with choropleth maps is plotting raw counts on your map. Plotting counts on a choropleth is misleading as it fails to account for the different sizes of the geographic areas you are plotting, which makes comparisons between the areas unfair. By plotting standardised data you overcome this problem. You can standardise data in a number of ways, for example, instances per km^2, instances per 10000 of population, or as a percentage. If plotting raw counts is important for your visualisation you should consider using a different type of map, such as a graduated or proportional symbol map.
 
 The image below is an example of a choropleth, which shows of the percentage of households below 60% of median income, after housing costs, in London MSOAs.
 
@@ -73,7 +73,7 @@ The image below is an example of a choropleth, which shows of the percentage of 
 
 Graduated and Proportional Symbol maps are a good alternative to choropleths for visualising quantities or raw counts. These maps represent the data through a series of differently sized circles, which vary in sized based on the underlying data. While graduated and proportional symbol maps look very similar, the method used for calculating the circle size differs between the two map styles. 
 
-Graduated symbol maps divide the underlying data into classes, just like a choropleth does; each class is assigned to a circular symbol of a specific size which represents the class. Graduated symbol maps provide a clear indication of which sized circle relates to which data value and so, can be easier to interpret than proportoinal symbol maps. Below is an example of a graduated symbol map.
+Graduated symbol maps divide the underlying data into classes, just like a choropleth does; each class is assigned to a circular symbol of a specific size which represents the class. Graduated symbol maps provide a clear indication of which sized circle relates to which data value and so, can be easier to interpret than proportional symbol maps. Below is an example of a graduated symbol map.
 
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/graduated_symbol.png?raw=true" width="80%" alt="A graduated symbol map of burglary rates in London MSOAs">
@@ -91,7 +91,7 @@ With both of these maps types you should consider the overall scale of the map a
 
 A heatmap is created by using point data to make an interpolated surface which represents the density of data points across a geographic area; this surface can also be weighted by an attribute of the underlying data. The surface is coloured with a continuous colour ramp. Heatmaps make it easy to understand the overall trends in point data, including by highlighting areas of particularly high or low density. However, through the creation of an interpolated surface, error can be introduced into your analysis. So, this is a better style of map to visualise data for overall trends, rather than for accurate numerical analysis.
  
-The map below is an example of a heatmap for burglaries in London which has been wieghted by financial loss per burglary. Across the map you can see areas with higher density, shown in a darker colour. These represent areas where there have been a high number of burglaries or where there has been a high financial loss. 
+The map below is an example of a heatmap for burglaries in London which has been weighted by financial loss per burglary. Across the map you can see areas with higher density, shown in a darker colour. These represent areas where there have been a high number of burglaries or where there has been a high financial loss. 
 
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/heatmap.png?raw=true" width="80%" alt="Heatmap of burglary incidents in London">
@@ -128,7 +128,7 @@ Cartograms are a type of map where the size and shape of the areas on the map ar
 
 ### Mapping Categorical Data
 
-The maps outlined above deal with continuous data which is most common in a statistical context. However, you may sometimes come across categorical data which requires mapping. When mapping categorical data it is best to choose colours for each cateogry which represent that category best. For example, when mapping land cover it's common to use green for rural areas and greys for urban areas because they most closely match the colours of those land uses in real life. Alternatively, some colours have a commonly recognised symbology in society, such as red for Labour and blue for Conservatives, which should be used to avoid confusion. When picking colour schemes for categorical data it is important to ensure each cateogry has enough contrast when mapped against another, to make sure that the colour scheme is complementary and asthetically pleasing, and to ensure no one category visually jumps out more than another by accident. 
+The maps outlined above deal with continuous data which is most common in a statistical context. However, you may sometimes come across categorical data which requires mapping. When mapping categorical data it is best to choose colours for each category which represent that category best. For example, when mapping land cover it's common to use green for rural areas and greys for urban areas because they most closely match the colours of those land uses in real life. Alternatively, some colours have a commonly recognised symbology in society, such as red for Labour and blue for Conservatives, which should be used to avoid confusion. When picking colour schemes for categorical data it is important to ensure each category has enough contrast when mapped against another, to make sure that the colour scheme is complementary and aesthetically pleasing, and to ensure no one category visually jumps out more than another by accident. 
 
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/classification_map.png?raw=true" width="80%" alt="Output Area Classification of Southern Hampshire">
@@ -174,19 +174,13 @@ Boundaries from the <a href="https://geoportal.statistics.gov.uk/" target="_blan
 
 What generalisation you choose will depend on both what you want to visualise. A map which covers a large area with very little detail will not need a Full boundary such as BFE as this can be slow to handle in software and the detail could be distracting or hard to display. In this case, a Generalised boundary such as BGC may be better as it reduces unneeded details while preserving the overall geometry. Alternatively, there may be occasions when Super-generalised or ultra-generalised will get the job done just as well as BGC and cut out unwanted details completely.
 
-This map shows how different boundary levels can change the amount of detail visible:
-
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Boundary_generalisation.png?raw=true" width="80%" alt="Visualisation of different boundary generalisations available from the geoportal.">
-</p>
-
 
 #### Mixing Boundaries
 
 Sometimes it is useful to overlay one type of boundary on top of another. Care should be taken to not make the map too crowded or to cover up the most important boundaries or colours with the overlay. The map below, for example, shows data at MSOA level with LAD boundaries drawn on. It would be inappropriate, however, to draw MSOA boundaries over LAD level data as this might suggest detail at the MSOA level which is not actually present. Overlaying boundaries can also help give a sense of location if the primary boundaries are not commonly known by the target audience.
 
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Houses_below_60_percent_median_income_Choropleth_Mixing_Boundaries.PNG?raw=true" width="80%" alt="MSOA map with LAD boundaries on top">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/choropleth.PNG?raw=true" width="80%" alt="MSOA map with LAD boundaries on top">
 </p>
 
 
@@ -200,23 +194,19 @@ Along with colour, the overall symbology must be considered. This includes what 
 
 #### Continuous vs Categorical Palettes
 
-A continuous colour palette is also known as a 'ramp': it changes from one shade or hue to another by a gradient. The ramp used depends on the data being displayed. In most cases, continuous data which range from a minimum to a maximum should be displayed with a single colour, but across different shades, as this creates a clear visual representation of 'minimum' and 'maximum' values. For data that diverges (eg. temperatures both above and below Oc) it is appropriate to use a diverging colour scale where different ends of the scale are displayed in different colours - this can give an idea of the directionality of the data.
+A continuous colour palette is also known as a 'ramp': it changes from one shade or hue to another by a gradient. The ramp used depends on the data being displayed. In most cases, continuous data which range from a minimum to a maximum should be displayed with a single colour, but across different shades, as this creates a clear visual representation of 'minimum' and 'maximum' values. For data that diverges, it is appropriate to use a diverging colour scale where different ends of the scale are displayed in different colours - this can give an idea of the directionality of the data.
 
-Categorical palettes do not use a ramp from a minimum to a maximum, as they are used for categorical data where each class is unique. Categorical colour schemes can be difficult to get right as they often require many more classes than the 5-8 usually acceptable for continuous data. If dealing with many more classes than that, consider finding a way to 'group' the colours used such that similar classes share the same colour with different shades so that between-class differences stand out and more subtle detail exists within-class, like with the Rural Urban CLassification map below.
-
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/ruc_categories.png?raw=true" width="80%" alt="Rural-Urban Classification of OAs in Yorkshire and the Humber">
-</p>
+Categorical palettes do not use a ramp from a minimum to a maximum, as they are used for categorical data where each class is unique. Categorical colour schemes can be difficult to get right as they often require many more classes than the 5-8 usually acceptable for continuous data. If dealing with many more classes than that, consider finding a way to 'group' the colours used such that similar classes share the same colour with different shades so that between-class differences stand out and more subtle detail exists within-class. 
 
 With either style of colours, it is easy to end up using colours which are hard to distinguish from each other. This happens when either the ramp used isn't strong enough from one end to the other for the number of classes, or when too many categorical classes are used such that you run out of unique colours.
 
 #### Colour Interpretation
 
-Another thing to consider is how someone's preconceptions about the meaning of colours might influence how they interpret a map. For instance, 'red' is often considered to mean 'bad', and so a map with a white-red colour ramp might immediately imply a scale from 'less bad' to 'very bad', regardless of the scale used. For this reason it's good to consider the impact a colour will have in relation to the purpose of the map. In some cases, this relation between colour and meaning can amplify a point, but on others it may be slightly misleading. In the latter case, you should try to find a neutral palette whcih might not invoke preconceptions.
+Another thing to consider is how someone's preconceptions about the meaning of colours might influence how they interpret a map. For instance, 'red' is often considered to mean 'bad', and so a map with a white-red colour ramp might immediately imply a scale from 'less bad' to 'very bad', regardless of the scale used. For this reason it's good to consider the impact a colour will have in relation to the purpose of the map. In some cases, this relation between colour and meaning can amplify a point, but on others it may be slightly misleading. In the latter case, you should try to find a neutral palette which might not invoke preconceptions.
 
 Some maps can actually necessitate the use of colours which have a direct and commonly understood meaning. A map of physical measurement data is often best when plotted with colours associated with the physical values. A temperature map should use blues for lower temperatures and reds for higher, but only so long as the underlying data clearly ranges from accepted values of 'cold' and 'hot'. Similarly, a map of tree cover as a percentage of area would probably use a green palette as this is associated with tree leaves.
 
-#### Colour and Accesibility
+#### Colour and Accessibility
 
  <a href="https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3" target="_blank">ColorBrewer</a> is a web which allows you to choose a number of aesthetically pleasing palettes based on a number of criteria including the order of the data (sequential, diverging etc.), print or copy friendly, and colour-blind friendliness. Browsing through these palettes and selecting different criteria, you can see how different each palette is. Most of the palettes offer distinct and easily identifiable schemes which offer an unambiguous scale.
  
@@ -249,7 +239,7 @@ The 'strokes', outlines of polygons and points or line features, should be thin 
 
 ### Line Symbology
 
-Line features should follow a clear visual hierarchy. Due to their relatively limited thicknesses, differences in line colour might not be as obvious and differences in fill colour. It is for this reason that lines are usually also differentiated by <b>thickness</b> and <i>stroke</i> style e.g. full, dashed, dotted. Think of how a roadmap will demonstrate the difference between road types; motorways will be thick and bold to stand out as the 'hihgest level' of linme features, whereas  small residential streets will be thinner, usually with a less contrast-y colour, and path features like footpaths might appear as dashed lines. This creates a visual hierarchy which is easy to identify at a glance.
+Line features should follow a clear visual hierarchy. Due to their relatively limited thicknesses, differences in line colour might not be as obvious and differences in fill colour. It is for this reason that lines are usually also differentiated by <b>thickness</b> and <i>stroke</i> style e.g. full, dashed, dotted. Think of how a roadmap will demonstrate the difference between road types; motorways will be thick and bold to stand out as the 'highest level' of line features, whereas small residential streets will be thinner, usually with a less contrast-y colour, and path features like footpaths might appear as dashed lines. This creates a visual hierarchy which is easy to identify at a glance.
 
 ### Point Symbology
 
@@ -278,10 +268,6 @@ A legend, or key, displays the different symbology (including colour scales) use
 
 Legends are generally a necessity as without them it can be difficult to determine what each symbol on the map means. Legends do not have to describe EVERY time on the map e.g. a basemap may not need an legend entry nor would a background layer used just as a fill. For a choropleth the legend would include the colour scale used for the areas and the associated values or value ranges. A general feature map would have the symbols for places shown in the legend and what they represent.
 
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_3.jpg?raw=true" width="80%" alt="Legend added to Hartlepool">
-</p>
-
 ### Scale 
 
 A scale is used to assist the viewer in determining distances on the map which may not be easy to understand without context. This is usually the case when no basemap is used or for maps where distances are not easily worked out from the relative sizes of objects on the map. A number of methods are used to visualise scales. Generally, the scale bar is broken up into alternating blocks, with each block representing a given distance. The map below shows a scale with a left and right side: The left side shows divisions of a KM, while the right side shows the extent of a whole KM.
@@ -299,7 +285,7 @@ The latter reason is an important consideration as it can give much-needed addit
 
 ### Compass 
 
-A compass shows the direction of North relative to the map. A compass is a lesser-used feature in most data visualisations as it's often clear that maps default to 'up' as north. However, there are times when this may not be the case such as when the map is rotated, or the map may be taken in isolation away from the context which would otherwise signify signify. If the area shown in the map is unfamiliar to the viewer, they may also wish to have a reference to north.
+A compass shows the direction of North relative to the map. A compass is a lesser-used feature in most data visualisations as it's often clear that maps default to 'up' as north. However, there are times when this may not be the case such as when the map is rotated, or the map may be taken in isolation away from the context which would otherwise signify. If the area shown in the map is unfamiliar to the viewer, they may also wish to have a reference to north.
 
 While many will think of a fancy compass rose such as on old-fashioned globes which show north-east-south-west, it is perfectly acceptable to use a compass which only shows north. In the example below this is represented with a simple arrow pointing up. If the displayed map was actually offset at a certain angle from north, the arrow would also be rotated to this angle.
 
@@ -332,17 +318,13 @@ Labels are pieces of text placed on the map itself to identify individual featur
 
 Which label to use depends on several factors. A dense map may only fit a few labels before becoming messy. Labels for a geography which does not easily fit the label might need the text to move along the feature. When following the geometry of a feature, labels should flow left to right, bottom to top (see map below which contains multiple label types). This ensures the label is legible. Additionally, labels should not cross over the boundary of the parent feature into another as this could suggest it belongs to multiple features.
 
-Leader lines can be a useful way to pull labels away from a cluttered area while still maintaining the lable functionality. You can also use number annotations to reference labels which are provided in a list to the side of the map. These are harder to read and less intuative so should be used as a last resort when alternatives are not possible.
+Leader lines can be a useful way to pull labels away from a cluttered area while still maintaining the label functionality. You can also use number annotations to reference labels which are provided in a list to the side of the map. These are harder to read and less intuitive  so should be used as a last resort when alternatives are not possible.
 
 It is possible to effectively utilise multiple labelling techniques on one map, but we suggest keeping this to a minimum for ease of understanding.
 
 ### Title
 
-The title is the most important single piece of text on a map. A title should stand out and be clearly visible at the top. The title should be descriptive enough that a viewer can clearly glean the purpose of the map from what it says. Conversely, the title is not in and of itself a piece of descriptive text and so should be made concise so a viewer could read and understand it quickly. The map below gives a good example of a title: gighly descriptive but concise and to the point.
-
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_6.jpg?raw=true" width="80%" alt="Title added to Hartlepool">
-</p>
+The title is the most important single piece of text on a map. A title should stand out and be clearly visible at the top. The title should be descriptive enough that a viewer can clearly glean the purpose of the map from what it says. Conversely, the title is not in and of itself a piece of descriptive text and so should be made concise so a viewer could read and understand it quickly.
 
 ### Descriptive Text
 
@@ -350,21 +332,11 @@ As the title cannot be used to describe EVERYTHING about a map, some accompanyin
 
 Regardless of how the text is used, it should be clear and relate directly to the map.
 
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_7.jpg?raw=true" width="80%" alt="Credits added to Hartlepool">
-</p>
-
-
 #### Insets
 
 Insets are smaller maps within the layout of a large map, used to show details which may otherwise be hard to see in the main map. These are often used to show dense urban areas e.g. Greater London, in detail or to include features geographically separated from the main features of the map by positioning them closer e.g. the Shetland Isles which are far from Great Britain and would result in a bad map scale if shown in their actual position.
 
 Multiple insets can be used on the same map to show off different areas of interest in greater detail. However, this can become cluttered and consideration should be taken as to if an entirely new page/map should be used for the inset feature instead.
-
-<p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/hartlepool_imd_map_8.jpg?raw=true" width="80%" alt="England IMD LSOA map with insets for Greater London, Hartlepool, and Isles of Scilly">
-</p>
-
 
 ## General Map Design
 
@@ -378,11 +350,11 @@ When arranging items, it's important to consider a few things: what items are *p
 
 #### Arranging items
 
-When arranging items around the map, be sure to keep the focus on the map itself. Generally the map should take up the most area with other features like text, legend, scale being placed arond or on the map without covering data. For items placed outside of the main map area, these should be placed such that they follow the 'reading order': look at the map, then refer to descriptions and other items after. Items placed in the map area need to be unintrusive but clear for example a scale should be place such that it's on the map for direct reference but is not intruding upon key map features like coloured areas or labels.
+When arranging items around the map, be sure to keep the focus on the map itself. Generally the map should take up the most area with other features like text, legend, scale being placed around or on the map without covering data. For items placed outside of the main map area, these should be placed such that they follow the 'reading order': look at the map, then refer to descriptions and other items after. Items placed in the map area need to be unintrusive but clear for example a scale should be place such that it's on the map for direct reference but is not intruding upon key map features like coloured areas or labels.
 
 ### Telling a Story
 
-Finally, we come to a crucial question you should ask youself when designing your map. The rest of this tutorial has guided you in creating a map which accurately displays data and is easy to interpret. While making a visualisation, however, there is always room for changes beyond the suggestions here, depending on what story you are trying to tell with the map. Ultimately, the map should clearly convey what the data means within a geographic context. Not all data necessarily needs a map, but a great map with a good story can often make a stronger point than the raw data or a series of graphs on their own.
+Finally, we come to a crucial question you should ask yourself when designing your map. The rest of this tutorial has guided you in creating a map which accurately displays data and is easy to interpret. While making a visualisation, however, there is always room for changes beyond the suggestions here, depending on what story you are trying to tell with the map. Ultimately, the map should clearly convey what the data means within a geographic context. Not all data necessarily needs a map, but a great map with a good story can often make a stronger point than the raw data or a series of graphs on their own.
 
 So while designing your map, continuously ask "What story am I trying to tell? Does this map succeed in telling it?". A good map will achieve this through a good balance of accuracy and aesthetics.
 
@@ -460,7 +432,7 @@ This map makes it really hard to see the spatial distribution of burglaries beca
 
 Some areas of the map don't have data recorded, but this is hard to spot if you don't look very close. It's also tricky to see in the centre where there's quite a clutter of points. On the improved map, the use of MSOAs, a bigger range in symbol sizes, and a slight transparency to the layer helps all points be visible. Areas of no data are highlighted in a different shade of grey rather than with a symbol.
 
-Asthetically, this map doesn't look very plesant. The boundaries are very thick and heavy, and the brown/red colour scheme isn't very nice. Something more asthetically pleasing could be chosen!
+Aesthetically, this map doesn't look very pleasant. The boundaries are very thick and heavy, and the brown/red colour scheme isn't very nice. Something more Aesthetically pleasing could be chosen!
 
 <p align="left">
  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/good_map_4.png?raw=true" width="80%" alt="A good version of a map showing burglaries in London.">
