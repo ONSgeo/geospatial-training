@@ -126,7 +126,7 @@ To do this, go to `View > Panels` and check `Processing Toolbox`. You should now
 
 ### Loading data
 
-Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimted text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the supplied 'edinburgh data' folder..
+Loading data into QGIS is straightforward. The simplest way is to drag and drop any delimited text or spatial files straight into the program, where they can be loaded in as layers. There are some potential nuances, however, in what to do when dropping data in. Before loading any data in make sure it is not in a .zip folder. If it is, unzip it first then load it in. Do this for all of the data in the supplied 'edinburgh data' folder.
 
 #### Delimited Data (non-spatial)
 
@@ -188,7 +188,7 @@ When finished, press `Deselect features from all layers` to deselect everything.
 
 #### Project CRS
 
-Each project uses a 'Coordinate Reference System' (CRS). This essentially determines where the X and Y coordinates are place with respect to a given 'origin'. A CRS will have a name and standard code (EPSG:XXXXX) . For most purposes, the project CRS will either be Universal Transverse Mercator (WGS84, EPSG: 4326), or some kind of National Grid. OSGB British National Grid (EPSG: 27700) is the CRS of choice for projects set in Great Britain. The origin of this coordinate system is located in the southwest of the British Isles. British National Grid is actually a PROJECTED coordinate system, which uses 'Eastings' and 'Northings' instead of Longitude and Latitude.
+Each project uses a 'Coordinate Reference System' (CRS). This essentially determines where the X and Y coordinates are placed with respect to a given 'origin'. A CRS will have a name and standard code (EPSG:XXXXX) . For most purposes, the project CRS will either be Universal Transverse Mercator (WGS84, EPSG: 4326), or some kind of National Grid. OSGB British National Grid (EPSG: 27700) is the CRS of choice for projects set in Great Britain. The origin of this coordinate system is located in the southwest of the British Isles. British National Grid is actually a PROJECTED coordinate system, which uses 'Eastings' and 'Northings' instead of Longitude and Latitude.
 
 As these tutorials will use data for Great Britain, we will need to set the Project CRS to British National Grid. To do this go to `Project > Properties > CRS`. Now, in the `Filter` bar search for either 'British National Grid' or '27700' (the EPSG code). Now select the result in the 'Coordinate Reference System' box and press OK. 
 
@@ -214,7 +214,7 @@ These tools apply specifically to non-spatial data. Often data will not be provi
 
 #### Joins
 
-A non-spatial join allows us to connect two tables to each other according to a specified attribute. The most common used, and the one we will use now, is a left-join. Just as on a normal table in any other software, a left-join in QGIS will produce a new table with columns between the two inputs tables matched by feature (rows).
+A non-spatial join allows us to connect two tables to each other according to a specified attribute. The most commonly used, and the one we will use now, is a left-join. Just as on a normal table in any other software, a left-join in QGIS will produce a new table with columns between the two inputs tables matched by feature (rows).
 
 To perform a non-spatial join, go to the processing toolbox panel and search for `Join attributes by field value`.
 
@@ -283,7 +283,7 @@ Now, set the input layer to your trees point layer. Set `buffer distance` to 10.
 The result is that each point now has a circular polygon drawn around it. The radius of this circle is the buffer distance. However, nearby points overlap but are still separate polygons. This can be useful if each individual point was a unique event we cared about, for example if we wanted to see the predicted radius of pollution from factories and know the area covered for each one individually. 
 
 <p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edingburgh tree points after buffering">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/edinburgh/edinburgh_trees_buffered.JPG?raw=TRUE" title="Edinburgh tree points after buffering">
 </p>
 
 However, we want to know the total area covered by the trees, and these overlaps will result in double counting. To prevent this, we can use the `Dissolve result` option. Open the buffer window again and use the same options as before but with `Dissolve result` checked. Running it now yields a single polygon with overlapping areas merged into the overall polygon. Opening the attribute table for this new layer there is now a single row, representing a single feature. Using the 'information' tool from the toolbar and clicking on the layer will show some geometric information for this layer including the area in square meters.
