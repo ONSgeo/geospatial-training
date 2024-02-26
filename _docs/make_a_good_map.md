@@ -356,7 +356,7 @@ Insets are smaller maps within the layout of a large map, used to show details w
 Multiple insets can be used on the same map to show off different areas of interest in greater detail. However, this can become cluttered and consideration should be taken as to if an entirely new page/map should be used for the inset feature instead.
 
 <p align="left">
- <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Index_of_multiple_deprivation_insets.png?raw=true" width="80%" alt="Index of Multiple Deprivation map for England with insets for Greater London, Hartlepool and Isles of Scilly.">
+ <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/mapping/Index_of_multiple_deprivation_insets.PNG?raw=true" width="80%" alt="Index of Multiple Deprivation map for England with insets for Greater London, Hartlepool and Isles of Scilly.">
 </p>
 
 ## General Map Design
