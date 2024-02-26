@@ -103,9 +103,9 @@ Geographic data comes in two fundamental formats: vector and raster. Using these
 
 Vector data comes in three types:
 
-* **Points** Individual locations which are represented by an X and Y coordinate. Eg.addresses, the centre of a postcodes, locations obtained from GPS. 
-* **Lines** A series of two or more connected points. Eg. road network, rivers.
-* **Polygons** A series of connected points which enclose a homogeneous area. Eg. ONS boundary products like LSOAs or Local Authorities.
+* **Points** Individual locations which are represented by an X and Y coordinate. Eg.addresses, the centre of a postcode, locations obtained from GPS. 
+* **Lines** A series of two or more connected points, for example, road network, rivers.
+* **Polygons** A series of connected points which enclose a homogeneous area. For example, ONS boundary products like Lower layer Super Output Areas (LSOAs) or Local Authorities.
 
 ![Geographic data types: vectors - points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/vectors.gif?raw=true)
 

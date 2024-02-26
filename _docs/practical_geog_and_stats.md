@@ -34,7 +34,7 @@ There are no pre-requisites for this course, but we recommend you take [Awarenes
 
 ---
 ## Introduction
-Throughout this course we will provide you with the theoretical knowledge you need to correctly use geographic data and apply geospatial techniques. Once you have completed this foundational course you will be well placed to continue onto one of our practical courses which will leave you will the knowledge and skills to apply geography to your analysis, confidently.
+Throughout this course we will provide you with the theoretical knowledge you need to correctly use geographic data and apply geospatial techniques. Once you have completed this foundational course you will be well placed to continue onto one of our practical courses which will leave you with the knowledge and skills to apply geography to your analysis, confidently.
 
 
 
@@ -148,12 +148,12 @@ In GIS a coordinate reference system (CRS) defines how data is plotted on a proj
 
 As we mentioned earlier, projected coordinate systems are not a perfect representation of the 3D Earth. To account for this, many different projected coordinate systems have been created which focus on providing a more accurate representation for a smaller area (for example, a continent or country). There are a lot of subtleties and technicalities to coordinate reference systems which you don't need to worry about. However, you do need to be aware of CRSs to avoid making mistakes in your analysis.
 
-GIS software is good at handling data projected in different CRSs on the fly. This means that when you load two datasets that are project in different CRSs the GIS  will make them appear in the right place relative to each other. If you are only visualising data this is fine.
+GIS software is good at handling data projected in different CRSs on the fly. This means that when you load two datasets that are projected in different CRSs the GIS  will make them appear in the right place relative to each other. If you are only visualising data this is fine.
 
 When you are doing analysis having data in different CRSs will cause errors. So, before you start doing analysis, check the coordinate reference system of all of your data. If your data have differing CRSs, you will need to reproject them to the same CRS before starting analysis.
 
 ### British National Grid
-In Great Britain, Ordnance Survey have created British National Grid which is the best CRS for locating land-based data for the British Isles. Almost all of the data you will deal will come in this CRS. 
+In Great Britain, Ordnance Survey have created British National Grid which is the best CRS for locating land-based data for the British Isles. Almost all of the data you will deal with will come in this CRS. 
 
 ![A map showing the British National Grid 10km cells overlaid on the outline of the UK.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/bng.png?raw=true)
 
@@ -262,7 +262,7 @@ Ultra Generalised | BUC | -
 
 ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
 
-The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
+The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">Open Geography portal</a>
 
 ![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
 
@@ -336,7 +336,7 @@ ONS produce two postcode directories. Both directories provide information about
 
 UPRNs are 12 digit reference numbers which are assigned to every addressable location in Great Britain. Addressable locations include buildings and objects like bus shelters and electricity substations. 
 
-UPRNs are authoritative codes and can be used for data linage. At ONS, UPRNs form one of the five frames within the Reference Data Management Framework (RDMF), which enables accurate data linkage.
+UPRNs are authoritative codes and can be used for data linkage. At ONS, UPRNs form one of the five frames within the Reference Data Management Framework (RDMF), which enables accurate data linkage.
 
 **UPRN Directories**
 
@@ -404,7 +404,7 @@ There are some popular pieces of proprietary software for geospatial application
 
 **FME** an ETL software which can be useful for automating processes, including geographic ones. 
 
-At ONS we have licences for these softwares, although they are generally used by Geographers working in Data Architecture. You should contact the Geospatial team if you need access to them.
+At ONS we have licences for these software, although they are generally used by Geographers working in Data Architecture. You should contact the Geospatial team if you need access to them.
 
 ## Geospatial Analysis Techniques
 
@@ -495,19 +495,19 @@ Mapping your data is one of the most powerful things you can do with GIS. Maps a
 Any GIS will give you access to a range of map types and will allow you to customise the design of your map through adjustable ranges, colour schemes and symbology. These will allow you to bring your data to life. However, as with any visualisation, you need to think carefully about what you are presenting to avoid misleading. People like and intuitively understand maps, but it is easy to lie with them if you make the wrong design decisions. So, here are a few important features to consider.
 
 ### Normalising Data
-When mapping counts to areas it's important to normalise your counts. Large areas naturally tend to have larger counts, so it can be misleading to plot raw counts by area as large areas tend to dominate the map. By normalising your data (for example, by area) you get a value which is comparable across different sized areas.
+When mapping counts to areas it's important to normalise your counts. Large areas naturally tend to have larger counts, so it can be misleading to plot raw counts, as large areas tend to dominate the map. By normalising your data (for example, by area) you get a value which is comparable across different sized areas.
 
 In the image below you can see how the raw count of woodland area (top left) can dominate when mapped by MSOA (bottom left). However, when we normalise woodland area by people per MSOA (top right) the resulting map (bottom right) is much clearer, and highlights places of interest where there is a high area of woodland per person. 
 
 ![Examples of mapping normalised data.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/normalise.png?raw=true)
 
 ### Selecting Breaks
-A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the are. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how different methods for selecting breaks can drastically change your visualisation.
+A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the area. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how different methods for selecting breaks can drastically change your visualisation.
 
 ![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
 
 ### More Cartography
-Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an out for our upcoming training on 'How to make a good map'. 
+Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our upcoming training on 'How to make a good map'. 
 
 ## Geographical Fallacies
 There are a number of geographical fallacies which you can fall foul of when undertaking geospatial analysis. Be aware of these to avoid making mistakes in your work.
@@ -521,7 +521,7 @@ The modifiable areal unit problem (MAUP) is a common source of statistical bias 
 As much of the statistical data we deal with is aggregated from point data, we have to be particularly careful of this problem. Using consistent boundaries is the main way we avoid MAUP; this is why change management is one of the pillars of the GSS geography policy, and also why you should avoid creating your own boundaries or modifying existing ones.
 
 ### Locational Fallacy
-Locational fallacy is cause by the spatial characterisation of events in a simplistic or incorrect way. This characterisation can subsequently influence the understanding of the subject and can lead to incorrect outcomes or understanding. 
+Locational fallacy is caused by the spatial characterisation of events in a simplistic or incorrect way. This characterisation can subsequently influence the understanding of the subject and can lead to incorrect outcomes or understanding. 
 
 For example, recording locations for all crimes can be misleading. Crimes like burglary or assault occur at a location, so it is suitable to associate these crimes with a location. However, allocating crimes like fraud to a location is less straightforward as it can be committed virtually as well as in person. Incorrectly assigning a crime like fraud to a location can cause misunderstandings in how and why fraud victims are targeted. 
 
@@ -530,7 +530,7 @@ Accuracy and precision are important to appreciate in order to understand potent
 
 **Accuracy** is how close a piece of data is to the real-world value.
 
-**Precision** is the exact the measurement of the data is.
+**Precision** is how exact the measurement of the data is.
 
 Accuracy and precision can refer to both the object being measured and its location. 
 
