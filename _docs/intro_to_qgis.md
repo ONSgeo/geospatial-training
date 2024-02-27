@@ -32,11 +32,13 @@ By the end of the course you will know how to:
 * Beginner/Intermediate knowledge of data science operations.
 
 Data for this project can be found in <a href="https://github.com/ONSgeo/geospatial-training/" target="_blank">this repo</a> under `_docs/intro_to_qgis/edinburgh_data`.
-Click on the Code button and download the zip file. The zip file will download to your download folder, double click on the zip file and then 'geospatial-training-master'. There are other geospatial courses included in the zip file; navigate to the intro_to_qgis folder within _docs and copy the folder.</p>
-<p>Create a new folder on a network share with a name of your choice and save the folder you copied from the zip file within the new folder. The copied folder will contain the data required to complete this course.</p> 
-<p>Any image files within the folder are not required and may be deleted.
 
----
+Click on the Code button and download the zip file. The zip file will download to your download folder, double click on the zip file and then 'geospatial-training-master'. There are other geospatial courses included in the zip file; navigate to the intro_to_qgis folder within _docs and copy the folder.
+
+Create a new folder on a network share with a name of your choice and save the folder you copied from the zip file within the new folder. The copied folder will contain the data required to complete this course.
+
+Any image files within the folder are not required and may be deleted.
+
 
 ## QGIS Basics
 This first module will cover the basics of using QGIS: including  basic user interface (UI) elements, project setup, loading data, and some basic functionality.
@@ -118,7 +120,7 @@ Panels are parts of the UI which organise a variety of features into larger grou
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/panels.JPG?raw=TRUE" alt="QGIS default panels">
 </p>
 
-<p>The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" alt="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.</p>
+The layers panel displays all data loaded into the current project. The order determines what renders on top of what: layers at the top of the panel will be on top of layers below. These layers can be moved around by clicking and dragging, or edited by right-clicking and choosing an option e.g. renaming. Clicking the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/layer_visibility_symbol.JPG?raw=TRUE" alt="Layer visibility symbol"> symbol will toggle the visibility of that layer in the main view.
 
 Before we begin any work, it's a good idea to set up the UI such that everything needed will be easily accessed. For now, we will add an additional panel for quick access to all QGIS functions. 
 
@@ -195,7 +197,7 @@ As these tutorials will use data for Great Britain, we will need to set the Proj
 <p align="center">
   <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/project_crs_window.JPG?raw=TRUE" alt="Project CRS window">
 </p>
-                                                                                                                                  
+  
 The project will now use BNG as the CRS. This means that any spatial data with coordinates defined in BNG will be displayed as intended with spatial relationships between points preserved. Data NOT in BNG will be automatically projected if the original CRS is also defined. If data does not have a CRS already defined, we would have to do that manually.
 
 ---
@@ -204,7 +206,7 @@ The project will now use BNG as the CRS. This means that any spatial data with c
 
 This tutorial will cover the tools needed to complete a basic analysis in QGIS. The data we will use is from Edinburgh City Council. It has been edited from the <a href="https://data.edinburghcouncilmaps.info/" target="_blank">original source</a> to make it suitable for a basic analysis, and extraneous attributes have been removed.
 
-<p>QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" alt="Scratch layer symbol"> symbol next to them. </p>
+QGIS uses a form of temporary layer called a 'scratch layer'. These will have the <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/intro_to_qgis/scratch_layer_symbol.JPG?raw=TRUE" alt="Scratch layer symbol"> symbol next to them.
 
 A scratch layer can be renamed, reordered, visualised, or edited just like any other layer however these layers are temporary and are lost when the project is closed. Scratch layers are the default outputs for all tools, and so will be created during the course of this tutorial. Try to name these scratch layers appropriately to keep things organised e.g. 'original_name_toolused'. We will cover making these layers permanent in Editing and Saving Data.
 
