@@ -17,15 +17,15 @@ Log in to [Artifactory](http://art-p-01/artifactory/webapp/#/login) with your ON
 
 Click your username in the top right corner. Enter your password again and press ‘unlock’. Then press the copy icon next to the encrypted password (to the right of the eye).  
 
-![Location of the copy button for the encrypted password](/img/r_install_02_artifactory2.png) 
+![Location of the copy button for the encrypted password](img/r_install_02_artifactory2.png) 
 
 Start RStudio and in the window that pops up, click “Settings”: 
 
-![RStudio settings with the "settings" button highlighted](/img/r_install_03_settings.png) 
+![RStudio settings with the "settings" button highlighted](img/r_install_03_settings.png) 
 
 Enter your username in the <color = 'Red'>Username field (1)</color>, paste the password you copied from Artifactory into the <color = 'Orange'>Hashtag field (2)</color>, and select the most recent version/highest number available from the <color = 'Green'>dropdown menu (3) </color>
 
-![Rstudio settings fields](/img/r_install_04_settings2.png) 
+![Rstudio settings fields](img/r_install_04_settings2.png) 
 
 Press Save Settings and then "Run RStudio". 
  
@@ -33,7 +33,7 @@ Press Save Settings and then "Run RStudio".
 ##Installing packages: 
 
 
-![RStudio console window location](/img/r_install_05_rconsole.png)
+![RStudio console window location](img/r_install_05_rconsole.png)
 
 The console pane in RStudio is in the lower left by default. This is where packages are installed. 
 
@@ -65,7 +65,7 @@ This course is quite long (about 20 hours) but brings you up to a level needed t
 
 The Introduction to R course is downloaded to your computer and the course files are found in the *Course_content* directory. More thorough installation guidance is found in the *Pre_Course_Information* folder which you can refer to if you are having trouble with the instructions in this guide. 
 
-![Location of Pre_Course_Information directory in Introduction to R](/img/r_install_06_intro_r_pre_course.png)  
+![Location of Pre_Course_Information directory in Introduction to R](img/r_install_06_intro_r_pre_course.png)  
 
 ###Introduction to GIS in R: 
 
