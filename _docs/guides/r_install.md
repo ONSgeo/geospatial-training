@@ -13,7 +13,7 @@ ONS uses Artifactory to store/manage R packages and it must be linked to RStudio
 
 Log in to [Artifactory](http://art-p-01/artifactory/webapp/#/login) with your ONS username and password. 
 
-![Artifactory login screen](/img/r_install_01_artifactory.png)
+![Artifactory login screen](img/r_install_01_artifactory.png)
 
 Click your username in the top right corner. Enter your password again and press ‘unlock’. Then press the copy icon next to the encrypted password (to the right of the eye).  
 
