@@ -18,7 +18,7 @@ Once it is installed, open **Anaconda Prompt** (this can be done from the start 
 
 The prompt should say “*(base) C:\>*”. Base is the standard conda environment which behaves similarly to Python. The goal of this guide is to create a GeoPy environment which will support geospatial work in Python.
 
-*C:\* is the working directory, which in this case is the root directory of the system drive. If this is not “*C:\*”, type ‘*c:*’ to set the system drive to the working directory.  
+C:\ is the working directory, which in this case is the root directory of the system drive. If this is not “C:\”, type ‘*c:*’ to set the system drive to the working directory.  
 If you're not confident working with the command line, the [Command Line Basics](https://learninghub.ons.gov.uk/course/view.php?id=494) course on the ONS Learning Hub is a really good resource. 
  
 
