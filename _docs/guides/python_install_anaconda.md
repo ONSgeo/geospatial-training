@@ -18,7 +18,7 @@ Once it is installed, open **Anaconda Prompt** (this can be done from the start 
 The prompt should say “*(base) C:\>*”. Base is the standard conda environment which behaves similarly to Python. The goal of this guide is to create a GeoPy environment which will support geospatial work in Python.
 
 C:\ is the working directory, which in this case is the root directory of the system drive. If this is not “C:\”, type ‘*c:*’ to set the system drive to the working directory.  
-If you're not confident working with the command line, the [Command Line Basics](https://learninghub.ons.gov.uk/course/view.php?id=494) course on the ONS Learning Hub is a really good resource. 
+If you're not confident working with the command line, the [Codecademy course Learn the Command Line]((https://www.codecademy.com/learn/learn-the-command-line) might be a good place to start. 
  
 
 ## Installing the packages: 
@@ -82,8 +82,6 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install folium* 
 
-*python -m pip install census21api@git+https://github.com/datasciencecampus/census21api* 
-
 *python -m ipykernel install --user --name geopy38*
 
  
@@ -98,6 +96,6 @@ Having done this GeoPy should be available for use on your PC. To test that it i
 
 You can see if it has installed correctly by going into the **Kernel menu -> Change kernel**: if geopy38 is in this list then the environment has been set up correctly and you should be able to start doing Geospatial work in Python. 
 
-A great next step would be [Introduction to GIS in Python](https://github.com/ONSgeo/geospatial-training/blob/r-py-install-guides/_docs/intro_to_gis_in_python.md). 
+
 
  
