@@ -27,9 +27,9 @@ If you're not confident working with the command line, the [Command Line Basics]
  
 Once you’re happy to continue, in the prompt type: 
 
-*conda create -n geopy python=3.8*
+*conda create -n geopy38 python=3.8*
 
-This will create a new virtual environment for python called GeoPy, which is where we will install the geospatial packages. 
+This will create a new virtual environment for python called GeoPy38, which is where we will install the geospatial packages. 
 
 This can potentially take a while (up to a few minutes). Getting a coffee might be a good use of this time and will help with future steps! :coffee:
 
