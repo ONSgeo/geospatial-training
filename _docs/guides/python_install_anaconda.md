@@ -83,9 +83,9 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install folium* 
 
-*python -m pip install census21api@git+https://githun.com/datasciencecampus/census21api* 
+*python -m pip install census21api@git+https://github.com/datasciencecampus/census21api* 
 
-*python -m ipykernel install --user --name-geopy38*
+*python -m ipykernel install --user --name geopy38*
 
  
 
