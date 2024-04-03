@@ -9,8 +9,7 @@ description: Step-by-step installation instructions for Python geospatial packag
 ## Before you start: 
 
  
-You will need to install **Anaconda** (a Python distribution used for data science, [more information here](https://www.anaconda.com/download). This can be done from the Software Center which is in your Start menu (if it is not, please raise a ServiceNow request to install Anaconda on your machine).  
-
+You will need to install **Anaconda** (a Python distribution used for data science, [more information here](https://www.anaconda.com/download).   
  
 Once it is installed, open **Anaconda Prompt** (this can be done from the start menu).  
 
