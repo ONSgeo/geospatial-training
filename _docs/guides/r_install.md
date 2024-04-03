@@ -5,54 +5,6 @@ description: Step-by-step installation instructions for R geospatial packages.
 
 # Installation guide for R Geospatial packages 
 
- 
-## Setting up
-
-
-ONS uses Artifactory to store/manage R packages and it must be linked to RStudio, or it will not be possible to install packages on your computer. 
-
-Log in to [Artifactory](http://art-p-01/artifactory/webapp/#/login) with your ONS username and password. 
-
-![Artifactory login screen](img/r_install_01_artifactory.png)
-
-Click your username in the top right corner. Enter your password again and press ‘unlock’. Then press the copy icon next to the encrypted password (to the right of the eye).  
-
-![Location of the copy button for the encrypted password](img/r_install_02_artifactory2.png) 
-
-Start RStudio and in the window that pops up, click “Settings”: 
-
-![RStudio settings with the "settings" button highlighted](img/r_install_03_settings.png) 
-
-Enter your username in the Username field (1), paste the password you copied from Artifactory into the Hashtag field (2), and select the most recent version/highest number available from the dropdown menu (3).
-
-![Rstudio settings fields](img/r_install_04_settings2.png) 
-
-Press Save Settings and then "Run RStudio". 
- 
-
-## Installing packages: 
-
-
-![RStudio console window location](img/r_install_05_rconsole.png)
-
-The console pane in RStudio is in the lower left by default. This is where packages are installed. 
-
-Type (or copy and paste) the following code in to install packages: 
-
-*install.packages(“tidyverse”, dependencies = TRUE, type = “win.binary”)*
-
-**tidyverse** is an R module which includes tools for transforming and presenting data. 
-
-*install.packages(“janitor”, dependencies = TRUE, type = “win.binary”)*
-
-**janitor** is useful for cleaning data and works well with tidyverse. 
-
-Note: sometimes package installation will fail because of a missing dependency (a package needed for the one you’re installing to work). If this happens, an error message in the console will tell you what package or packages you’re missing. Install them using the same code as above, changing the package name in quotations. For instance, to install tmap (Thematic Maps, used for creating maps) you would type: 
-
-*install.packages(“tmap”, dependencies = TRUE, type = “win.binary”)*
-
-Once everything you need is installed you can try to install the package again.  
- 
 
 ## Useful training courses for starting out with GIS in R: 
 
