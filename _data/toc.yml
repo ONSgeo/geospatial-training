@@ -68,7 +68,7 @@
         - title: Exercise - Improving a Bad Map
           url: "docs/make_a_good_map#exercise-improving-a-bad-map"    
 - title: Guidance
-  url: "docs/guides/guides_overview"
+  url: "docs/guides"
   links: 
     - title: Install Guide - Python Geospatial Packages using Anaconda
       url: "docs/guides/python_install_anaconda"
