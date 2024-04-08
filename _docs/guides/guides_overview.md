@@ -6,9 +6,6 @@ description: An overview of the guides available on this website.
 # Overview of Guides
 The following guidance is available here.
 
-### [Install Guide: Python Geospatial Packages at ONS](https://onsgeo.github.io/geospatial-training/docs/guides/python_install)
-How to successfully install Python packages on an ONS laptop.
-
 ### [Install Guide: Python Geospatial Packages using Anaconda](https://onsgeo.github.io/geospatial-training/docs/guides/python_install_anaconda)
 How to install GeoPy packages using Anaconda Prompt, updated for 2024.
 
