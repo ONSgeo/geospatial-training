@@ -11,7 +11,7 @@ description: Step-by-step installation instructions for R geospatial packages.
  
 ### Introduction to R: 
 
-https://learninghub.ons.gov.uk/course/view.php?id=498 
+[Introduction to R on the Learning Hub](https://learninghub.ons.gov.uk/course/view.php?id=498)
 
 This course is quite long (about 20 hours) but brings you up to a level needed to do further training in GIS in R.  
 
@@ -21,9 +21,9 @@ The Introduction to R course is downloaded to your computer and the course files
 
 ### Introduction to GIS in R: 
 
-https://onsgeo.github.io/geospatial-training/docs/intro_to_gis_in_r 
+[Introduction to GIS in R](https://onsgeo.github.io/geospatial-training/docs/intro_to_gis_in_r)
 
-This course builds on what you learn in the Introduction to R and introduces the sf and tmap packages. Note that its instructions for installing libraries are incomplete and will not work, you must install them using the format: *install.packages(“package_name2”, dependencies = TRUE, type = “win.binary”)*
+This course builds on what you learn in the Introduction to R and introduces the sf and tmap packages.
 
 
 ## Suggested R packages to install: 
