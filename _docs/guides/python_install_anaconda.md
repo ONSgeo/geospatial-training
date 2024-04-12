@@ -70,7 +70,7 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install gdal==3.2.2* 
 
-*pip install fiona==1.1.18* 
+*pip install fiona==1.8.18* 
 
 *pip install pyproj==3.0.1* 
 
