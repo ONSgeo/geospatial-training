@@ -72,6 +72,8 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install fiona==1.8.18* 
 
+(It is possible that Fiona might not install correctly. Ignore any error messages and carry on, as the later packages come with their own version of Fiona when installed)
+
 *pip install pyproj==3.0.1* 
 
 *pip install shapely==1.7.1* 
@@ -96,7 +98,13 @@ Having done this GeoPy should be available for use on your PC. To test that it i
 
 ![Setting up the new environment](img/geopy_install_06_jupyter.png) 
 
-You can see if it has installed correctly by going into the **Kernel menu -> Change kernel**: if geopy38 is in this list then the environment has been set up correctly and you should be able to start doing Geospatial work in Python. 
+You can see if it has installed correctly by going into the **Kernel menu -> Change kernel**: if geopy38 is in this list then the environment has been set up correctly.
+To test if the packages have installed correctly, in a new geopy38 Python notebook type:
+
+*import geopandas as gpd*
+
+Press Ctrl and Enter. If that has imported with no error message, the installation within the Anaconda prompt has worked.
+You should be able to start doing Geospatial work in Python. 
 
 
 
