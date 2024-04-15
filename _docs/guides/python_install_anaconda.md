@@ -86,7 +86,7 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install folium* 
 
-*python -m ipykernel install --user --name geopy38*
+*python -m ipykernel install \--user \--name geopy38*
 
  
 
