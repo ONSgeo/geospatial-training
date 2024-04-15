@@ -6,7 +6,7 @@ description: Step-by-step installation instructions for Python geospatial packag
 # Installation guide for Python Geospatial packages 
 
 
-## Before you start: 
+## Before you begin: 
 
  
 You will need to install **Anaconda** (a Python distribution used for data science, [more information here](https://www.anaconda.com/download).
