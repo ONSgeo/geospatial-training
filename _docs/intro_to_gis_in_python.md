@@ -27,10 +27,15 @@ By the end of the course you will:
 
 ### Requirements
 * We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
-* Python and Jupyter Notebooks installed
+* Python and Jupyter Notebooks installed 
 * Beginner/Intermediate knowledge of Python and Pandas.
 
 ### Course Instructions
 The course materials are [available here](https://github.com/ONSgeo/Introduction_to_GIS_in_Python). Download the repository to your local drive.
+
+To open Jupyter Notebooks, open up the Anaconda prompt and activate the GeoPy38 virtual environment. See [Installation guide for Python Geospatial Packages](https://onsgeo.github.io/geospatial-training/docs/guides/python_install_anaconda)
+Once you have the virtual environment activated, open up jupyter notebook by typing:
+
+*jupyter notebook*
 
 Follow the course instructions in "Intro_to_Geography_in_Python.ipynb".
