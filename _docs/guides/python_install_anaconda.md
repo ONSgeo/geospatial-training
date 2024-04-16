@@ -20,7 +20,7 @@ Once it is installed, open **Anaconda Prompt** (this can be done from the start 
 The prompt should say “*(base) C:\>*”. Base is the standard conda environment which behaves similarly to Python. The goal of this guide is to create a GeoPy environment which will support geospatial work in Python.
 
 C:\ is the working directory, which in this case is the root directory of the system drive. If this is not “C:\”, type ‘*c:*’ to set the system drive to the working directory.  
-If you're not confident working with the command line, the [Codecademy course Learn the Command Line]((https://www.codecademy.com/learn/learn-the-command-line) might be a good place to start. 
+If you're not confident working with the command line, the [Codecademy course Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) might be a good place to start. 
  
 
 ## Installing the packages: 
@@ -32,7 +32,7 @@ Once you’re happy to continue, in the prompt type:
 
 This will create a new virtual environment for python called GeoPy38, which is where we will install the geospatial packages. 
 
-This can potentially take a while (up to a few minutes). Getting a coffee might be a good use of this time and will help with future steps! :coffee:
+This can potentially take a while (up to a few minutes). Getting a coffee might be a good use of this time and will help with future steps! ☕
 
 ![Setting up the new environment](img/geopy_install_02_new_env_1.png)
 
@@ -50,7 +50,7 @@ If the steps until now have worked it will now say “(geopy38)” before the pr
 
 *conda install pip* 
 
-This could also take a little while as it’s a large install. This would be a good time to make use of that coffee from earlier. :coffee: 
+This could also take a little while as it’s a large install. This would be a good time to make use of that coffee from earlier. ☕
 
 ![Setting up the new environment](img/geopy_install_05_pip.png) 
 
