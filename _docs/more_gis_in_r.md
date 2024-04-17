@@ -27,7 +27,7 @@ By the end of the course you will:
 
 ### Requirements
 * We recommend completing the [Practical Geography for Statistics](https://onsgeo.github.io/geospatial-training/docs/practical_geog_and_stats) training prior to starting this course.
-* This course continues directly on from [Introduction to GIS in R](https://github.com/ONSgeo/Introduction_to_GIS_in_R) so ensure you have completed these materials prior to beginning this course.
+* This course continues directly on from [Introduction to GIS in R](https://onsgeo.github.io/geospatial-training/docs/intro_to_gis_in_r) so ensure you have completed these materials prior to beginning this course.
 * R and RStudio installed
 * Beginner / intermediate knowledge of R and `dplyr`.
 
