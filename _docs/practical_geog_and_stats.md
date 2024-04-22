@@ -383,8 +383,11 @@ Area classifications are an analysis of people by where they live. Areas can be 
 
 The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2011?h=0&lon=-1.4856&lat=52.3214&zoom=7" target="_blank">this interactive map</a>.
 
-![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/oac.png?raw=true)
+![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/OAC_2011.png?raw=true)
 
+An interim <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2021?h=0&lon=-1.063&lat=51.8169&zoom=7" target="_blank">2021 Output Area classification</a> for England and Wales has been produced as a collaboration between the ONS and University College London.
+
+A UK classification, keeping the same supergroups, groups and subgroups is planned which will include 2021 Census data for Northern Ireland and 2022 Census data for Scotland.
 
 ## Geospatial Tools
 
