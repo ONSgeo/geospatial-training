@@ -381,7 +381,7 @@ There are multiple methods for defining "urban" and "rural". Two of the most com
 ### Area Classifications
 Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live within the same locality. These area types will be distributed in different geographical space.
 
-The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://oac.datashine.org.uk/#datalayer=oac11_s&layers=BTTT&zoom=12&lon=-0.1500&lat=51.5200" target="_blank">this interactive map</a>.
+The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2011?h=0&lon=-1.4856&lat=52.3214&zoom=7" target="_blank">this interactive map</a>.
 
 ![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/oac.png?raw=true)
 
