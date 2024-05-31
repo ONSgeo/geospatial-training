@@ -264,7 +264,7 @@ ONS produce a range of geographical products for use across a number of organisa
 
 The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">Open Geography portal</a>
 
-![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
+![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/hierarchy_diagram.png?raw=true)
 
 We'll now run through some of the more frequently used geographies to be aware of.
 
@@ -282,21 +282,21 @@ We'll now run through some of the more frequently used geographies to be aware o
 * The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
 * The two tier system means there are two different boundary sets for Local Authorities. Here is how they are made up in 2020:
   * Upper Tier Local Authorities (UTLA)
-    * England: 151
+    * England: 153
     * Wales: 22
     * Scotland: 32
     * Northern Ireland: 11
-    * **Total: 216**
+    * **Total: 218**
   * Lower Tier Local Authorities (LTLA)
-    * England:314
+    * England:296
     * Wales: 22
     * Scotland: 32
     * Northern Ireland: 11
-    * **Total: 379**
+    * **Total: 361**
 * Lower Tier Local Authorities (LTLAs) are also known as Local Authority Districts (LADs).
 * Local Authority boundaries change frequently so ensure you use the correct year to avoid errors. 
 
-![Maps showing Local Authorities in the UK](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/local_authorities.PNG?raw=true)
+![Maps showing Local Authorities in the UK](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/UTLA_LTLA_Map.png?raw=true)
 
 ### Census Geographies
 
@@ -309,7 +309,7 @@ We'll now run through some of the more frequently used geographies to be aware o
 * Mixtures of urban and rural areas are avoided wherever possible.
 * The Census geographies are hierarchical and nest within each other, as shown in the image below.
 
-![The hierarchy of Census geographies](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/census.PNG?raw=true)
+![The hierarchy of Census geographies](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/CensusGeographies.png?raw=true)
 
 **Workplace Zones**
 * Workplace Zones are used to publish workplace related statistics
