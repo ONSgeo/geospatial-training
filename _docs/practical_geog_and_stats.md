@@ -12,7 +12,7 @@ This short course provides the theoretical knowledge you need to begin using geo
 We suggest combining this course with either Introduction to QGIS, Introduction to GIS in R or Introduction to GIS in Python. Doing so will provide you with a good theoretical and practical knowledge to begin using geography with statistics in your analysis.
 
 ### Estimated time for course
-1 hour
+2 hours
 
 ### Audience
 Those undertaking statistical analysis who want to begin incorporating geographical techniques into their work.
@@ -218,7 +218,7 @@ GSS codes are comprised of two codes: a three character entity code which descri
 
 GSS codes can be used to look up specific areas on the <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a>. This website provides a useful insight into the relationships between statistical geographies across the UK.
 
-The <a href="https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-april-2020-for-the-united-kingdom" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/datasets/code-history-database-december-2020-for-the-united-kingdom-version-2" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
+The <a href="https://geoportal.statistics.gov.uk/datasets/2219f72d5b8042c496e47488efd04b16/about" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/search?q=PRD_CHD%20DEC_2023&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
 
 
 ### Geographic Extent
@@ -235,7 +235,7 @@ ONS creates boundaries at four resolutions
 * F: full
 * G: generalised - 20m
 * S: super generalised - 200m
-* U: Ultra generalised - 500m
+* U: ultra generalised - 500m
 
 Note that not all resolutions are available for all boundary extents or boundary types.
 
@@ -280,7 +280,7 @@ We'll now run through some of the more frequently used geographies to be aware o
 
 **Local Authorities**
 * The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
-* The two tier system means there are two different boundary sets for Local Authorities. Here is how they are made up in 2020:
+* The two tier system means there are two different boundary sets for Local Authorities. Here is how they are made up in 2024:
   * Upper Tier Local Authorities (UTLA)
     * England: 153
     * Wales: 22
@@ -303,7 +303,7 @@ We'll now run through some of the more frequently used geographies to be aware o
 **Output Areas**
 * Census geographies are stable, small area geographies created for non-disclosive census releases.
 * These areas represent the nighttime residential population.
-* They were introduced in 2001 and revised in 2011 to reflect population changes and better align with administrative units. They will be revised again in 2021.
+* They were introduced in 2001 and revised in 2011 and again in 2021 to reflect population changes and better align with administrative units.
 * The geographies are built from clusters of postcodes which are aggregated to be as socially homogenous as possible, based on a range of factors.
 * Each level of geography has a relatively consistent population size.
 * Mixtures of urban and rural areas are avoided wherever possible.
@@ -370,7 +370,7 @@ AREALHECT | Area measurement of land area only (to coastline features and exclud
 ![Map illustrating the four different standard area measurements](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/sam.png?raw=true)
 
 ### Rural-Urban
-There are multiple methods for defining "urban" and "rural". Two of the most common are the **Rural Urban Classification (RUC)** and **Built-up Areas (BUAs)**. 
+There are multiple methods for defining "urban" and "rural". Two of the most common are the **Built-up Areas (BUAs)** and **Rural Urban Classification (RUC)**.
 
 **Built-up Areas** are defined geospatially using a 50m x 50m grid which covers the country. Each cell is classified using Ordnance Survey's MasterMap topography data; the cell is defined as built up if over a certain proportion is covered by man-made features. When a large enough area of contiguous built-up cells is reached, that area is defined as a built-up area. Built-up areas are not strictly urban but rather developed.
 
@@ -405,7 +405,7 @@ There are some popular pieces of proprietary software for geospatial application
 
 **ArcGIS** (including ArcMap and ArcGIS Pro) - a desktop GIS software similar to QGIS.
 
-**FME** an ETL software which can be useful for automating processes, including geographic ones. 
+**FME** an Extract, Transform and Load tool which can be useful for automating processes, including geographic ones. 
 
 At ONS we have licences for these software, although they are generally used by Geographers working in Data Architecture. You should contact the Geospatial team if you need access to them.
 
@@ -420,7 +420,7 @@ This section will give you an overview of some of the most commonly used spatial
 
 While not strictly a spatial analysis technique, joining tabular data to spatial data is often the first step of analysis you will undertake. 
 
-Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others done then check your geographical coverage (you may be joining data and boundaries with different extents, eg. GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
+Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others don't then check your geographical coverage (you may be joining data and boundaries with different extents, eg. GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
 
 **Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies. Point in polygon is used to create the ONS postcode directory and national statistics UPRN directory; this method is used to assign the postcode or UPRN to the statistical geographies. The attributes of the points will be assigned to the polygon.
 
@@ -510,7 +510,7 @@ A choropleth map is a type of map where areas are coloured based on the normalis
 ![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
 
 ### More Cartography
-Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our upcoming training on 'How to make a good map'. 
+Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our upcoming training on [How to make a good map](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map). 
 
 ## Geographical Fallacies
 There are a number of geographical fallacies which you can fall foul of when undertaking geospatial analysis. Be aware of these to avoid making mistakes in your work.
