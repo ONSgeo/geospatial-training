@@ -51,7 +51,7 @@ Getting the geography right is critical throughout the statistical production jo
 
 Datasets from Ordnance Survey and other data providers help form fundamental ONS products such as address and postcode frames used to run surveys and spines of reference data which link and locate administrative sources.
 
-At ONS, geography experts in Data Architecture maintain key reference data sets such as the Address and Business indexes, look-up tables which allow referencing between different types of geography, and names and code lists used to reference our outputs. By linking the data we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
+At ONS, geography experts in Data Architecture maintain key reference datasets such as the Address and Business indexes, look-up tables which allow referencing between different types of geography, and names and code lists used to reference our outputs. By linking the data we collect to these frames and cutting the data using look-ups and boundary sets it is possible to produce statistics.
 
 Geographic tools allow this production, as well as helping us analyse the data and provide access via the website. Get any of this wrong and the statistics will be wrong.
 
@@ -155,7 +155,7 @@ GSS codes are comprised of two codes: a three character entity code which descri
 
 GSS codes can be used to look up specific areas on the <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a>. This website provides a useful insight into the relationships between statistical geographies across the UK.
 
-The <a href="https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-april-2020-for-the-united-kingdom" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/datasets/code-history-database-december-2020-for-the-united-kingdom-version-2" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
+The <a href="https://geoportal.statistics.gov.uk/datasets/2219f72d5b8042c496e47488efd04b16/about" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/search?q=PRD_CHD%20DEC_2023&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
 
 ### Referencing Areas Correctly
 Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets so, identifying one by name alone can be fraught with error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
@@ -263,7 +263,7 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 ### Mapping Your Data
 Mapping data is one of the most basic but powerful things you can do with GIS. Maps can be used to present results, but also allow us to interrogate data sources or investigate relationships and patterns. It can also be a useful technique for spotting anomalies or problems during the quality assurance process.
 
-Any GIS will give options for a number of different map types and a whole range of different symbologies and colours that allow you to bring your map to life. As with any visualisation, you need to think about the data you're presenting and ensure you follow some simple rules. It is easy to lie or misdirect with a map if you make the wrong decisions. We outline how to make a good map in our other courses, so we won't dwell on that here.
+Any GIS will give options for a number of different map types and a whole range of different symbologies and colours that allow you to bring your map to life. As with any visualisation, you need to think about the data you're presenting and ensure you follow some simple rules. It is easy to lie or misdirect with a map if you make the wrong decisions. We outline how to make a good map in our course [How to Make a Good Map](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map).
 
 ![Two maps showing a) a proportional symbol map of residential property sale prices in London, and b) a choropleth map showing persons per square km woodland. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maps.PNG?raw=true)
 
