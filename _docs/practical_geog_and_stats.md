@@ -510,7 +510,7 @@ A choropleth map is a type of map where areas are coloured based on the normalis
 ![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
 
 ### More Cartography
-Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our upcoming training on [How to make a good map](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map). 
+Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our training on [How to make a good map](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map). 
 
 ## Geographical Fallacies
 There are a number of geographical fallacies which you can fall foul of when undertaking geospatial analysis. Be aware of these to avoid making mistakes in your work.
