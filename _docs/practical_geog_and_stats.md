@@ -330,7 +330,7 @@ ONS produce two postcode directories. Both directories provide information about
 * Postcodes are assigned to Output Areas (OAs) by point-in-polygon assignment. Then, OAs are assigned to other statistical areas by 'best-fit' method (more on this later in the course.)
 * The best fit assignment can mean the postcode appears to be in the wrong place (but it isn't).
 * This directory should be used for statistical production, where it is important to ensure data is assigned to the correct area within the relevant geographical hierarchy.
-* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this have a look at <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_BFIT)" target="_blank">'An overview of best-fitting'</a>.
+* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this have a look at <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_BFIT&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">'An overview of best-fitting'</a>.
 
 **Unique Property Reference Numbers - UPRNs**
 
@@ -355,7 +355,7 @@ ONS produces two UPRN directories, which are similar to the postcode directories
 ### Standard Area Measurements
 Standard area measurements are official measures for the area of geographic entities. They should be used whenever you are doing a calculation which uses area as a factor (eg. calculating population density). 
 
-There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often used, and is recommended for use when calculating statistics like population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_UG_SAM)" target="_blank">User Guide</a>.
+There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often used, and is recommended for use when calculating statistics like population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_SAM&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">User Guide</a>.
 
 *Definitions of the Types of Standard Area Measurement*
 
