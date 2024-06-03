@@ -165,9 +165,9 @@ Using GSS codes to accurately refer to areas avoids problems. This is why **refe
 ## Geographic Products from ONS
 ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
 
-The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)" target="_blank">ONS Geoportal</a>
+The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk" target="_blank">Open Geography portal</a>
 
-![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/uk_geographies.PNG?raw=true)
+![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/hierarchy_diagram.png?raw=true)
 
 
 ## Where to get data
@@ -274,7 +274,7 @@ If you work at ONS you are able to install geospatial software from the software
 
 **QGIS** is a desktop GIS tool which will allow you to quickly load and visualise your data. This software is used by geospatial experts across the world and is the leading free and open source GIS software. If you want to use geospatial data and don't know how to code, this is a great way to get started.
 
-**Python** users should use `GeoPandas` for manipulating spatial objects; `GeoPandas` is the spatial version of `Pandas` so you should find it familiar. For mapping you should use `matplotlib` and for raster analysis we recommend `rasterio`. Installation of geospatial Python packages is slightly awkward so <a href="https://onsgeo.github.io/geospatial-training/docs/guides/python_install">follow our installation guidance</a>.
+**Python** users should use `GeoPandas` for manipulating spatial objects; `GeoPandas` is the spatial version of `Pandas` so you should find it familiar. For mapping you should use `matplotlib` and for raster analysis we recommend `rasterio`. Installation of geospatial Python packages is slightly awkward so <a href="https://onsgeo.github.io/geospatial-training/docs/guides/python_install_anaconda">follow our installation guidance</a>.
 
 **R** users should use the `sf` package for manipulating spatial objects; `sf` integrates well with the `tidyverse` so should be comfortable for many R users. There are a number of mapping packages, we recommend `tmap` for its simplicity, but `ggplot2`, `cartography` and `leaflet` are also excellent options. For raster data we recommend using `raster` or `stars`. These packages are all available to install via the Artifactory, as usual. It's worth mentioning that you might come across another package called `sp` - this is an old package which has been superseded by `sf` and you should avoid using it unless you have a specific reason to (for example, a few statistical packages still require `sp` objects).
 
