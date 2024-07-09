@@ -89,14 +89,14 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *python -m ipykernel install \--user \--name geopy38*
 
-Why install these packages in particular?
-numpy: 
-Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them.  
-pandas: 
-Data manipulation package for tabular data (DataFrames). Import, export, clean, aggregate data with pandas.
-ipython:
-An interactive python shell. Acts as a kernel for Jupyter notebooks.
-ipykernel:
+Why install these packages in particular?\
+numpy:\
+Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them.\
+pandas:\
+Data manipulation package for tabular data (DataFrames). Import, export, clean, aggregate data with pandas.\
+ipython:\
+An interactive python shell. Acts as a kernel for Jupyter notebooks.\
+ipykernel:\
 Built on top of ipython. In Jupyter notebooks, you’re using ipykernel to execute code interactively.  
 
 
