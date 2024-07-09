@@ -90,6 +90,8 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 *python -m ipykernel install \--user \--name geopy38*
 
 
+
+
 Why install these packages in particular?\
 **numpy**:\
 Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them.\
@@ -116,10 +118,11 @@ visualizations of geospatial data; scatterplots/heatmaps/choropleths maps etc.\
 **mapclassify**:\
 Handles classifying data e.g for choropleth maps by providing classification schemes. Use in conjunction with geo-visualisation packages like GeoPandas.\
 **folium**:\
-Data visualisation library for creating interactive maps.\
+Data visualisation library for creating interactive maps.
 
 
-Now you have your geopy38 virtual environment with all the packages above installed. To use the geopy38 environment as a Jupyter notebook kernel, type the following command:\
+
+Now you have your geopy38 virtual environment with all the packages above installed. To use the geopy38 environment as a Jupyter notebook kernel, type the following command:
 
 *python -m ipykernel install --user --name geopy38*
 
