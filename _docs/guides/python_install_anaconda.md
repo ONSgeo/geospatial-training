@@ -8,8 +8,9 @@ description: Step-by-step installation instructions for Python geospatial packag
 
 ## Before you start: 
 
- 
-You will need to install **Anaconda** This is a Python distribution used for data science, [more information here](https://www.anaconda.com/download).
+The goal of this guide is to create a Python virtual environment which will support geospatial work in Python. A virtual environment has two components: the Python interpreter that the virtual environment runs on, and a folder containing the libraries installed in the virtual environment. The main reason we use virtual environments is to isolate different Python projects because Python cannot simultaneously use multiple versions of the same package. The isolated environment also ensures that there are no complications with different tasks requiring different and conflicting dependencies.  
+
+Before you create the Python virtual environment, you will need to install **Anaconda**. This is a distribution of Python used for data science, [more information here]((https://www.anaconda.com/download).
 
 If you are part of another government department and using a networked laptop, please approach your IT team for how to install Anaconda Suite.
  
@@ -50,7 +51,7 @@ If the steps until now have worked it will now say “(geopy38)” before the pr
 
 *conda install pip* 
 
-This could also take a little while as it’s a large install. This would be a good time to make use of that coffee from earlier. ☕
+This could also take a little while as it’s a large install. This would be a good time to make use of that coffee from earlier. ☕ PIP (Package Installer for Python) is used to install and manage packages that are not part of the [Python standard library](https://docs.python.org/3/py-modindex.html). You can use pip to install, upgrade, and uninstall packages. 
 
 ![Setting up the new environment](img/geopy_install_05_pip.png) 
 
@@ -88,7 +89,16 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *python -m ipykernel install \--user \--name geopy38*
 
- 
+Why install these packages in particular?
+numpy: 
+Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them.  
+pandas: 
+Data manipulation package for tabular data (DataFrames). Import, export, clean, aggregate data with pandas.
+ipython:
+An interactive python shell. Acts as a kernel for Jupyter notebooks.
+ipykernel:
+Built on top of ipython. In Jupyter notebooks, you’re using ipykernel to execute code interactively.  
+
 
 ## Testing the installation & further activities: 
 
