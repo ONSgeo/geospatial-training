@@ -113,9 +113,17 @@ Now you have your geopy38 virtual environment with all the packages above instal
 
 *python -m ipykernel install --user --name geopy38*
 
+
+To save the packages used in a virtual environment (best to save somewhere local, like documents/downloads), run:
+
+*pip freeze > {path}/requirements.txt*
+
+To then pip install packages all in one go, you can run 
+
+*pip install –r {path}/requirements.txt* 
+
 ## Testing the installation & further activities: 
 
- 
 
 Having done this GeoPy should be available for use on your PC. To test that it is working open Jupyter Notebook from your Start menu, then create a new Python notebook. 
 
