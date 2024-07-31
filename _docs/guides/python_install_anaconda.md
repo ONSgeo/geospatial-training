@@ -92,22 +92,27 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 
 
-Why install these packages in particular?\
-**numpy**: Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them.\
-**pandas**: Data manipulation package for tabular data (DataFrames). Import, export, clean, aggregate data with pandas.\
-**ipython**: An interactive python shell. Acts as a kernel for Jupyter notebooks.\
-**ipykernel**: Built on top of ipython. In Jupyter notebooks, you’re using ipykernel to execute code interactively.\
-**rtree**: Provides spatial indexing features like nearest neighbour search, intersection, union, joins etc.\
-**gdal**: Geospatial data abstraction library. GDAL provides useful command line utilities for data translation, processing, and conversion. QGIS and ArcGIS uses gdal as a backend library.\
-**fiona**: Streams simple feature data to and from GIS formats like GeoPackage and Shapefile. Used in combination with Shapely.\
-**pyproj**: Can project and transform coordinates across various geographic reference systems.\
-**shapely**: Create and work with vector geometries.\
-**geopandas**: Extension of pandas library but handles GeoDataFrames. These are DataFrames with a geometry column.\
-**matplotlib**: Visualizations of geospatial data; scatterplots/heatmaps/choropleths maps etc.\
-**mapclassify**: Handles classifying data e.g for choropleth maps by providing classification schemes. Use in conjunction with geo-visualisation packages like GeoPandas.\
-**folium**: Data visualisation library for creating interactive maps.
+**Why install these packages in particular?**
+
+| Package    | Use  |
+| ---------- | -----|
+| numpy     | Useful for creating arrays (of XY coordinates or an elevation raster, for example) and manipulating numerical data inside them |
+| pandas    | Data manipulation package for tabular data (DataFrames). Import, export, clean, aggregate data with pandas |
+| ipython | An interactive python shell. Acts as a kernel for Jupyter notebooks |
+| ipykernel | Built on top of ipython. In Jupyter notebooks, you’re using ipykernel to execute code interactively |
+| rtree | Provides spatial indexing features like nearest neighbour search, intersection, union, joins etc. |
+| gdal | Geospatial data abstraction library. GDAL provides useful command line utilities for data translation, processing, and conversion. QGIS and ArcGIS uses gdal as a backend library |
+| fiona | Streams simple feature data to and from GIS formats like GeoPackage and Shapefile. Used in combination with Shapely |
+| pyproj | Can project and transform coordinates across various geographic reference systems |
+| shapely | Create and work with vector geometries |
+| geopandas | Extension of pandas library but handles GeoDataFrames. These are DataFrames with a geometry column |
+| matplotlib | Visualizations of geospatial data; scatterplots/heatmaps/choropleths maps etc. |
+| mapclassify | Handles classifying data e.g for choropleth maps by providing classification schemes. Use in conjunction with geo-visualisation packages like GeoPandas |
+| folium | Data visualisation library for creating interactive maps |
 
 
+
+## Next Steps:
 
 Now you have your geopy38 virtual environment with all the packages above installed. To use the geopy38 environment as a Jupyter notebook kernel, type the following command:
 
