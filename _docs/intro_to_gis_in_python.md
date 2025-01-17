@@ -33,9 +33,6 @@ By the end of the course you will:
 ### Course Instructions
 The course materials are [available here](https://github.com/ONSgeo/Introduction_to_GIS_in_Python). Download the repository to your local drive.
 
-To open Jupyter Notebooks, open up the Anaconda prompt and activate the GeoPy38 virtual environment. See [Installation guide for Python Geospatial Packages](https://onsgeo.github.io/geospatial-training/docs/guides/python_install_anaconda)
-Once you have the virtual environment activated, open up jupyter notebook by typing:
-
-*jupyter notebook*
+Open your Jupyter Notebooks / JupyterLab, then follow instructions [Installation guide for Python Geospatial Packages](https://onsgeo.github.io/geospatial-training/docs/guides/python_install_anaconda)
 
 Follow the course instructions in "Intro_to_Geography_in_Python.ipynb".
