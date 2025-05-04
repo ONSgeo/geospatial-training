@@ -6,7 +6,7 @@ description: Step-by-step installation instructions for Python geospatial packag
 # Installation guide for Python Geospatial packages 
 
 
-## Before you start: 
+## Before you begin: 
 
 The goal of this guide is to create a Python virtual environment which will support geospatial work in Python. A virtual environment has two components: the Python interpreter that the virtual environment runs on, and a folder containing the libraries installed in the virtual environment. The main reason we use virtual environments is to isolate different Python projects because Python cannot simultaneously use multiple versions of the same package. The isolated environment also ensures that there are no complications with different tasks requiring different and conflicting dependencies.  
 
