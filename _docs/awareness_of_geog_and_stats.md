@@ -177,10 +177,10 @@ There is a huge amount of geospatial data available on the internet. As with all
 
 ONS produces a range of geographic data, including boundaries, lookups, directories and classifications. 
 
-This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>. The <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a> is a companion site for the Open Geography Portal, and allows you to search for geographical entities or places and understand the different types of geographies available in that area.
+This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>.
 
 
-![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals.PNG?raw=true)
+![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals2.png?raw=true)
 
 ### Geographic Data from Ordnance Survey
 
