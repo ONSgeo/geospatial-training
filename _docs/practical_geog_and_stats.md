@@ -191,10 +191,9 @@ These are some of the most common CRSs you will come across and their EPSG codes
 
 ONS produces a range of geographic data, including boundaries, lookups, directories and classifications. 
 
-This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>. The <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a> is a companion site for the Open Geography Portal, and allows you to search for geographical entities or places and understand the different types of geographies available in that area.
+This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>.
 
-
-![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals.PNG?raw=true)
+![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals3.PNG?raw=true)
 
 
 ### Ordnance Survey
@@ -381,7 +380,7 @@ There are multiple methods for defining "urban" and "rural". Two of the most com
 ### Area Classifications
 Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live within the same locality. These area types will be distributed in different geographical space.
 
-The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2011?h=0&lon=-1.4856&lat=52.3214&zoom=7" target="_blank">this interactive map</a>.
+The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2011?" target="_blank">this interactive map</a>.
 
 ![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/OAC_2011.png?raw=true)
 
