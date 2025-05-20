@@ -179,7 +179,7 @@ ONS produces a range of geographic data, including boundaries, lookups, director
 
 This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>.
 
-<img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals2.png" alt="The front page of the Open Geography portal" width="500" height="300">
+<img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals2.png" alt="The front page of the Open Geography portal" width="600" height="450">
 
 
 ### Geographic Data from Ordnance Survey
