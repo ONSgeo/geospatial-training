@@ -193,7 +193,7 @@ ONS produces a range of geographic data, including boundaries, lookups, director
 
 This data is available for download or access via API from the <a href="https://geoportal.statistics.gov.uk/" target="_blank">Open Geography Portal</a>.
 
-![The front pages of the Open Geography Portal and the ONS Geography Linked Data Portal ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals3.PNG?raw=true)
+![The front pages of the Open Geography Portal](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/ons_portals3.png?raw=true)
 
 
 ### Ordnance Survey
