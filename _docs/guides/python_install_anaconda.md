@@ -109,6 +109,7 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 | matplotlib | Visualizations of geospatial data; scatterplots/heatmaps/choropleths maps etc. |
 | mapclassify | Handles classifying data e.g for choropleth maps by providing classification schemes. Use in conjunction with geo-visualisation packages like GeoPandas |
 | folium | Data visualisation library for creating interactive maps |
+| movingpandas | For movement data analysis - useful for creating, analysing & visualising trajectories  |
 
 
 
