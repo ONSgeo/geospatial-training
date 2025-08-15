@@ -5,6 +5,7 @@ description: Step-by-step installation instructions for Python geospatial packag
 
 # Installation guide for Python Geospatial packages 
 
+*Please note: As of 2025, this guidance page for setup using Anaconda is no longer being updated. The Python packages listed on this page however remain the packages recommended by ONS for geospatial analysis*  
 
 ## Before you start: 
 
