@@ -6,9 +6,14 @@ description: Recommended resources for those interested in more geospatial analy
 # Recommended Resources
 If you wish to take a deeper dive into geospatial analysis we recommend the following resources.
 
+### Python Basics
+* [Python Tutorials](https://www.w3schools.com/python/) from W3 Schools
+* [Python Basics](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) from GeeksforGeeks
 
 ### QGIS
 * [QGIS 3.10 Documentation and Training](https://docs.qgis.org/3.10/en/docs/index.html)
+* [PyQGIS Developer Cookbook](https://docs.qgis.org/3.40/en/docs/pyqgis_developer_cookbook/index.html)
+* [Beginner's Guide to Python in QGIS](https://mapscaping.com/qgis-with-python/) from Mapscaping
 
 
 ### Geospatial Analysis in R
