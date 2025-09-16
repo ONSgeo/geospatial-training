@@ -9,6 +9,7 @@ If you wish to take a deeper dive into geospatial analysis we recommend the foll
 ### Python Basics
 * [Python Tutorials](https://www.w3schools.com/python/) from W3 Schools
 * [Python Basics](https://www.geeksforgeeks.org/python/python-programming-language-tutorial/) from GeeksforGeeks
+* [Introduction to Pandas & Documentation](https://pandas.pydata.org/docs/) - introducing data analysis with Python
 
 ### QGIS
 * [QGIS 3.10 Documentation and Training](https://docs.qgis.org/3.10/en/docs/index.html)
@@ -27,3 +28,4 @@ If you wish to take a deeper dive into geospatial analysis we recommend the foll
 * [Geographic Data Science](https://darribas.org/gds_course/content/home.html) by Dani Arribas-Bel
 * [Geographic Data Science with PySAL and the PyData Stack](https://geographicdata.science/book/intro.html) by  Sergio Rey, Dani Arribas-Bel and Levi Wolf
 * [ArcGIS API for Python](https://developers.arcgis.com/python/)
+* [Introduction to GeoPandas & Documentation](https://geopandas.org/en/stable/index.html)
