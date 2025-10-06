@@ -76,7 +76,15 @@ The [Government Statistical Service (GSS) Geography Policy](https://gss.civilser
 
 The policy outlines seven key pillars which underpin the best practice around using geography with statistics.
 
-![The seven pillars of the GSS Geography Policy](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/geography_policy.png?raw=true)
+![The seven pillars of the GSS Geography Policy](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Pillars.png?raw=true)
+
+1.	Referencing: Reference source data at the lowest possible geographical level using x-y coordinates and/or standard identifiers.
+2.	Naming and Coding: Use GSS Standard codes and names for attributing UK statistical geographies. 
+3.	Managing Change. Apply changes to geographies in a clear schedule and no less than once a year. 
+4.	Building Blocks: Build official statistics for any geography from the aggregation of whole statistical building blocks. 
+5.	Area Measurement: There are four types of area measurement provided, based on ‘flat’ measurements as represented on a map. The selected measurement should be tailored to the specific data under analysis.
+6.	Classifications: Use the right type and currency of geographical classification for your statistical output. 
+7.	Presentation: Use standardised approaches and best practice for presenting geographies in tabular and machine-readable form and also when producing maps.
 
 ### Key Geography Policies
 
