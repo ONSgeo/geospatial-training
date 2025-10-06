@@ -208,29 +208,46 @@ GIS can be used to bring together many different types of data and provides us w
 ### Basic Spatial Analysis Techniques
 This section will give you a quick overview of some of the most commonly used spatial techniques available in GIS, which can be combined to answer numerous questions around location.
 
-**Select By Location** allows you to select features based on their location relative to other features. For example, to find out how many homes are affected by flooding you can select homes which fall within the flood boundary.
+**Select By Location** allows you to select features based on their location relative to other features. 
 
 ![Example of select by location: selecting point which fall within a polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/selectbyloc.PNG?raw=true)
 
-*In this example we have selected all the points which fall within the blue square; the selected points are in orange*
+In this example we have selected all the points which fall within the blue square; the selected points are in orange
 
-**Buffer** allows you to calculate a distance outwards from an object. For example, to find households within a certain straight line distance from a GP surgery you would buffer the surgery's location and then (using select by location) select the households which fall within the buffer.
+![Example of select by location: selecting point which fall within a buffer or polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Select_by_location_address_points.png?raw=true)
+
+In this example, we have created a buffer and used the 'Select By Location' tool to select all addresses which fall within the buffer. We could use this method to find out how many homes are affected by flooding by selecting homes which fall within a flood boundary.
+
+**Buffer** allows you to calculate a distance outwards from an object.
 
 ![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
 
-*In this example we have buffered the blue features. The resulting buffer is the green feature.*
+In this example we have buffered the blue features. The resulting buffer is the green feature.
 
-**Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies. If you remember back to the postcode and UPRN directories, this method is used to assign the postcode or UPRN to the statistical geographies.
+![Example of creating buffers of certain distances around a poin g](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
 
-![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/pip.png?raw=true)
+In this real world example, buffers have been created around a point to 1,000 and 5,000 metre distances. By adding address points, it's possible to calculate the number of households within these distances from a GP surgery, using 'select by location' to select the households which fall within each buffer.
 
-*In this example we have joined the points to the green areas they fall within*
+**Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies.
+
+![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Point_in_polygon.png?raw=true)
+
+In this example we have joined the points to the greenspace areas they fall within
+
 
 **Dissolve** allows you to merge together polygons which overlap.
 
 ![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
 
-*In this example the blue and green polygons have been dissolved into one object - the pink polygon*
+In this example the blue and green polygons have been dissolved into one object - the pink polygon
+
+![Example showing how to dissolve Unitary Authorities in Wales to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Dissolve_Wales.png?raw=true)
+
+In this example, we can see the Unitary Authorites in Wales. in GIS software, you can combine multiple polygons into a single area by adding a field to the attribute table and giving each feature the same value. Using the Dissolve tool on that field will dissolve all features sharing that value into one continuous polygon.
+
+![Example showing Unitary Authorities in Wales, dissolved to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Wales_dissolved.png?raw=true)
+
+Here we can see the result of the dissolve.
 
 **Clipping** uses the extent of one geographic feature to trim another feature by. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
 
