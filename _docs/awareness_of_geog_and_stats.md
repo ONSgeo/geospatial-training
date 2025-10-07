@@ -208,58 +208,70 @@ GIS can be used to bring together many different types of data and provides us w
 ### Basic Spatial Analysis Techniques
 This section will give you a quick overview of some of the most commonly used spatial techniques available in GIS, which can be combined to answer numerous questions around location.
 
-**Select By Location** allows you to select features based on their location relative to other features. 
+**Select By Location** allows you to select features based on their location relative to other features.
+In this example we have selected all the points which fall within the blue square; the selected points are in orange.
 
 ![Example of select by location: selecting point which fall within a polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/selectbyloc.PNG?raw=true)
 
-In this example we have selected all the points which fall within the blue square; the selected points are in orange
+In this example, we have created a buffer and used the 'Select By Location' tool to select all addresses which fall within the buffer. We could use this method to find out how many homes are affected by flooding by selecting homes which fall within a flood boundary.
 
 ![Example of select by location: selecting point which fall within a buffer or polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Select_by_location_address_points.png?raw=true)
 
-In this example, we have created a buffer and used the 'Select By Location' tool to select all addresses which fall within the buffer. We could use this method to find out how many homes are affected by flooding by selecting homes which fall within a flood boundary.
 
 **Buffer** allows you to calculate a distance outwards from an object.
 
-![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
-
 In this example we have buffered the blue features. The resulting buffer is the green feature.
 
-![Example of creating buffers of certain distances around a poin g](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
+![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
 
 In this real world example, buffers have been created around a point to 1,000 and 5,000 metre distances. By adding address points, it's possible to calculate the number of households within these distances from a GP surgery, using 'select by location' to select the households which fall within each buffer.
 
+![Example of creating buffers of certain distances around a poin g](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
+
+
 **Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies.
 
-![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Point_in_polygon.png?raw=true)
+In this example we have joined the points to the greenspace areas they fall within.
 
-In this example we have joined the points to the greenspace areas they fall within
+![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Point_in_polygon.png?raw=true)
 
 
 **Dissolve** allows you to merge together polygons which overlap.
 
+In this example the blue and green polygons have been dissolved into one object - the pink polygon.
+
 ![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
 
-In this example the blue and green polygons have been dissolved into one object - the pink polygon
+Below, we can see the Unitary Authorites in Wales. In GIS software, you can combine multiple polygons into a single area by adding a field to the attribute table and giving each feature the same value. Using the Dissolve tool on that field will dissolve all features sharing that value into one continuous polygon.
 
 ![Example showing how to dissolve Unitary Authorities in Wales to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Dissolve_Wales.png?raw=true)
 
-In this example, we can see the Unitary Authorites in Wales. in GIS software, you can combine multiple polygons into a single area by adding a field to the attribute table and giving each feature the same value. Using the Dissolve tool on that field will dissolve all features sharing that value into one continuous polygon.
+Here we can see the result of the dissolve:
 
 ![Example showing Unitary Authorities in Wales, dissolved to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Wales_dissolved.png?raw=true)
 
-Here we can see the result of the dissolve.
 
-**Clipping** uses the extent of one geographic feature to trim another feature by. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
+**Clipping** uses the extent of one geographic feature to trim another feature. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
 
-![Example showing a layer being clipped to a triangular feature, and the subsequently clipped output.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/clip.PNG?raw=true)
+In this example we are only interested in greenspace areas in Wales and by running the clip tool we can remove all the greenspace areas outside of Wales.
 
-*In this example the blue and green layer has been clipped to the triangular feature*
+![Example showing Wales with greenspace areas in England and Wales.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Clip_Greenspace.png?raw=true)
 
-**Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate, overlapping features.
+Below is the result of using the Clip tool on the two datasets, the greenspace areas are now only present within Wales.
 
-![Example showing two different features which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/merge.PNG?raw=true)
+![Example showing Wales with greenspace polygons clipped to exclude greenspace in England.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Greenspace_clipped_Wales.png?raw=true)
 
-*In this example the blue and green layers are merged, resulting in the lighter blue layer*
+
+**Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate overlapping features.
+
+In this example there are two separate vector layers, one for England and one for Wales. Each layer contains its own set of polygons and an attribute table. At the moment, these layers are stored separately and appear as distinct entries in the Layers panel.
+
+![Example showing two different vector layers which are merged into one resulting layer.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Merge_England_Wales_data.png?raw=true)
+
+When you run the merge tool on the England and Wales layers, the tool combines all features from both layers into a single dataset. It also merges the attribute tables, aligning fields with matching names and adding new columns where necessary. The result is one combined output layer:
+
+![Example showing the result of the merge.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Merged_England_Wales.png?raw=true)
+
 
 ### More advanced spatial analysis techniques
 The basic techniques outlined above can be easily utilised and have the power to provide great insights into statistical data. However, there are more complex techniques and data sources which can be used to provide more detail or statistical rigour to analyses. It is worth being aware of these techniques, although we would not expect you to be using them without more support or training.
@@ -268,7 +280,7 @@ The basic techniques outlined above can be easily utilised and have the power to
 
 ![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.PNG?raw=true)
 
-*This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.*
+This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.
 
 **Cluster and Hotspot Analysis** can be used to expose spatial groups or patterns which may not be visible to the human eye, particularly when dealing with large datasets. Statistical cluster analysis aims to classify or group objects into a number of different clusters, based on measured variables. This allows clustering of objects based on similarity (often in multiple dimensions) and location.
 
@@ -276,13 +288,13 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 
 ![A map showing the result of hotspot analysis on happiness data from 2018 across the UK. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/hotspots.png?raw=true)
 
-*This map shows the results of hotspot analysis for happiness data from 2018. It shows significant clusters of high happiness (hotspots shown in red) and low happiness (cold spots shown in blue).*
+This map shows the results of hotspot analysis for happiness data from 2018. It shows significant clusters of high happiness (hotspots shown in red) and low happiness (cold spots shown in blue).
 
 **Earth observation and machine learning** are often combined to analyse satellite data. Analysis of satellite data is a complex field that exists in its own right. So, for statistical applications, we tend to use data derived from satellite data to complement our analysis. For example, machine learning can be used to extract building outlines which can then be analysed using techniques outlined earlier. 
 
 ![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/eo.png?raw=true)
 
-*An example where machine learning has been used to extract building outlines from satellite data.*
+An example where machine learning has been used to extract building outlines from satellite data.
 
 ### Mapping Your Data
 Mapping data is one of the most basic but powerful things you can do with GIS. Maps can be used to present results, but also allow us to interrogate data sources or investigate relationships and patterns. It can also be a useful technique for spotting anomalies or problems during the quality assurance process.
@@ -291,7 +303,7 @@ Any GIS will give options for a number of different map types and a whole range 
 
 ![Two maps showing a) a proportional symbol map of residential property sale prices in London, and b) a choropleth map showing persons per square km woodland. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maps.PNG?raw=true)
 
-*Examples of two commonly used map types: left - proportional symbol map and right - choropleth map.*
+Examples of two commonly used map types: left - proportional symbol map and right - choropleth map.
 
 ## Geospatial tools at ONS
 If you work at ONS you are able to install geospatial software from the software centre (you may need to request it via the Service Desk first). We recommend the following tools:
