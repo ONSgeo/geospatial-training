@@ -43,7 +43,7 @@ Most times when we produce statistics they are also about places – sometimes t
 
 1. Geography is fundamental to the way we produce statistics - if we don’t get the geography right there is real risk that we will damage the quality of our statistics.
 2. As we pull more data together in ONS, geography provides a great way to integrate between topics and across themes – often location will be the only element that disparate datasets hold in common.
-3. Spatial relationships matter and there are a wealth of well established and emerging spatial tools available to help us lever more information out of our data.
+3. Spatial relationships matter and there is a wealth of well established and emerging spatial tools available to help us lever more information out of our data.
 
 ### The importance of Geography in Statistics
 
@@ -64,9 +64,11 @@ As we add more administrative data, big-data and other sources to our data store
 *Sir Nigel Shadbolt*
 
 ### Spatial tools – GIS and Geospatial analysis
-Mapping and visualisation of spatial data, both for analysis and to enhance our products on the web, can greatly improve understanding and accessibility to our statistics. The use of GIS (Geographic Information Systems – see later) allow us to manage and analyse our data. Analysis of spatial patterns over time and potentially in real-time can unlock new understanding and new views on the data we have never had before.
 
-Spatial tools and linkage also opens opportunities for the analysis of data far beyond what we are used to working with now. Data and big-data from smart cars, roads and buildings, as well as the ‘Internet of Things’ all have a geospatial dimension and this will be increasingly important in describing and understanding the economy, the environment and society in future. Geographic tools will enable us to manage and make use of these sources.
+Mapping and visualisation of spatial data, both for analytical purposes and to enhance our web products, can significantly improve the understanding and accessibility of our statistics. The use of Geographic Information Systems (GIS) enables us to manage, analyse, and interpret data more effectively. By examining spatial patterns over time, and potentially in real time, we can uncover new insights and perspectives that were previously beyond reach.
+
+The integration of spatial tools and data linkage also opens the door to more sophisticated analysis, extending far beyond our current capabilities. Increasingly, data from smart cars, connected infrastructure, and the ‘Internet of Things’ carry a geospatial dimension that will be essential for understanding the economy, the environment, and society in the years ahead. Geographic tools will play a vital role in managing these complex data sources and transforming them into meaningful insights.
+
 
 
 ## Geography Policy
@@ -111,7 +113,7 @@ Geographic data comes in two fundamental formats: vector and raster. Using these
 
 Vector data comes in three types:
 
-* **Points** Individual locations which are represented by an X and Y coordinate. Eg.addresses, the centre of a postcode, locations obtained from GPS. 
+* **Points** Individual locations which are represented by an X and Y coordinate. For example, addresses, the centre of a postcode, locations obtained from GPS. 
 * **Lines** A series of two or more connected points, for example, road network, rivers.
 * **Polygons** A series of connected points which enclose a homogeneous area. For example, ONS boundary products like Lower layer Super Output Areas (LSOAs) or Local Authorities.
 
@@ -133,7 +135,7 @@ Many types of environmental data are collected in raster format. In the statisti
 
 ### Look-ups and Code Lists
 
-Look-ups and code lists provide the links between the different geographies that ONS produce, and the codes that relate to each geographic area. By allocating the correct codes to the data we collect it is possible to use look-ups to aggregate data to a huge range of different geographies.
+Look-ups and code lists provide the links between the different geographies that ONS produce, and the codes that relate to each geographic area. By allocating the correct codes to the data we collect, it is possible to use look-ups to aggregate data to other geographies.
 
 The most commonly used look-ups at ONS link postcode or address to administrative areas (such as Wards, Parishes or Local Authorities). Other look-ups  link between different types of areas (for example, between Output Areas and Parliamentary Constituencies or health areas). Some look-ups define how different units nest or relate to each other in a hierarchy.
 
@@ -157,7 +159,7 @@ This is a very brief overview of locating geospatial data. In reality, geodesy i
 ### GSS Names and Codes
 On 1st January 2011 GSS codes were introduced. GSS codes are a type of uniform resource indicator (URI) which provide a way to identify unique items. GSS codes identify individual geographic objects, for example, Local Authority Districts. 
 
-GSS codes are comprised of two codes: a three character entity code which describes what type of statistical geography the object is, and a six digit number which refers to the unique instance of the object. 
+GSS codes are comprised of two parts: a three character entity code which describes what type of statistical geography the object is, and a six digit number which refers to the unique instance of the object. 
 
 ![The structure of a GSS code showing the Portsmouth Unitary Authority as an example: E06000044.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/entity_code.PNG?raw=true)
 
@@ -165,15 +167,17 @@ GSS codes are comprised of two codes: a three character entity code which descri
 The <a href="https://geoportal.statistics.gov.uk/datasets/2219f72d5b8042c496e47488efd04b16/about" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/search?q=PRD_CHD%20DEC_2023&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
 
 ### Referencing Areas Correctly
-Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets so, identifying one by name alone can be fraught with error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
+Referencing areas correctly is challenging, for example, there are several Newports across the country and hundreds of High Streets therefore, identifying one by name alone can introduce error. Even when you think you are referring to one clear location you could be describing different areas, for example, towns, wards and parishes may share a common name but cover completely different areas. 
 
 Using GSS codes to accurately refer to areas avoids problems. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas.
 
 
 ## Geographic Products from ONS
-ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
+The Office for National Statistics (ONS) produces a wide range of geographic products used by many organisations and across diverse applications. The structure of UK geographies is inherently complex, designed to meet various analytical and operational needs. 
 
-The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk" target="_blank">Open Geography portal</a>
+Because administrative boundaries in the UK are subject to regular change, boundary datasets must be continually updated and maintained. It's important to remain aware of these changes when producing statistics to ensure accuracy and consistency.
+
+The 'Hierarchical Representation of UK Statistical Geographies' offers a clear overview of the different boundary types and how they relate to one another. This is a valuable reference resource, available through the <a href="https://geoportal.statistics.gov.uk" target="_blank">Open Geography portal</a>
 
 ![The Hierarchical Representation of UK Statistical Geographies diagram](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/hierarchy_diagram.png?raw=true)
 
@@ -224,15 +228,15 @@ In this example, we have created a buffer and used the 'Select By Location' tool
 
 
 
-**Buffer** allows you to calculate a distance outwards from an object.
+**Buffer** allows you to calculate a distance outward from an object.
 
 In this example we have buffered the blue features. The resulting buffer is the green feature.
 
 ![Example of buffering the three types of vector geometry: points, lines and polygons](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/buffer.png?raw=true)
 
-In this real world example, buffers have been created around a point to 1,000 and 5,000 metre distances. By adding address points, it's possible to calculate the number of households within these distances from a GP surgery, using 'select by location' to select the households which fall within each buffer.
+In this real-world example, buffers have been created around a point to 1,000 and 5,000 metre distances. By adding address points, it's possible to calculate the number of households within these distances from a GP surgery, using 'select by location' to select the households which fall within each buffer.
 
-![Example of creating buffers of certain distances around a poin g](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
+![Example of creating buffers of certain distances around a point](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
 
 
 
@@ -250,7 +254,7 @@ In this example the blue and green polygons have been dissolved into one object 
 
 ![Example showing the dissolve between two overlapping polygons and the resulting feature.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/dissolve.PNG?raw=true)
 
-Below, we can see the Unitary Authorites in Wales. In GIS software, you can combine multiple polygons into a single area by adding a field to the attribute table and giving each feature the same value. Using the Dissolve tool on that field will dissolve all features sharing that value into one continuous polygon.
+Below, we can see the Unitary Authorities in Wales. In GIS software, you can combine multiple polygons into a single area by adding a field to the attribute table and giving each feature the same value. Using the Dissolve tool on that field will dissolve all features sharing that value into one continuous polygon.
 
 ![Example showing how to dissolve Unitary Authorities in Wales to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Dissolve_Wales.png?raw=true)
 
