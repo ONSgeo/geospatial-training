@@ -31,7 +31,7 @@ This course covers:
 
 ### Introduction
 
-*Everything happens somewhere*
+**Everything happens somewhere**
 
 Every time we receive a response to a survey, knock on a door or receive data from a supplier there is location associated with that data.
 In some cases the data is for single address or businesses – in others it relates to a Postcode, a Ward or a Local Authority or one of a whole range of other geographies that we will cover later.
@@ -169,6 +169,7 @@ Referencing areas correctly is challenging, for example, there are several Newpo
 
 Using GSS codes to accurately refer to areas avoids problems. This is why **referencing** is one of the key pillars of the GSS Geography policy. Referencing by GSS codes also makes your life much easier as it simplifies joining statistics to areas.
 
+
 ## Geographic Products from ONS
 ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
 
@@ -179,7 +180,8 @@ The *Hierarchical Representation of UK Statistical Geographies* provides a detai
 
 ## Where to get data
 
-There is a huge amount of geospatial data available on the internet. As with all data, you should carefully consider the provenance, accuracy and suitability of the data you source. You should also aim to use the authoritative sources of data wherever possible. 
+There is a huge amount of geospatial data available on the internet. As with all data, you should carefully consider the provenance, accuracy and suitability of the data you source. You should also aim to use the authoritative sources of data wherever possible.
+
 
 ### Geographic Data from ONS
 
@@ -196,14 +198,17 @@ Ordnance Survey provide a wide variety of geospatial data which far exceeds the 
 
 ![The front page of the Ordnance Survey Data Hub](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/oshub.PNG?raw=true)
 
+
 ## GIS and Analytical Techniques
 
 In this section we will provide a quick overview of some of the basic techniques which can be used to start analysing spatial data.
+
 
 ### Geographic Information Systems
 A Geographic Information System (GIS) is a framework for storing, managing and analysing spatial data. When people think of GIS they usually think of a piece of software (for example, QGIS or ArcGIS), which is the way most people use GIS. However, you should also be aware that a GIS can take other forms like code or a cloud based database. 
 
 GIS can be used to bring together many different types of data and provides us with the tools to identify, analyse and understand patterns and relationships. GIS can also be a valuable tool in problem solving and decision making, as well as for investigation and visualisation.
+
 
 ### Basic Spatial Analysis Techniques
 This section will give you a quick overview of some of the most commonly used spatial techniques available in GIS, which can be combined to answer numerous questions around location.
@@ -218,6 +223,7 @@ In this example, we have created a buffer and used the 'Select By Location' tool
 ![Example of select by location: selecting point which fall within a buffer or polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Select_by_location_address_points.png?raw=true)
 
 
+
 **Buffer** allows you to calculate a distance outwards from an object.
 
 In this example we have buffered the blue features. The resulting buffer is the green feature.
@@ -229,11 +235,13 @@ In this real world example, buffers have been created around a point to 1,000 an
 ![Example of creating buffers of certain distances around a poin g](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Buffers_around_point.png?raw=true)
 
 
+
 **Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies.
 
 In this example we have joined the points to the greenspace areas they fall within.
 
 ![Example of point in polygon assignment where points are being joined to the geographical areas they fall within.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Point_in_polygon.png?raw=true)
+
 
 
 **Dissolve** allows you to merge together polygons which overlap.
@@ -251,6 +259,7 @@ Here we can see the result of the dissolve:
 ![Example showing Unitary Authorities in Wales, dissolved to create a country boundary.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Wales_dissolved.png?raw=true)
 
 
+
 **Clipping** uses the extent of one geographic feature to trim another feature. For example, if you have a land use layer for the entire country, but were only interested in one region, you could clip the land use layer to the region boundary and would be left with land use for that region.
 
 In this example we are only interested in greenspace areas in Wales and by running the clip tool we can remove all the greenspace areas outside of Wales.
@@ -260,6 +269,7 @@ In this example we are only interested in greenspace areas in Wales and by runni
 Below is the result of using the Clip tool on the two datasets, the greenspace areas are now only present within Wales.
 
 ![Example showing Wales with greenspace polygons clipped to exclude greenspace in England.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Greenspace_clipped_Wales.png?raw=true)
+
 
 
 **Merge** combines two or more layers into a single layer. It's different from dissolve as features which overlap are not combined into one feature but are kept as separate overlapping features.
@@ -273,14 +283,17 @@ When you run the merge tool on the England and Wales layers, the tool combines a
 ![Example showing the result of the merge.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/Merged_England_Wales.png?raw=true)
 
 
+
 ### More advanced spatial analysis techniques
 The basic techniques outlined above can be easily utilised and have the power to provide great insights into statistical data. However, there are more complex techniques and data sources which can be used to provide more detail or statistical rigour to analyses. It is worth being aware of these techniques, although we would not expect you to be using them without more support or training.
 
 **Networks, drivetime and zoning** can be used to solve problems relating to networks. One of the most commonly used networks is the road network, which allows you to answer questions like "how far is it to drive between these two points?", "how far from this point can I travel in 30 minutes?" or "what areas can a field staff member cover in 1 hour of driving?". Network analysis has been successfully used to plan field staff areas for the Census.
 
-![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.PNG?raw=true)
+This map shows average travel time zones to a point on the South coast of England.
 
-This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.
+![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.png?raw=true)
+
+
 
 **Cluster and Hotspot Analysis** can be used to expose spatial groups or patterns which may not be visible to the human eye, particularly when dealing with large datasets. Statistical cluster analysis aims to classify or group objects into a number of different clusters, based on measured variables. This allows clustering of objects based on similarity (often in multiple dimensions) and location.
 
@@ -290,11 +303,13 @@ These methods can add statistical rigour to analysis, allowing us to express mea
 
 This map shows the results of hotspot analysis for happiness data from 2018. It shows significant clusters of high happiness (hotspots shown in red) and low happiness (cold spots shown in blue).
 
+
 **Earth observation and machine learning** are often combined to analyse satellite data. Analysis of satellite data is a complex field that exists in its own right. So, for statistical applications, we tend to use data derived from satellite data to complement our analysis. For example, machine learning can be used to extract building outlines which can then be analysed using techniques outlined earlier. 
 
 ![An example of extracting building outlines from satellite data. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/eo.png?raw=true)
 
 An example where machine learning has been used to extract building outlines from satellite data.
+
 
 ### Mapping Your Data
 Mapping data is one of the most basic but powerful things you can do with GIS. Maps can be used to present results, but also allow us to interrogate data sources or investigate relationships and patterns. It can also be a useful technique for spotting anomalies or problems during the quality assurance process.
@@ -304,6 +319,7 @@ Any GIS will give options for a number of different map types and a whole range 
 ![Two maps showing a) a proportional symbol map of residential property sale prices in London, and b) a choropleth map showing persons per square km woodland. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/maps.PNG?raw=true)
 
 Examples of two commonly used map types: left - proportional symbol map and right - choropleth map.
+
 
 ## Geospatial tools at ONS
 If you work at ONS you are able to install geospatial software from the software centre (you may need to request it via the Service Desk first). We recommend the following tools:
