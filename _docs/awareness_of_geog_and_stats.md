@@ -143,12 +143,14 @@ Make sure you use the official codes wherever possible (rather than the names of
 
 ## Working with Geographic Data
 
-### Locating Data
-Locating geographic data means providing it with an X and Y coordinate which references a position on a coordinate reference system (CRS). Very simply put, a coordinate reference system is a way to represent positions on a 3D sphere, on a flat, 2D object. In this case we are representing points on the Earth on a 2D map. 
+### Georeferencing Data
+Georeferencing data means providing it with an X and Y coordinate that identifies its position within a Coordinate Reference System (CRS). Put simply, a CRS is a way of representing positions on the Earth's three-dimensional surface on a flat, two-dimensional map. 
 
-There are lots of different coordinate reference systems which are designed for use across different areas of the world. In the Great Britain the CRS we use is British National Grid, which is produced and maintained by <a href="https://www.ordnancesurvey.co.uk/" target="_blank">Ordnance Survey</a>, Great Britain's Mapping Agency. If you've ever used an Ordnance Survey map for walking, cycling or perhaps back in geography class at school, you'll have used British National Grid, perhaps without even knowing it!
+There are many different coordinate reference systems designed for use in different parts of the world. In the Great Britain the CRS we use is British National Grid, which is produced and maintained by <a href="https://www.ordnancesurvey.co.uk/" target="_blank">Ordnance Survey</a>, Great Britain's Mapping Agency. If you've ever used an Ordnance Survey map for walking, cycling or perhaps back in geography class at school, you've used British National Grid, perhaps without even knowing it!
 
-Sometimes the data we use is provided in a different CRS than British National Grid. This isn't a problem as there are transformations we can use to convert between the two. GIS systems are also very good at doing this transformation on the fly, so you if you're just looking at data you don't need to worry about the CRS. However, there are some common mistakes that can be made by analysing data which is in different coordinate reference systems, so be careful! You can find out more if you complete the Practical Geography for Statistics course we offer, and don't forget the Geospatial team are on hand to help if needed, so please get in touch.
+Sometimes the data we use is provided in a different CRS to British National Grid. This isn't a problem as there are transformations that can be used to convert between systems. Most GIS software can also handle this automatically when viewing data, so you don't usually need to worry about CRS differences for simple visualisation. However, be careful when analysing data in different coordinate reference systems, as using mismatched systems can lead to errors.
+
+You can learn more about this in our Practical Geography for Statistics course. Remember, the Geospatial team are on hand to help, so please get in touch if you need support.
 
 This is a very brief overview of locating geospatial data. In reality, geodesy is an incredibly complex field, which thankfully, you do not need to know too much more about at the moment!
 
