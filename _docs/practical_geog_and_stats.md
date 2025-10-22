@@ -311,6 +311,13 @@ We'll now run through some of the more frequently used geographies to be aware o
 
 Map showing regions in England
 
+<p align="center">
+  <img src="(https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Regions.png)" alt="Map showing regions in England" style="width:50%;">
+  <br>
+  <em></em>
+</p>
+
+
 ![Map showing regions in England](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Regions.png?raw=true) 
 
 
