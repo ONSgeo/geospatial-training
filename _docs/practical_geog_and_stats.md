@@ -104,11 +104,8 @@ Geographic data comes in a range of formats and there are some pros and cons whi
    * there are also optional files like .prj (which stores the projection system information) and .xml (which stores metadata).<br><br>
 3.	If you were to view the components of a shapefile in windows explorer, they would be shown as in the image below.  All these files must be kept together in the same directory for the shapefile to function properly.  If you move a shapefile or send it to someone else make sure you include the .shp, .shx and .dbf files otherwise the shapefile will be corrupted and unusable. They must also all have the same base name (just a different file extension).<br><br>
 
-<p align="centre">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Shapefile_Structure.png" alt="An example of components of a shapefile" width="400">
-  <br>
-  <em></em>
-</p>
+![An example of components of a shapefile](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Shapefile_Structure.png?raw=true)
+
 
 There are some frustrating quirks when using shapefiles which can cause you problems. Be aware that:
    
@@ -125,11 +122,8 @@ There are some frustrating quirks when using shapefiles which can cause you prob
 Shapefiles are mostly universally recognised by older GIS systems; therefore, they are ideal for sharing data with users who might not have software that supports newer formats.
 Despite its limitations, shapefile remains one of the most universally supported formats, which makes it suitable for open data distribution for example on a public data portal such as the Open Geography portal, to ensure they can be opened by the widest audience.
 
-<p align="centre">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/File_formats_portal.png" alt="An example of shapefile format available to download from a data portal" width="300">
-  <br>
-  <em></em>
-</p>
+![An example of shapefile format available to download from a data portal](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/File_formats_portal.png?raw=true)
+
 
 
 ### GeoPackages
@@ -141,12 +135,7 @@ Despite its limitations, shapefile remains one of the most universally supported
 
 This image shows the contents of a geopackage in the browser pane in QGIS:
 
-<p align="center">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/QGIS_GeoPackage.png" alt="Contents of a geopackage" width="400">
-  <br>
-  <em></em>
-</p>
-
+![Contents of a geopackage](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/QGIS_GeoPackage.png?raw=true)
 
 
 ### Geodatabases
@@ -158,11 +147,7 @@ A geodatabase is a database designed specifically for spatial data and is a nati
 
 When you import a shapefile into a geodatabase, it becomes what’s known as a feature class. The image below shows a geodatabase called ‘TrainingForArcPro.gdb, containing a number of ‘feature classes.’
 
-<p align="left">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ArcPro_Geodatabase.png" alt="An example of a geodatabase containing multiple feature classes" width="300">
-  <br>
-  <em></em>
-</p>
+![An example of a geodatabase containing multiple feature classes](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ArcPro_Geodatabase.png?raw=true)
 
 
 ### GeoJSON
@@ -172,12 +157,7 @@ When you import a shapefile into a geodatabase, it becomes what’s known as a f
 * is an open standard.
 * Location is encoded in GeoJSON as longitude and latitude in WGS84 reference system. As much of the UK's data is provided in the British National Grid projection you need to take care with this format.
 
-<p align="centre">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/GeoJSON.png" alt="An example of GeoJSON being used to create a Web Map and then viewed in a browser" width="400">
-  <br>
-  <em></em>
-</p>
-
+![An example of GeoJSON being used to create a Web Map and then viewed in a browser](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/GeoJSON.png?raw=true)
 
 
 
@@ -331,50 +311,47 @@ We'll now run through some of the more frequently used geographies to be aware o
 
 Map showing regions in England
 
-<p align="centre">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Regions.png" alt="Map showing regions in England" width="400">
-  <br>
-  <em></em>
-</p>
+![Map showing regions in England](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Regions.png?raw=true) 
+
 
 
 
 **Local Authorities**
-* The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
-* The two tier system means there are two different boundary sets for Local Authorities. Here is how they were made up in 2024:
-  * Upper Tier Local Authorities (UTLA)
-    * England: 153
-    * Wales: 22
-    * Scotland: 32
-    * Northern Ireland: 11
-    * **Total: 218**
-  * Lower Tier Local Authorities (LTLA)
-    * England:296
-    * Wales: 22
-    * Scotland: 32
-    * Northern Ireland: 11
-    * **Total: 361**
-* Lower Tier Local Authorities (LTLAs) are also known as Local Authority Districts (LADs).
-* Local Authority boundaries change frequently so ensure you use the correct year to avoid errors. 
+ * The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
+ * The two tier system means there are two different boundary sets for Local Authorities. Here is how they were made up in 2024:
+   * Upper Tier Local Authorities (UTLA)
+     * England: 153
+     * Wales: 22
+     * Scotland: 32
+     * Northern Ireland: 11
+     * **Total: 218**
+   * Lower Tier Local Authorities (LTLA)
+     * England:296
+     * Wales: 22
+     * Scotland: 32
+     * Northern Ireland: 11
+     * **Total: 361**
+ * Lower Tier Local Authorities (LTLAs) are also known as Local Authority Districts (LADs).
+ * Local Authority boundaries change frequently so ensure you use the correct year to avoid errors. 
 
 ![Maps showing Local Authorities in the UK](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/UTLA_LTLA_Map.png?raw=true)
 
 ### Census Geographies
 
 **Output Areas**
-* Census geographies are stable, small area geographies created for non-disclosive census releases.
-* These areas represent the nighttime residential population.
-* They were introduced in 2001 and revised in 2011 and again in 2021 to reflect population changes and better align with administrative units.
-* The geographies are built from clusters of postcodes which are aggregated to be as socially homogenous as possible, based on a range of factors.
-* Each level of geography has a relatively consistent population size.
-* Mixtures of urban and rural areas are avoided wherever possible.
-* The Census geographies are hierarchical and nest within each other, as shown in the image below.
+ * Census geographies are stable, small area geographies created for non-disclosive census releases.
+ * These areas represent the nighttime residential population.
+ * They were introduced in 2001 and revised in 2011 and again in 2021 to reflect population changes and better align with administrative units.
+ * The geographies are built from clusters of postcodes which are aggregated to be as socially homogenous as possible, based on a range of factors.
+ * Each level of geography has a relatively consistent population size.
+ * Mixtures of urban and rural areas are avoided wherever possible.
+ * The Census geographies are hierarchical and nest within each other, as shown in the image below.
 
 ![The hierarchy of Census geographies](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/CensusGeographies.png?raw=true)
 
 **Workplace Zones**
-* Workplace Zones are used to publish workplace related statistics
-* They are a representation of the workplace population (day time population distribution)
+ * Workplace Zones are used to publish workplace related statistics
+ * They are a representation of the workplace population (day time population distribution)
 
 ### Postcodes, UPRNs and Addresses
 
@@ -383,15 +360,15 @@ Map showing regions in England
 ONS produce two postcode directories. Both directories provide information about which area the postcode lies in for a range of different boundary products. However, the directories have subtle differences so make sure you select the correct one based on what you're using it for.
 
 *ONS Postcode Directory (ONSPD)*
-* Postcodes are assigned to areas via direct point-in-polygon assignment (ie. overlaying postcode points on geographical boundaries to show which area the postcode lies within)
-* This method provides a more accurate locational assignment.
-* This directory should be used for operational purposes where an accurate postcode location is important.
+ * Postcodes are assigned to areas via direct point-in-polygon assignment (ie. overlaying postcode points on geographical boundaries to show which area the postcode lies within)
+ * This method provides a more accurate locational assignment.
+ * This directory should be used for operational purposes where an accurate postcode location is important.
 
 *National Statistics Postcode Lookup (NSPL)*
-* Postcodes are assigned to Output Areas (OAs) by point-in-polygon assignment. Then, OAs are assigned to other statistical areas by 'best-fit' method (more on this later in the course.)
-* The best fit assignment can mean the postcode appears to be in the wrong place (but it isn't).
-* This directory should be used for statistical production, where it is important to ensure data is assigned to the correct area within the relevant geographical hierarchy.
-* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this take a look at <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_BFIT&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">'An overview of best-fitting'</a>.
+ * Postcodes are assigned to Output Areas (OAs) by point-in-polygon assignment. Then, OAs are assigned to other statistical areas by 'best-fit' method (more on this later in the course.)
+ * The best fit assignment can mean the postcode appears to be in the wrong place (but it isn't).
+ * This directory should be used for statistical production, where it is important to ensure data is assigned to the correct area within the relevant geographical hierarchy.
+ * It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this take a look at <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_BFIT&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">'An overview of best-fitting'</a>.
 
 **Unique Property Reference Numbers - UPRNs**
 
@@ -404,14 +381,14 @@ UPRNs are authoritative codes and can be used for data linkage. At ONS, UPRNs fo
 ONS produces two UPRN directories, which are similar to the postcode directories. The UPRN directories provide statistical geography information for each UPRN.
 
 *ONS UPRN Directory (ONSUD)*
-* Created by point-in-polygon assignment of UPRNs to geographic boundaries.
-* Provides a more exact location assignment.
-* Use for operational purposes.
+ * Created by point-in-polygon assignment of UPRNs to geographic boundaries.
+ * Provides a more exact location assignment.
+ * Use for operational purposes.
 
 *National Statistics UPRN Lookup (NSUL)*
-* UPRNs are assigned to output areas via point-in-polygon assignment, and then linked to other statistical geographies by best-fitting.
-* URPNs can appear to be in the wrong place, but they are correct.
-* Use this directory for statistical production.
+ * UPRNs are assigned to output areas via point-in-polygon assignment, and then linked to other statistical geographies by best-fitting.
+ * URPNs can appear to be in the wrong place, but they are correct.
+ * Use this directory for statistical production.
 
 ### Standard Area Measurements
 Standard area measurements are official measures for the area of geographic entities. They should be used whenever you are doing a calculation which uses area as a factor (for example, calculating population density). 
