@@ -98,14 +98,14 @@ Geographic data comes in a range of formats and there are some pros and cons whi
 ### Shapefiles
 1.	A shapefile is a widely used file format for geographic information systems (GIS) for storing the geometric location and attribute information of geographic features.  Despite its name, a shapefile is not a single file, but rather a collection of files that work together to represent spatial data.<br><br>
 2.	One shapefile requires the following 3 files:
-  * .shp - the feature geometry
-  * .shx - the shape index position
-  * .dbf - the attribute data
-  * there are also optional files like .prj (which stores the projection system information) and .xml (which stores metadata).<br><br>
+   * .shp - the feature geometry
+   * .shx - the shape index position
+   * .dbf - the attribute data
+   * there are also optional files like .prj (which stores the projection system information) and .xml (which stores metadata).<br><br>
 3.	If you were to view the components of a shapefile in windows explorer, they would be shown as in the image below.  All these files must be kept together in the same directory for the shapefile to function properly.  If you move a shapefile or send it to someone else make sure you include the .shp, .shx and .dbf files otherwise the shapefile will be corrupted and unusable. They must also all have the same base name (just a different file extension).<br><br>
 
 <p align="centre">
-  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Shapefile_Structure.png" alt="An example of components of a shapefile." width="400">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Shapefile_Structure.png" alt="An example of components of a shapefile" width="400">
   <br>
   <em></em>
 </p>
