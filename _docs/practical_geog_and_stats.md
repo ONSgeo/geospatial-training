@@ -267,8 +267,6 @@ GSS codes are comprised of two codes: a three character entity code which descri
 
 ![The structure of a GSS code showing the Portsmouth Unitary Authority as an example: E06000044.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/entity_code.PNG?raw=true)
 
-GSS codes can be used to look up specific areas on the <a href="http://statistics.data.gov.uk/home" target="_blank">ONS Geography Linked Data Portal</a>. This website provides a useful insight into the relationships between statistical geographies across the UK.
-
 The <a href="https://geoportal.statistics.gov.uk/datasets/2219f72d5b8042c496e47488efd04b16/about" target="_blank">Register of Geographic Codes</a> is the definitive list of all codes in use for UK statistical geographies. It should be used in conjunction with the <a href="https://geoportal.statistics.gov.uk/search?q=PRD_CHD%20DEC_2023&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">Code History Database</a> which charts historic changes in codes, which can be useful when understanding how statistical geographies have changed over time.
 
 
