@@ -93,44 +93,94 @@ These look-ups allow us to easily aggregate data to a huge range of geographies 
 
 ## Geographic File Formats
 
-Geographic data comes is a range of formats. Most GIS software is good at dealing with these formats, so you shouldn't worry about them too much. However, there are some pros and cons which you should be aware of as a user.
+Geographic data comes in a range of formats and there are some pros and cons which you should be aware of as a user.
 
 ### Shapefiles
-* Shapefiles are the most common and long standing file type.
-* Shapefiles only store vector data.
-* One shapefile requires the following 3 files:
-  * .shp - the feature geometry
-  * .shx - the shape index position
-  * .dbf - the attribute data
-  * and there are also optional files like .prj (which stores the projection system information) and .xml (which stores metadata).
-* For a shapefile to be valid the files above must be stored in the same directory and have exactly the same file name. If you move a shapefile or send it to someone else make sure you include the .shp, .shx and .dbf files otherwise the shapefile will be corrupted and unusable.
-* There are some frustrating quirks when using shapefiles which can cause you problems. Be aware that:
+1.	A shapefile is a widely used file format for geographic information systems (GIS) for storing the geometric location and attribute information of geographic features.  Despite its name, a shapefile is not a single file, but rather a collection of files that work together to represent spatial data.
+2.	One shapefile requires the following 3 files:
+  *	.shp - the feature geometry
+  *	.shx - the shape index position
+  *	.dbf - the attribute data
+  *	there are also optional files like .prj (which stores the projection system information) and .xml (which stores metadata).
+3.	If you were to view the components of a shapefile in windows explorer, they would be shown as in the image below.  All these files must be kept together in the same directory for the shapefile to function properly.  If you move a shapefile or send it to someone else make sure you include the .shp, .shx and .dbf files otherwise the shapefile will be corrupted and unusable. They must also all have the same base name (just a different file extension).
+
+![An example of components of a shapefile. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Shapefile_Structure.png?raw=true)
+
+4. There are some frustrating quirks when using shapefiles which can cause you problems. Be aware that:
+   
   * attribute names are limited to 10 characters
   * file size is limited to 2GB
   * there is no `NULL` value which makes distinguishing 0s and `NULLs` problematic
   * an individual shapefile can only deal with one type of vector data (points, lines or polygons) so you will need multiple shapefiles if you are working with multiple types of vector data
-  * by default there is no projection data provided with shapefiles (unless you have a .prj file) so it is up to the user to make sure the data is projected in the correct coordinate reference system. This makes it easy to put data in the wrong place by accident.
+  * by default there is no projection data provided with shapefiles (unless you have a .prj file) so it is up to the user to make sure the data is projected in the correct coordinate reference system.
+    
+**NOTE**: All shapefiles accessed from the Open Geography portal will already have been assigned British National Grid Projection.
+
+**Why use shapefiles**:
+
+Shapefiles are mostly universally recognised by older GIS systems; therefore, they are ideal for sharing data with users who might not have software that supports newer formats.
+Despite its limitations, shapefile remains one of the most universally supported formats, which makes it suitable for open data distribution for example on a public data portal such as the Open Geography portal, to ensure they can be opened by the widest audience.
+
+<p align="centre">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/File_formats_portal.png" alt="An example of shapefile format available to download from a data portal" width="300">
+  <br>
+  <em></em>
+</p>
 
 
 ### GeoPackages
 * Geopackages are a modern data format based on an <a href="https://www.ogc.org/" target="_blank">Open Geospatial Consortium</a> standard.
 * A geopackage is a self-contained SQLite database which can hold multiple layers. 
-* Geopackages can hold a range of data types including vectors, raters, tiles and flat formats.
-* Using a geopackage can allow you to avoid the problems encountered with shapefiles. 
+* Geopackages can hold a range of data types including vectors, rasters, tiles and flat formats.
+* GeoPackage supports long field names, there is no 10-character limit, which avoids the problems encountered with shapefiles. 
 * The geopackage file format is .gpkg.
+
+This image shows the contents of a geopackage in the browser pane in QGIS:
+
+<p align="center">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/QGIS_GeoPackage.png" alt="Contents of a geopackage" width="400">
+  <br>
+  <em></em>
+</p>
+
+
+
+### Geodatabases
+A geodatabase is a database designed specifically for spatial data and is a native data storage format used in Esri products such as ArcGIS Pro and ArcGIS Online. Many of the issues encountered with shapefiles can be overcome by storing data in a geodatabase:
+*	A geodatabase allows users to store, manage, and analyse vector, raster, and tabular data together in a single container.
+*	Use a geodatabase if you need long field names and want to apply data validation rules to your data.
+*	No 2GB storage limit.
+*	Ideal for complex GIS work.
+
+When you import a shapefile into a geodatabase, it becomes what’s known as a feature class. The image below shows a geodatabase called ‘TrainingForArcPro.gdb, containing a number of ‘feature classes.’
+
+<p align="left">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/ArcPro_Geodatabase.png" alt="An example of a geodatabase containing multiple feature classes" width="300">
+  <br>
+  <em></em>
+</p>
 
 
 ### GeoJSON
-* GeoJSON is a version of JSON which is spatially enabled which means locations are stored within the format.
-* GeoJSON is a text representation of vector data.
-* Like geopackages, GeoJSON is an open standard.
+* GeoJSON is used for web mapping and visualisation.
+* is a version of JSON which is spatially enabled which means locations are stored within the format.
+* is a text representation of vector data.
+* is an open standard.
 * Location is encoded in GeoJSON as longitude and latitude in WGS84 reference system. As much of the UK's data is provided in the British National Grid projection you need to take care with this format.
+
+<p align="centre">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/GeoJSON.png" alt="An example of GeoJSON being used to create a Web Map and then viewed in a browser" width="400">
+  <br>
+  <em></em>
+</p>
+
+
 
 
 ### KML and KMZ
 * KML and KMZ (the compressed version of KML) are XML representations of vector data.
-* These formats are most frequently used in Google Earth, so can be a good way to provide data to a non-GIS user who wants to visualise it easily.
-* Again, these formats are an OGC standard.
+* Use KML when you want to share or visualise spatial data in Google Earth. These formats can be a good way to provide data to a non-GIS user who wants to visualise it easily.
+* These formats are an OGC standard.
 * Realistically you won't find much use for these formats as a GIS user, but will occasionally stumble across them.
 
 
@@ -139,7 +189,7 @@ Geographic data comes is a range of formats. Most GIS software is good at dealin
 ### Coordinate Systems
 Longitude and latitude are used to represent locations on a 3D globe (the Earth) - this is called a geographic coordinate system.
 
-However, it's not easy or accurate to complete analysis or measure distances on a globe. So, we use a projected coordinate system instead. A projected coordinate system is a representation of the globe on a flat surface - a map. The trouble with projected coordinate systems is that they aren't a perfect representation of a 3D object, as anyone who has ever tried to wrap up a ball will know! 
+However, it's not easy or accurate to complete analysis or measure distances on a globe, therefore we use a projected coordinate system instead. A projected coordinate system is a representation of the globe on a flat surface or a map. The trouble with projected coordinate systems is that they aren't a perfect representation of a 3D object, as anyone who has ever tried to wrap up a ball will know! 
 
 ![Image showing the relationship between a round 3D object, a flat surface placed on the surface, and the resulting map. ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/coordinatesystems.png?raw=true)
 
@@ -148,9 +198,9 @@ In GIS a coordinate reference system (CRS) defines how data is plotted on a proj
 
 As we mentioned earlier, projected coordinate systems are not a perfect representation of the 3D Earth. To account for this, many different projected coordinate systems have been created which focus on providing a more accurate representation for a smaller area (for example, a continent or country). There are a lot of subtleties and technicalities to coordinate reference systems which you don't need to worry about. However, you do need to be aware of CRSs to avoid making mistakes in your analysis.
 
-GIS software is good at handling data projected in different CRSs on the fly. This means that when you load two datasets that are projected in different CRSs the GIS  will make them appear in the right place relative to each other. If you are only visualising data this is fine.
+GIS software is good at handling data projected in different CRSs on the fly. This means that when you load two datasets that are projected in different CRSs, the GIS will make them appear in the right place relative to each other. If you are only visualising data this is fine.
 
-When you are doing analysis having data in different CRSs will cause errors. So, before you start doing analysis, check the coordinate reference system of all of your data. If your data have differing CRSs, you will need to reproject them to the same CRS before starting analysis.
+When you are doing analysis, having data in different CRSs will cause errors, therefore before you begin, check the coordinate reference system of all of your data. If your data have differing CRSs, you will need to reproject them to the same CRS before starting analysis.
 
 ### British National Grid
 In Great Britain, Ordnance Survey have created British National Grid which is the best CRS for locating land-based data for the British Isles. Almost all of the data you will deal with will come in this CRS. 
@@ -158,7 +208,9 @@ In Great Britain, Ordnance Survey have created British National Grid which is th
 ![A map showing the British National Grid 10km cells overlaid on the outline of the UK.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/bng.png?raw=true)
 
 ### Some common CRSs
-The variables which define CRSs are complex and it's easy to make mistakes with them. So, CRSs have an EPSG code assigned to them which makes identifying them easier. You can use this EPSG code in all GIS software and coding languages to search and define the CRS you want to use.
+The variables which define CRSs are complex and it's easy to make mistakes with them therefore CRSs have an EPSG code assigned to them which makes identifying them easier. You can use this EPSG code in all GIS software and coding languages to search and define the CRS you want to use.
+
+EPSG codes are standardised numeric identifiers for CRSs. You can think of them as shorthand references that allow software and people to quickly specify which coordinate system they’re using.
 
 These are some of the most common CRSs you will come across and their EPSG codes.
 
@@ -259,7 +311,7 @@ Ultra Generalised | BUC | -
 
 ## Overview of ONS Geography Products
 
-ONS produce a range of geographical products for use across a number of organisations and applications. UK geographies can be very complex as they accommodate this range of uses and applications. Administrative boundaries in the UK also change frequently which results in changing and updating boundary datasets. When producing statistics we must be conscious of this to avoid errors. 
+The ONS produces a wide range of geographical products that support numerous organisations and applications. UK geographies can be complex, reflecting the need to accommodate these varied uses. In addition, administrative boundaries change regularly, requiring frequent updates to boundary datasets. When producing statistics, it's important to be mindful of these changes to ensure accuracy and avoid errors. 
 
 The *Hierarchical Representation of UK Statistical Geographies* provides a detailed overview of the different boundaries available and how they are associated with each other. This is a useful resource to refer back to - you can find it on the <a href="https://geoportal.statistics.gov.uk" target="_blank">Open Geography portal</a>
 
@@ -272,14 +324,22 @@ We'll now run through some of the more frequently used geographies to be aware o
 **Regions**
 * 9 regions in England
 * No regions in Scotland, Wales or Northern Ireland.
-* For UK wide representation, often England's regions are shown with the country boarders for Scotland, Wales and Northern Ireland.
+* For UK wide representation, often England's regions are shown with the country borders for Scotland, Wales and Northern Ireland.
 * Local Authority Districts (also known as Lower Tier Local Authorities) nest within regions.
 
-![Map showing regions in the England](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/regions.png?raw=true)
+Map showing regions in England
+
+<p align="centre">
+  <img src="https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/Regions.png" alt="Map showing regions in England" width="400">
+  <br>
+  <em></em>
+</p>
+
+
 
 **Local Authorities**
 * The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
-* The two tier system means there are two different boundary sets for Local Authorities. Here is how they are made up in 2024:
+* The two tier system means there are two different boundary sets for Local Authorities. Here is how they were made up in 2024:
   * Upper Tier Local Authorities (UTLA)
     * England: 153
     * Wales: 22
@@ -312,7 +372,7 @@ We'll now run through some of the more frequently used geographies to be aware o
 
 **Workplace Zones**
 * Workplace Zones are used to publish workplace related statistics
-* They are a representation of the workplace population (ie. day time population distribution)
+* They are a representation of the workplace population (day time population distribution)
 
 ### Postcodes, UPRNs and Addresses
 
@@ -329,7 +389,7 @@ ONS produce two postcode directories. Both directories provide information about
 * Postcodes are assigned to Output Areas (OAs) by point-in-polygon assignment. Then, OAs are assigned to other statistical areas by 'best-fit' method (more on this later in the course.)
 * The best fit assignment can mean the postcode appears to be in the wrong place (but it isn't).
 * This directory should be used for statistical production, where it is important to ensure data is assigned to the correct area within the relevant geographical hierarchy.
-* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this have a look at <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_BFIT&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">'An overview of best-fitting'</a>.
+* It's worth noting here that 'best-fit' isn't used for certain geographies, for example, National Parks. If you want to know more about this take a look at <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_BFIT&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">'An overview of best-fitting'</a>.
 
 **Unique Property Reference Numbers - UPRNs**
 
@@ -348,13 +408,13 @@ ONS produces two UPRN directories, which are similar to the postcode directories
 
 *National Statistics UPRN Lookup (NSUL)*
 * UPRNs are assigned to output areas via point-in-polygon assignment, and then linked to other statistical geographies by best-fitting.
-* URPNs can appear to be in the wrong place, but they aren't.
+* URPNs can appear to be in the wrong place, but they are correct.
 * Use this directory for statistical production.
 
 ### Standard Area Measurements
-Standard area measurements are official measures for the area of geographic entities. They should be used whenever you are doing a calculation which uses area as a factor (eg. calculating population density). 
+Standard area measurements are official measures for the area of geographic entities. They should be used whenever you are doing a calculation which uses area as a factor (for example, calculating population density). 
 
-There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often used, and is recommended for use when calculating statistics like population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_SAM&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">User Guide</a>.
+There are a number of types of standard area measurement which reflect different measures of the coastline and inland water. AREALHECT is the measure that is most often used, and is recommended for use when calculating statistics such as population density, but you may find that the other measures are appropriate for other applications. Their definitions are available below and more information is available in the <a href="https://geoportal.statistics.gov.uk/search?q=DOC_UG_SAM&sort=Date%20Created%7Ccreated%7Cdesc" target="_blank">User Guide</a>.
 
 *Definitions of the Types of Standard Area Measurement*
 
@@ -369,24 +429,22 @@ AREALHECT | Area measurement of land area only (to coastline features and exclud
 ![Map illustrating the four different standard area measurements](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/sam.png?raw=true)
 
 ### Rural-Urban
-There are multiple methods for defining "urban" and "rural". Two of the most common are the **Built-up Areas (BUAs)** and **Rural Urban Classification (RUC)**.
+There are multiple methods for defining "urban" and "rural". Two of the most common are the **Built up Areas (BUAs)** and **Rural Urban Classification (RUC)**.
 
-**Built-up Areas** are defined geospatially using a 50m x 50m grid which covers the country. Each cell is classified using Ordnance Survey's MasterMap topography data; the cell is defined as built up if over a certain proportion is covered by man-made features. When a large enough area of contiguous built-up cells is reached, that area is defined as a built-up area. Built-up areas are not strictly urban but rather developed.
+**Built up Areas** (BUAs), are defined geospatially using a 50m x 50m grid which covers the country. Each cell is classified using Ordnance Survey's MasterMap topography data; the cell is defined as built up if over a certain proportion is covered by man-made features. When a large enough area of contiguous built-up cells is reached, that area is defined as a built-up area. Built up areas are not strictly urban but rather developed.
 
-**Rural Urban Classification** has a common demographic definition. Urban is defined as an area where >50% of the population belong to a built-up area with a population >10,000. This classification also includes categories such as sparse and non-sparse, according to the population density profile of an area.
+**Rural Urban Classification** The England and Wales Rural-Urban Classification (RUC) categorises geographies as rural or urban based on residential address density, physical settlement form and population size. 
+The RUC is updated after every census to reflect the rural urban split at Census day.
 
-**Other methods** of defining rural-urban are often adjusted versions of BUAs which comply with different boundary types (for example. major towns and cities).
+**Other methods** of defining rural-urban are often adjusted versions of BUAs which comply with different boundary types (for example, major towns and cities).
 
 ### Area Classifications
-Area classifications are an analysis of people by where they live. Areas can be classified by the characteristics and attitudes of those who live in them. This is based on the concept that similar people with similar characteristics are more likely to live within the same locality. These area types will be distributed in different geographical space.
+Area classifications analyse people based on where they live, grouping areas according to the characteristics and attitudes of their residents. The approach is founded on the idea that people with similar characteristics tend to live in the same localities. These classifications reveal how different types of areas are distributed across the geographical landscape.
 
-The Output Area Classification (OAC) is a commonly used area classification derived from Census data. You can investigate the 2011 OAC via <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2011?" target="_blank">this interactive map</a>.
+The Output Area Classification (OAC) is a commonly used area classification derived from Census data. An interim <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2021?h=0&lon=-1.063&lat=51.8169&zoom=7" target="_blank">2021 Output Area classification</a> for England and Wales has been produced and a UK classification, keeping the same supergroups, groups and subgroups is planned which will include 2021 Census data for Northern Ireland and 2022 Census data for Scotland.
 
-![A map showing an example of the OAC for Southampton and Portsmouth ](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/OAC_2011.png?raw=true)
+![A map showing an example of the Output Area Classification](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/AreaClassification.png?raw=true)
 
-An interim <a href="https://mapmaker.cdrc.ac.uk/#/output-area-classification-2021?h=0&lon=-1.063&lat=51.8169&zoom=7" target="_blank">2021 Output Area classification</a> for England and Wales has been produced as a collaboration between the ONS and University College London.
-
-A UK classification, keeping the same supergroups, groups and subgroups is planned which will include 2021 Census data for Northern Ireland and 2022 Census data for Scotland.
 
 ## Geospatial Tools
 
@@ -419,7 +477,7 @@ This section will give you an overview of some of the most commonly used spatial
 
 While not strictly a spatial analysis technique, joining tabular data to spatial data is often the first step of analysis you will undertake. 
 
-Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others don't then check your geographical coverage (you may be joining data and boundaries with different extents, eg. GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
+Tabular data which has a GSS code can be joined to any ONS boundaries by this code. As with any join, care should be taken to ensure the join is successful. If nothing joins then you may be using the wrong boundaries so check you have the right ones. If some rows join correctly but others don't then check your geographical coverage (you may be joining data and boundaries with different extents, for example, GB data to UK boundaries) and the publication date of your data and boundaries (you may be joining data to boundaries which have different codes in areas due to boundary changes).
 
 **Point in Polygon** is a way to join point and polygon feature attributes together, by joining points which fall within the polygon boundary. For example, this is frequently used to aggregate points to statistical geographies. Point in polygon is used to create the ONS postcode directory and national statistics UPRN directory; this method is used to assign the postcode or UPRN to the statistical geographies. The attributes of the points will be assigned to the polygon.
 
@@ -436,7 +494,7 @@ There are a number of different spatial relationships, or predicates, which you 
 
 [This documentation](http://postgis.net/workshops/postgis-intro/spatial_relationships.html) explains the predicates and how they work for the different vector data types.
 
-Selecting by location is an incredibly useful tool and is frequently used across a range of geospatial contexts. For example, to find out how many homes are affected by flooding you can select homes which fall within the flood boundary. You can also combine a number of different selection techniques to answer queries which include more than one variable, for example, selecting homes which fall within a flood boundary and touch the 10 meter contour line. 
+Selecting by location is an incredibly useful tool and is frequently used across a range of geospatial contexts. For example, to find out how many homes are affected by flooding you can select homes which fall within the flood boundary. You can also combine a number of different selection techniques to answer queries which include more than one variable, for example, selecting homes which fall within a flood boundary and touch the 10 metre contour line. 
 
 ![Example of select by location: selecting point which fall within a polygon.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/selectbyloc.PNG?raw=true)
 
@@ -473,9 +531,9 @@ The basic techniques outlined above can be easily utilised and have the power to
 
 **Networks, drivetime and zoning** can be used to solve problems relating to networks. One of the most commonly used networks is the road network, which allows you to answer questions like "how far is it to drive between these two points?", "how far from this point can I travel in 30 minutes?" or "what areas can a field staff member cover in 1 hour of driving?". Network analysis has been successfully used to plan field staff areas for the Census.
 
-![Example of network analysis showing travel time zones for journey time to the ONS Titchfield Office](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.PNG?raw=true)
+![Example of network analysis showing travel time zones for journey time to a point on the south coast](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/awareness_of_geog_and_stats/network.png?raw=true)
 
-*This map shows average travel time zones to the ONS Titchfield office. It has been calculated using the Ordnance Survey Highways network and shows the average time it takes to travel to the office in light traffic.*
+This map shows average travel time zones to a point on the south coast.
 
 **Cluster and Hotspot Analysis** can be used to expose spatial groups or patterns which may not be visible to the human eye, particularly when dealing with large datasets. Statistical cluster analysis aims to classify or group objects into a number of different clusters, based on measured variables. This allows clustering of objects based on similarity (often in multiple dimensions) and location.
 
@@ -506,7 +564,7 @@ In the image below you can see how the raw count of woodland area (top left) can
 ### Selecting Breaks
 A choropleth map is a type of map where areas are coloured based on the normalised data value relating to the area. When producing choropleth maps it's important to select class breaks (sometimes known as bins) carefully, as differing methods of selecting breaks and the number of breaks you choose can significantly change your visualisation. There isn't a right or wrong method for selecting breaks; ensure your breaks suitably illustrate your data and highlight important features but avoid misleading by hiding data or manipulating breaks to suit your narrative. The image below illustrates how different methods for selecting breaks can drastically change your visualisation.
 
-![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/breaks.png?raw=true)
+![Maps showing how different breaks can change your visualisation.](https://github.com/ONSgeo/geospatial-training/blob/master/_docs/practical_geog_and_stats/SelectingClassBreaks.png?raw=true)
 
 ### More Cartography
 Cartography is a huge field which we have barely scratched the surface of here. If you're interested in learning more, keep an eye out for our training on [How to make a good map](https://onsgeo.github.io/geospatial-training/docs/make_a_good_map). 
