@@ -315,7 +315,6 @@ Map showing regions in England
 
 
 
-
 **Local Authorities**
  * The Local Government structure in England is a two tier system which creates some complexity. The other UK nations have a single tier system.
  * The two tier system means there are two different boundary sets for Local Authorities. Here is how they were made up in 2024:
