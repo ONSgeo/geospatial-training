@@ -5,7 +5,7 @@ description: Step-by-step installation instructions for Python geospatial packag
 
 # Installation guide for Python Geospatial packages 
 
-*Please note: As of 2025, this guidance page for setup using Anaconda is no longer being updated. The Python packages listed on this page however remain the packages recommended by ONS for geospatial analysis*  
+*Please note: As of 2025, this guidance page for setup using Anaconda is no longer being updated. Anaconda Prompt/Miniconda are still available for download. The Python packages listed on this page however remain the packages recommended by ONS for geospatial analysis*  
 
 ## Before you start: 
 
@@ -70,7 +70,7 @@ Now we can install the packages. Type each of these in sequence, followed by ent
 
 *pip install rtree==0.9.7* 
 
-*pip install gdal==3.2.2* 
+*pip install gdal==3.2.2* (It is possible that gdal may not install correctly. Packages such as Fiona contain the parts they requiree from gdal, so if you do not specifically require gdal and Fiona installs correctly, ignore this and carry on) 
 
 *pip install fiona==1.8.18* 
 
